@@ -2,11 +2,12 @@ import { Input } from "@nextui-org/input";
 import Image from "next/image";
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
-import { PrimaryButton } from "./PrimaryButton";
+
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
+import { PrimaryButton } from "./Button";
 
-export const FooterSection1 = ({items}) => {
+export const FooterSection1 = ({ items }) => {
   return (
     <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between lg:justify-evenly">
       <div className="relative order-1 w-full md:w-24 md:mt-10 h-14 md:h-20 xl:h-20">

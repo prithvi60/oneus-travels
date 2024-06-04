@@ -7,3 +7,27 @@
     text-wrap: balance;
   }
 }
+
+.slick__dots--custom {
+  height: 8px;
+  width: 8px;
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  position: relative;
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+  color: blueviolet !important;
+}
+
+.slick-dots li.slick-active {
+  opacity: 0.75;
+  color: blue !important;
+}
+

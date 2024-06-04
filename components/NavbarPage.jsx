@@ -35,7 +35,7 @@ export default function NavbarPage() {
 
   return (
     <Navbar
-      // isBordered
+      isBlurred="false"
       maxWidth="full"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
