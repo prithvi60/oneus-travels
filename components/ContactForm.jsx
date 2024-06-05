@@ -13,7 +13,7 @@ const lists = ["list1", "list", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
-    <section className="w-full h-full p-[24px] bg-secondary ">
+    <section className="w-full h-full p-[24px] bg-secondary" id="contact">
       <form
         action=""
         method="post"
@@ -98,6 +98,24 @@ export const ContactForm = () => {
               <HiOutlineBuildingOffice2 className="flex-shrink-0 text-2xl opacity-50 pointer-events-none text-secondary-300" />
             }
           />
+        </div>
+        <div className="py-5"> 
+        <Select
+          isRequired
+          size="lg"
+          label="Where are you located?"
+          labelPlacement={"outside"}
+          placeholder="Select your region"
+          radius="full"
+          color="secondary"
+          variant="faded"
+          className="max-w-ful"
+          classNames={{ label: "text-primary capitalize" }}
+        >
+          {lists.map((list, idx) => (
+            <SelectItem key={idx}>{list}</SelectItem>
+          ))}
+        </Select>
         </div>
         <div className="pb-10">
           <RadioGroup

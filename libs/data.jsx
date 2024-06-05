@@ -39,3 +39,5 @@ export const testimonialList = [
     name: "Andy Finkelstein, Sabre Travel Network",
   },
 ];
+
+export const clients = ["/pic_1.png", "/pic_2.png", "/pic_3.png", "/pic_4.png"];

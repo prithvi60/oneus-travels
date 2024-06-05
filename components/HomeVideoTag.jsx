@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SecondaryButton } from "./Button";
 
 export const HomeVideoTag = () => {
@@ -12,12 +13,15 @@ export const HomeVideoTag = () => {
           text={"Explore our Travel Ecosystem"}
         />
       </div>
-      <video muted autoPlay controls className="w-full h-dvh" preload="auto">
+      {/* <video muted autoPlay controls className="w-full h-dvh" preload="auto">
         <source
           src="https://ik.imagekit.io/webibee/sample_video%20(1).mp4?updatedAt=1717496685038"
           type="video/mp4"
         />
-      </video>
+      </video> */}
+      <div className="relative w-full overflow-hidden shadow-md h-dvh">
+        <Image fill alt="banner" src={"/sample_1.jpg"} className="object-cover object-center"/>
+      </div>
     </section>
   );
 };

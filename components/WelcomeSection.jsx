@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PrimaryButton } from "./Button";
 
 export const WelcomeSection = () => {
@@ -29,11 +30,13 @@ export const WelcomeSection = () => {
         customer service excellence, innovative travel technology and a
         demonstrable return on investment, you’re in the right place.
       </p>
-      <div className="pt-5">
+      <div className="pt-5 w-max">
+        <Link href={"/sample.pdf"} download={"sample_file.pdf"} type="file" target="_blank">
       <PrimaryButton
         roleType={"button"}
         text={"view our global capabilities"}
       />
+        </Link>
       </div>
     </section>
   );

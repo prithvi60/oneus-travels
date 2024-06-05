@@ -3,18 +3,20 @@ import { testimonialList } from "@/libs/data";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import {FaCircleArrowLeft,FaCircleArrowRight } from "react-icons/fa6";
+import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"absolute -bottom-10 md:top-16 right-44  md:-right-10 cursor-pointer"}
+      className={
+        "absolute -bottom-10 md:top-16 right-44  md:-right-10 cursor-pointer"
+      }
       //   style={{ ...style, display: "block", background: "red" }}
       onClick={onClick}
     >
-       < FaCircleArrowRight className="text-3xl hover:text-success" />
-        </div>
+      <FaCircleArrowRight className="text-3xl hover:text-success" />
+    </div>
   );
 }
 
@@ -22,11 +24,13 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"absolute -bottom-10 md:top-16 left-44 md:-left-10 cursor-pointer"}
+      className={
+        "absolute -bottom-10 md:top-16 left-44 md:-left-10 cursor-pointer"
+      }
       //   style={{ ...style, display: "block", background: "green" }}
       onClick={onClick}
     >
-        < FaCircleArrowLeft className="text-3xl hover:text-success" />
+      <FaCircleArrowLeft className="text-3xl hover:text-success" />
     </div>
   );
 }

@@ -12,6 +12,8 @@ import {
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaSignInAlt } from "react-icons/fa";
+import { IoMdLogIn } from "react-icons/io";
 
 export default function NavbarPage() {
   const path = usePathname();
@@ -25,7 +27,7 @@ export default function NavbarPage() {
     { menuTitle: "Technology", ref: "/technology" },
     { menuTitle: "About", ref: "/about" },
     { menuTitle: "Resources", ref: "/resources" },
-    { menuTitle: "Contact", ref: "/contact" },
+    { menuTitle: "Contact", ref: "#contact" },
   ];
 
   const handleClick = (ref) => {
@@ -41,18 +43,11 @@ export default function NavbarPage() {
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
         base: "py-4 shadow-md",
-        // wrapper: "justify-around ",
-        item: [
-          // "flex",
-          // "relative",
-          // "h-full",
-          // "items-center",
-          "data-[active=true]: !text-success",
-        ],
+        item: ["data-[active=true]: !text-success"],
         menuItem: ["data-[active=true]: !text-success pt-2"],
       }}
     >
-      <NavbarContent className="pr-2 max-w-max" justify="start">
+      <NavbarContent className="pr-2 " justify="start">
         <NavbarBrand
           className="space-x-3 cursor-pointer"
           onClick={() => router.push("/")}
@@ -65,12 +60,15 @@ export default function NavbarPage() {
             className="object-contain"
           />
           <p className="hidden text-2xl font-bold font-Montserrat text-inherit md:block">
-            ACME
+            OneUs
           </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden gap-4 sm:flex font-Lato" justify="end">
+      <NavbarContent
+        className="hidden gap-4 sm:flex font-Lato"
+        justify="center"
+      >
         {menuItems.map((item, id) => (
           <NavbarItem
             key={id}
@@ -92,6 +90,15 @@ export default function NavbarPage() {
             </Link>
           </NavbarItem>
         ))}
+      </NavbarContent>
+
+      <NavbarContent justify="end" className="space-x-4">
+        <Link href="/">
+          <FaSignInAlt className="text-base md:text-xl text-secondary" />
+        </Link>
+        <Link href="/">
+          <IoMdLogIn className="text-base md:text-2xl text-secondary" />
+        </Link>
       </NavbarContent>
 
       <NavbarContent className="sm:!hidden" justify="end">
