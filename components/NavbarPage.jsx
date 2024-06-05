@@ -1,4 +1,6 @@
 "use client";
+import { AppContext } from "@/hooks/UseHooks";
+import { menuItems } from "@/libs/data";
 import { Link } from "@nextui-org/link";
 import {
   Navbar,
@@ -11,24 +13,18 @@ import {
 } from "@nextui-org/navbar";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaSignInAlt } from "react-icons/fa";
 import { IoMdLogIn } from "react-icons/io";
 
 export default function NavbarPage() {
   const path = usePathname();
   const router = useRouter();
+  let { isInView } = useContext(AppContext);
+  console.log(isInView);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [isActivated, setIsActivated] = useState(null);
-
-  const menuItems = [
-    { menuTitle: "Services", ref: "/services" },
-    { menuTitle: "Technology", ref: "/technology" },
-    { menuTitle: "About", ref: "/about" },
-    { menuTitle: "Resources", ref: "/resources" },
-    { menuTitle: "Contact", ref: "#contact" },
-  ];
 
   const handleClick = (ref) => {
     setIsMenuOpen(false);
@@ -42,8 +38,12 @@ export default function NavbarPage() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
-        base: "py-4 shadow-md",
-        item: ["data-[active=true]: !text-success"],
+        base: [
+          `${
+            isInView ? "bg-success opacity-70 " : ""
+          } py-4 shadow-md transition-all duration-500 ease-linear`,
+        ],
+        item: [`data-[active=true]: !text-success`],
         menuItem: ["data-[active=true]: !text-success pt-2"],
       }}
     >
@@ -59,7 +59,11 @@ export default function NavbarPage() {
             src={"/travel_logo.png"}
             className="object-contain"
           />
-          <p className="hidden text-2xl font-bold font-Montserrat text-inherit md:block">
+          <p
+            className={`hidden text-2xl font-bold font-Montserrat text-inherit md:block ${
+              isInView ? "text-primary" : ""
+            }`}
+          >
             OneUs
           </p>
         </NavbarBrand>
@@ -80,11 +84,11 @@ export default function NavbarPage() {
               title={item.menuTitle}
               aria-current={`${item.menuTitle} page`}
               href={item.ref}
-              className={`${
-                path === item.menuTitle
-                  ? "text-success"
+              className={`text-base ${
+                isInView
+                  ? "text-primary hover:text-secondary"
                   : "text-secondary hover:text-success"
-              } text-base`}
+              }`}
             >
               {item.menuTitle}
             </Link>
@@ -94,10 +98,18 @@ export default function NavbarPage() {
 
       <NavbarContent justify="end" className="space-x-4">
         <Link href="/">
-          <FaSignInAlt className="text-base md:text-xl text-secondary" />
+          <FaSignInAlt
+            className={`text-base md:text-xl  ${
+              isInView ? "text-primary" : "text-secondary"
+            }`}
+          />
         </Link>
         <Link href="/">
-          <IoMdLogIn className="text-base md:text-2xl text-secondary" />
+          <IoMdLogIn
+            className={`text-base md:text-xl  ${
+              isInView ? "text-primary" : "text-secondary"
+            }`}
+          />
         </Link>
       </NavbarContent>
 

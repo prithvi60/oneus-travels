@@ -1,3 +1,11 @@
+export const menuItems = [
+  { menuTitle: "Services", ref: "/services" },
+  { menuTitle: "Technology", ref: "/technology" },
+  { menuTitle: "About", ref: "/about" },
+  { menuTitle: "Resources", ref: "/resources" },
+  { menuTitle: "Contact", ref: "#contact" },
+];
+
 export const sliders = [
   { imgSrc: "/bg_1.jpg", note: "Connecting ideas through travel", ref: "/" },
   { imgSrc: "/bg_2.jpg", note: "Connecting business through travel", ref: "/" },

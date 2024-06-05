@@ -1,10 +1,11 @@
+
 import { clients } from "@/libs/data";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 export const OurClients = () => {
   return (
-    <section className="w-full h-full p-[24px] space-y-5">
+    <section className="w-full h-full px-[24px] py-7 space-y-5">
       <h4 className="text-lg font-semibold text-center capitalize md:text-3xl font-montserrat text-secondary">
         Some of our precious clients
       </h4>

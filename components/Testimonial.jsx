@@ -10,9 +10,8 @@ function SampleNextArrow(props) {
   return (
     <div
       className={
-        "absolute -bottom-10 md:top-16 right-44  md:-right-10 cursor-pointer"
+        "absolute -bottom-14 md:top-16 right-20 md:-right-16 cursor-pointer"
       }
-      //   style={{ ...style, display: "block", background: "red" }}
       onClick={onClick}
     >
       <FaCircleArrowRight className="text-3xl hover:text-success" />
@@ -25,9 +24,8 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={
-        "absolute -bottom-10 md:top-16 left-44 md:-left-10 cursor-pointer"
+        "absolute -bottom-14 md:top-16 left-20 md:-left-16 cursor-pointer"
       }
-      //   style={{ ...style, display: "block", background: "green" }}
       onClick={onClick}
     >
       <FaCircleArrowLeft className="text-3xl hover:text-success" />
@@ -49,7 +47,7 @@ export const Testimonial = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <section className="w-full h-full p-[24px] flex flex-col justify-center items-center gap-10">
+    <section className="w-full h-full px-[24px] py-7 flex flex-col justify-center items-center gap-10">
       <Image
         height={180}
         width={180}

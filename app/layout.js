@@ -1,8 +1,9 @@
-import { Inter, Lato, Montserrat } from "next/font/google";
+import { Lato, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Provider";
 import NavbarPage from "@/components/NavbarPage";
 import Footer from "@/components/Footer";
+import AppContextProvider from "@/hooks/UseHooks";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -70,11 +71,13 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${montserrat.variable}`}>
-        <NavbarPage />
-        <Providers>{children}</Providers>
-        <Footer />
-      </body>
+      <AppContextProvider>
+        <body className={`${lato.variable} ${montserrat.variable}`}>
+          <NavbarPage />
+          <Providers>{children}</Providers>
+          <Footer />
+        </body>
+      </AppContextProvider>
     </html>
   );
 }

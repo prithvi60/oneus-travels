@@ -5,7 +5,7 @@ import { travelCardList } from "@/libs/data";
 
 export const TravelTechnologyCard = () => {
   return (
-    <section className="w-full h-full p-[24px] space-y-5 md:space-y-10">
+    <section className="w-full h-full px-[24px] py-7 space-y-5 md:space-y-10">
       <h2 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
         Transformative Business Travel Technology
       </h2>

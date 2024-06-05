@@ -13,7 +13,7 @@ const lists = ["list1", "list", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
-    <section className="w-full h-full p-[24px] bg-secondary" id="contact">
+    <section className="w-full h-full px-[24px] py-7 bg-secondary" id="contact">
       <form
         action=""
         method="post"
