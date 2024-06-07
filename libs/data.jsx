@@ -1,9 +1,43 @@
 export const menuItems = [
-  { menuTitle: "Services", ref: "/services" },
+  {
+    menuTitle: "Services",
+    ref: "/services",
+    subMenu: [
+      { list: "Corporate Travel", subMenuRef: "/corporate_travel" },
+      { list: "Leisure", subMenuRef: "/leisure" },
+      { list: "Visa Services", subMenuRef: "/visa_services" },
+      { list: "Meeting & Events", subMenuRef: "/meeting_events" },
+    ],
+  },
   { menuTitle: "Technology", ref: "/technology" },
-  { menuTitle: "About", ref: "/about" },
-  { menuTitle: "Resources", ref: "/resources" },
-  { menuTitle: "Contact", ref: "#contact" },
+  {
+    menuTitle: "About",
+    ref: "/about",
+    subMenu: [
+      { list: "Why Oneus", subMenuRef: "/why_oneus" },
+      { list: "Oneus Story", subMenuRef: "/oneus_story" },
+      { list: "Oneus Team", subMenuRef: "/oneus_team" },
+      { list: "Our Vision", subMenuRef: "/our_vision" },
+      { list: "Network", subMenuRef: "/network" },
+    ],
+  },
+  {
+    menuTitle: "Resources",
+    ref: "/resources",
+    subMenu: [
+      { list: "News", subMenuRef: "/news" },
+      { list: "Blog", subMenuRef: "/blog" },
+      { list: "Case Studies", subMenuRef: "/case_studies" },
+    ],
+  },
+  {
+    menuTitle: "Contact",
+    ref: "#contact",
+    subMenu: [
+      { list: "Subscribe", subMenuRef: "/subscribe " },
+      { list: "Social Media", subMenuRef: "/social_media" },
+    ],
+  },
 ];
 
 export const sliders = [
