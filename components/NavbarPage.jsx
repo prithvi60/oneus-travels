@@ -21,7 +21,6 @@ export default function NavbarPage() {
   const path = usePathname();
   const router = useRouter();
   let { isInView } = useContext(AppContext);
-  console.log(isInView);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [isActivated, setIsActivated] = useState(null);
@@ -48,24 +47,15 @@ export default function NavbarPage() {
       }}
     >
       <NavbarContent className="pr-2 " justify="start">
-        <NavbarBrand
-          className="space-x-3 cursor-pointer"
-          onClick={() => router.push("/")}
-        >
+        <NavbarBrand className="space-x-3 ">
           <Image
-            width={50}
-            height={50}
+            onClick={() => router.push("/")}
+            width={130}
+            height={130}
             alt="Logo"
-            src={"/travel_logo.png"}
-            className="object-contain"
+            src={"/Oneus_Logo_2.png"}
+            className="object-cover object-center cursor-pointer"
           />
-          <p
-            className={`hidden text-2xl font-bold font-Montserrat text-inherit md:block ${
-              isInView ? "text-primary" : ""
-            }`}
-          >
-            OneUs
-          </p>
         </NavbarBrand>
       </NavbarContent>
 

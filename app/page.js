@@ -1,6 +1,4 @@
 import { HomePageHero } from "@/components/HomePageHero";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { WelcomeSection } from "@/components/WelcomeSection";
 import { ContactForm } from "@/components/ContactForm";
 import { TravelTechnologyCard } from "@/components/TravelTechnologyCard";

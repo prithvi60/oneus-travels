@@ -3,7 +3,7 @@ import { PrimaryButton } from "./Button";
 
 export const WelcomeSection = () => {
   return (
-    <section className="w-full h-full px-[24px] py-7 space-y-4">
+    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-4">
       <div className="w-full text-[32px] font-bold font-Montserrat md:text-[40px] lg:text-[42px] leading-tight pt-5">
         <h1>Welcome to CTM.</h1>
         <h1>We Do Global Business Travel, Differently.</h1>

@@ -4,6 +4,8 @@ import { Providers } from "./Provider";
 import NavbarPage from "@/components/NavbarPage";
 import Footer from "@/components/Footer";
 import AppContextProvider from "@/hooks/UseHooks";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

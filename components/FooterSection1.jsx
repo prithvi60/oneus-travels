@@ -10,11 +10,11 @@ import { PrimaryButton } from "./Button";
 export const FooterSection1 = ({ items }) => {
   return (
     <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between lg:justify-evenly">
-      <div className="relative order-1 w-full md:w-24 md:mt-10 h-14 md:h-20 xl:h-20">
+      <div className="relative order-1 w-full h-20 md:w-28 md:mt-10 md:h-24">
         <Image
           fill
           alt="Logo"
-          src={"/travel_logo.png"}
+          src={"/Oneus_Logo_1.png"}
           className="object-contain"
         />
       </div>
