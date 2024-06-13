@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import AppContextProvider from "@/hooks/UseHooks";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ContactForm } from "@/components/ContactForm";
+import { Testimonial } from "@/components/Testimonial";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -77,6 +79,8 @@ export default function RootLayout({ children }) {
         <body className={`${lato.variable} ${montserrat.variable}`}>
           <NavbarPage />
           <Providers>{children}</Providers>
+          <ContactForm />
+          <Testimonial />
           <Footer />
         </body>
       </AppContextProvider>

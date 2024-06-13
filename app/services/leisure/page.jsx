@@ -1,5 +1,4 @@
 import { OtherHero } from "@/components/OtherHero";
-import SliderTabs from "@/components/services/SliderTabs";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
 const data = [
@@ -10,15 +9,14 @@ const data = [
 const page = () => {
   return (
     <main>
-      <OtherHero imgSrc={"/bg_2.jpg"} />
+      <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
-        title={"Corporate Travel"}
+        title={"Leisure"}
         desc={
           "Global business is complex, driven by global objectives and underpinned by regional diverse and complex your travel needs, we’re committed to designing simple, safe and sustainable travel solutions that delivers measurable results."
         }
         shortNotes={data}
       />
-      <SliderTabs />
     </main>
   );
 };

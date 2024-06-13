@@ -5,7 +5,7 @@ import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RadioGroup, Radio } from "@nextui-org/radio";
-import { Select, SelectSection, SelectItem } from "@nextui-org/select";
+import { Select, SelectItem } from "@nextui-org/select";
 import { Checkbox } from "@nextui-org/checkbox";
 import { PrimaryButton } from "./Button";
 
@@ -15,8 +15,9 @@ export const ContactForm = () => {
   return (
     <section className="w-full h-full px-[24px] py-7 bg-secondary" id="contact">
       <form
-        action=""
+        action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
         method="post"
+        acceptCharset="UTF-8"
         className="w-full md:w-3/4 lg:w-1/2 h-auto bg-[#133548] rounded-md p-7 mx-auto space-y-4"
       >
         <h4 className="text-lg font-semibold tracking-normal font-Montserrat text-primary md:text-xl xl:text-2xl">
@@ -29,6 +30,7 @@ export const ContactForm = () => {
         </h5>
         <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
           <Input
+            name="firstName"
             isRequired
             size="lg"
             type="firstName"
@@ -43,6 +45,7 @@ export const ContactForm = () => {
             }
           />
           <Input
+            name="lastName"
             isRequired
             size="lg"
             type="lastName"
@@ -57,6 +60,7 @@ export const ContactForm = () => {
             }
           />
           <Input
+            name="email"
             isRequired
             size="lg"
             type="email"
@@ -71,6 +75,7 @@ export const ContactForm = () => {
             }
           />
           <Input
+            name="phone number"
             size="lg"
             type="text"
             label="Phone Number"
@@ -84,6 +89,7 @@ export const ContactForm = () => {
             }
           />
           <Input
+            name="company name"
             isRequired
             size="lg"
             type="text"
@@ -99,23 +105,24 @@ export const ContactForm = () => {
             }
           />
         </div>
-        <div className="py-5"> 
-        <Select
-          isRequired
-          size="lg"
-          label="Where are you located?"
-          labelPlacement={"outside"}
-          placeholder="Select your region"
-          radius="full"
-          color="secondary"
-          variant="faded"
-          className="max-w-ful"
-          classNames={{ label: "text-primary capitalize" }}
-        >
-          {lists.map((list, idx) => (
-            <SelectItem key={idx}>{list}</SelectItem>
-          ))}
-        </Select>
+        <div className="py-5">
+          <Select
+            name="location"
+            isRequired
+            size="lg"
+            label="Where are you located?"
+            labelPlacement={"outside"}
+            placeholder="Select your region"
+            radius="full"
+            color="secondary"
+            variant="faded"
+            className="max-w-ful"
+            classNames={{ label: "text-primary capitalize" }}
+          >
+            {lists.map((list, idx) => (
+              <SelectItem key={idx}>{list}</SelectItem>
+            ))}
+          </Select>
         </div>
         <div className="pb-10">
           <RadioGroup
@@ -132,6 +139,7 @@ export const ContactForm = () => {
           </RadioGroup>
         </div>
         <Select
+          name="selecting options"
           isRequired
           size="lg"
           label="How Can I Help You ?"
@@ -148,6 +156,7 @@ export const ContactForm = () => {
           ))}
         </Select>
         <Textarea
+          name="comments"
           isRequired
           label="Comments"
           labelPlacement="outside"

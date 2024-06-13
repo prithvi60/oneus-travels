@@ -1,6 +1,6 @@
 "use client";
 import { AppContext } from "@/hooks/UseHooks";
-import { menuItems } from "@/libs/data";
+import { menuItems, menuItemsMobile, subCategories } from "@/libs/data";
 // import { Link } from "@nextui-org/link";
 import {
   Navbar,
@@ -11,7 +11,6 @@ import {
   NavbarContent,
   NavbarItem,
 } from "@nextui-org/navbar";
-import { Tooltip } from "@nextui-org/tooltip";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -25,14 +24,27 @@ export default function NavbarPage() {
   let { isInView } = useContext(AppContext);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   // const [isActivated, setIsActivated] = useState(null);
-
+  const [subMenuBar, setSubMenuBar] = useState(menuItems[0].menuTitle);
   const handleClick = (ref) => {
     setIsMenuOpen(false);
     router.push(`${ref}`);
   };
+  const handleEnter = (value) => {
+    // if (value === "Technology") {
+    //   setIsOpen(false);
+    // } else {
+    //   setIsOpen(true);
+    //   }
+    setSubMenuBar(value);
+  };
 
+  // const handleLeave = () => {
+  //   setIsOpen(false);
+  // };
+
+  // console.log(isOpen);
   return (
     <Navbar
       isBlurred="false"
@@ -63,7 +75,7 @@ export default function NavbarPage() {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden gap-4 sm:flex font-Lato"
+        className="hidden gap-10 md:flex font-Lato"
         justify="center"
       >
         {menuItems.map((item, id) => (
@@ -71,71 +83,89 @@ export default function NavbarPage() {
             key={id}
             isActive={path === item.menuTitle}
             onClick={() => handleClick(item.ref)}
+            className="group"
           >
-            {/* <Tooltip
-            // isOpen={isOpen}
-            // onOpenChange={(open) => setIsOpen(open)}
-            placement="bottom"
-            color="primary"
-            offset={35}
-            classNames={{
-              content: [
-                "bg-primary h-full rounded-none bg-success"
-              ],
-            }}
-              content={
-                <div className="h-full px-1 py-2 w-dvw bg-primary">
-                  <div className="font-bold text-small">Custom Content</div>
-                  <div className="text-tiny">This is a custom tooltip content</div>
-                </div>
-              }
-            > */}
-            <Link
-              aria-label={`know more about ${item.menuTitle}`}
-              title={item.menuTitle}
-              aria-current={`${item.menuTitle} page`}
-              href={item.ref}
+            <div
+              // aria-label={`know more about ${item.menuTitle}`}
+              // title={item.menuTitle}
+              // aria-current={`${item.menuTitle} page`}
+              // href={item.ref}
               className={`text-base ${
                 isInView
                   ? "text-primary hover:text-secondary"
                   : "text-secondary hover:text-success"
-              }`}
+              } py-10 `}
+              onMouseEnter={() => handleEnter(item.menuTitle)}
+              // onMouseLeave={() => handleLeave(item.menuTitle)}
             >
               {item.menuTitle}
-            </Link>
-            {/* </Tooltip> */}
+            </div>
+            {/* sub menu categories */}
+            <ul
+              className={`absolute ${
+                subMenuBar === "Technology"
+                  ? "hidden"
+                  : "group-hover:flex group-hover:transition-all group-hover:delay-150 group-hover:ease-linear group-hover:duration-700 group-hover:top-20"
+              } left-0 w-full h-[30vh] bg-primary shadow-md pt-2 pb-6 hidden md:justify-start lg:justify-center items-start gap-5`}
+            >
+              {subCategories?.map((l, index) => (
+                <li
+                  key={index}
+                  className="text-secondary first:ms-24 first:me-16 lg:first:ms-8 lg:first:me-16"
+                >
+                  {l.lists.map((sub, idx) => (
+                    <Link
+                      className="text-sm block pb-2 cursor-pointer"
+                      key={idx}
+                      href={sub.subMenuRef}
+                      // onClick={() => router.replace("/services/corporate_travel")}
+                    >
+                      {sub.list}
+                    </Link>
+                  ))}
+                </li>
+              ))}
+            </ul>
           </NavbarItem>
         ))}
       </NavbarContent>
 
       <NavbarContent
-        justify="end"
-        className="mt-4 space-x-1 md:mt-0 md:space-x-4"
+        // justify="end"
+        className="!justify-start md:!justify-end mt-4 space-x-1 md:mt-0 md:space-x-4"
       >
-        <Link href="/" className="block">
+        <Link href="/" className="flex flex-col items-center justify-center">
           <IoPersonOutline
-            className={`text-sm md:text-xl  ${
+            className={`text-sm md:text-xl ${
               isInView ? "text-primary" : "text-secondary"
             }`}
           />
-          <h5 className="mt-1 text-xs font-medium tracking-normal capitalize md:text-base font-Montserrat text-secondary">
+          <h5
+            className={`${
+              isInView ? "text-primary" : "text-secondary"
+            } mt-1 text-xs font-medium tracking-normal capitalize md:text-base font-Montserrat`}
+          >
             Employee
           </h5>
         </Link>
-        <Link href="/" className="block">
+        <Link href="/" className="flex flex-col items-center justify-center">
           <IoPersonOutline
             className={`text-sm md:text-xl  ${
               isInView ? "text-primary" : "text-secondary"
             }`}
           />
-          <h5 className="mt-1 text-xs font-medium tracking-normal capitalize md:text-base font-Montserrat text-secondary">
+          <h5
+            className={`${
+              isInView ? "text-primary" : "text-secondary"
+            } mt-1 text-xs font-medium tracking-normal capitalize md:text-base font-Montserrat`}
+          >
             client
           </h5>
         </Link>
       </NavbarContent>
 
       <NavbarContent
-        className="sm:!hidden !flex-grow-0 mt-4 md:mt-0"
+        className="md:!hidden !flex-grow-0 mt-4 md:mt-0"
         justify="end"
       >
         <NavbarMenuToggle
@@ -164,8 +194,9 @@ export default function NavbarPage() {
           },
         }}
       >
-        <div className="w-full h-[400px] columns-2 gap-4">
-          {menuItems.map((item, index) => (
+        <div className="w-full h-[400px] grid grid-cols-2 gap-x-6">
+          {/* className="w-full h-[400px] columns-2 gap-4" */}
+          {menuItemsMobile.map((item, index) => (
             <NavbarMenuItem
               key={index}
               className="!pt-0 aspect-auto break-inside-avoid-column"
@@ -180,18 +211,19 @@ export default function NavbarPage() {
                     ? "text-success"
                     : "text-secondary hover:text-success"
                 } w-full h-full text-base ${
-                  item.menuTitle === "Technology" && "underline underline-offset-1"
+                  item.menuTitle === "Technology" &&
+                  "underline underline-offset-1"
                 }`}
               >
                 {item.menuTitle}
               </Link>
               {item.subMenu?.map((l, id) => (
-                <NavbarMenuItem key={id} className="px-6 !pt-0 font-Lato">
+                <NavbarMenuItem key={id} className="px-2 !pt-0 font-Lato">
                   <Link
                     aria-label={`know more about ${l.list}`}
                     title={l.list}
                     aria-current={`${l.list} page`}
-                    href={l.subMenuRef}
+                    href={`${item.ref}${l.subMenuRef}`}
                     className={`w-full h-full text-xs`}
                   >
                     {l.list}
@@ -216,3 +248,12 @@ export default function NavbarPage() {
     </Navbar>
   );
 }
+
+// const subCategories = () => {
+//   return (
+//     <div className="absolute top-10 left-0 w-full h-[50vh] bg-primary shadow-md p-5 flex justify-center items-center gap-5">
+//       <div>List1</div>
+//       <div>list 2</div>
+//     </div>
+//   );
+// };

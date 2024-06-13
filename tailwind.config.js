@@ -35,8 +35,9 @@ module.exports = {
         light: {
           colors: {
             primary :"#FEFEFF", // Main Bg
-            secondary: "#013143", // text & section bg
-            success: "#0094DA", // hover effect & btn border
+            secondary: "#353B6B", // text & section bg
+            success: "#3880CB", // hover effect & btn border
+            info: "#CB8238"
           },
         },
       },

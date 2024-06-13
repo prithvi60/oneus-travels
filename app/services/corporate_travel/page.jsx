@@ -1,5 +1,4 @@
 import { OtherHero } from "@/components/OtherHero";
-import SliderTabs from "@/components/services/SliderTabs";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
 const data = [
@@ -18,7 +17,6 @@ const page = () => {
         }
         shortNotes={data}
       />
-      <SliderTabs />
     </main>
   );
 };
