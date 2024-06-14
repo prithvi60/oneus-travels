@@ -141,11 +141,11 @@ export default function NavbarPage() {
                   key={index}
                   className={`text-secondary ${
                     l.menuTitle === "Services"
-                      ? "first:-ms-[350px] lg:first:me-96"
+                      ? "first:-ms-[350px] lg:first:me-10"
                       : l.menuTitle === "About"
-                      ? "first:-ms-52 lg:first:me-52"
+                      ? "first:-ms-52 lg:first:me-2"
                       : l.menuTitle === "Resources"
-                      ? "first:-ms-16 lg:first:me-8"
+                      ? "first:-ms-16 lg:first:-ms-5"
                       : l.menuTitle === "Contact"
                       ? "first:ms-36 lg:first:ms-52"
                       : ""
