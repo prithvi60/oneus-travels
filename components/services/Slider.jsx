@@ -3,6 +3,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { timelines } from "@/libs/data";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -35,6 +37,7 @@ function SamplePrevArrow(props) {
 function SimpleSlider() {
   // const [index, setIndex] = useState(0)
   // console.log(index);
+  const path = usePathname();
   const settings = {
     infinite: false,
     loop: false,
@@ -77,8 +80,9 @@ function SimpleSlider() {
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">
       <Slider {...settings}>
         {timelines.map((item, id) => (
-          <div
-            className="relative w-full px-2.5 cursor-auto h-[35vh] md:h-[45vh]"
+          <Link
+            href={`${path}/${item.location}`}
+            className="relative w-full px-2.5 h-[35vh] md:h-[45vh] cursor-pointer"
             key={id}
           >
             <div className="relative overflow-hidden w-full h-[23vh] md:h-[33vh]">
@@ -115,7 +119,7 @@ function SimpleSlider() {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Slider>
     </section>

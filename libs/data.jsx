@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     menuTitle: "Services",
-    ref: "/services",
+    ref: "",
     subMenu: [
       { list: "Corporate Travel", subMenuRef: "/corporate_travel" },
       { list: "Leisure", subMenuRef: "/leisure" },
@@ -9,10 +9,9 @@ export const menuItems = [
       { list: "Meeting & Events", subMenuRef: "/meeting_events" },
     ],
   },
-  { menuTitle: "Technology", ref: "/technology" },
   {
     menuTitle: "About",
-    ref: "/about",
+    ref: "",
     subMenu: [
       { list: "Why Oneus", subMenuRef: "/why_oneus" },
       { list: "Oneus Story", subMenuRef: "/oneus_story" },
@@ -23,7 +22,7 @@ export const menuItems = [
   },
   {
     menuTitle: "Resources",
-    ref: "/resources",
+    ref: "",
     subMenu: [
       { list: "News", subMenuRef: "/news" },
       { list: "Blog", subMenuRef: "/blog" },
@@ -38,67 +37,72 @@ export const menuItems = [
       { list: "Social Media", subMenuRef: "/social_media" },
     ],
   },
+  // { menuTitle: "Technology", ref: "/technology" },
 ];
 
 export const subCategories = [
   {
+    menuTitle: "Services",
     lists: [
       {
         list: "Corporate Travel",
         menuRef: "services",
-        subMenuRef: "/services/corporate_travel",
+        subMenu: "/services/corporate_travel",
       },
-      { list: "Leisure", menuRef: "services", subMenuRef: "/services/leisure" },
+      { list: "Leisure", menuRef: "services", subMenu: "/services/leisure" },
       {
         list: "Visa Services",
         menuRef: "services",
-        subMenuRef: "/services/visa_services",
+        subMenu: "/services/visa_services",
       },
       {
         list: "Meeting & Events",
         menuRef: "services",
-        subMenuRef: "/services/meeting_events",
+        subMenu: "/services/meeting_events",
       },
     ],
   },
   {
-    lists: [{ list: "", subMenuRef: "" }],
+    lists: [{ list: "", subMenu: "" }],
   },
   {
+    menuTitle: "About",
     lists: [
-      { list: "Why Oneus", menuRef: "about", subMenuRef: "/about/why_oneus" },
+      { list: "Why Oneus", menuRef: "about", subMenu: "/about/why_oneus" },
       {
         list: "Oneus Story",
         menuRef: "about",
-        subMenuRef: "/about/oneus_story",
+        subMenu: "/about/oneus_story",
       },
-      { list: "Oneus Team", menuRef: "about", subMenuRef: "/about/oneus_team" },
-      { list: "Our Vision", menuRef: "about", subMenuRef: "/about/our_vision" },
-      { list: "Network", menuRef: "about", subMenuRef: "/about/network" },
+      { list: "Oneus Team", menuRef: "about", subMenu: "/about/oneus_team" },
+      { list: "Our Vision", menuRef: "about", subMenu: "/about/our_vision" },
+      { list: "Network", menuRef: "about", subMenu: "/about/network" },
     ],
   },
   {
+    menuTitle: "Resources",
     lists: [
-      { list: "News", menuRef: "resources", subMenuRef: "/resources/news" },
-      { list: "Blog", menuRef: "resources", subMenuRef: "/resources/blog" },
+      { list: "News", menuRef: "resources", subMenu: "/resources/news" },
+      { list: "Blog", menuRef: "resources", subMenu: "/resources/blog" },
       {
         list: "Case Studies",
         menuRef: "resources",
-        subMenuRef: "/resources/case_studies",
+        subMenu: "/resources/case_studies",
       },
     ],
   },
   {
+    menuTitle: "Contact",
     lists: [
       {
         list: "Subscribe",
         menuRef: "contact",
-        subMenuRef: "/contact/subscribe ",
+        subMenu: "/contact/subscribe ",
       },
       {
         list: "Social Media",
         menuRef: "contact",
-        subMenuRef: "/contact/social_media",
+        subMenu: "/contact/social_media",
       },
     ],
   },
@@ -287,5 +291,59 @@ export const timelines = [
     location: "bhutan",
     cost: "9000",
     packages: "10",
+  },
+];
+
+export const columns = [
+  { name: "Tour Packages", uid: "tour_packages" },
+  { name: "Duration", uid: "duration" },
+  { name: "Price", uid: "price" },
+  { name: "Inclusions", uid: "inclusions" },
+  { name: "Details", uid: "details" },
+];
+
+export const packages = [
+  {
+    id: 1,
+    tourPackages: "Enjoy An Island Getaway With Our Andaman Honeymoon Package",
+    duration: "5 Nights/6 Days",
+    price: "₹24,420/-	",
+    inclusions: "Upto 3 Stars, Meals, Sightseeing, Transfers, Stay Included	",
+    detailsRef: "#",
+  },
+  {
+    id: 2,
+    tourPackages:
+      "Discover Our Beautiful 4 Nights 5 Days Andaman Family Tour Packages	",
+    duration: "4 Nights/5 Days	",
+    price: "₹18,990/-	",
+    inclusions: "Upto 2 Stars, Meals, Sightseeing, Transfers	",
+    detailsRef: "#",
+  },
+  {
+    id: 3,
+    tourPackages:
+      "Time To Indulge In Some Thrilling Activities & Soak The Sun On The Sand	",
+    duration: "5 Nights/6 Days	",
+    price: "₹25,200/-",
+    inclusions: "Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers	",
+    detailsRef: "#",
+  },
+  {
+    id: 4,
+    tourPackages:
+      "Check Out Our Top-rated Andaman Itinerary For 4 Days For A Soulful Vacancy	",
+    duration: "3 Nights/4 Days	",
+    price: "₹16,800/-	",
+    inclusions: "Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers	",
+    detailsRef: "#",
+  },
+  {
+    id: 5,
+    tourPackages: "Fantastic Andaman Honeymoon Package	",
+    duration: "4 Nights/5 Days	",
+    price: "₹15,599/-	",
+    inclusions: "Upto 3 Stars, Meals, Sightseeing, Transfers, Watersports	",
+    detailsRef: "#",
   },
 ];

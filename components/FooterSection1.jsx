@@ -34,8 +34,14 @@ export const FooterSection1 = ({ items }) => {
         <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-Montserrat nd:text-lg">
           Subscribe for latest news:
         </h3>
-        <form className="space-y-12">
+        <form
+          action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
+          method="post"
+          acceptCharset="UTF-8"
+          className="space-y-12"
+        >
           <Input
+            name="firstName"
             isRequired
             size="lg"
             type="firstName"
@@ -50,6 +56,7 @@ export const FooterSection1 = ({ items }) => {
             }
           />
           <Input
+            name="email"
             isRequired
             size="lg"
             type="email"
@@ -62,6 +69,19 @@ export const FooterSection1 = ({ items }) => {
             endContent={
               <IoMailOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
+          />
+          <Input
+            isReadOnly
+            name="default value"
+            isRequired
+            size="lg"
+            type="text"
+            label="text"
+            defaultValue="subscribe details"
+            radius="full"
+            variant="bordered"
+            color="secondary"
+            className="hidden"
           />
           <PrimaryButton text={"submit"} roleType={"submit"} />
         </form>

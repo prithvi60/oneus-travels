@@ -8,17 +8,22 @@ import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Checkbox } from "@nextui-org/checkbox";
 import { PrimaryButton } from "./Button";
+import Image from "next/image";
 
 const lists = ["list1", "list", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
-    <section className="w-full h-full px-[24px] py-7 bg-secondary" id="contact">
+    <section className="w-full h-full px-[24px] py-7 bg-secondary md:flex justify-center items-center gap-10" id="contact">
+      <div className="relative overflow-hidden w-full h-[550px] hidden md:block basis-2/5">
+
+      <Image fill src={"/illustration_1.png"} alt="illustration image" className="object-contain rounded-sm" />
+      </div>
       <form
         action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
         method="post"
         acceptCharset="UTF-8"
-        className="w-full md:w-3/4 lg:w-1/2 h-auto bg-[#133548] rounded-md p-7 mx-auto space-y-4"
+        className="w-full md:w-3/4 lg:w-1/2 h-auto bg-[#133548] rounded-md p-7 mx-auto space-y-4 basis-3/5"
       >
         <h4 className="text-lg font-semibold tracking-normal font-Montserrat text-primary md:text-xl xl:text-2xl">
           Take your first step towards better business travel with Corporate
