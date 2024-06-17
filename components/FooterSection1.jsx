@@ -13,6 +13,8 @@ export const FooterSection1 = ({ items }) => {
       <div className="relative order-1 w-full h-20 md:w-28 md:mt-10 md:h-24">
         <Image
           fill
+          title="oneUs logo"
+          sizes="(min-width: 780px) 112px, calc(100vw - 48px)"
           alt="Logo"
           src={"/Oneus_Logo_1.png"}
           className="object-contain"
@@ -21,7 +23,7 @@ export const FooterSection1 = ({ items }) => {
       <ul className="grid order-3 grid-cols-2 gap-4 md:pt-10 md:order-2">
         {items.map((item, idx) => (
           <li key={idx}>
-            <Link className="flex items-center gap-2" href={item.ref}>
+            <Link title="menu" className="flex items-center gap-2" href={item.ref}>
               <FaAngleRight size={14} className="text-secondary" />
               <h4 className="text-base font-medium text-secondary hover:text-success">
                 {item.menuTitle}

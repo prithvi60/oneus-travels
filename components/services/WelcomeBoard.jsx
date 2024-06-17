@@ -19,12 +19,6 @@ export const WelcomeBoard = ({ title, desc, shortNotes }) => {
               </li>
             ))}
           </ul>
-            {/* <span
-              className="underline capitalize cursor-pointer hover:text-success hover:decoration-success"
-              onClick={() => router.push("/")}
-            >
-              Corporate Travel Management (CTM)
-            </span> */}
         </div>
       </div>
     </section>

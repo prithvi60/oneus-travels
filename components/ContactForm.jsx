@@ -17,7 +17,7 @@ export const ContactForm = () => {
     <section className="w-full h-full px-[24px] py-7 bg-secondary md:flex justify-center items-center gap-10" id="contact">
       <div className="relative overflow-hidden w-full h-[550px] hidden md:block basis-2/5">
 
-      <Image fill src={"/illustration_1.png"} alt="illustration image" className="object-contain rounded-sm" />
+      <Image fill title="illustration image" src={"/illustration_1.png"} alt="illustration image" className="object-contain rounded-sm" />
       </div>
       <form
         action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"

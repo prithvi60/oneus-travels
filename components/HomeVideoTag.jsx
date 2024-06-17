@@ -20,7 +20,7 @@ export const HomeVideoTag = () => {
         />
       </video> */}
       <div className="relative w-full overflow-hidden shadow-md h-dvh">
-        <Image fill alt="banner" src={"/sample_1.jpg"} className="object-cover object-center"/>
+        <Image fill alt="banner" title="banner" src={"/sample_1.jpg"} className="object-cover object-center"/>
       </div>
     </section>
   );

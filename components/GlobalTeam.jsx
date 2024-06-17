@@ -69,7 +69,9 @@ export const GlobalTeam = () => {
             alt="team image"
             src={"/card_bg_2.jpg"}
             fill
+            title="team image"
             quality={100}
+            sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
             className="object-cover object-center shadow-md rounded-3xl"
           />
         </div>

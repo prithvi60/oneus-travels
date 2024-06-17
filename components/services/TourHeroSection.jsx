@@ -5,6 +5,7 @@ export const TourHeroSection = () => {
     <div className="relative overflow-hidden w-full h-[30vh] md:md:h-[40vh] mb-4 md:mb-8">
         <Image
           fill
+          title="background image"
           sizes="calc(101.19vw - 36px)"
           src={"/bg_2.jpg"}
           alt="background image"

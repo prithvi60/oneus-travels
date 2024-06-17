@@ -11,6 +11,8 @@ export const GlobalTeamCard = ({ imgSrc, desc }) => {
           src={imgSrc}
           quality={100}
           fill
+          title="team image"
+          sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
           className="object-cover object-center rounded-3xl shadow-md"
         />
       </div>

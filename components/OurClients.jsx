@@ -18,6 +18,7 @@ export const OurClients = () => {
                 height={75}
                 alt="client logo"
                 src={item}
+                title="client logo"
                 className="transition-all ease-linear cursor-pointer hover:scale-110 duration-400 "
               />
               {/* </div> */}

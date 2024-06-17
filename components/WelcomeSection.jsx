@@ -31,7 +31,7 @@ export const WelcomeSection = () => {
         demonstrable return on investment, you’re in the right place.
       </p>
       <div className="pt-5 w-max">
-        <Link href={"/sample.pdf"} download={"sample_file.pdf"} type="file" target="_blank">
+        <Link href={"/sample.pdf"} title="brochure" download={"sample_file.pdf"} type="file" target="_blank">
       <PrimaryButton
         roleType={"button"}
         text={"view our global capabilities"}

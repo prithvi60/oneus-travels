@@ -31,7 +31,8 @@ export const HomePageHero = () => {
             <div className="relative overflow-hidden w-full h-[40vh] md:md:h-[55vh]">
               <Image
                 fill
-                sizes="calc(101.19vw - 36px)"
+                title="background image"
+                sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
                 src={item.imgSrc}
                 alt="background image"
                 className="object-cover object-center md:px-0"

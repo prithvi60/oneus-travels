@@ -82,13 +82,15 @@ function SimpleSlider() {
         {timelines.map((item, id) => (
           <Link
             href={`${path}/${item.location}`}
+            title="location"
             className="relative w-full px-2.5 h-[35vh] md:h-[45vh] cursor-pointer"
             key={id}
           >
             <div className="relative overflow-hidden w-full h-[23vh] md:h-[33vh]">
               <Image
                 fill
-                sizes="calc(101.19vw - 36px)"
+                title="background image"
+                sizes="(min-width: 1940px) 201px, (min-width: 1040px) 169px, (min-width: 780px) 151px, (min-width: 660px) 168px, (min-width: 340px) 92px, calc(355vw - 1044px)"
                 src={item.imgSrc}
                 alt="background image"
                 className="object-cover object-center md:px-0"

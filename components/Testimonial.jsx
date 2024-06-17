@@ -53,6 +53,7 @@ export const Testimonial = () => {
         width={180}
         quality={100}
         alt="testimonial log"
+        title="testimonial logo"
         src={"/testimonial.png"}
         className="object-cover object-center"
       />

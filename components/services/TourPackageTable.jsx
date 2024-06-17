@@ -44,7 +44,10 @@ export const TourPackageTable = ({ location }) => {
       case "details":
         return (
           <Link
-            href={packageList.detailsRef}
+            href={"/sample.pdf"}
+            download={"sample_file.pdf"}
+            type="file"
+            target="_blank"
             className="text-base capitalize text-success hover:text-secondary font-Lato"
           >
             View Details
@@ -57,7 +60,11 @@ export const TourPackageTable = ({ location }) => {
 
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto">
-      <Table color="secondary" isStriped aria-label={`${location} Tour Packages`}>
+      <Table
+        color="secondary"
+        isStriped
+        aria-label={`${location} Tour Packages`}
+      >
         <TableHeader columns={columns}>
           {(column) => (
             <TableColumn

@@ -19,8 +19,10 @@ export const TravelTechnologyCard = () => {
             <div className="relative w-full h-56 overflow-hidden">
               <Image
                 alt="card img"
+                title="card img"
                 fill
                 src={list.img}
+                sizes="(min-width: 1220px) 350px, (min-width: 780px) calc(32.38vw - 39px), (min-width: 440px) 350px, 81.67vw"
                 className="object-cover object-center transition-all duration-200 ease-linear group-hover:scale-110"
               />
             </div>
