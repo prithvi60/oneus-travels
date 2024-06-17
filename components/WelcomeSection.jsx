@@ -22,9 +22,9 @@ export const WelcomeSection = () => {
         results for every part of your business and every member of your team,
         in every region you operate in.
       </p>
-      <h4 className="text-base font-medium font-lato">
+      <h3 className="text-base font-medium font-lato">
         That’s the CTM difference.
-      </h4>
+      </h3>
       <p className="text-sm font-lato">
         If you are looking for a tailored travel management solution, delivering
         customer service excellence, innovative travel technology and a

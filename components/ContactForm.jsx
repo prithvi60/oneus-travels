@@ -25,10 +25,10 @@ export const ContactForm = () => {
         acceptCharset="UTF-8"
         className="w-full md:w-3/4 lg:w-1/2 h-auto bg-[#133548] rounded-md p-7 mx-auto space-y-4 basis-3/5"
       >
-        <h4 className="text-lg font-semibold tracking-normal font-Montserrat text-primary md:text-xl xl:text-2xl">
+        <h3 className="text-lg font-semibold tracking-normal font-Montserrat text-primary md:text-xl xl:text-2xl">
           Take your first step towards better business travel with Corporate
           Travel Management.
-        </h4>
+        </h3>
         <h5 className="text-sm font-lato text-primary">
           Contact our team for an obligation-free review of your global travel
           management needs today.

@@ -7,9 +7,9 @@ export const WelcomeBoard = ({ title, desc, shortNotes }) => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10">
       <div className="flex flex-col items-start justify-center gap-6 md:flex-row">
-        <h4 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
+        <h2 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
           {title}
-        </h4>
+        </h2>
         <div className="w-full space-y-4 md:space-y-8 font-Lato md:w-3/5">
           <p className="text-base md:text-lg">{desc}</p>
           <ul>

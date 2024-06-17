@@ -20,9 +20,9 @@ export const GlobalTeam = () => {
       className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 "
       ref={globalRef}
     >
-      <h4 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
+      <h3 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
         Global Travel, Powered By One Travel Team
-      </h4>
+      </h3>
       <div className="space-y-7">
         <p className="w-full h-full text-base font-lato">
           No matter how large, diverse, and complex your business or travel

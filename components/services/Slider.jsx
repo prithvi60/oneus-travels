@@ -45,7 +45,6 @@ function SimpleSlider() {
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
-    // afterChange: (i) => (setIndex(i)),
     responsive: [
       {
         breakpoint: 1024,
@@ -97,12 +96,12 @@ function SimpleSlider() {
                 quality={100}
               />
               <div className="absolute w-full bottom-1 md:bottom-3 left-3 md:left-7">
-                <h2 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
+                <h3 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
                   {"best time"}
-                </h2>
-                <h2 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
+                </h3>
+                <h3 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
                   {item.months}
-                </h2>
+                </h3>
               </div>
             </div>
             <div className="flex flex-col w-full h-auto gap-2 pt-1 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Lato">

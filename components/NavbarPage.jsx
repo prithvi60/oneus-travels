@@ -1,7 +1,5 @@
 "use client";
-import { AppContext } from "@/hooks/UseHooks";
 import { menuItems, menuItemsMobile, subCategories } from "@/libs/data";
-// import { Link } from "@nextui-org/link";
 import {
   Navbar,
   NavbarBrand,
@@ -14,7 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
@@ -77,19 +75,17 @@ export default function NavbarPage() {
         menuItem: ["data-[active=true]: !text-success pt-2"],
       }}
     >
-      <NavbarContent className="pr-2" justify="start">
-        <NavbarBrand className="space-x-3 ">
-          <Image
-            onClick={() => router.push("/")}
-            width={130}
-            height={130}
-            title="OneUs logo image"
-            alt="Logo"
-            src={"/Oneus_Logo_2.png"}
-            className="object-cover object-center cursor-pointer"
-          />
-        </NavbarBrand>
-      </NavbarContent>
+      <NavbarBrand className="space-x-3">
+        <Image
+          onClick={() => router.push("/")}
+          width={130}
+          height={130}
+          title="OneUs logo image"
+          alt="Logo"
+          src={"/Oneus_Logo_2.png"}
+          className="object-cover object-center cursor-pointer"
+        />
+      </NavbarBrand>
 
       {/* Technology menu bar */}
       <NavbarContent
@@ -185,42 +181,54 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-start md:!justify-end mt-4 space-x-1 md:mt-0 md:space-x-4">
-        <Link
-          href="/"
-          title="Login"
-          className="flex flex-col items-center justify-center"
-        >
-          <IoPersonOutline
-            className={`text-sm md:text-xl ${
-              percent >= 35 && percent <= 95 ? "text-primary" : "text-secondary"
-            }`}
-          />
-          <h5
-            className={`${
-              percent >= 35 && percent <= 95 ? "text-primary" : "text-secondary"
-            } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+        <NavbarItem>
+          <Link
+            href="/"
+            title="Login"
+            className="flex flex-col items-center justify-center"
           >
-            Employee
-          </h5>
-        </Link>
-        <Link
-          href="/"
-          title="Login"
-          className="flex flex-col items-center justify-center"
-        >
-          <IoPersonOutline
-            className={`text-sm md:text-xl ${
-              percent >= 35 && percent <= 95 ? "text-primary" : "text-secondary"
-            }`}
-          />
-          <h5
-            className={`${
-              percent >= 35 && percent <= 95 ? "text-primary" : "text-secondary"
-            } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+            <IoPersonOutline
+              className={`text-sm md:text-xl ${
+                percent >= 35 && percent <= 95
+                  ? "text-primary"
+                  : "text-secondary"
+              }`}
+            />
+            <h3
+              className={`${
+                percent >= 35 && percent <= 95
+                  ? "text-primary"
+                  : "text-secondary"
+              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+            >
+              Employee
+            </h3>
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            href="/"
+            title="Login"
+            className="flex flex-col items-center justify-center"
           >
-            client
-          </h5>
-        </Link>
+            <IoPersonOutline
+              className={`text-sm md:text-xl ${
+                percent >= 35 && percent <= 95
+                  ? "text-primary"
+                  : "text-secondary"
+              }`}
+            />
+            <h3
+              className={`${
+                percent >= 35 && percent <= 95
+                  ? "text-primary"
+                  : "text-secondary"
+              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+            >
+              client
+            </h3>
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
       {/* Toggle button */}

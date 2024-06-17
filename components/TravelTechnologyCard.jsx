@@ -28,9 +28,9 @@ export const TravelTechnologyCard = () => {
             </div>
           </CardHeader>
           <CardBody className="p-5 space-y-3">
-            <h4 className="text-base font-bold tracking-normal font-Montserrat md:text-lg xl:text-xl">
+            <h3 className="text-base font-bold tracking-normal font-Montserrat md:text-lg xl:text-xl">
               {list.title}
-            </h4>
+            </h3>
             <p className="text-sm font-lato md:text-base line-clamp-6">
               {list.desc}
             </p>

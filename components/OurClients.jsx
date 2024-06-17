@@ -5,9 +5,9 @@ import Marquee from "react-fast-marquee";
 export const OurClients = () => {
   return (
     <section className="w-full h-full px-[24px] py-7 space-y-5">
-      <h4 className="text-lg font-semibold text-center capitalize md:text-3xl font-montserrat text-secondary">
+      <h1 className="text-lg font-semibold text-center capitalize md:text-3xl font-montserrat text-secondary">
         Some of our precious clients
-      </h4>
+      </h1>
       <div className="w-full h-full py-10">
         <Marquee autoFill pauseOnHover gradient gradientWidth={60}>
           {clients.map((item, idx) => (

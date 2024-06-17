@@ -57,9 +57,9 @@ export const Testimonial = () => {
         src={"/testimonial.png"}
         className="object-cover object-center"
       />
-      <h4 className="text-lg font-semibold tracking-wide text-center uppercase font-Montserrat md:text-xl text-secondary">
+      <h3 className="text-lg font-semibold tracking-wide text-center uppercase font-Montserrat md:text-xl text-secondary">
         Testimonial
-      </h4>
+      </h3>
       <div className="relative w-full h-full mb-10 slider-container md:w-3/5 lg:w-1/2 xl:w-2/5">
         <Slider {...settings}>
           {testimonialList.map((list, id) => (
