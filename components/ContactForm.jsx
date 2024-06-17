@@ -14,10 +14,23 @@ const lists = ["list1", "list", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
-    <section className="w-full h-full px-[24px] py-7 bg-secondary md:flex justify-center items-center gap-10" id="contact">
-      <div className="relative overflow-hidden w-full h-[550px] hidden md:block basis-2/5">
-
-      <Image fill title="illustration image" src={"/illustration_1.png"} alt="illustration image" className="object-contain rounded-sm" />
+    <section
+      className="w-full h-full px-[24px] py-7 bg-secondary md:flex justify-center items-start gap-10"
+      id="contact"
+    >
+      <div className="mt-24 space-y-3 md:space-y-6 basis-2/5">
+        <h4 className="text-2xl font-semibold tracking-wider md:text-3xl text-primary font-Montserrat">
+          Don't just dream it, travel it. Let us craft your perfect adventure.
+        </h4>
+        <div className="relative overflow-hidden w-full h-[550px] hidden md:block">
+          <Image
+            fill
+            title="illustration image"
+            src={"/illustration_contact.png"}
+            alt="illustration image"
+            className="object-contain rounded-sm"
+          />
+        </div>
       </div>
       <form
         action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
