@@ -13,7 +13,7 @@ const page = () => {
   return (
     <main>
       <JsonLD data={blogPostData} />
-      <JsonLD data={blogPostBreadcrumbsDataData} />
+      <JsonLD data={blogPostBreadcrumbsData} />
       <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
         title={"Blog"}
