@@ -201,7 +201,7 @@ export default function NavbarPage() {
                   : "text-secondary"
               } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
             >
-              Employee
+              Member
             </h3>
           </Link>
         </NavbarItem>
@@ -225,7 +225,7 @@ export default function NavbarPage() {
                   : "text-secondary"
               } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
             >
-              client
+              Corporate
             </h3>
           </Link>
         </NavbarItem>

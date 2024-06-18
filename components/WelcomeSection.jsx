@@ -4,17 +4,23 @@ import { PrimaryButton } from "./Button";
 export const WelcomeSection = () => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-4">
-      <div className="w-full text-[32px] font-bold font-Montserrat md:text-[40px] lg:text-[42px] leading-tight pt-5">
-        <h1>Welcome to CTM.</h1>
-        <h1>We Do Global Business Travel, Differently.</h1>
-      </div>
-      <p className="text-base font-lato">
-        Corporate Travel Management (CTM) is a global leader in business travel
-        management services. We drive savings, efficiency, safety and
-        sustainability to companies and their travelers in every corner of the
-        world.
+      <h1 className="w-full text-[32px] font-bold font-Montserrat md:text-[40px] lg:text-[42px] leading-tight pt-5">
+        Welcome to Oneus Travels. Your Global Travel Companion.
+      </h1>
+      <p className="text-lg font-lato">
+        OneUs is a leading provider of business travel management solutions
+        worldwide. We enable businesses and tourists with maximum savings,
+        effectiveness, safety, and sustainability all across the globe. At
+        OneUs, we are more than just a travel management company; we are your
+        strategic partner in navigating the world of corporate travel.
       </p>
-      <p className="text-sm font-Lato">
+      <p className="text-base font-lato">
+        With OneUs by your side, you’ll discover a whole new global travel
+        experience. Our uniquely tailored travel management programs are crafted
+        with you and just for you, guaranteeing consistent and expert service
+        across every region you operate.
+      </p>
+      <p className="text-base font-Lato">
         When you partner with CTM, you’ll enjoy the experience of global travel
         done differently – a uniquely designed global travel management program,
         built with you and for you, consistently and expertly delivered in every
@@ -22,20 +28,50 @@ export const WelcomeSection = () => {
         results for every part of your business and every member of your team,
         in every region you operate in.
       </p>
-      <h3 className="text-base font-medium font-lato">
-        That’s the CTM difference.
-      </h3>
-      <p className="text-sm font-lato">
-        If you are looking for a tailored travel management solution, delivering
-        customer service excellence, innovative travel technology and a
-        demonstrable return on investment, you’re in the right place.
+      <p className="text-base font-Lato">
+        Contact us to learn more about our tailored travel management solutions
+        and unlock a world of possibilities with OneUs Travels.
       </p>
+      <h3 className="text-lg font-medium font-lato">
+        Travel Management, Fueled by One Travel Team
+      </h3>
+      <p className="text-base font-Lato">
+        Whether you're a multinational corporation or a growing enterprise, we
+        have the expertise and resources to elevate your business travel
+        experience. Our commitment to designing the simplest, safest and
+        sustainable solutions that deliver measurable results remains
+        unwavering, ensuring that we consistently exceed your expectations and
+        drive meaningful impact for you and your community.
+      </p>
+      <p className="text-base font-Lato">
+        At Oneus Travels, we adopt a tailored and collaborative approach to
+        crafting your international travel experience, ensuring a strategy that
+        aligns with your company's distinct objectives, challenges, and
+        opportunities.
+      </p>
+      <p className="text-base font-Lato">
+        When we partner with your team, we identify and implement the ideal
+        solutions for your business and people across all the markets you
+        operate in, seamlessly integrating them into a unified program. With our
+        advanced technology platform and dedicated global travel team, OneUs
+        Travels ensures your custom global travel program is easily accessible
+        and seamlessly supported, making us the perfect fit for your needs.
+      </p>
+      <h3 className="text-lg font-medium font-lato">
+        This is the OneUs Promise.
+      </h3>
       <div className="pt-5 w-max">
-        <Link href={"/sample.pdf"} title="brochure" download={"sample_file.pdf"} type="file" target="_blank">
-      <PrimaryButton
-        roleType={"button"}
-        text={"view our global capabilities"}
-      />
+        <Link
+          href={"/sample.pdf"}
+          title="brochure"
+          download={"sample_file.pdf"}
+          type="file"
+          target="_blank"
+        >
+          <PrimaryButton
+            roleType={"button"}
+            text={"view our global capabilities"}
+          />
         </Link>
       </div>
     </section>

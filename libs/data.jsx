@@ -151,9 +151,30 @@ export const menuItemsMobile = [
 ];
 
 export const sliders = [
-  { imgSrc: "/bg_1.jpg", note: "Connecting ideas through travel", ref: "/" },
-  { imgSrc: "/bg_2.jpg", note: "Connecting business through travel", ref: "/" },
-  { imgSrc: "/bg_3.jpg", note: "Connecting people through travel", ref: "/" },
+  {
+    imgSrc: "/bg_1.jpg",
+    shortNote: "One Strategy,",
+    note: "Using strategic solutions curated to your need",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_2.jpg",
+    shortNote: "One Forum,",
+    note: "We provide a singular simplified forum to ensure organized service",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_3.jpg",
+    shortNote: "One Community,",
+    note: "A specific group of team assigned for your company to ensure consistent service",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_2.jpg",
+    shortNote: "One Standard,",
+    note: "All services maintaining to your business standard and approved by AITA",
+    ref: "/",
+  },
 ];
 
 export const travelCardList = [
