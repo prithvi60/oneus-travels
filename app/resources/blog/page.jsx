@@ -1,5 +1,7 @@
+import JsonLD from "@/components/JsonLD";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
+import { blogPostBreadcrumbsData, blogPostData } from "@/libs/schema";
 
 const data = [
   "The CTM Global Network provides customers with consistency and assurance wherever they travel. Combining CTM’s wholly owned operations across Australia and New Zealand, North America, Europe, and Asia and a global network of best-in-class independent travel management companies across approximately 100 countries, the CTM Global Network allows our customers to enjoy consistency of service supported by compatible systems and processes in every market they travel in for maximum savings, efficiency and compliance.",
@@ -10,6 +12,8 @@ const data = [
 const page = () => {
   return (
     <main>
+      <JsonLD data={blogPostData} />
+      <JsonLD data={blogPostBreadcrumbsDataData} />
       <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
         title={"Blog"}

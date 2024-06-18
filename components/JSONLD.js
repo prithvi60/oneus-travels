@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const JSONLD = ({ data }) => (
+const JsonLD = ({ data }) => (
   <Script
     defer
     type="application/ld+json"
@@ -8,4 +8,4 @@ const JSONLD = ({ data }) => (
   />
 );
 
-export default JSONLD;
+export default JsonLD;

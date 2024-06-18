@@ -1,6 +1,8 @@
+import JsonLD from "@/components/JsonLD";
 import { OtherHero } from "@/components/OtherHero";
 import SliderTabs from "@/components/services/SliderTabs";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
+import { visaServiceData } from "@/libs/schema";
 
 const data = [
   "Corporate Travel Management’s (CTM’s) specialist meetings and events division, Event Travel Management (ETM), delivers strategic value to global travel programs through the consolidation of your meetings and events expendit.At ETM, we believe in the power of experiences that engage, excite and inspire people to perform. We call it “Connected Experiences",
@@ -11,6 +13,7 @@ const data = [
 const page = () => {
   return (
     <main>
+      <JsonLD data={visaServiceData} />
       <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
         title={"Global Meetings & Events Management"}

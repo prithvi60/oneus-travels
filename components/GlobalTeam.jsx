@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { PrimaryButton } from "./Button";
-import { GlobalTeamCard } from "./GlobalTeamCard";
+import { GlobalTeamCard, GlobalTeamCardReverse } from "./GlobalTeamCard";
 import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "@/hooks/UseHooks";
 import { useInView } from "framer-motion";
@@ -21,65 +21,63 @@ export const GlobalTeam = () => {
       ref={globalRef}
     >
       <h3 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
-        Global Travel, Powered By One Travel Team
+        Corporate Meetings & Events
       </h3>
       <div className="space-y-7">
         <p className="w-full h-full text-base font-lato">
-          No matter how large, diverse, and complex your business or travel
-          needs, we’re committed to designing simple, safe and sustainable
-          solutions that deliver measurable results.
+          Elevate your corporate meetings and events with Oneus Travels'
+          specialized event management team, OneT. Our seasoned event planners
+          ensure meticulously reschedulable meetings and events that not only
+          enhance attendee experiences but also yield strategic advantages for
+          your business, while optimizing your travel expenditure.
         </p>
         <p className="w-full h-full text-base font-lato">
-          At CTM, we take a highly consultative and curated approach to
-          designing your global travel program, ensuring a solution that meets
-          your business’s unique goals, challenges and opportunities.
+          Tap into our extensive network of suppliers to capitalize on exclusive
+          corporate deals for accommodations, travel arrangements, and
+          entertainment, saving you both time and money. Furthermore, centralize
+          your corporate and event-related travel expenses through Oneus Travels
+          to strengthen your bargaining position with suppliers, unlocking the
+          full potential of your budget.
         </p>
         <p className="w-full h-full text-base font-lato">
-          We work with your team to source and select the right solutions for
-          your business and people in every market you operate in and package
-          them up into one program, accessed through an integrated technology
-          ecosystem, and supported by one global travel team, to give your
-          unique global travel program a place to call “home”.
+          Whether you're organizing corporate functions, pivotal meetings,
+          large-scale conferences, group excursions, team-building initiatives,
+          or sales incentives, we tailor our event management solutions to
+          surpass expectations and fuel your business growth so we’ve got your
+          back!
+        </p>
+        <p className="w-full h-full text-base font-lato">
+          Partner with us for a seamlessly integrated event experience that
+          drives the best results for your business, people, and budget.
         </p>
       </div>
       <GlobalTeamCard
+        title={"One Strategy,"}
         imgSrc={"/card_bg_1.jpg"}
+        desc={"Using strategic solutions curated to your need."}
+      />
+
+      <GlobalTeamCardReverse
+        title={"One Forum"}
+        imgSrc={"/card_bg_2.jpg"}
         desc={
-          "Every aspect of your business travel, strategic meetings and corporate events needs consolidated into one strategic program to maximize savings, efficiencies and duty of care."
+          "We provide a singular simplified forum to ensure organized service "
         }
       />
-      <div className="relative flex flex-col-reverse w-full h-full gap-2 lg:gap-0 lg:flex-row lg:justify-end lg:items-center">
-        <Card className="w-full lg:max-w-[600px] z-20 !rounded-3xl p-2.5 md:p-5 lg:absolute lg:top-10 lg:left-16">
-          <CardHeader className="flex gap-3 font-Lato">
-            <h5 className="text-lg font-semibold md:text-xl">One Program</h5>
-          </CardHeader>
-          <CardBody>
-            <p className="text-sm md:text-base font-Lato">
-              Every aspect of your business travel, strategic meetings and
-              corporate events needs consolidated into one strategic program to
-              maximize savings, efficiencies and duty of care.
-            </p>
-          </CardBody>
-          <CardFooter>
-            <PrimaryButton roleType={"button"} text={"Find out more"} />
-          </CardFooter>
-        </Card>
-        <div className="relative w-full lg:w-3/5 h-[180px] md:h-[380px] overflow-hidden">
-          <Image
-            alt="team image"
-            src={"/card_bg_2.jpg"}
-            fill
-            title="team image"
-            quality={100}
-            sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
-            className="object-cover object-center shadow-md rounded-3xl"
-          />
-        </div>
-      </div>
+
       <GlobalTeamCard
+        title={"One Community"}
+        imgSrc={"/card_bg_3.jpg"}
+        desc={
+          "A specific group of team assigned for your company to ensure consistent service"
+        }
+      />
+
+      <GlobalTeamCardReverse
+        title={"One Standard"}
         imgSrc={"/card_bg_1.jpg"}
         desc={
-          "Every aspect of your business travel, strategic meetings and corporate events needs consolidated into one strategic program to maximize savings, efficiencies and duty of care."
+          "All services maintaining to your business standard and approved by AITA"
         }
       />
     </section>

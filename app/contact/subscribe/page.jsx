@@ -1,5 +1,7 @@
+import JsonLD from "@/components/JsonLD";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
+import { contactPageData } from "@/libs/schema";
 
 const data = [
   "We give you complete control over the communications you receive via your email preference center, ensuring you only receive the types of information that matter to you.",
@@ -9,6 +11,7 @@ const data = [
 const page = () => {
   return (
     <main>
+      <JsonLD data={contactPageData} />
       <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"Subscribe Today!"}

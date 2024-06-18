@@ -6,7 +6,7 @@ export const HomeVideoTag = () => {
     <section className="w-full h-full py-[32px]">
       <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-[#8DB63D] p-[24px]">
         <h1 className="text-lg font-semibold text-center md:text-xl font-montserrat text-primary">
-          Take a tour of CTM's global travel solutions
+        Take a tour of OneUs’s global travel solutions 
         </h1>
         <SecondaryButton
           roleType={"button"}

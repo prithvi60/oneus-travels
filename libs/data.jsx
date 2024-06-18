@@ -180,18 +180,18 @@ export const sliders = [
 export const travelCardList = [
   {
     img: "/card_bg_1.jpg",
-    title: "Global scale, local expertise, agile tech",
-    desc: "The scale to achieve maximum savings, the spread to provide consistent local market expertise, and the agility to solve tomorrow’s travel challenges today.",
+    title: "Engineered for Ease, Consistency, and Adaptability",
+    desc: "We employ a consultative, tailored approach to crafting distinctive, straightforward, and efficient global travel solutions that deliver strategic results now and into the future.",
   },
   {
     img: "/card_bg_2.jpg",
-    title: "Built for simplicity, consistency, flexibility",
-    desc: "We take a highly consultative, curated approach to designing unique, simple and effective global travel solutions which deliver strategic results today and into the future.",
+    title: "Global Reach, Local Insight, Adaptive Tech",
+    desc: "The capacity to maximize savings, the presence to offer reliable local market expertise, and the flexibility to address future travel challenges today.",
   },
   {
     img: "/card_bg_3.jpg",
-    title: "Your Feedback Drives Our Roadmap",
-    desc: "We put you front and center of our product and service roadmap, ensuring you benefit first from the fastest, most relevant and impactful solutions.",
+    title: "Your Input Shapes Our Innovations",
+    desc: "We prioritize your needs in our product and service development, ensuring you receive the most relevant, swift, and impactful solutions first.",
   },
 ];
 
