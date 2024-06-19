@@ -5,13 +5,13 @@ import { HomeVideoTag } from "@/components/HomeVideoTag";
 import { OurClients } from "@/components/OurClients";
 import { GlobalTeam } from "@/components/GlobalTeam";
 import { localBusinessData, structuredDataForOrg } from "@/libs/schema";
-import JsonLD from "@/components/JsonLD";
+import JsonLd from "@/components/JsonLd";
 
 export default function Home() {
   return (
     <main>
-      <JsonLD data={structuredDataForOrg} />
-      <JsonLD data={localBusinessData} />
+      <JsonLd data={structuredDataForOrg} />
+      <JsonLd data={localBusinessData} />
       <HomePageHero />
       <WelcomeSection />
       <OurClients />

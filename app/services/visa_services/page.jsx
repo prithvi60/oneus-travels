@@ -1,4 +1,4 @@
-import JsonLD from "@/components/JsonLD";
+import JsonLd from "@/components/JsonLd";
 import { OtherHero } from "@/components/OtherHero";
 import SliderTabs from "@/components/services/SliderTabs";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
@@ -13,7 +13,7 @@ const data = [
 const page = () => {
   return (
     <main>
-      <JsonLD data={visaServiceData} />
+      <JsonLd data={visaServiceData} />
       <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
         title={"Global Meetings & Events Management"}

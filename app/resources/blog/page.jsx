@@ -1,4 +1,4 @@
-import JsonLD from "@/components/JsonLD";
+import JsonLd from "@/components/JsonLd";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 import { blogPostBreadcrumbsData, blogPostData } from "@/libs/schema";
@@ -12,8 +12,8 @@ const data = [
 const page = () => {
   return (
     <main>
-      <JsonLD data={blogPostData} />
-      <JsonLD data={blogPostBreadcrumbsData} />
+      <JsonLd data={blogPostData} />
+      <JsonLd data={blogPostBreadcrumbsData} />
       <OtherHero imgSrc={"/bg_3.jpg"} />
       <WelcomeBoard
         title={"Blog"}
