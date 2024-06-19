@@ -57,6 +57,7 @@ export default function NavbarPage() {
 
   return (
     <Navbar
+      // position="static"
       isBlurred="false"
       maxWidth="full"
       isMenuOpen={isMenuOpen}
@@ -64,18 +65,40 @@ export default function NavbarPage() {
       classNames={{
         base: [
           `${
-            percent >= 35 && percent <= 74
+            percent >= 0 && percent <= 10
+              ? "bg-transparent !absolute"
+              : percent >= 35 && percent <= 74
               ? "bg-success"
               : percent >= 75 && percent <= 95
               ? "bg-info"
               : "bg-primary"
-          } py-4 shadow-md transition-all duration-500 ease-linear h-auto`,
+          } sticky py-4 transition-all duration-500 ease-linear`,
         ],
         item: [`data-[active=true]: !text-success`],
         menuItem: ["data-[active=true]: !text-success pt-2"],
       }}
+      motionProps={{
+        variants: {
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              ease: "easeIn",
+            },
+          },
+          exit: {
+            y: -500,
+            opacity: 0,
+            transition: {
+              duration: 1,
+              ease: "easeOut",
+            },
+          },
+        },
+      }}
     >
-      <NavbarBrand className="space-x-3">
+      <NavbarBrand className="space-x-3 ">
         <Image
           onClick={() => router.push("/")}
           width={130}
@@ -83,7 +106,7 @@ export default function NavbarPage() {
           title="OneUs logo image"
           alt="Logo"
           src={"/Oneus_Logo_2.png"}
-          className="object-cover object-center cursor-pointer"
+          className="object-cover object-center px-2.5 rounded-full cursor-pointer bg-primary"
         />
       </NavbarBrand>
 
@@ -98,8 +121,10 @@ export default function NavbarPage() {
             title={"Technology"}
             aria-current={`Technology page`}
             href={"/technology"}
-            className={`text-base ${
-              percent >= 35 && percent <= 95
+            className={`text-base lg:text-lg xl:text-xl ${
+              percent >= 0 && percent <= 10
+                ? "text-primary hover:text-info"
+                : percent >= 35 && percent <= 95
                 ? "text-primary hover:text-secondary"
                 : "text-secondary hover:text-success"
             } py-10 scroll-smooth tracking-wider cursor-pointer`}
@@ -129,12 +154,14 @@ export default function NavbarPage() {
               // aria-current={`${item.menuTitle} page`}
               // href={item.ref}
               className={`text-base ${
-                percent >= 35 && percent <= 95
+                percent >= 0 && percent <= 10
+                  ? "text-primary hover:text-info"
+                  : percent >= 35 && percent <= 95
                   ? "text-primary hover:text-secondary"
                   : "text-secondary hover:text-success"
               } py-10 cursor-default ${
                 item.ref !== "" && "cursor-pointer"
-              } scroll-smooth tracking-wider`}
+              } scroll-smooth tracking-wider text-base lg:text-lg xl:text-xl`}
               onMouseEnter={() => setSubMenuBar(item.menuTitle)}
             >
               {item.menuTitle}
@@ -144,10 +171,15 @@ export default function NavbarPage() {
 
         {isOpen && (
           <ul
-            className={`absolute flex transition-all delay-150 ease-linear duration-700 top-20 left-0 w-full h-[30vh] bg-primary shadow-md pt-2 pb-6 justify-center items-start`}
+            className={`absolute flex top-20 left-0 w-full ${
+              percent >= 0 && percent <= 10 && "bg-transparent shadow-none"
+            } h-[30vh] bg-primary shadow-md pt-2 pb-6 justify-center items-start`}
           >
             {val?.map((l, index) => (
               <li
+                // initial={{ opacity: 0, y: -500 }}
+                // animate={{ opacity: 1, y: 0 }}
+                // transition={{ duration: 0.8, ease: "easeIn" }}
                 key={index}
                 className={`text-secondary ${
                   l.menuTitle === "Services"
@@ -155,16 +187,20 @@ export default function NavbarPage() {
                     : l.menuTitle === "About"
                     ? "first:ms-3 lg:first:ms-12"
                     : l.menuTitle === "Resources"
-                    ? "first:ms-[156px] lg:first:ms-56"
+                    ? "first:ms-[156px] lg:first:ms-64"
                     : l.menuTitle === "Contact"
-                    ? "first:ms-[352px] lg:first:ms-[468px]"
+                    ? "first:ms-[352px] lg:first:ms-[530px]"
                     : ""
-                } `}
+                } ${
+                  percent >= 0 &&
+                  percent <= 15 &&
+                  "bg-primary px-5 py-3 shadow-md rounded-md"
+                }`}
               >
                 {l.lists.map((sub, idx) => (
                   <Link
                     title={sub.list}
-                    className="block pb-2 text-sm cursor-pointer"
+                    className="block pb-2 text-base cursor-pointer lg:text-lg hover:text-info"
                     key={idx}
                     href={sub.subMenu}
                     onClick={() => setIsOpen(false)}
@@ -180,7 +216,7 @@ export default function NavbarPage() {
 
       {/* Login button For employee and client */}
 
-      <NavbarContent className="!justify-start md:!justify-end mt-4 space-x-1 md:mt-0 md:space-x-4">
+      <NavbarContent className="!justify-start md:!justify-end  space-x-1 md:mt-0 md:space-x-4 md:gap-1">
         <NavbarItem>
           <Link
             href="/"
@@ -189,20 +225,25 @@ export default function NavbarPage() {
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 35 && percent <= 95
+                percent >= 0 && percent <= 10
+                  ? "text-primary"
+                  : percent >= 35 && percent <= 95
                   ? "text-primary"
                   : "text-secondary"
               }`}
             />
-            <h3
+            <div
               className={`${
-                percent >= 35 && percent <= 95
+                percent >= 0 && percent <= 10
+                  ? "text-primary hover:text-info"
+                  : percent >= 35 && percent <= 95
                   ? "text-primary"
                   : "text-secondary"
-              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat block text-center`}
             >
-              Member
-            </h3>
+              <h3>Member </h3>
+              <h3>Login</h3>
+            </div>
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -213,20 +254,25 @@ export default function NavbarPage() {
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 35 && percent <= 95
+                percent >= 0 && percent <= 10
+                  ? "text-primary"
+                  : percent >= 35 && percent <= 95
                   ? "text-primary"
                   : "text-secondary"
               }`}
             />
-            <h3
+            <div
               className={`${
-                percent >= 35 && percent <= 95
+                percent >= 0 && percent <= 10
+                  ? "text-primary hover:text-info"
+                  : percent >= 35 && percent <= 95
                   ? "text-primary"
                   : "text-secondary"
-              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat`}
+              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat block text-center`}
             >
-              Corporate
-            </h3>
+              <h3>corporate</h3>
+              <h3>Login</h3>
+            </div>
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -234,10 +280,11 @@ export default function NavbarPage() {
       {/* Toggle button */}
 
       <NavbarContent
-        className="md:!hidden !flex-grow-0 mt-4 md:mt-0"
+        className="md:!hidden !flex-grow-0 "
         justify="end"
       >
         <NavbarMenuToggle
+        className="!h-auto px-2 py-5 rounded-full bg-primary w-max"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>

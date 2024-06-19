@@ -9,44 +9,73 @@ import { Select, SelectItem } from "@nextui-org/select";
 import { Checkbox } from "@nextui-org/checkbox";
 import { PrimaryButton } from "./Button";
 import Image from "next/image";
+import { LiaPhoneVolumeSolid } from "react-icons/lia";
+import { RiMailSendLine } from "react-icons/ri";
 
 const lists = ["list1", "list", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
     <section
-      className="w-full h-full px-[24px] py-7 bg-secondary md:flex justify-center items-start gap-10"
+      className="w-full h-full md:h-auto px-[24px] py-9 relative items-center justify-center gap-2 sm:gap-8 flex flex-col lg:flex-row bg-[url('/world_bg.jpg')] shadow-sm bg-no-repeat bg-cover bg-center"
       id="contact"
     >
-      <div className="mt-24 space-y-3 md:space-y-6 basis-2/5">
-        <h4 className="text-2xl font-semibold tracking-wider md:text-3xl text-primary font-Montserrat">
+      <div className="absolute top-0 left-0 z-0 w-full h-full bg-opacity-55 bg-primary/70"></div>
+      {/* <div className=" w-full h-[100vh] hidden md:block">
+        <Image
+          fill
+          title="illustration image"
+          src={"/world_bg.jpg"}
+          alt="illustration image"
+          className="object-contain rounded-sm opacity-65"
+        />
+      </div> */}
+      {/* <div className="absolute top-0 "> */}
+      <div className="z-10 w-full mx-auto lg:w-1/2">
+        {/* mt-24 */}
+        {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Montserrat">
           Don't just dream it, travel it. Let us craft your perfect adventure.
-        </h4>
-        <div className="relative overflow-hidden w-full h-[550px] hidden md:block">
-          <Image
-            fill
-            title="illustration image"
-            src={"/illustration_contact.png"}
-            alt="illustration image"
-            className="object-contain rounded-sm"
-          />
+        </h4> */}
+        <div className="mx-auto rounded-md md:space-y-6 p-7 ">
+          <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Montserrat">
+            Stay Connected
+          </h4>
+          <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
+            <div className="flex flex-col items-center justify-center w-full text-center sm:gap-3 sm:flex-row lg:block">
+              <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
+                <LiaPhoneVolumeSolid className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
+              </div>
+              <h5 className="text-lg font-medium tracking-wider text-secondary font-Montserrat md:text-xl">
+                +91-98408 84460
+              </h5>
+            </div>
+            <div className="flex flex-col items-center justify-center w-full text-center sm:gap-3 sm:flex-row lg:block">
+              <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
+                <RiMailSendLine className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
+              </div>
+              <h5 className="text-lg font-medium tracking-wider text-secondary font-Montserrat md:text-xl">
+                oneustravel@gmail.com
+              </h5>
+            </div>
+          </div>
         </div>
       </div>
       <form
         action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
         method="post"
         acceptCharset="UTF-8"
-        className="w-full md:w-3/4 lg:w-1/2 h-auto bg-[#133548] rounded-md p-7 mx-auto space-y-4 basis-3/5"
+        className="z-10 w-full h-auto px-8 mx-auto space-y-4 rounded-md xl:px-20 py-7 md:w-3/4 lg:w-1/2"
       >
-        <h3 className="text-lg font-semibold tracking-normal font-Montserrat text-primary md:text-xl xl:text-2xl">
+        {/* bg-[#133548] */}
+        <h3 className="text-lg font-semibold tracking-normal font-Montserrat text-secondary md:text-xl xl:text-2xl">
           Take your first step towards better business travel with Corporate
           Travel Management.
         </h3>
-        <h5 className="text-sm font-lato text-primary">
-          Contact our team for an obligation-free review of your global travel
-          management needs today.
-        </h5>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+        {/* <h5 className="text-sm font-lato text-primary">
+            Contact our team for an obligation-free review of your global travel
+            management needs today.
+          </h5> */}
+        <div className="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2">
           <Input
             name="firstName"
             isRequired
@@ -55,7 +84,7 @@ export const ContactForm = () => {
             label="First Name"
             labelPlacement={"outside"}
             radius="full"
-            color="primary"
+            color="secondary"
             variant="faded"
             placeholder="Enter Your First Name"
             endContent={
@@ -71,7 +100,7 @@ export const ContactForm = () => {
             labelPlacement={"outside"}
             placeholder="Enter Your Last Name"
             radius="full"
-            color="primary"
+            color="secondary"
             variant="faded"
             endContent={
               <MdOutlineDriveFileRenameOutline className="flex-shrink-0 text-2xl opacity-50 pointer-events-none text-secondary-300" />
@@ -87,7 +116,7 @@ export const ContactForm = () => {
             placeholder="Enter Your Email"
             radius="full"
             variant="faded"
-            color="primary"
+            color="secondary"
             endContent={
               <IoMailOutline className="flex-shrink-0 text-2xl opacity-50 pointer-events-none text-secondary-300" />
             }
@@ -101,7 +130,7 @@ export const ContactForm = () => {
             placeholder="Enter Your Ph. No."
             radius="full"
             variant="faded"
-            color="primary"
+            color="secondary"
             endContent={
               <FaPhoneAlt className="flex-shrink-0 text-2xl opacity-50 pointer-events-none text-secondary-300" />
             }
@@ -116,14 +145,14 @@ export const ContactForm = () => {
             placeholder="Enter Your Company Name"
             radius="full"
             variant="faded"
-            color="primary"
+            color="secondary"
             className="md:col-span-2"
             endContent={
               <HiOutlineBuildingOffice2 className="flex-shrink-0 text-2xl opacity-50 pointer-events-none text-secondary-300" />
             }
           />
         </div>
-        <div className="py-5">
+        <div className="py-1.5">
           <Select
             name="location"
             isRequired
@@ -135,23 +164,23 @@ export const ContactForm = () => {
             color="secondary"
             variant="faded"
             className="max-w-ful"
-            classNames={{ label: "text-primary capitalize" }}
+            classNames={{ label: "text-secondary capitalize" }}
           >
             {lists.map((list, idx) => (
               <SelectItem key={idx}>{list}</SelectItem>
             ))}
           </Select>
         </div>
-        <div className="pb-10">
+        <div className="pb-6">
           <RadioGroup
-            classNames={{ label: "text-primary capitalize" }}
-            color="primary"
+            classNames={{ label: "text-secondary capitalize" }}
+            color="secondary"
             label="Is your company a CTM customer?"
           >
-            <Radio value="yes" classNames={{ label: "text-primary" }}>
+            <Radio value="yes" classNames={{ label: "text-secondary" }}>
               Yes
             </Radio>
-            <Radio value="no" classNames={{ label: "text-primary" }}>
+            <Radio value="no" classNames={{ label: "text-secondary" }}>
               No
             </Radio>
           </RadioGroup>
@@ -167,7 +196,7 @@ export const ContactForm = () => {
           color="secondary"
           variant="faded"
           className="mt-5 max-w-ful"
-          classNames={{ label: "text-primary capitalize" }}
+          classNames={{ label: "text-secondary capitalize" }}
         >
           {lists.map((list, idx) => (
             <SelectItem key={idx}>{list}</SelectItem>
@@ -181,11 +210,12 @@ export const ContactForm = () => {
           placeholder="Comments Please..."
           className="max-w-full"
           variant="faded"
-          color="primary"
+          color="secondary"
+          size="lg"
         />
         <Checkbox
           classNames={{
-            label: "text-primary capitalize ps-5 leading-sung text-base",
+            label: "text-secondary capitalize ps-5 leading-sung text-base",
           }}
           radius="sm"
           color="success"
@@ -196,6 +226,7 @@ export const ContactForm = () => {
         </Checkbox>
         <PrimaryButton roleType={"submit"} text={"Submit"} />
       </form>
+      {/* </div> */}
     </section>
   );
 };

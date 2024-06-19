@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { PrimaryButton } from "./Button";
+import Link from "next/link";
 
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
   return (
@@ -24,7 +25,9 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           <p className="text-sm md:text-base font-Lato">{desc}</p>
         </CardBody>
         <CardFooter>
-          <PrimaryButton roleType={"button"} text={"Find out more"} />
+          <Link href={"#contact"}>
+            <PrimaryButton roleType={"button"} text={"Find out more"} />
+          </Link>
         </CardFooter>
       </Card>
     </div>
@@ -42,7 +45,9 @@ export const GlobalTeamCardReverse = ({ title, imgSrc, desc }) => {
           <p className="text-sm md:text-base font-Lato">{desc}</p>
         </CardBody>
         <CardFooter>
-          <PrimaryButton roleType={"button"} text={"Find out more"} />
+          <Link href={"#contact"}>
+            <PrimaryButton roleType={"button"} text={"Find out more"} />
+          </Link>
         </CardFooter>
       </Card>
       <div className="relative w-full lg:w-3/5 h-[180px] md:h-[380px] overflow-hidden">

@@ -9,12 +9,12 @@ import JsonLd from "@/components/JsonLd";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <JsonLd data={structuredDataForOrg} />
       <JsonLd data={localBusinessData} />
       <HomePageHero />
-      <WelcomeSection />
       <OurClients />
+      <WelcomeSection />
       <GlobalTeam />
       <TravelTechnologyCard />
       <HomeVideoTag />
