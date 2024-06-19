@@ -9,7 +9,7 @@ export const HomePageHero = () => {
     setLoader(true);
   }, []);
 
-  console.log(loader);
+  // console.log(loader);
 
   // const settings = {
   //   dots: true,
@@ -62,17 +62,22 @@ export const HomePageHero = () => {
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
       {loader === false ? (
-        <div className="relative w-full h-[50vh] md:h-[75vh]">
-          <Image
-            fill
-            priority
-            title="background image"
-            sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
-            src={"/IATA-logo.png"}
-            alt="background image"
-            className="object-contain md:px-0"
-            quality={100}
-          />
+        <div className="flex flex-row items-center justify-center">
+          <h4 className="w-full h-full text-2xl text-center md:text-6xl font-Montserrat">
+            we are certified by
+          </h4>
+          <div className="relative w-full h-[50vh] md:h-[75vh]">
+            <Image
+              fill
+              priority
+              title="background image"
+              sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
+              src={"/IATA-logo.png"}
+              alt="background image"
+              className="object-contain md:px-0"
+              quality={100}
+            />
+          </div>
         </div>
       ) : (
         <video
@@ -80,7 +85,7 @@ export const HomePageHero = () => {
           loop
           autoPlay
           playsInline
-          className={`h-[75vh] w-full object-cover`}
+          className={`h-[75vh] w-full object-cover translat-y-0 transition-all duration-700 ease-linear`}
           // onLoadedData={() => setLoader(true)}
         >
           <source
