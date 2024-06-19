@@ -1,10 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export const HomePageHero = () => {
-  // const [loader, setLoader] = useState(true);
-  // console.log(loader);
+  const [loader, setLoader] = useState(false);
+
+  useEffect(() => {
+    setLoader(true);
+  }, []);
+
+  console.log(loader);
 
   // const settings = {
   //   dots: true,
@@ -56,39 +61,38 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
-      {/* {loader === true && (
-        <div className="relative overflow-hidden w-full h-[50vh] md:h-[75vh]">
+      {loader === false ? (
+        <div className="relative w-full h-[50vh] md:h-[75vh]">
           <Image
             fill
+            priority
             title="background image"
             sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
-            src={"/bg_1.jpg"}
+            src={"/IATA-logo.png"}
             alt="background image"
-            className="object-cover object-center md:px-0"
+            className="object-contain md:px-0"
             quality={100}
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCADFAqYDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EABUQAQEAAAAAAAAAAAAAAAAAAAAR/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAEDAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOaAAAFAAAEBQFAAFABQQFAAFAAQBQAAAAAAAAAAAABFAQABFAQBUQAEAUQAEAVEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRRHSCgIKAAAACigAoAKKCKCICgAoCCgAoCCgIKAgoggoCCijIoCCgMigIjSCIjSAiNIoiKAyKgCKKiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0KI7QUBBRRFAAAUUUAFRAUAFABREAUEFARRQQUBBQEFAQUBEaQEFARGkBBQGRRUZFAZFAZRpARFFGRUARQRAAAAAAAAAAAAAAAAAAAABQEUAAAABAAGgBqAACgIoAACqCiCigiiogCgiigigICgIoIAoCCgIKAgqAgoogoCIoCI0gIKgIKgIigiIoqso0gMioogqCCKIiAAAAAAAAAAAAAAAoAAAoCKKCCiCCgIKAoCtQAAAAABQUVUVEFFABUQBQAUAFBFAQBQQUBBQEFAQUBAAQUBAAQVAQVAQVAQVFERUBEaQGRUUQAEFQQAEQVEAAAAAAAAAUABQAUEUUEUEAFBBQEFAQBWoAAAAoKCooKCoCooigIKCiAAKAAqKAAIAACgIKgAAAAIAAioAigIACIooiKgIKgIiooiKgIAAioIACAAIKgACAAAoKAAKAgoACgAoIAAAKCCgMgK1AAFQBQFBUUFVBBVRRFAQVUBFABQAFRRAAAAFEAUQAAAABAAEVAAQABRAQBFQBABEVFERUBAAEVBAAQAABAAAAAURQAAUBBQAUAFEVAABRAFEAQBWoAAAAACiKoqoqIqoAqoIjQigogCqgIoigKgCiAKIAogCiAAAAIAAIIACAoIAICAIqCoiooIIAAIIAAAgIAAIAAAAAAKIAqoAqoAqoAoCCiAKAAADIA0AAFQUUQBQBVVARpWVEVUEFVAFVlRFEUFEAUQBVQBRAFEBFQQFEAVAAEAARRUEABAAQBBAEBQQQFQAAQRUBAAAAAAAAAAAAAVAFVAFEURRAFVlQUQBRAEVBGiiAKIAogCgKqqyoiqyoNCCI0IA0MqCqytBRARSoA0IUFEpQUQBRkBRAFEABAFQRRUEBUEBUEAQRRUEABBFQEAAAAAAAAAAAAAAAAAABUAURQAAUQEUQBRABUB0oggogKogCiAKqAKrKgqsqCqyoiqytBRAGisqC0SgKIAogClQEWlQBaVAFRAFEABBRUQBUQAKgAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKIAogCiAAAKIAogCiAKAKAAKggqoAqsqCqyoiiAKqAKIAogCiAKIAogCiAAICiAAgoCAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAooIgoAAAoAAAKAAAAAAAAAAgAACCAAgKAAIAKIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z"
           />
         </div>
-      )} */}
-      <video
-        muted
-        loop
-        autoPlay
-        playsInline
-        className={`h-[75vh] w-full object-cover`}
-        onLoadedData={() => setLoader(false)}
-        // ${
-        //   loader === false ? "block" : "hidden"
-        // }
-      >
-        <source
-          src={
-            "https://ik.imagekit.io/webibee/sample_video.mp4?updatedAt=1718791322485"
-          }
-          type="video/mp4"
-        />
-      </video>
+      ) : (
+        <video
+          muted
+          loop
+          autoPlay
+          playsInline
+          className={`h-[75vh] w-full object-cover`}
+          // onLoadedData={() => setLoader(true)}
+        >
+          <source
+            src={
+              "https://ik.imagekit.io/webibee/sample_video.mp4?updatedAt=1718791322485"
+            }
+            // src="/sample_video.mp4"
+            type="video/mp4"
+          />
+        </video>
+      )}
+
       {/* </div> */}
     </section>
   );
