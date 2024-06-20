@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        contact_bg: "url('/world_bg.jpg')",
+        contact_bg_lg: "url('/world_map_lg.png')",
+        contact_bg_sm: "url('/world_map_sm.png')",
       },
       fontFamily: {
         Lato: "var(--font-lato)",

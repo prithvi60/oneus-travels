@@ -17,7 +17,7 @@ export default function Home() {
       <WelcomeSection />
       <GlobalTeam />
       <TravelTechnologyCard />
-      <HomeVideoTag />
+      {/* <HomeVideoTag /> */}
     </main>
   );
 }

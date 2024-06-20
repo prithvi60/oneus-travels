@@ -26,7 +26,7 @@ export const HomePageHero = () => {
   //   customPaging: (i) => <div className="slick__dots--custom"></div>,
   // };
   return (
-    <section className="w-full h-full overflow-hidden slider-container">
+    <section className="relative w-full h-full overflow-hidden slider-container">
       {/* <Slider {...settings}>
         {sliders.map((item, id) => (
           <div
@@ -61,42 +61,40 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
-      {loader === false ? (
-        <div className="flex flex-row items-center justify-center">
-          <h4 className="w-full h-full text-2xl text-center md:text-6xl font-Montserrat">
-            we are certified by
-          </h4>
-          <div className="relative w-full h-[50vh] md:h-[75vh]">
-            <Image
-              fill
-              priority
-              title="background image"
-              sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
-              src={"/IATA-logo.png"}
-              alt="background image"
-              className="object-contain md:px-0"
-              quality={100}
-            />
-          </div>
-        </div>
-      ) : (
-        <video
-          muted
-          loop
-          autoPlay
-          playsInline
-          className={`h-[75vh] w-full object-cover translat-y-0 transition-all duration-700 ease-linear`}
-          // onLoadedData={() => setLoader(true)}
-        >
-          <source
-            src={
-              "https://ik.imagekit.io/webibee/sample_video.mp4?updatedAt=1718791322485"
-            }
-            // src="/sample_video.mp4"
-            type="video/mp4"
+
+      <div className="absolute block -translate-x-1/2 bottom-5 left-1/2">
+        <h4 className="w-full h-full text-xl font-semibold text-center capitalize text-success md:text-2xl font-Montserrat">
+          we are certified by
+        </h4>
+        <div className="relative w-full h-20 md:h-28">
+          <Image
+            fill
+            priority
+            title="background image"
+            sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
+            src={"/IATA-logo.png"}
+            alt="background image"
+            className="object-contain md:px-0"
+            quality={100}
           />
-        </video>
-      )}
+        </div>
+      </div>
+      <video
+        muted
+        loop
+        autoPlay
+        playsInline
+        className={`h-[75vh] w-full object-cover translat-y-0 transition-all duration-700 ease-linear`}
+        // onLoadedData={() => setLoader(true)}
+      >
+        <source
+          src={
+            "https://ik.imagekit.io/webibee/sample_video.mp4?updatedAt=1718791322485"
+          }
+          // src="/sample_video.mp4"
+          type="video/mp4"
+        />
+      </video>
 
       {/* </div> */}
     </section>
