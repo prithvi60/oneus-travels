@@ -55,6 +55,8 @@ export default function NavbarPage() {
     if (item.menuTitle === subMenuBar) return item.lists;
   });
 
+  console.log(percent);
+
   return (
     <Navbar
       // position="static"
@@ -65,14 +67,14 @@ export default function NavbarPage() {
       classNames={{
         base: [
           `${
-            percent >= 0 && percent <= 10
-              ? "bg-transparent !absolute"
+            percent >= 0 && percent <= 12
+              ? "!bg-transparent shadow-none"
               : percent >= 35 && percent <= 74
-              ? "bg-success"
+              ? "bg-success shadow-md"
               : percent >= 75 && percent <= 95
-              ? "bg-info"
-              : "bg-primary"
-          } sticky py-4 transition-all duration-500 ease-linear`,
+              ? "bg-info shadow-md"
+              : "bg-primary shadow-md"
+          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear`,
         ],
         item: [`data-[active=true]: !text-success`],
         menuItem: ["data-[active=true]: !text-success pt-2"],
@@ -98,7 +100,7 @@ export default function NavbarPage() {
         },
       }}
     >
-      <NavbarBrand className="space-x-3 ">
+      <NavbarBrand className="space-x-3">
         <Image
           onClick={() => router.push("/")}
           width={130}
@@ -122,7 +124,7 @@ export default function NavbarPage() {
             aria-current={`Technology page`}
             href={"/technology"}
             className={`text-base lg:text-lg xl:text-xl ${
-              percent >= 0 && percent <= 10
+              percent >= 0 && percent <= 12
                 ? "text-primary hover:text-info"
                 : percent >= 35 && percent <= 95
                 ? "text-primary hover:text-secondary"
@@ -154,7 +156,7 @@ export default function NavbarPage() {
               // aria-current={`${item.menuTitle} page`}
               // href={item.ref}
               className={`text-base ${
-                percent >= 0 && percent <= 10
+                percent >= 0 && percent <= 12
                   ? "text-primary hover:text-info"
                   : percent >= 35 && percent <= 95
                   ? "text-primary hover:text-secondary"
@@ -225,7 +227,7 @@ export default function NavbarPage() {
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 0 && percent <= 10
+                percent >= 0 && percent <= 12
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -234,7 +236,7 @@ export default function NavbarPage() {
             />
             <div
               className={`${
-                percent >= 0 && percent <= 10
+                percent >= 0 && percent <= 12
                   ? "text-primary hover:text-info"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -254,7 +256,7 @@ export default function NavbarPage() {
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 0 && percent <= 10
+                percent >= 0 && percent <= 12
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -263,7 +265,7 @@ export default function NavbarPage() {
             />
             <div
               className={`${
-                percent >= 0 && percent <= 10
+                percent >= 0 && percent <= 12
                   ? "text-primary hover:text-info"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -279,12 +281,9 @@ export default function NavbarPage() {
 
       {/* Toggle button */}
 
-      <NavbarContent
-        className="md:!hidden !flex-grow-0 "
-        justify="end"
-      >
+      <NavbarContent className="md:!hidden !flex-grow-0 " justify="end">
         <NavbarMenuToggle
-        className="!h-auto px-2 py-5 rounded-full bg-primary w-max"
+          className="!h-auto px-2 py-5 rounded-full bg-primary w-max"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
