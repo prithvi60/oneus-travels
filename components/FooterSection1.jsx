@@ -1,7 +1,7 @@
 import { Input } from "@nextui-org/input";
 import Image from "next/image";
 import { IoMailOutline } from "react-icons/io5";
-import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
+import { MdOutlineDriveFileRenameOutline, MdFlight } from "react-icons/md";
 
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
@@ -10,27 +10,46 @@ import { PrimaryButton } from "./Button";
 export const FooterSection1 = ({ items }) => {
   return (
     <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between lg:justify-evenly">
-      <div className="relative order-1 w-full h-20 md:w-28 md:mt-10 md:h-24">
+      <div className="relative order-1 block w-full h-20 md:h-24 md:w-36 lg:w-44 md:mt-10 lg:h-32 md:hidden lg:block">
         <Image
           fill
           title="oneUs logo"
           sizes="(min-width: 780px) 112px, calc(100vw - 48px)"
           alt="Logo"
-          src={"/Oneus_Logo_1.png"}
+          src={"/Oneus_Logo_2.png"}
           className="object-contain"
         />
       </div>
-      <ul className="grid order-3 grid-cols-2 gap-4 md:pt-10 md:order-2">
+      <ul className="grid order-3 grid-cols-2 gap-4 md:pt-4 md:order-2">
         {items.map((item, idx) => (
           <li key={idx}>
-            <Link title="menu" className="flex items-center gap-2" href={item.ref}>
+            <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
-              <h4 className="text-base font-medium text-secondary hover:text-success">
+              <h4 className="font-medium capitalize text-secondary hover:text-success font-Montserrat">
                 {item.menuTitle}
               </h4>
-            </Link>
+            </div>
+            {item.subMenu.map((list, idx) => (
+              <div className="flex items-start gap-2 mb-2 ms-4" key={idx}>
+                <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
+                <Link
+                  href={`${item.menuTitle}/${list.subMenuRef}`}
+                  className="text-secondary hover:text-success font-Lato"
+                >
+                  {list.listMenu}
+                </Link>
+              </div>
+            ))}
           </li>
         ))}
+        <li>
+          <Link href={"/technology"} className="flex items-center gap-2 mb-2">
+            <FaAngleRight size={14} className="text-secondary" />
+            <h4 className="font-medium capitalize text-secondary hover:text-success font-Montserrat">
+              Technology
+            </h4>
+          </Link>
+        </li>
       </ul>
       <div className="order-2 block md:order-3">
         <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-Montserrat nd:text-lg">

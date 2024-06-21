@@ -62,8 +62,11 @@ export const HomePageHero = () => {
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
 
-      <div className="absolute block -translate-x-1/2 bottom-5 left-1/2">
-        <h4 className="w-full h-full text-xl font-semibold text-center capitalize text-success md:text-2xl font-Montserrat">
+      <div className="absolute block py-2 px-3.5 space-y-2 -translate-x-1/2 rounded-md bg-opacity-10 bg-black/30 bottom-5 left-1/2">
+      <h4 className="w-full h-full text-2xl font-semibold text-center capitalize text-primary md:text-4xl font-Montserrat">
+          oneus travels
+        </h4>
+        <h4 className="w-full h-full text-lg font-semibold text-center capitalize text-primary md:text-xl font-lato">
           we are certified by
         </h4>
         <div className="relative w-full h-20 md:h-28">

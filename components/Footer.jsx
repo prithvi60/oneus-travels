@@ -1,3 +1,4 @@
+import { menuItems } from "@/libs/data";
 import { FooterSection1 } from "./FooterSection1";
 import { FooterSection2 } from "./FooterSection2";
 
@@ -12,7 +13,7 @@ const footerItems = [
 const Footer = () => {
   return (
     <footer className="w-full h-full px-[24px] py-7 space-y-10 font-Lato">
-      <FooterSection1 items={footerItems} />
+      <FooterSection1 items={menuItems} />
       <FooterSection2 />
     </footer>
   );

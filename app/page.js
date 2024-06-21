@@ -13,8 +13,8 @@ export default function Home() {
       <JsonLd data={structuredDataForOrg} />
       <JsonLd data={localBusinessData} />
       <HomePageHero />
-      <OurClients />
       <WelcomeSection />
+      <OurClients />
       <GlobalTeam />
       <TravelTechnologyCard />
       {/* <HomeVideoTag /> */}

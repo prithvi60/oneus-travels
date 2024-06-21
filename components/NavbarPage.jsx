@@ -15,13 +15,21 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  // DropdownSection,
+  DropdownItem,
+} from "@nextui-org/dropdown";
 
 export default function NavbarPage() {
   const path = usePathname();
   const router = useRouter();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpenState, setIsOpenState] = useState(false);
   const [percent, setPercent] = useState(null);
   // const [isActivated, setIsActivated] = useState(null);
   const [subMenuBar, setSubMenuBar] = useState(menuItems[0].menuTitle);
@@ -47,15 +55,9 @@ export default function NavbarPage() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [percent]);
 
-  // Filtering the subCategories data
-
-  const val = subCategories.filter((item) => {
-    if (item.menuTitle === subMenuBar) return item.lists;
-  });
-
-  console.log(percent);
+  // console.log(isOpenState);
 
   return (
     <Navbar
@@ -67,14 +69,14 @@ export default function NavbarPage() {
       classNames={{
         base: [
           `${
-            percent >= 0 && percent <= 12
+            percent >= 0 && percent <= 18
               ? "!bg-transparent shadow-none"
               : percent >= 35 && percent <= 74
               ? "bg-success shadow-md"
               : percent >= 75 && percent <= 95
               ? "bg-info shadow-md"
               : "bg-primary shadow-md"
-          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear`,
+          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear gap-2 lg:gap-4`,
         ],
         item: [`data-[active=true]: !text-success`],
         menuItem: ["data-[active=true]: !text-success pt-2"],
@@ -100,22 +102,42 @@ export default function NavbarPage() {
         },
       }}
     >
-      <NavbarBrand className="space-x-3">
-        <Image
-          onClick={() => router.push("/")}
-          width={130}
-          height={130}
-          title="OneUs logo image"
-          alt="Logo"
-          src={"/Oneus_Logo_2.png"}
-          className="object-cover object-center px-2.5 rounded-full cursor-pointer bg-primary"
-        />
+      <NavbarBrand className="space-x-3 grow-0">
+        {percent >= 0 && percent <= 18 ? (
+          <div className="relative w-28 h-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+            <Image
+              onClick={() => router.push("/")}
+              // width={130}
+              // height={130}
+              fill
+              title="OneUs logo image"
+              alt="Logo"
+              src={"/Oneus_Logo_2.png"}
+              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary transition-transform duration-1000 ease-linear"
+            />
+          </div>
+        ) : (
+          <div className="relative w-28 h-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+            <Image
+              onClick={() => router.push("/")}
+              // width={130}
+              // height={130}
+              fill
+              title="OneUs logo image"
+              alt="Logo"
+              src={"/Oneus_Logo_1.png"}
+              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary transition-transform duration-1000 ease-linear"
+            />
+          </div>
+        )}
       </NavbarBrand>
 
-      {/* Technology menu bar */}
+      {/* Other menu bar */}
       <NavbarContent
-        className="hidden pr-2 lg:pr-6 md:flex font-Lato"
-        justify="center"
+        className="hidden gap-2 lg:gap-4 xl:gap-10 md:flex font-Lato"
+        justify="start"
+        // onMouseEnter={() => setIsOpen(true)}
+        // onMouseLeave={() => setIsOpen(false)}
       >
         <NavbarItem>
           <Link
@@ -124,57 +146,101 @@ export default function NavbarPage() {
             aria-current={`Technology page`}
             href={"/technology"}
             className={`text-base lg:text-lg xl:text-xl ${
-              percent >= 0 && percent <= 12
-                ? "text-primary hover:text-info"
+              percent >= 0 && percent <= 18
+                ? "text-primary hover:text-primary/50"
                 : percent >= 35 && percent <= 95
                 ? "text-primary hover:text-secondary"
                 : "text-secondary hover:text-success"
             } py-10 scroll-smooth tracking-wider cursor-pointer`}
-            onMouseEnter={() => setSubMenuBar("Technology")}
+            // onMouseEnter={() => setSubMenuBar("Technology")}
           >
             Technology
           </Link>
         </NavbarItem>
-      </NavbarContent>
-
-      {/* Other menu bar */}
-      <NavbarContent
-        className="hidden gap-5 lg:gap-10 md:flex font-Lato"
-        justify="center"
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
-      >
-        {menuItems.map((item, id) => (
+        {menuItems.map((list, id) => (
           <NavbarItem
             key={id}
-            isActive={path === item.menuTitle}
+            isActive={path === list.menuTitle}
             onClick={() => handleClick(item.ref)}
           >
-            <div
-              // aria-label={`know more about ${item.menuTitle}`}
-              // title={item.menuTitle}
-              // aria-current={`${item.menuTitle} page`}
-              // href={item.ref}
+            {/* <div
               className={`text-base ${
-                percent >= 0 && percent <= 12
-                  ? "text-primary hover:text-info"
+                percent >= 0 && percent <= 18
+                  ? "text-primary hover:text-primary/50"
                   : percent >= 35 && percent <= 95
                   ? "text-primary hover:text-secondary"
                   : "text-secondary hover:text-success"
               } py-10 cursor-default ${
                 item.ref !== "" && "cursor-pointer"
-              } scroll-smooth tracking-wider text-base lg:text-lg xl:text-xl`}
+              } scroll-smooth tracking-wider text-base lg:text-lg xl:text-xl flex items-center gap-2 group`}
               onMouseEnter={() => setSubMenuBar(item.menuTitle)}
             >
-              {item.menuTitle}
-            </div>
+              <h4>{item.menuTitle}</h4>
+              <MdOutlineKeyboardArrowDown
+                className={`${
+                  percent >= 0 && percent <= 18
+                    ? "text-primary group-hover:text-primary/50"
+                    : percent >= 35 && percent <= 95
+                    ? "text-primary group-hover:text-secondary"
+                    : "text-secondary group-hover:text-success"
+                } text-lg transition-all duration-400 ease-linear ${
+                  isOpen === true && "rotate-180"
+                }`}
+              />
+            </div> */}
+            <Dropdown
+              // isOpen={isOpenState}
+              // onOpenChange={(isOpen) => setIsOpenState(isOpen)}
+            >
+              <DropdownTrigger>
+                <div
+                  className={`text-base ${
+                    percent >= 0 && percent <= 18
+                      ? "text-primary hover:text-primary/50"
+                      : percent >= 35 && percent <= 95
+                      ? "text-primary hover:text-secondary"
+                      : "text-secondary hover:text-success"
+                  } py-10 cursor-default ${
+                    list.ref !== "" && "cursor-pointer"
+                  } scroll-smooth tracking-wider text-base lg:text-lg xl:text-xl flex items-center lg:gap-2 group`}
+                  // onMouseEnter={() => setSubMenuBar(list.menuTitle)}
+                >
+                  <h4 className="capitalize">{list.menuTitle}</h4>
+                  <MdOutlineKeyboardArrowDown
+                    className={`${
+                      percent >= 0 && percent <= 18
+                        ? "text-primary group-hover:text-primary/50"
+                        : percent >= 35 && percent <= 95
+                        ? "text-primary group-hover:text-secondary"
+                        : "text-secondary group-hover:text-success"
+                    } text-lg transition-all duration-400 ease-linear `}
+                    // ${
+                    //   isOpen === true && "rotate-180"
+                    // }
+                  />
+                </div>
+              </DropdownTrigger>
+              <DropdownMenu aria-label="Dynamic Actions" items={list.subMenu}>
+                {(item) => (
+                  <DropdownItem
+                    key={item.listMenu}
+                    color={item.listMenu === "delete" ? "danger" : "default"}
+                    className={item.listMenu === "delete" ? "text-danger" : ""}
+                  >
+                    <Link href={`${list.menuTitle}/${item.subMenuRef}`}>
+                      {item.listMenu}
+                    </Link>
+                  </DropdownItem>
+                )}
+              </DropdownMenu>
+            </Dropdown>
           </NavbarItem>
         ))}
 
-        {isOpen && (
+        {/* {isOpen && (
           <ul
             className={`absolute flex top-20 left-0 w-full ${
-              percent >= 0 && percent <= 10 && "bg-transparent shadow-none"
+              percent >= 0 && percent <= 18 && "bg-transparent shadow-none"
             } h-[30vh] bg-primary shadow-md pt-2 pb-6 justify-center items-start`}
           >
             {val?.map((l, index) => (
@@ -187,7 +253,7 @@ export default function NavbarPage() {
                   l.menuTitle === "Services"
                     ? "first:-ms-[130px] lg:first:-ms-[135px]"
                     : l.menuTitle === "About"
-                    ? "first:ms-3 lg:first:ms-12"
+                    ? "first:ms-3 lg:first:ms-18"
                     : l.menuTitle === "Resources"
                     ? "first:ms-[156px] lg:first:ms-64"
                     : l.menuTitle === "Contact"
@@ -213,7 +279,7 @@ export default function NavbarPage() {
               </li>
             ))}
           </ul>
-        )}
+        )} */}
       </NavbarContent>
 
       {/* Login button For employee and client */}
@@ -223,11 +289,11 @@ export default function NavbarPage() {
           <Link
             href="/"
             title="Login"
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 0 && percent <= 12
+                percent >= 0 && percent <= 18
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -236,7 +302,7 @@ export default function NavbarPage() {
             />
             <div
               className={`${
-                percent >= 0 && percent <= 12
+                percent >= 0 && percent <= 18
                   ? "text-primary hover:text-info"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -244,7 +310,7 @@ export default function NavbarPage() {
               } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat block text-center`}
             >
               <h3>Member </h3>
-              <h3>Login</h3>
+              {/* <h3>Login</h3> */}
             </div>
           </Link>
         </NavbarItem>
@@ -252,11 +318,11 @@ export default function NavbarPage() {
           <Link
             href="/"
             title="Login"
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
             <IoPersonOutline
               className={`text-sm md:text-xl ${
-                percent >= 0 && percent <= 12
+                percent >= 0 && percent <= 18
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -265,7 +331,7 @@ export default function NavbarPage() {
             />
             <div
               className={`${
-                percent >= 0 && percent <= 12
+                percent >= 0 && percent <= 18
                   ? "text-primary hover:text-info"
                   : percent >= 35 && percent <= 95
                   ? "text-primary"
@@ -273,7 +339,7 @@ export default function NavbarPage() {
               } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Montserrat block text-center`}
             >
               <h3>corporate</h3>
-              <h3>Login</h3>
+              {/* <h3>Login</h3> */}
             </div>
           </Link>
         </NavbarItem>

@@ -48,7 +48,7 @@ export const Testimonial = () => {
   };
   return (
     <section className="w-full h-full px-[24px] py-7 flex flex-col justify-center items-center gap-10">
-      <Image
+      {/* <Image
         height={180}
         width={180}
         quality={100}
@@ -56,8 +56,8 @@ export const Testimonial = () => {
         title="testimonial logo"
         src={"/testimonial.png"}
         className="object-cover object-center"
-      />
-      <h3 className="text-lg font-semibold tracking-wide text-center uppercase font-Montserrat md:text-xl text-secondary">
+      /> */}
+      <h3 className="w-full text-[32px] font-bold font-Montserrat md:text-[40px] lg:text-[42px] max-w-[1200px] text-center text-secondary leading-tight">
         Testimonial
       </h3>
       <div className="relative w-full h-full mb-10 slider-container md:w-3/5 lg:w-1/2 xl:w-2/5">
