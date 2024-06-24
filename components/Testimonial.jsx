@@ -57,7 +57,7 @@ export const Testimonial = () => {
         src={"/testimonial.png"}
         className="object-cover object-center"
       /> */}
-      <h3 className="w-full text-[32px] font-bold font-Montserrat md:text-[40px] lg:text-[42px] max-w-[1200px] text-center text-secondary leading-tight">
+      <h3 className="w-full text-[32px] font-bold font-WorkSans md:text-[40px] lg:text-[42px] max-w-[1200px] text-center text-secondary leading-tight">
         Testimonial
       </h3>
       <div className="relative w-full h-full mb-10 slider-container md:w-3/5 lg:w-1/2 xl:w-2/5">
@@ -65,7 +65,7 @@ export const Testimonial = () => {
           {testimonialList.map((list, id) => (
             <div
               key={id}
-              className="w-full mx-auto space-y-5 text-base leading-snug text-center text-secondary md:text-lg font-lato"
+              className="w-full mx-auto space-y-5 text-base leading-snug text-center text-secondary md:text-lg font-WorkSans font-normal"
             >
               <p>{list.review}</p>
               <h4>- {list.name} -</h4>

@@ -8,11 +8,10 @@ import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Checkbox } from "@nextui-org/checkbox";
 import { PrimaryButton, SecondaryButton } from "./Button";
-import Image from "next/image";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 
-const lists = ["list1", "list", "list3", "list4", "list5"];
+const lists = ["list1", "list2", "list3", "list4", "list5"];
 
 export const ContactForm = () => {
   return (
@@ -21,18 +20,8 @@ export const ContactForm = () => {
       id="contact"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 bg-opacity-85 bg-[#F8F9F8]"></div>
-      {/* <div className=" w-full h-[100vh] hidden md:block">
-        <Image
-          fill
-          title="illustration image"
-          src={"/world_bg.jpg"}
-          alt="illustration image"
-          className="object-contain rounded-sm opacity-65"
-        />
-      </div> */}
-      {/* <div className="absolute top-0 "> */}
-      <div className="z-20 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-[#8DB63D] p-[24px]">
-        <h1 className="text-lg font-semibold text-center md:text-xl font-montserrat text-primary">
+      <div className="z-20 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-secondary p-[24px]">
+        <h1 className="text-lg font-semibold text-center md:text-xl font-WorkSans text-primary">
           Take a tour of OneUs’s global travel solutions
         </h1>
         <SecondaryButton
@@ -43,11 +32,11 @@ export const ContactForm = () => {
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-8 lg:flex-row">
         <div className="z-20 w-full mx-auto lg:w-1/2">
           {/* mt-24 */}
-          {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Montserrat">
+          {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-WorkSans">
           Don't just dream it, travel it. Let us craft your perfect adventure.
         </h4> */}
           <div className="mx-auto rounded-md md:space-y-6 p-7 ">
-            <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Montserrat">
+            <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-WorkSans">
               Stay Connected
             </h4>
             <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
@@ -55,7 +44,7 @@ export const ContactForm = () => {
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <LiaPhoneVolumeSolid className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
-                <h5 className="text-lg font-medium tracking-wider text-secondary font-Montserrat md:text-xl">
+                <h5 className="text-lg tracking-wider text-secondary font-WorkSans font-normal md:text-xl">
                   +91-98408 84460
                 </h5>
               </div>
@@ -63,7 +52,7 @@ export const ContactForm = () => {
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <RiMailSendLine className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
-                <h5 className="text-lg font-medium tracking-wider text-secondary font-Montserrat md:text-xl">
+                <h5 className="text-lg font-normal tracking-wider text-secondary font-WorkSans md:text-xl">
                   oneustravel@gmail.com
                 </h5>
               </div>
@@ -77,18 +66,18 @@ export const ContactForm = () => {
           className="z-20 w-full h-auto px-8 mx-auto space-y-4 rounded-md xl:px-20 py-7 md:w-3/4 lg:w-1/2"
         >
           {/* bg-[#133548] */}
-          <h3 className="text-lg font-semibold tracking-normal font-Montserrat text-secondary md:text-xl xl:text-2xl">
+          <h3 className="text-lg font-semibold tracking-normal font-WorkSans text-secondary md:text-xl xl:text-2xl">
             Take your first step towards better business travel with Corporate
             Travel Management.
           </h3>
-          {/* <h5 className="text-sm font-lato text-primary">
+          {/* <h5 className="text-sm font-WorkSans text-primary">
             Contact our team for an obligation-free review of your global travel
             management needs today.
           </h5> */}
           <div className="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2">
             <Input
               classNames={{
-                inputWrapper: "bg-primary",
+                inputWrapper: "bg-primary font-WorkSans font-normal",
               }}
               name="firstName"
               isRequired
@@ -106,7 +95,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary",
+                inputWrapper: "bg-primary font-WorkSans font-normal",
               }}
               name="lastName"
               isRequired
@@ -124,7 +113,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary",
+                inputWrapper: "bg-primary font-WorkSans font-normal",
               }}
               name="email"
               isRequired
@@ -142,7 +131,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary",
+                inputWrapper: "bg-primary font-WorkSans font-normal",
               }}
               name="phone number"
               size="lg"
@@ -159,7 +148,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary",
+                inputWrapper: "bg-primary font-WorkSans font-normal",
               }}
               name="company name"
               isRequired
@@ -190,7 +179,7 @@ export const ContactForm = () => {
               variant="faded"
               className="max-w-ful"
               classNames={{
-                label: "text-secondary capitalize",
+                label: "text-secondary capitalize font-WorkSans font-normal",
                 trigger: "bg-primary",
               }}
             >
@@ -201,14 +190,26 @@ export const ContactForm = () => {
           </div>
           <div className="pb-6">
             <RadioGroup
-              classNames={{ label: "text-secondary capitalize" }}
+              classNames={{
+                label: "text-secondary capitalize font-WorkSans font-normal",
+              }}
               color="secondary"
               label="Is your company a CTM customer?"
             >
-              <Radio value="yes" classNames={{ label: "text-secondary" }}>
+              <Radio
+                value="yes"
+                classNames={{
+                  label: "text-secondary font-WorkSans font-normal",
+                }}
+              >
                 Yes
               </Radio>
-              <Radio value="no" classNames={{ label: "text-secondary" }}>
+              <Radio
+                value="no"
+                classNames={{
+                  label: "text-secondary font-WorkSans font-normal",
+                }}
+              >
                 No
               </Radio>
             </RadioGroup>
@@ -225,7 +226,7 @@ export const ContactForm = () => {
             variant="faded"
             className="mt-5 max-w-ful"
             classNames={{
-              label: "text-secondary capitalize",
+              label: "text-secondary capitalize font-WorkSans font-normal",
               trigger: "bg-primary",
             }}
           >
@@ -234,9 +235,9 @@ export const ContactForm = () => {
             ))}
           </Select>
           <Textarea
-          classNames={{
-            inputWrapper: "bg-primary",
-          }}
+            classNames={{
+              inputWrapper: "bg-primary font-WorkSans font-normal",
+            }}
             name="comments"
             isRequired
             label="Comments"

@@ -96,15 +96,15 @@ function SimpleSlider() {
                 quality={100}
               />
               <div className="absolute w-full bottom-1 md:bottom-3 left-3 md:left-7">
-                <h3 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
+                <h3 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-WorkSans text-primary">
                   {"best time"}
                 </h3>
-                <h3 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Montserrat text-primary">
+                <h3 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-WorkSans text-primary">
                   {item.months}
                 </h3>
               </div>
             </div>
-            <div className="flex flex-col w-full h-auto gap-2 pt-1 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Lato">
+            <div className="flex flex-col w-full h-auto gap-2 pt-1 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-WorkSans">
               <div className="font-medium text-secondary">
                 <h5 className="text-xs sm:text-sm">{item.location}</h5>
                 <p className="text-[11px] sm:text-xs opacity-60">

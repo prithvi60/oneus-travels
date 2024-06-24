@@ -38,7 +38,7 @@ const Timeline = () => {
           ></div>
 
           <div
-            className={`min-w-[100px] relative after:w-full after:sm:w-max after:absolute p-3.5 text-sm font-medium rounded-md sm:text-base font-Lato after:text-secondary group-hover:bg-success group-hover:text-primary group-hover:before:absolute group-hover:before:w-3 group-hover:before:h-3 group-hover:before:rotate-45 group-hover:before:-top-1 group-hover:before:left-1/2 group-hover:before:-translate-x-1/2 group-hover:before:bg-success group-hover:shadow-md ${
+            className={`min-w-[100px] relative after:w-full after:sm:w-max after:absolute p-3.5 text-sm font-medium rounded-md sm:text-base font-WorkSans after:text-secondary group-hover:bg-success group-hover:text-primary group-hover:before:absolute group-hover:before:w-3 group-hover:before:h-3 group-hover:before:rotate-45 group-hover:before:-top-1 group-hover:before:left-1/2 group-hover:before:-translate-x-1/2 group-hover:before:bg-success group-hover:shadow-md ${
               isActive === item
                 ? "text-primary bg-success after:absolute after:w-3.5 after:h-3.5 after:top-1 after:left-1/2 after:transform after:-translate-x-1/2 after:bg-success after:z-20"
                 : ""

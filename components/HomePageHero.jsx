@@ -48,10 +48,10 @@ export const HomePageHero = () => {
             </div>
             <div className="absolute flex flex-col items-start w-full gap-3 md:items-center left-7 md:left-0 md:w-full md:flex-row md:justify-around lg:justify-between lg:w-9/12 xl:w-3/5 bottom-10 md:bottom-16 xl:left-40">
               <div className="block w-4/5 space-y-3 md:w-3/5 md:space-y-5">
-                <h3 className="text-3xl font-bold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-Montserrat text-primary">
+                <h3 className="text-3xl font-bold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-WorkSans text-primary">
                   {item.shortNote}
                 </h3>
-                <h4 className="text-lg font-bold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-Montserrat text-primary">
+                <h4 className="text-lg font-bold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-WorkSans text-primary">
                   {item.note}
                 </h4>
               </div>
@@ -63,10 +63,10 @@ export const HomePageHero = () => {
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
 
       <div className="absolute block py-2 px-3.5 space-y-2 -translate-x-1/2 rounded-md bg-opacity-10 bg-black/30 bottom-5 left-1/2">
-      <h4 className="w-full h-full text-2xl font-semibold text-center capitalize text-primary md:text-4xl font-Montserrat">
-          oneus travels
+      <h4 className="w-full h-full text-2xl font-semibold text-center capitalize text-primary md:text-4xl font-WorkSans">
+          one:Us travels
         </h4>
-        <h4 className="w-full h-full text-lg font-semibold text-center capitalize text-primary md:text-xl font-lato">
+        <h4 className="w-full h-full text-lg text-center capitalize text-primary md:text-xl font-WorkSans font-normal">
           we are certified by
         </h4>
         <div className="relative w-full h-20 md:h-28">

@@ -1,4 +1,4 @@
-import { Lato, Montserrat } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Provider";
 import NavbarPage from "@/components/NavbarPage";
@@ -8,20 +8,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonial } from "@/components/Testimonial";
-import Script from "next/script";
 import { SalesIq } from "@/components/SalesIq";
 
-const montserrat = Montserrat({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  variable: "--font-montserrat",
-  weight: "600",
+  variable: "--font-workSans",
+  weight: ["600","400","700","300"],
+  display: "swap"
 });
 
-const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-lato",
-  weight: "400",
-});
+// const WorkSans = WorkSans({
+//   subsets: ["latin"],
+//   variable: "--font-WorkSans",
+//   weight: "400",
+// });
 
 // Meta Data
 export async function generateMetadata() {
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AppContextProvider>
-        <body className={`${lato.variable} ${montserrat.variable}`}>
+        <body className={`${workSans.variable}`}>
           <NavbarPage />
           <Providers>{children}</Providers>
           <ContactForm />

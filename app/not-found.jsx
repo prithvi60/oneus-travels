@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[35px] lg:px-[60px] lg:py-12 font-Lato bg-primary text-secondary space-y-6 mx-auto h-full w-full text-center">
+    <section className="px-5 py-10 md:px-10 md:py-[35px] lg:px-[60px] lg:py-12 font-WorkSans bg-primary text-secondary space-y-6 mx-auto h-full w-full text-center">
       {/* <div className='relative w-56 h-56 -mt-5'> */}
       <Image
         src={"/404_page.png"}

@@ -14,9 +14,7 @@ module.exports = {
         contact_bg_sm: "url('/world_map_sm.png')",
       },
       fontFamily: {
-        Lato: "var(--font-lato)",
-        Montserrat: "var(--font-montserrat)",
-        Caveat: "var(--font-caveat)",
+        WorkSans: "var(--font-workSans)",
       },
       aspectRatio: {
         box: "3 / 4",

@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { SecondaryButton } from "./Button";
+import { PrimaryButton } from "./Button";
 
 export const HomeVideoTag = () => {
   return (
     <section className="w-full h-full py-[32px]">
       <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-[#8DB63D] p-[24px]">
-        <h1 className="text-lg font-semibold text-center md:text-xl font-montserrat text-primary">
+        <h1 className="text-lg font-semibold text-center md:text-xl font-WorkSans text-primary">
         Take a tour of OneUs’s global travel solutions 
         </h1>
-        <SecondaryButton
+        <PrimaryButton
           roleType={"button"}
           text={"Explore our Travel Ecosystem"}
         />

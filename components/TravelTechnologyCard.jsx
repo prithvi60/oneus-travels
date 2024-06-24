@@ -6,7 +6,7 @@ import { travelCardList } from "@/libs/data";
 export const TravelTechnologyCard = () => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-5 md:space-y-10">
-      <h2 className="text-2xl font-semibold tracking-normal font-Montserrat text-secondary md:text-3xl xl:text-4xl">
+      <h2 className="text-2xl font-bold tracking-normal font-WorkSans text-secondary md:text-3xl xl:text-4xl">
       Ground-Breaking Corporate Travel Technology
       </h2>
       <div className="flex flex-col items-center justify-center w-full h-full gap-6 md:flex-row md:gap-10 ">
@@ -28,10 +28,10 @@ export const TravelTechnologyCard = () => {
             </div>
           </CardHeader>
           <CardBody className="p-5 space-y-3">
-            <h3 className="text-base font-bold tracking-normal font-Montserrat md:text-lg xl:text-xl">
+            <h3 className="text-base font-semibold tracking-normal font-WorkSans md:text-lg xl:text-xl text-secondary">
               {list.title}
             </h3>
-            <p className="text-sm font-lato md:text-base line-clamp-6">
+            <p className="text-sm font-WorkSans font-normal md:text-base line-clamp-6">
               {list.desc}
             </p>
           </CardBody>

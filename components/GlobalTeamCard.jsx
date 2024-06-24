@@ -18,11 +18,11 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
         />
       </div>
       <Card className="w-full lg:max-w-[600px] !rounded-3xl p-2.5 md:p-5 lg:absolute lg:top-10 lg:right-20 h-auto md:h-56">
-        <CardHeader className="flex gap-3 font-Lato">
+        <CardHeader className="flex gap-3 font-WorkSans">
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
         <CardBody className="h-full">
-          <p className="text-sm md:text-base font-Lato">{desc}</p>
+          <p className="text-sm md:text-base font-WorkSans">{desc}</p>
         </CardBody>
         <CardFooter>
           <Link href={"#contact"}>
@@ -38,11 +38,11 @@ export const GlobalTeamCardReverse = ({ title, imgSrc, desc }) => {
   return (
     <div className="relative flex flex-col-reverse w-full h-full gap-2 lg:gap-0 lg:flex-row lg:justify-end lg:items-center">
       <Card className="w-full lg:max-w-[600px] z-20 !rounded-3xl p-2.5 md:p-5 lg:absolute lg:top-10 lg:left-16 h-auto md:h-56">
-        <CardHeader className="flex gap-3 font-Lato">
+        <CardHeader className="flex gap-3 font-WorkSans">
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
         <CardBody className="h-full">
-          <p className="text-sm md:text-base font-Lato">{desc}</p>
+          <p className="text-sm md:text-base font-WorkSans">{desc}</p>
         </CardBody>
         <CardFooter>
           <Link href={"#contact"}>
