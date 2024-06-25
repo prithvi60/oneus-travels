@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { PrimaryButton } from "./Button";
+import { PrimaryButton, SecondaryButton } from "./Button";
 import Link from "next/link";
 
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
   return (
-    <div className="relative w-full h-full flex items-center space-y-2 md:space-y-0">
-      <div className="relative w-full lg:w-3/5 h-[180px] md:h-[380px] overflow-hidden">
+    <div className="relative w-full h-full flex-col sm:flex-row flex sm:justify-center items-center space-y-2 md:space-y-0">
+      <div className="hidden sm:block absolute -z-10 w-14 h-14 md:w-20 md:h-20 top-5 -rotate-12 -left-1 md:-left-3 xl:-left-14">
+        <Image fill title="wheel svg" src={"/handle.svg"} alt="handle svg"/>
+      </div>
+      <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-3/5 h-[180px] md:h-[380px] overflow-hidden">
         <Image
           alt="team image"
           src={imgSrc}
@@ -14,10 +17,10 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           fill
           title="team image"
           sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
-          className="object-cover object-center shadow-md rounded-tl-3xl rounded-bl-3xl"
+          className="object-cover object-center shadow-md rounded-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl"
         />
       </div>
-      <Card className="w-full -z-10 lg:w-2/5 rounded-none rounded-tr-3xl rounded-br-3xl p-2.5 md:p-5 !shadow-none bg-secondary/90 text-primary h-[180px] md:h-[380px]">
+      <Card className="w-full sm:w-[50%] md:w-full lg:w-1/2 xl:w-2/5  sm:!rounded-tr-3xl sm:!rounded-br-3xl rounded-3xl p-2.5 md:p-5 sm:!shadow-none bg-secondary text-primary h-[200px] md:h-[380px]">
         <CardHeader className="flex gap-3 font-WorkSans">
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
@@ -26,10 +29,13 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
         </CardBody>
         <CardFooter>
           <Link href={"#contact"}>
-            <PrimaryButton roleType={"button"} text={"Find out more"} />
+            <SecondaryButton roleType={"button"} text={"Find out more"} />
           </Link>
         </CardFooter>
       </Card>
+      <div className="hidden sm:block absolute z-0 w-10 h-10 md:w-14 md:h-14 -bottom-2 md:-bottom-5 right-6 md:right-8 xl:-right-5">
+        <Image fill title="wheel svg" src={"/wheel.png"} alt="wheel svg" className="bg-primary p-1 rounded-full" />
+      </div>
     </div>
   );
 };
