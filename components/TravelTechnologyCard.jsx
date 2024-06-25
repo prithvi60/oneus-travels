@@ -6,36 +6,63 @@ import { travelCardList } from "@/libs/data";
 export const TravelTechnologyCard = () => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-5 md:space-y-10">
-      <h2 className="text-2xl font-bold tracking-normal font-WorkSans text-secondary md:text-3xl xl:text-4xl">
-      Ground-Breaking Corporate Travel Technology
+      <h2 className="font-bold tracking-normal font-WorkSans text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-16 md:pb-10">
+        Ground-Breaking Corporate Travel Technology
       </h2>
-      <div className="flex flex-col items-center justify-center w-full h-full gap-6 md:flex-row md:gap-10 ">
-        {travelCardList.map((list,id)=>(
-        <Card
-          className="max-w-[350px] min-h-[350px] md:min-h-[475px] group"
-        key={id}
-        >
-          <CardHeader className="flex gap-3 !p-0">
-            <div className="relative w-full h-56 overflow-hidden">
+      <div className="flex flex-col items-center justify-center w-full h-full gap-16 md:flex-row md:gap-10 mt-20">
+        {travelCardList.map((list, id) => (
+          <div className="relative w-full h-full pb-14" key={id}>
+            <div className="absolute z-0 w-32 h-32 -translate-x-1/2 border-8 md:w-24 md:h-24 lg:w-32 lg:h-32 -top-12 left-1/2 border-secondary rounded-t-xl">
+              <div className="relative">
+                <div className="absolute z-0 w-14 h-14 -top-2 -right-[54px] -rotate-90">
+                  <Image
+                    fill
+                    title="wheel svg"
+                    src={"/tag.svg"}
+                    alt="wheel svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-4 border-secondary">
+              <CardHeader className="flex gap-3 !p-0">
+                <div className="relative w-full h-56 overflow-hidden border-b-4 border-secondary">
+                  <Image
+                    alt="card img"
+                    title="card img"
+                    fill
+                    src={list.img}
+                    sizes="(min-width: 1220px) 350px, (min-width: 780px) calc(32.38vw - 39px), (min-width: 440px) 350px, 81.67vw"
+                    className="object-cover object-center transition-all duration-200 ease-linear group-hover:scale-110"
+                  />
+                </div>
+              </CardHeader>
+              <CardBody className="p-5 space-y-3">
+                <h3 className="text-base font-semibold tracking-normal font-WorkSans md:text-lg xl:text-xl text-secondary">
+                  {list.title}
+                </h3>
+                <p className="text-sm font-normal font-WorkSans md:text-base line-clamp-6">
+                  {list.desc}
+                </p>
+              </CardBody>
+            </Card>
+            <div className="absolute z-0 w-16 h-16 bottom-6 left-10">
               <Image
-                alt="card img"
-                title="card img"
                 fill
-                src={list.img}
-                sizes="(min-width: 1220px) 350px, (min-width: 780px) calc(32.38vw - 39px), (min-width: 440px) 350px, 81.67vw"
-                className="object-cover object-center transition-all duration-200 ease-linear group-hover:scale-110"
+                title="wheel svg"
+                src={"/wheel-angle.svg"}
+                alt="wheel svg"
               />
             </div>
-          </CardHeader>
-          <CardBody className="p-5 space-y-3">
-            <h3 className="text-base font-semibold tracking-normal font-WorkSans md:text-lg xl:text-xl text-secondary">
-              {list.title}
-            </h3>
-            <p className="text-sm font-WorkSans font-normal md:text-base line-clamp-6">
-              {list.desc}
-            </p>
-          </CardBody>
-        </Card>
+            <div className="absolute z-0 w-16 h-16 bottom-6 right-10">
+              <Image
+                fill
+                title="wheel svg"
+                src={"/wheel-angle.svg"}
+                alt="wheel svg"
+              />
+            </div>
+          </div>
         ))}
       </div>
     </section>

@@ -61,12 +61,12 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
+      <h4 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-5xl italic font-bols text-center capitalize text-primary sm:text-6xl lg:text-8xl xl:text-9xl font-WorkSans rounded-md py-2 px-3.5 z-10">
+        oneUs travels
+      </h4>
 
-      <div className="absolute block py-2 px-3.5 space-y-2 -translate-x-1/2 rounded-md bg-opacity-10 bg-black/30 bottom-5 left-1/2">
-      <h4 className="w-full h-full text-2xl font-semibold text-center capitalize text-primary md:text-4xl font-WorkSans">
-          one:Us travels
-        </h4>
-        <h4 className="w-full h-full text-lg text-center capitalize text-primary md:text-xl font-WorkSans font-normal">
+      <div className="absolute block py-2 px-3.5 space-y-2 -translate-x-1/2 rounded-md bottom-5 left-1/2 z-10">
+        <h4 className="w-full h-full text-lg font-normal text-center capitalize text-primary md:text-xl font-WorkSans">
           we are certified by
         </h4>
         <div className="relative w-full h-20 md:h-28">
@@ -87,7 +87,7 @@ export const HomePageHero = () => {
         loop
         autoPlay
         playsInline
-        className={`h-[75vh] w-full object-cover translat-y-0 transition-all duration-700 ease-linear`}
+        className={`h-[75vh] w-full object-cover translat-y-0 transition-all duration-700 ease-linear brightness-[0.55] -z-10`}
         // onLoadedData={() => setLoader(true)}
       >
         <source

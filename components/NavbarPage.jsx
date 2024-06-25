@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { GiCommercialAirplane } from "react-icons/gi";
 
 export default function NavbarPage() {
   const path = usePathname();
@@ -94,7 +95,7 @@ export default function NavbarPage() {
     >
       <NavbarBrand className="space-x-3 grow-0">
         {percent >= 0 && percent <= 18 ? (
-          <div className="relative w-28 h-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+          <div className="relative w-20 h-12 md:w-24 md:h-10 lg:h-16 lg:w-36">
             <Image
               onClick={() => router.push("/")}
               // width={130}
@@ -107,7 +108,7 @@ export default function NavbarPage() {
             />
           </div>
         ) : (
-          <div className="relative w-28 h-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+          <div className="relative h-10 w-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
             <Image
               onClick={() => router.push("/")}
               // width={130}
@@ -122,10 +123,12 @@ export default function NavbarPage() {
         )}
       </NavbarBrand>
 
-      {/* Technology menu bar */}
+      {/* Other menu bar */}
       <NavbarContent
-        className="hidden pr-2 lg:pr-6 md:flex font-WorkSans"
+        className="hidden gap-1.5 lg:gap-5 md:flex font-WorkSans"
         justify="center"
+        // onMouseEnter={() => setIsOpen(true)}
+        // onMouseLeave={() => setIsOpen(false)}
       >
         <NavbarItem>
           <Link
@@ -133,28 +136,19 @@ export default function NavbarPage() {
             title={"Technology"}
             aria-current={`Technology page`}
             href={"/technology"}
-            className={`text-base lg:text-lg xl:text-xl ${
+            className={`text-sm lg:text-lg xl:text-xl ${
               percent >= 0 && percent <= 18
                 ? "text-primary hover:text-info"
                 : percent >= 35 && percent <= 95
                 ? "text-primary hover:text-secondary"
-                : "text-secondary hover:text-text-info"
+                : "text-secondary hover:text-info"
             } py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
             Technology
           </Link>
         </NavbarItem>
-      </NavbarContent>
-
-      {/* Other menu bar */}
-      <NavbarContent
-        className="hidden gap-5 lg:gap-10 md:flex font-WorkSans"
-        justify="center"
-        // onMouseEnter={() => setIsOpen(true)}
-        // onMouseLeave={() => setIsOpen(false)}
-      >
         {menuItems.map((item, id) => (
-          <NavbarItem key={id} className="group relative">
+          <NavbarItem key={id} className="relative group">
             <div>
               <div
                 className={`text-base ${
@@ -163,7 +157,7 @@ export default function NavbarPage() {
                     : percent >= 35 && percent <= 95
                     ? "text-primary group-hover:text-secondary"
                     : "text-secondary group-hover:text-info"
-                } py-10 cursor-default tracking-wider text-base lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
+                } py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
               >
                 <h4
@@ -187,17 +181,22 @@ export default function NavbarPage() {
                 <div
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary p-4 rounded-md shadow-md group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out font-WorkSans`}
+                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out font-WorkSans group-hover:border-4 border-secondary`}
+                  // first:pt-14 last:pb-14 outline-4 outline-dashed outline-secondary
                 >
+                  <div className="absolute -z-10 border-8 w-12 h-12 -top-7 left-5 border-secondary rounded-xl hidden group-hover:block"></div>
                   {item?.subMenu?.map((l, index) => (
                     <Link
                       // title={l.listMenu}
-                      className={`block pb-3 text-secondary text-base cursor-pointer lg:text-lg hover:text-info w-full h-full font-normal z-10`}
+                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg hover:text-info w-full h-full font-normal z-10`}
                       key={index}
                       href={l.subMenuRef}
                       onClick={() => setIsOpen(false)}
                     >
-                      {l.listMenu}
+                      <GiCommercialAirplane className="text-lg lg:text-xl text-secondary" />
+                      <h4 className="underline underline-offset-8">
+                        {l.listMenu}
+                      </h4>
                     </Link>
                   ))}
                 </div>
@@ -205,50 +204,6 @@ export default function NavbarPage() {
             </div>
           </NavbarItem>
         ))}
-
-        {/* {isOpen && (
-          <ul
-            className={`absolute flex top-20 left-0 w-full ${
-              percent >= 0 && percent <= 10 && "bg-transparent shadow-none"
-            } h-[30vh] bg-primary shadow-md pt-2 pb-6 justify-center items-start`}
-          >
-            {val?.map((l, index) => (
-              <li
-                // initial={{ opacity: 0, y: -500 }}
-                // animate={{ opacity: 1, y: 0 }}
-                // transition={{ duration: 0.8, ease: "easeIn" }}
-                key={index}
-                className={`text-secondary ${
-                  l.menuTitle === "Services"
-                    ? "first:-ms-[130px] lg:first:-ms-[135px]"
-                    : l.menuTitle === "About"
-                    ? "first:ms-3 lg:first:ms-12"
-                    : l.menuTitle === "Resources"
-                    ? "first:ms-[156px] lg:first:ms-64"
-                    : l.menuTitle === "Contact"
-                    ? "first:ms-[352px] lg:first:ms-[530px]"
-                    : ""
-                } ${
-                  percent >= 0 &&
-                  percent <= 15 &&
-                  "bg-primary px-5 py-3 shadow-md rounded-md"
-                }`}
-              >
-                {l.lists.map((sub, idx) => (
-                  <Link
-                    title={sub.list}
-                    className="block pb-2 text-base cursor-pointer lg:text-lg hover:text-info"
-                    key={idx}
-                    href={sub.subMenu}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {sub.list}
-                  </Link>
-                ))}
-              </li>
-            ))}
-          </ul>
-        )} */}
       </NavbarContent>
 
       {/* Login button For employee and client */}
@@ -261,7 +216,7 @@ export default function NavbarPage() {
             className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
             <IoPersonOutline
-              className={`text-sm md:text-xl ${
+              className={`text-sm md:text-lg lg:text-xl ${
                 percent >= 0 && percent <= 18
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
@@ -290,7 +245,7 @@ export default function NavbarPage() {
             className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
             <IoPersonOutline
-              className={`text-sm md:text-xl ${
+              className={`text-sm md:text-lg lg:text-xl ${
                 percent >= 0 && percent <= 18
                   ? "text-primary"
                   : percent >= 35 && percent <= 95
