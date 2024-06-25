@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
   return (
-    <div className="relative w-full h-full space-y-2 md:space-y-5">
+    <div className="relative w-full h-full flex items-center space-y-2 md:space-y-0">
       <div className="relative w-full lg:w-3/5 h-[180px] md:h-[380px] overflow-hidden">
         <Image
           alt="team image"
@@ -14,10 +14,10 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           fill
           title="team image"
           sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
-          className="object-cover object-center shadow-md rounded-3xl"
+          className="object-cover object-center shadow-md rounded-tl-3xl rounded-bl-3xl"
         />
       </div>
-      <Card className="w-full lg:max-w-[600px] !rounded-3xl p-2.5 md:p-5 lg:absolute lg:top-10 lg:right-20 h-auto md:h-56">
+      <Card className="w-full -z-10 lg:w-2/5 rounded-none rounded-tr-3xl rounded-br-3xl p-2.5 md:p-5 !shadow-none bg-secondary/90 text-primary h-[180px] md:h-[380px]">
         <CardHeader className="flex gap-3 font-WorkSans">
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
