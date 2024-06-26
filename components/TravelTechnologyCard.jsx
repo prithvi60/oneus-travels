@@ -9,7 +9,7 @@ export const TravelTechnologyCard = () => {
       <h2 className="font-bold tracking-normal font-WorkSans text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-16 md:pb-10">
         Ground-Breaking Corporate Travel Technology
       </h2>
-      <div className="flex flex-col items-center justify-center w-full h-full gap-16 md:flex-row md:gap-10 mt-20">
+      <div className="flex flex-col items-center justify-center w-full h-full gap-16 mt-20 md:flex-row md:gap-10">
         {travelCardList.map((list, id) => (
           <div className="relative w-full h-full pb-14" key={id}>
             <div className="absolute z-0 w-32 h-32 -translate-x-1/2 border-8 md:w-24 md:h-24 lg:w-32 lg:h-32 -top-12 left-1/2 border-secondary rounded-t-xl">
@@ -64,6 +64,53 @@ export const TravelTechnologyCard = () => {
             </div>
           </div>
         ))}
+        <div className="relative w-full h-full pb-14">
+          <div className="absolute z-0 w-16 h-16 border-8 md:w-24 md:h-24 lg:w-20 lg:h-20 -top-8 left-5 border-secondary rounded-t-xl">
+            <div className="relative">
+              <div className="absolute z-0 w-11 h-11 -top-3 -right-[44px] -rotate-90">
+                <Image
+                  fill
+                  title="wheel svg"
+                  src={"/tag.svg"}
+                  alt="wheel svg"
+                />
+              </div>
+            </div>
+          </div>
+          <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-4 border-secondary">
+            <CardHeader className="flex gap-3 !p-0">
+              <div className="relative w-full h-56 overflow-hidden border-b-4 border-secondary">
+                <Image
+                  alt="card img"
+                  title="card img"
+                  fill
+                  src={"/card_bg_3.jpg"}
+                  sizes="(min-width: 1220px) 350px, (min-width: 780px) calc(32.38vw - 39px), (min-width: 440px) 350px, 81.67vw"
+                  className="object-cover object-center transition-all duration-200 ease-linear group-hover:scale-110"
+                />
+              </div>
+            </CardHeader>
+            <CardBody className="p-5 space-y-3">
+              <h3 className="text-base font-semibold tracking-normal font-WorkSans md:text-lg xl:text-xl text-secondary">
+                Your Input Shapes Our Innovations
+              </h3>
+              <p className="text-sm font-normal font-WorkSans md:text-base line-clamp-6">
+                We prioritize your needs in our product and service development,
+                ensuring you receive the most relevant, swift, and impactful
+                solutions first.
+              </p>
+            </CardBody>
+          </Card>
+          <div className="absolute z-10 w-14 h-14 -right-2 md:w-16 md:h-16 bottom-6 md:bottom-6 md:-right-4 lg:right-10 xl:-right-3">
+            <Image
+              fill
+              title="wheel svg"
+              src={"/wheel.svg"}
+              alt="wheel svg"
+              className="rounded-full bg-primary"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

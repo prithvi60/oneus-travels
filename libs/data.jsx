@@ -123,11 +123,11 @@ export const travelCardList = [
     title: "Global Reach, Local Insight, Adaptive Tech",
     desc: "The capacity to maximize savings, the presence to offer reliable local market expertise, and the flexibility to address future travel challenges today.",
   },
-  {
-    img: "/card_bg_3.jpg",
-    title: "Your Input Shapes Our Innovations",
-    desc: "We prioritize your needs in our product and service development, ensuring you receive the most relevant, swift, and impactful solutions first.",
-  },
+  // {
+  //   img: "/card_bg_3.jpg",
+  //   title: "Your Input Shapes Our Innovations",
+  //   desc: "We prioritize your needs in our product and service development, ensuring you receive the most relevant, swift, and impactful solutions first.",
+  // },
 ];
 
 export const testimonialList = [

@@ -5,11 +5,9 @@ import Link from "next/link";
 
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
   return (
-    <div className="relative w-full h-full flex-col sm:flex-row flex sm:justify-center items-center space-y-2 md:space-y-0">
-      <div className="hidden sm:block absolute -z-10 w-14 h-14 md:w-20 md:h-20 top-5 -rotate-12 -left-1 md:-left-3 xl:-left-14">
-        <Image fill title="wheel svg" src={"/handle.svg"} alt="handle svg"/>
-      </div>
-      <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-3/5 h-[180px] md:h-[380px] overflow-hidden">
+    <div className="relative flex flex-col items-center w-full h-full space-y-2 sm:flex-row sm:justify-center md:space-y-0">
+      <div className="absolute hidden w-12 h-12 border-8 lg:w-16 lg:h-16 sm:block -z-10 top-5 -left-1 md:-left-5 lg:left-3 xl:-left-7 border-secondary rounded-xl"></div>
+      <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-1/2 h-[200px] md:h-[320px] overflow-hidden">
         <Image
           alt="team image"
           src={imgSrc}
@@ -17,10 +15,10 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           fill
           title="team image"
           sizes="(min-width: 1300px) 691px, (min-width: 1040px) calc(40vw + 179px), calc(100vw - 48px)"
-          className="object-cover object-center shadow-md rounded-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl"
+          className="object-cover object-center shadow-md rounded-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl sm:rounded-br-none sm:rounded-tr-none"
         />
       </div>
-      <Card className="w-full sm:w-[50%] md:w-full lg:w-1/2 xl:w-2/5  sm:!rounded-tr-3xl sm:!rounded-br-3xl rounded-3xl p-2.5 md:p-5 sm:!shadow-none bg-secondary text-primary h-[200px] md:h-[380px]">
+      <Card className="w-full sm:w-[50%] md:w-full lg:w-1/2 xl:w-1/2  sm:!rounded-tr-3xl sm:!rounded-br-3xl sm:!rounded-bl-none sm:!rounded-tl-none p-2.5 md:p-5 sm:!shadow-none bg-secondary text-primary h-[200px] md:h-[320px]">
         <CardHeader className="flex gap-3 font-WorkSans">
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
@@ -33,8 +31,14 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           </Link>
         </CardFooter>
       </Card>
-      <div className="hidden sm:block absolute z-0 w-10 h-10 md:w-14 md:h-14 -bottom-2 md:-bottom-5 right-6 md:right-8 xl:-right-5">
-        <Image fill title="wheel svg" src={"/wheel.png"} alt="wheel svg" className="bg-primary p-1 rounded-full" />
+      <div className="absolute z-0 w-10 h-10 -right-2 md:w-16 md:h-16 -bottom-2 md:-bottom-5 md:-right-4 lg:right-10 xl:-right-3">
+        <Image
+          fill
+          title="wheel svg"
+          src={"/wheel.svg"}
+          alt="wheel svg"
+          className="rounded-full bg-primary"
+        />
       </div>
     </div>
   );
