@@ -24,9 +24,9 @@ export const TravelTechnologyCard = () => {
                 </div>
               </div>
             </div>
-            <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-4 border-secondary">
+            <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-[6px] border-secondary">
               <CardHeader className="flex gap-3 !p-0">
-                <div className="relative w-full h-56 overflow-hidden border-b-4 border-secondary">
+                <div className="relative w-full h-56 overflow-hidden">
                   <Image
                     alt="card img"
                     title="card img"
@@ -77,9 +77,9 @@ export const TravelTechnologyCard = () => {
               </div>
             </div>
           </div>
-          <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-4 border-secondary">
+          <Card className="w-full min-h-[350px] sm:min-h-[500px] group relative !overflow-auto z-10 border-[6px] border-secondary">
             <CardHeader className="flex gap-3 !p-0">
-              <div className="relative w-full h-56 overflow-hidden border-b-4 border-secondary">
+              <div className="relative w-full h-56 overflow-hidden">
                 <Image
                   alt="card img"
                   title="card img"

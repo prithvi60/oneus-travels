@@ -104,7 +104,7 @@ export default function NavbarPage() {
               title="OneUs logo image"
               alt="Logo"
               src={"/Oneus_Logo_2.png"}
-              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary transition-transform duration-1000 ease-linear"
+              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary/50 transition-transform duration-1000 ease-linear"
             />
           </div>
         ) : (
@@ -116,8 +116,8 @@ export default function NavbarPage() {
               fill
               title="OneUs logo image"
               alt="Logo"
-              src={"/Oneus_Logo_1.png"}
-              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary transition-transform duration-1000 ease-linear"
+              src={"/Oneus_Logo_1.svg"}
+              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary/50 transition-transform duration-1000 ease-linear"
             />
           </div>
         )}
@@ -184,7 +184,7 @@ export default function NavbarPage() {
                   } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out font-WorkSans group-hover:border-4 border-secondary`}
                   // first:pt-14 last:pb-14 outline-4 outline-dashed outline-secondary
                 >
-                  <div className="absolute -z-10 border-8 w-12 h-12 -top-7 left-5 border-secondary rounded-xl hidden group-hover:block"></div>
+                  <div className="absolute hidden w-12 h-12 border-8 -z-10 -top-7 left-5 border-secondary rounded-xl group-hover:block"></div>
                   {item?.subMenu?.map((l, index) => (
                     <Link
                       // title={l.listMenu}

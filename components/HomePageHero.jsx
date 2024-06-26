@@ -75,7 +75,7 @@ export const HomePageHero = () => {
             priority
             title="background image"
             sizes="(min-width: 2060px) 2060px, (min-width: 1940px) 1940px, (min-width: 1220px) 1220px, (min-width: 1100px) 1100px, (min-width: 840px) 840px, (min-width: 760px) calc(33.33vw + 487px), (min-width: 660px) 640px, 280px"
-            src={"/IATA-logo.png"}
+            src={"/IATA-logo-2.svg"}
             alt="background image"
             className="object-contain md:px-0"
             quality={100}
