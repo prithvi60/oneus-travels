@@ -61,11 +61,12 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
-      <h4 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-5xl italic font-bols text-center capitalize text-primary sm:text-6xl lg:text-8xl xl:text-9xl font-WorkSans rounded-md py-2 px-3.5 z-10">
-        oneUs travels
-      </h4>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-5xl text-center capitalize text-primary sm:text-6xl lg:text-8xl xl:text-9xl font-SourceSerif rounded-md py-2 px-3.5 z-10">
+        <h4>oneUs</h4>
+        <h4>travels</h4>
+      </div>
 
-      <div className="absolute block py-2 px-3.5 space-y-2 -translate-x-1/2 rounded-md bottom-5 left-1/2 z-10">
+      <div className="absolute block py-2 px-3.5 -translate-x-1/2 rounded-md bottom-0.5 left-1/2 z-10">
         <h4 className="w-full h-full text-lg font-normal text-center capitalize text-primary md:text-xl font-WorkSans">
           we are certified by
         </h4>

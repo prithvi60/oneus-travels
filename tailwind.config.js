@@ -5,7 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(card|checkbox|dropdown|input|link|navbar|radio|ripple|select|table|menu|divider|popover|button|spinner|listbox|scroll-shadow|spacer).js"
+    "./node_modules/@nextui-org/theme/dist/components/(card|checkbox|dropdown|input|link|navbar|radio|ripple|select|table|menu|divider|popover|button|spinner|listbox|scroll-shadow|spacer).js",
   ],
   theme: {
     extend: {
@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         WorkSans: "var(--font-workSans)",
+        SourceSerif: "var(--font-sourceSerif)",
       },
       aspectRatio: {
         box: "3 / 4",
@@ -30,17 +31,13 @@ module.exports = {
         "3xl": "1920px",
       },
       keyframes: {
-        skew_y_shaking: {
-          "0%,": { transform: "skewY(-15deg)" },
-          "5%,": { transform: "skewY(15deg)" },
-          "10%,": { transform: "skewY(-15deg)" },
-          "15%,": { transform: "skewY(-15deg)" },
-          "20%,": { transform: "skewY(0deg)" },
-          "100%,": { transform: "skewY(0deg)" },
+        rotateAnimate: {
+          "0%,": { transform: "rotate(0deg)" },
+          "100%,": { transform: "rotate(360deg)" },
         },
       },
       animation: {
-        "shake": "skew_y_shaking 3s linear infinite",
+        rotate: "rotateAnimate 2s linear infinite",
       },
     },
   },

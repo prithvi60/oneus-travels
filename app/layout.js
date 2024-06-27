@@ -1,4 +1,4 @@
-import { Work_Sans } from "next/font/google";
+import { Work_Sans,Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Provider";
 import NavbarPage from "@/components/NavbarPage";
@@ -17,11 +17,11 @@ const workSans = Work_Sans({
   display: "swap"
 });
 
-// const WorkSans = WorkSans({
-//   subsets: ["latin"],
-//   variable: "--font-WorkSans",
-//   weight: "400",
-// });
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-sourceSerif",
+  weight: "900",
+});
 
 // Meta Data
 export async function generateMetadata() {
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AppContextProvider>
-        <body className={`${workSans.variable}`}>
+        <body className={`${workSans.variable} ${sourceSerif.variable}`}>
           <NavbarPage />
           <Providers>{children}</Providers>
           <ContactForm />

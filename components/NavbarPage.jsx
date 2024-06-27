@@ -13,10 +13,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { IoPersonOutline } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
+import { MenuBtnCorporate, MenuBtnMember } from "./Button";
+import { motion } from "framer-motion";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function NavbarPage() {
   const path = usePathname();
@@ -67,8 +69,9 @@ export default function NavbarPage() {
               : percent >= 75 && percent <= 95
               ? "bg-info shadow-md"
               : "bg-primary shadow-md"
-          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear gap-2 lg:gap-4`,
+          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear`,
         ],
+        wrapper: ["gap-2 lg:gap-4"],
         item: [`data-[active=true]: !text-success`],
         menuItem: ["data-[active=true]: !text-success pt-2"],
       }}
@@ -95,31 +98,51 @@ export default function NavbarPage() {
     >
       <NavbarBrand className="space-x-3 grow-0">
         {percent >= 0 && percent <= 18 ? (
-          <div className="relative w-20 h-12 md:w-24 md:h-10 lg:h-16 lg:w-36">
-            <Image
-              onClick={() => router.push("/")}
-              // width={130}
-              // height={130}
-              fill
-              title="OneUs logo image"
-              alt="Logo"
-              src={"/Oneus_Logo_2.png"}
-              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary/50 transition-transform duration-1000 ease-linear"
-            />
+          <div className="relative">
+            <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-success rounded-full"></div>
+            <div className="relative w-20 h-12 md:w-24 md:h-10 lg:h-16 lg:w-36">
+              <Image
+                onClick={() => router.push("/")}
+                // width={130}
+                // height={130}
+                fill
+                title="OneUs logo image"
+                alt="Logo"
+                src={"/Oneus_Logo_2.png"}
+                className="object-contain object-center transition-transform duration-1000 ease-linear border-4 cursor-pointer rounded-xl bg-primary border-success"
+              />
+            </div>
+            {/* <div className="absolute w-6 h-6 right-2 -z-10 -bottom-3">
+              <Image
+                fill
+                title="wheel svg"
+                src={"/wheel_2.svg"}
+                alt="wheel svg"
+                className="rounded-full bg-success/90"
+              />
+            </div> */}
           </div>
         ) : (
-          <div className="relative h-10 w-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
-            <Image
-              onClick={() => router.push("/")}
-              // width={130}
-              // height={130}
-              fill
-              title="OneUs logo image"
-              alt="Logo"
-              src={"/Oneus_Logo_1.svg"}
-              className="object-contain object-center px-2.5 rounded-full cursor-pointer bg-primary/50 transition-transform duration-1000 ease-linear"
-            />
-          </div>
+          <motion.div
+            className="relative"
+            initial={{ x: -30, scale: 0.3, opacity: 0 }}
+            animate={{ x: 0, scale: 1, opacity: 1 }}
+            transition={{ duration: 0.3, ease: "backInOut" }}
+          >
+            <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-secondary/85 rounded-full"></div>
+            <div className="relative h-10 w-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+              <Image
+                onClick={() => router.push("/")}
+                // width={130}
+                // height={130}
+                fill
+                title="OneUs logo image"
+                alt="Logo"
+                src={"/Oneus_Logo_1.svg"}
+                className="object-contain object-center transition-transform duration-500 ease-linear border-4 cursor-pointer rounded-xl bg-primary border-secondary/85"
+              />
+            </div>
+          </motion.div>
         )}
       </NavbarBrand>
 
@@ -208,63 +231,31 @@ export default function NavbarPage() {
 
       {/* Login button For employee and client */}
 
-      <NavbarContent className="!justify-start md:!justify-end  space-x-1 md:mt-0 md:space-x-4 md:gap-1">
+      <NavbarContent className="!justify-start md:!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
         <NavbarItem>
           <Link
             href="/"
             title="Login"
-            className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
+            // className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
-            <IoPersonOutline
-              className={`text-sm md:text-lg lg:text-xl ${
-                percent >= 0 && percent <= 18
-                  ? "text-primary"
-                  : percent >= 35 && percent <= 95
-                  ? "text-primary"
-                  : "text-secondary"
-              }`}
+            <MenuBtnMember
+              text={"member"}
+              roleType={"text"}
+              percent={percent}
             />
-            <div
-              className={`${
-                percent >= 0 && percent <= 18
-                  ? "text-primary hover:text-info"
-                  : percent >= 35 && percent <= 95
-                  ? "text-primary"
-                  : "text-secondary"
-              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-WorkSans block text-center`}
-            >
-              <h3>Member </h3>
-              {/* <h3>Login</h3> */}
-            </div>
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             href="/"
             title="Login"
-            className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
+            // className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
           >
-            <IoPersonOutline
-              className={`text-sm md:text-lg lg:text-xl ${
-                percent >= 0 && percent <= 18
-                  ? "text-primary"
-                  : percent >= 35 && percent <= 95
-                  ? "text-primary"
-                  : "text-secondary"
-              }`}
+            <MenuBtnCorporate
+              text={"corporate"}
+              roleType={"text"}
+              percent={percent}
             />
-            <div
-              className={`${
-                percent >= 0 && percent <= 18
-                  ? "text-primary hover:text-info"
-                  : percent >= 35 && percent <= 95
-                  ? "text-primary"
-                  : "text-secondary"
-              } mt-1 text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-WorkSans block text-center`}
-            >
-              <h3>corporate</h3>
-              {/* <h3>Login</h3> */}
-            </div>
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -273,6 +264,7 @@ export default function NavbarPage() {
 
       <NavbarContent className="md:!hidden !flex-grow-0" justify="end">
         <NavbarMenuToggle
+          // onChange={(isMenuToggle) => setIsMenuToggle(!isMenuToggle)}
           className="!h-auto px-2 py-5 rounded-full bg-primary w-max"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
@@ -281,7 +273,7 @@ export default function NavbarPage() {
       {/* Mobile view menubar */}
 
       <NavbarMenu
-        className="items-start !columns-2 py-0 !z-[1000] !top-24 !gap-0"
+        className="items-start !columns-2 gap-10 py-0 !z-[1000] top-0"
         motionProps={{
           variants: {
             enter: {
@@ -301,15 +293,21 @@ export default function NavbarPage() {
           },
         }}
       >
+        <h4
+          onClick={() => setIsMenuOpen(false)}
+          className="absolute p-2 text-xl border-2 rounded-full shadow-lg cursor-pointer right-5 top-6 border-secondary"
+        >
+          <AiOutlineClose className="text-red-500" />
+        </h4>
         <div className="w-full h-[400px] grid grid-cols-2 gap-x-6">
           {/* className="w-full h-[400px] columns-2 gap-4" */}
           {menuItemsMobile.map((item, index) => (
             <NavbarMenuItem
               key={index}
-              className="!pt-0 aspect-auto break-inside-avoid-column"
-              onClick={() => setIsMenuOpen(false)}
+              className="pt-10 aspect-auto break-inside-avoid-column"
             >
               <Link
+                onClick={() => setIsMenuOpen(false)}
                 aria-label={`know more about ${item.menuTitle}`}
                 title={item.menuTitle}
                 aria-current={`${item.menuTitle} page`}

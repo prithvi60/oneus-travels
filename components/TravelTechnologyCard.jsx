@@ -6,7 +6,7 @@ import { travelCardList } from "@/libs/data";
 export const TravelTechnologyCard = () => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-5 md:space-y-10">
-      <h2 className="font-bold tracking-normal font-WorkSans text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-16 md:pb-10">
+      <h2 className="tracking-normal font-SourceSerif text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-16 md:pb-10">
         Ground-Breaking Corporate Travel Technology
       </h2>
       <div className="flex flex-col items-center justify-center w-full h-full gap-16 mt-20 md:flex-row md:gap-10">
@@ -101,13 +101,13 @@ export const TravelTechnologyCard = () => {
               </p>
             </CardBody>
           </Card>
-          <div className="absolute z-10 w-14 h-14 -right-2 md:w-16 md:h-16 bottom-6 md:bottom-6 md:-right-4 lg:right-10 xl:-right-3">
+          <div className="absolute z-10 w-14 h-14 -right-2 md:w-16 md:h-16 bottom-6 md:bottom-6 md:-right-4 lg:-right-2 xl:-right-3">
             <Image
               fill
               title="wheel svg"
-              src={"/wheel.svg"}
+              src={"/wheel_2.svg"}
               alt="wheel svg"
-              className="rounded-full bg-primary"
+              className="rounded-full bg-primary animate-spin"
             />
           </div>
         </div>

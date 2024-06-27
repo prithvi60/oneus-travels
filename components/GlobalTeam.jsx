@@ -20,7 +20,7 @@ export const GlobalTeam = () => {
       className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 "
       ref={globalRef}
     >
-      <h3 className="text-[32px] md:text-[40px] lg:text-[42px] font-bold tracking-normal font-WorkSans text-secondary">
+      <h3 className="text-[32px] md:text-[40px] lg:text-[42px] tracking-normal font-SourceSerif text-secondary">
         Corporate Meetings & Events
       </h3>
       <div className="space-y-7">

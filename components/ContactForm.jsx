@@ -36,7 +36,7 @@ export const ContactForm = () => {
           Don't just dream it, travel it. Let us craft your perfect adventure.
         </h4> */}
           <div className="mx-auto rounded-md md:space-y-6 p-7 ">
-            <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-WorkSans">
+            <h4 className="text-2xl tracking-wider text-center font-SourceSerif md:text-3xl text-secondary">
               Stay Connected
             </h4>
             <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
@@ -44,7 +44,7 @@ export const ContactForm = () => {
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <LiaPhoneVolumeSolid className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
-                <h5 className="text-lg tracking-wider text-secondary font-WorkSans font-normal md:text-xl">
+                <h5 className="text-lg font-normal tracking-wider text-secondary font-WorkSans md:text-xl">
                   +91-98408 84460
                 </h5>
               </div>
