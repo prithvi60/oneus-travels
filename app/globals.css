@@ -8,10 +8,15 @@
   }
 }
 
+/* .clip-custom {
+  mask: radial-gradient(15px at left 20px,#0000 98%, #000) 0 -15px;
+
+} */
+
 .slick__dots--custom {
   height: 8px;
   width: 8px;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   border-radius: 15px;
   position: relative;
 }
@@ -30,4 +35,3 @@
   opacity: 0.75;
   color: blue !important;
 }
-

@@ -52,6 +52,8 @@ export default function NavbarPage() {
     };
   }, [percent]);
 
+  // console.log(isMenuOpen);
+
   return (
     <Navbar
       // position="static"
@@ -100,7 +102,7 @@ export default function NavbarPage() {
         {percent >= 0 && percent <= 18 ? (
           <div className="relative">
             <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-success rounded-full"></div>
-            <div className="relative w-20 h-12 md:w-24 md:h-10 lg:h-16 lg:w-36">
+            <div className="relative w-20 h-12 md:h-16 md:w-36 clip-custom">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
@@ -109,7 +111,7 @@ export default function NavbarPage() {
                 title="OneUs logo image"
                 alt="Logo"
                 src={"/Oneus_Logo_2.png"}
-                className="object-contain object-center transition-transform duration-1000 ease-linear border-4 cursor-pointer rounded-xl bg-primary border-success"
+                className="object-contain object-center transition-transform duration-1000 ease-linear border-4 cursor-pointer bg-primary border-success"
               />
             </div>
             {/* <div className="absolute w-6 h-6 right-2 -z-10 -bottom-3">
@@ -130,7 +132,7 @@ export default function NavbarPage() {
             transition={{ duration: 0.3, ease: "backInOut" }}
           >
             <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-secondary/85 rounded-full"></div>
-            <div className="relative h-10 w-14 md:w-24 md:h-10 lg:h-16 lg:w-36">
+            <div className="relative w-20 h-12 md:h-16 md:w-36 clip-custom">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
@@ -146,12 +148,10 @@ export default function NavbarPage() {
         )}
       </NavbarBrand>
 
-      {/* Other menu bar */}
+      {/* Desktop menu bar */}
       <NavbarContent
-        className="hidden gap-1.5 lg:gap-5 md:flex font-WorkSans"
+        className="hidden lg_2:flex gap-1.5 lg:gap-5 font-WorkSans"
         justify="center"
-        // onMouseEnter={() => setIsOpen(true)}
-        // onMouseLeave={() => setIsOpen(false)}
       >
         <NavbarItem>
           <Link
@@ -201,10 +201,13 @@ export default function NavbarPage() {
                 />
               </div>
               {item.subMenu && (
-                <div
+                <motion.div
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out font-WorkSans group-hover:border-4 border-secondary`}
+                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl font-WorkSans group-hover:border-4 border-secondary`}
                   // first:pt-14 last:pb-14 outline-4 outline-dashed outline-secondary
                 >
                   <div className="absolute hidden w-12 h-12 border-8 -z-10 -top-7 left-5 border-secondary rounded-xl group-hover:block"></div>
@@ -222,7 +225,7 @@ export default function NavbarPage() {
                       </h4>
                     </Link>
                   ))}
-                </div>
+                </motion.div>
               )}
             </div>
           </NavbarItem>
@@ -231,7 +234,7 @@ export default function NavbarPage() {
 
       {/* Login button For employee and client */}
 
-      <NavbarContent className="!justify-start md:!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
+      <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
         <NavbarItem>
           <Link
             href="/"
@@ -262,7 +265,7 @@ export default function NavbarPage() {
 
       {/* Toggle button */}
 
-      <NavbarContent className="md:!hidden !flex-grow-0" justify="end">
+      <NavbarContent className="lg_2:!hidden !flex-grow-0" justify="end">
         <NavbarMenuToggle
           // onChange={(isMenuToggle) => setIsMenuToggle(!isMenuToggle)}
           className="!h-auto px-2 py-5 rounded-full bg-primary w-max"
@@ -273,20 +276,20 @@ export default function NavbarPage() {
       {/* Mobile view menubar */}
 
       <NavbarMenu
-        className="items-start !columns-2 gap-10 py-0 !z-[1000] top-0"
+        className="items-start !columns-2 gap-20 py-0 !z-[1000] top-0"
         motionProps={{
           variants: {
             enter: {
               x: 0,
               transition: {
-                duration: 0.3,
+                duration: 0.4,
                 ease: "easeOut",
               },
             },
             exit: {
-              x: 500,
+              x: 1000,
               transition: {
-                duration: 0.5,
+                duration: 0.4,
                 ease: "easeIn",
               },
             },
@@ -299,12 +302,12 @@ export default function NavbarPage() {
         >
           <AiOutlineClose className="text-red-500" />
         </h4>
-        <div className="w-full h-[400px] grid grid-cols-2 gap-x-6">
+        <div className="w-full h-[400px] grid grid-cols-2 gap-y-9 gap-x-6 pt-16">
           {/* className="w-full h-[400px] columns-2 gap-4" */}
           {menuItemsMobile.map((item, index) => (
             <NavbarMenuItem
               key={index}
-              className="pt-10 aspect-auto break-inside-avoid-column"
+              className="aspect-auto break-inside-avoid-column"
             >
               <Link
                 onClick={() => setIsMenuOpen(false)}
@@ -316,7 +319,7 @@ export default function NavbarPage() {
                   path === item.menuTitle
                     ? "text-success"
                     : "text-secondary hover:text-success"
-                } w-full h-full text-base ${
+                } w-full h-full text-base sm:text-lg lg:text-xl font-WorkSans font-semibold ${
                   item.menuTitle === "Technology" &&
                   "underline underline-offset-1"
                 }`}
@@ -324,9 +327,9 @@ export default function NavbarPage() {
                 {item.menuTitle}
               </Link>
               {item.subMenu?.map((l, id) => (
-                <NavbarMenuItem
+                <div
                   key={id}
-                  className="px-2 !pt-0 font-WorkSans font-normal"
+                  className="px-2 pb-1 !pt-0 font-WorkSans font-normal"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Link
@@ -334,11 +337,11 @@ export default function NavbarPage() {
                     title={l.list}
                     aria-current={`${l.list} page`}
                     href={`${item.ref}${l.subMenuRef}`}
-                    className={`w-full h-full text-xs`}
+                    className={`w-full h-full text-sm sm:text-base lg:text-lg hover:text-info`}
                   >
-                    {l.list}
+                    <h4>{l.list}</h4>
                   </Link>
-                </NavbarMenuItem>
+                </div>
               ))}
             </NavbarMenuItem>
           ))}

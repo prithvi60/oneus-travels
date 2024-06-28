@@ -29,15 +29,16 @@ module.exports = {
         xl: "1440px",
         "2xl": "1560px",
         "3xl": "1920px",
+        "lg_2": "1120px",
       },
       keyframes: {
         rotateAnimate: {
-          "0%,": { transform: "rotate(0deg)" },
-          "100%,": { transform: "rotate(360deg)" },
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
-        rotate: "rotateAnimate 2s linear infinite",
+        rotate: "rotateAnimate 3s linear infinite",
       },
     },
   },

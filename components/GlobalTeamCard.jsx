@@ -7,7 +7,7 @@ import Link from "next/link";
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
   return (
     <div className="relative flex flex-col items-center w-full h-full space-y-2 sm:flex-row sm:justify-center md:space-y-0">
-      <div className="absolute hidden w-12 h-12 border-8 lg:w-16 lg:h-16 sm:block -z-10 top-5 -left-1 md:-left-5 lg:left-3 xl:-left-7 border-secondary rounded-xl"></div>
+      <div className="absolute hidden w-12 h-12 border-8 rounded-full lg:w-14 lg:h-14 sm:block -z-10 top-5 -left-1 md:-left-5 lg:left-3 xl:-left-6 border-secondary"></div>
       <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-1/2 h-[200px] md:h-[320px] overflow-hidden">
         <Image
           alt="team image"
@@ -38,7 +38,7 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           title="wheel svg"
           src={"/wheel_2.svg"}
           alt="wheel svg"
-          className="rounded-full bg-primary animate-spin"
+          className="rounded-full bg-primary animate-rotate"
         />
       </div>
     </div>
@@ -58,7 +58,7 @@ export const GlobalTeamCardReverse = ({ title, imgSrc, desc }) => {
           title="wheel svg"
           src={"/wheel_2.svg"}
           alt="wheel svg"
-          className="rotate-90 rounded-full bg-primary animate-spin"
+          className="rotate-90 rounded-full bg-primary animate-rotate"
         />
       </div>
       <Card className="w-full sm:w-[50%] md:w-full lg:w-1/2 xl:w-1/2  sm:!rounded-tl-3xl sm:!rounded-bl-3xl sm:!rounded-br-none sm:!rounded-tr-none p-2.5 md:p-5 sm:!shadow-none bg-secondary text-primary h-[200px] md:h-[320px]">
@@ -85,7 +85,7 @@ export const GlobalTeamCardReverse = ({ title, imgSrc, desc }) => {
           className="object-cover object-center shadow-md rounded-3xl sm:rounded-tr-3xl sm:rounded-br-3xl sm:rounded-bl-none sm:rounded-tl-none"
         />
       </div>
-      <div className="absolute hidden w-12 h-12 border-8 lg:w-16 lg:h-16 sm:block -z-10 top-5 -right-1 md:-right-5 lg:right-3 xl:-right-7 border-secondary rounded-xl"></div>
+      <div className="absolute hidden w-12 h-12 border-8 rounded-full lg:w-14 lg:h-14 sm:block -z-10 top-5 -right-1 md:-right-5 lg:right-3 xl:-right-7 border-secondary"></div>
     </div>
   );
 };
