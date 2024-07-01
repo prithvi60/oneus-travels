@@ -8,10 +8,19 @@
   }
 }
 
-/* .clip-custom {
-  mask: radial-gradient(15px at left 20px,#0000 98%, #000) 0 -15px;
+.clip-custom {
+  mask: radial-gradient(12px at right 50%, #0000 98%, #000);
+}
 
-} */
+@media only screen and (max-width: 600px) {
+  .clip_custom {
+    mask: radial-gradient(6px at right 50%, #0000 98%, #000);
+  }
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
 
 .slick__dots--custom {
   height: 8px;

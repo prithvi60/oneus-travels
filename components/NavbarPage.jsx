@@ -101,8 +101,8 @@ export default function NavbarPage() {
       <NavbarBrand className="space-x-3 grow-0">
         {percent >= 0 && percent <= 18 ? (
           <div className="relative">
-            <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-success rounded-full"></div>
-            <div className="relative w-20 h-12 md:h-16 md:w-36 clip-custom">
+            {/* <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-success rounded-full shadow-md"></div> */}
+            <div className="relative w-20 h-12 rounded-sm md:h-16 md:w-36 clip-custom">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
@@ -111,18 +111,9 @@ export default function NavbarPage() {
                 title="OneUs logo image"
                 alt="Logo"
                 src={"/Oneus_Logo_2.png"}
-                className="object-contain object-center transition-transform duration-1000 ease-linear border-4 cursor-pointer bg-primary border-success"
+                className="object-contain object-center transition-transform duration-1000 ease-linear border-2 cursor-pointer sm:border-4 bg-primary border-secondary pe-[10px] sm:pe-0"
               />
             </div>
-            {/* <div className="absolute w-6 h-6 right-2 -z-10 -bottom-3">
-              <Image
-                fill
-                title="wheel svg"
-                src={"/wheel_2.svg"}
-                alt="wheel svg"
-                className="rounded-full bg-success/90"
-              />
-            </div> */}
           </div>
         ) : (
           <motion.div
@@ -131,7 +122,7 @@ export default function NavbarPage() {
             animate={{ x: 0, scale: 1, opacity: 1 }}
             transition={{ duration: 0.3, ease: "backInOut" }}
           >
-            <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-secondary/85 rounded-full"></div>
+            {/* <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-secondary shadow-md"></div> */}
             <div className="relative w-20 h-12 md:h-16 md:w-36 clip-custom">
               <Image
                 onClick={() => router.push("/")}
@@ -141,7 +132,7 @@ export default function NavbarPage() {
                 title="OneUs logo image"
                 alt="Logo"
                 src={"/Oneus_Logo_1.svg"}
-                className="object-contain object-center transition-transform duration-500 ease-linear border-4 cursor-pointer rounded-xl bg-primary border-secondary/85"
+                className="object-contain object-center transition-transform duration-500 ease-linear border-4 rounded-sm cursor-pointer bg-primary border-secondary"
               />
             </div>
           </motion.div>
