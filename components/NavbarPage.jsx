@@ -67,9 +67,9 @@ export default function NavbarPage() {
             percent >= 0 && percent <= 18
               ? "!bg-transparent shadow-none"
               : percent >= 35 && percent <= 74
-              ? "bg-success shadow-md"
+              ? "bg-secondary shadow-md"
               : percent >= 75 && percent <= 95
-              ? "bg-info shadow-md"
+              ? "bg-success shadow-md"
               : "bg-primary shadow-md"
           } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear`,
         ],
@@ -101,17 +101,14 @@ export default function NavbarPage() {
       <NavbarBrand className="space-x-3 grow-0">
         {percent >= 0 && percent <= 18 ? (
           <div className="relative">
-            {/* <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-success rounded-full shadow-md"></div> */}
-            <div className="relative w-20 h-12 rounded-sm md:h-16 md:w-36 clip-custom">
+            <div className="relative w-20 h-12 md:h-16 md:w-36">
               <Image
                 onClick={() => router.push("/")}
-                // width={130}
-                // height={130}
                 fill
                 title="OneUs logo image"
                 alt="Logo"
                 src={"/Oneus_Logo_2.png"}
-                className="object-contain object-center transition-transform duration-1000 ease-linear border-2 cursor-pointer sm:border-4 bg-primary border-secondary pe-[10px] sm:pe-0"
+                className="object-contain object-center transition-transform duration-1000 ease-linear rounded-full cursor-pointer bg-primary"
               />
             </div>
           </div>
@@ -122,8 +119,7 @@ export default function NavbarPage() {
             animate={{ x: 0, scale: 1, opacity: 1 }}
             transition={{ duration: 0.3, ease: "backInOut" }}
           >
-            {/* <div className="absolute block w-9 h-9 border-[6px] -z-10 -top-3 left-1/2 -translate-x-1/2 border-secondary shadow-md"></div> */}
-            <div className="relative w-20 h-12 md:h-16 md:w-36 clip-custom">
+            <div className="relative w-20 h-12 md:h-16 md:w-36 ">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
@@ -132,7 +128,7 @@ export default function NavbarPage() {
                 title="OneUs logo image"
                 alt="Logo"
                 src={"/Oneus_Logo_1.svg"}
-                className="object-contain object-center transition-transform duration-500 ease-linear border-4 rounded-sm cursor-pointer bg-primary border-secondary"
+                className="object-contain object-center rounded-full cursor-pointer bg-primary"
               />
             </div>
           </motion.div>
@@ -152,10 +148,10 @@ export default function NavbarPage() {
             href={"/technology"}
             className={`text-sm lg:text-lg xl:text-xl ${
               percent >= 0 && percent <= 18
-                ? "text-primary hover:text-info"
+                ? "text-primary hover:text-success"
                 : percent >= 35 && percent <= 95
                 ? "text-primary hover:text-secondary"
-                : "text-secondary hover:text-info"
+                : "text-secondary hover:text-success"
             } py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
             Technology
@@ -167,10 +163,10 @@ export default function NavbarPage() {
               <div
                 className={`text-base ${
                   percent >= 0 && percent <= 18
-                    ? "text-primary group-hover:text-info"
+                    ? "text-primary group-hover:text-success"
                     : percent >= 35 && percent <= 95
                     ? "text-primary group-hover:text-secondary"
-                    : "text-secondary group-hover:text-info"
+                    : "text-secondary group-hover:text-success"
                 } py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
               >
@@ -205,7 +201,7 @@ export default function NavbarPage() {
                   {item?.subMenu?.map((l, index) => (
                     <Link
                       // title={l.listMenu}
-                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg hover:text-info w-full h-full font-normal z-10`}
+                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg hover:text-success w-full h-full font-normal z-10`}
                       key={index}
                       href={l.subMenuRef}
                       onClick={() => setIsOpen(false)}

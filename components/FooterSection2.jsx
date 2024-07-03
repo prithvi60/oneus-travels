@@ -11,7 +11,7 @@ const links = [
 export const FooterSection2 = () => {
   return (
     <div className="grid w-full h-full grid-cols-1 gap-4 md:grid-cols-3 place-content-evenly">
-      <h3 className="flex items-center justify-center order-2 text-sm font-normal tracking-wide capitalize font-WorkSans text-secondary hover:text-success md:order-1">
+      <h3 className="flex items-center justify-center order-2 text-sm font-normal tracking-wide capitalize font-WorkSans text-secondary md:order-1">
         © 2024 Corporate Travel Management
       </h3>
       <div className="flex flex-wrap items-center order-1 gap-3 text-sm font-normal tracking-wide capitalize justify-evenly font-WorkSans md:order-2">

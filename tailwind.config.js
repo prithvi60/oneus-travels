@@ -5,7 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(card|checkbox|dropdown|input|link|navbar|radio|ripple|select|table|tabs|menu|divider|popover|button|spinner|listbox|scroll-shadow|spacer).js"
+    "./node_modules/@nextui-org/theme/dist/components/(card|checkbox|dropdown|input|link|navbar|radio|ripple|select|table|tabs|menu|divider|popover|button|spinner|listbox|scroll-shadow|spacer).js",
   ],
   theme: {
     extend: {
@@ -16,6 +16,13 @@ module.exports = {
       fontFamily: {
         WorkSans: "var(--font-workSans)",
         SourceSerif: "var(--font-sourceSerif)",
+        Poppins: "var(--font-poppins)",
+        Alice: "var(--font-alice)",
+        Lora: "var(--font-lora)",
+        Oswald: "var(--font-oswald)",
+        DMSans: "var(--font-DMSans)",
+        Roboto: "var(--font-roboto)",
+        RobotoCondensed: "var(--font-robotoCondensed)",
       },
       aspectRatio: {
         box: "3 / 4",
@@ -29,7 +36,7 @@ module.exports = {
         xl: "1440px",
         "2xl": "1560px",
         "3xl": "1920px",
-        "lg_2": "1120px",
+        lg_2: "1120px",
       },
       keyframes: {
         rotateAnimate: {
@@ -48,8 +55,8 @@ module.exports = {
         light: {
           colors: {
             primary: "#FEFEFF", // Main Bg
-            secondary: "#353B6B", // text & section bg
-            success: "#3880CB", // hover effect & btn border
+            secondary: "#061735", // text & section bg
+            success: "#AE0001", // hover effect & btn border
             info: "#CB8238",
           },
         },

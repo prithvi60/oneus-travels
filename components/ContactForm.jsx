@@ -7,7 +7,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Checkbox } from "@nextui-org/checkbox";
-import { PrimaryButton, SecondaryButton } from "./Button";
+import { PrimaryButton, SecondaryButton, SubmitBtn } from "./Button";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 
@@ -25,7 +25,6 @@ export const ContactForm = () => {
           Take a tour of OneUs’s global travel solutions
         </h1>
         <SecondaryButton
-          roleType={"button"}
           text={"Explore our Travel Ecosystem"}
         />
       </div>
@@ -259,7 +258,7 @@ export const ContactForm = () => {
             YES, I want to receive the latest travel news, insights and offers
             to my inbox!
           </Checkbox>
-          <PrimaryButton roleType={"submit"} text={"Submit"} />
+          <SubmitBtn text={"Submit"} />
         </form>
       </div>
       {/* </div> */}

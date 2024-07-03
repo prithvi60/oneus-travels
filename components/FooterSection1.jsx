@@ -5,7 +5,7 @@ import { MdOutlineDriveFileRenameOutline, MdFlight } from "react-icons/md";
 
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
-import { PrimaryButton } from "./Button";
+import { PrimaryButton, SubmitBtn } from "./Button";
 
 export const FooterSection1 = ({ items }) => {
   return (
@@ -34,7 +34,7 @@ export const FooterSection1 = ({ items }) => {
                 <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                 <Link
                   href={`${item.menuTitle}/${list.subMenuRef}`}
-                  className="text-secondary hover:text-success font-WorkSans font-normal"
+                  className="font-normal text-secondary hover:text-success font-WorkSans"
                 >
                   {list.listMenu}
                 </Link>
@@ -72,7 +72,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             color="secondary"
             variant="bordered"
-            className="font-WorkSans font-normal"
+            className="font-normal font-WorkSans"
             endContent={
               <MdOutlineDriveFileRenameOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -88,7 +88,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="font-WorkSans font-normal"
+            className="font-normal font-WorkSans"
             endContent={
               <IoMailOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -104,9 +104,9 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="hidden font-WorkSans font-normal"
+            className="hidden font-normal font-WorkSans"
           />
-          <PrimaryButton text={"submit"} roleType={"submit"} />
+          <SubmitBtn text={"submit"} />
         </form>
       </div>
     </div>
