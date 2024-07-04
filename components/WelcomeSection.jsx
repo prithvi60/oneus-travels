@@ -4,16 +4,16 @@ import { PrimaryButton } from "./Button";
 export const WelcomeSection = () => {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-4">
-      <h1 className="w-full text-[32px] font-Poppins md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
+      <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
         Welcome to Oneus Travels. Your Global Travel Companion.
       </h1>
-      <p className="text-lg font-normal font-Alice">
+      <p className="text-lg font-normal font-Gilroy">
         OneUs is a leading provider of business travel management solutions
         worldwide. We enable businesses and tourists with maximum savings,
         effectiveness, safety, and sustainability all across the globe. At
         OneUs, we are more than just a travel management company; we are your
         strategic partner in navigating the world of corporate
-        travel(font-Alice).
+        travel(font-Gilroy).
       </p>
       <p className="text-base font-normal font-Alice">
         With OneUs by your side, you’ll discover a whole new global travel
@@ -33,8 +33,8 @@ export const WelcomeSection = () => {
         Contact us to learn more about our tailored travel management solutions
         and unlock a world of possibilities with OneUs Travels(font-Lora).
       </p>
-      <h3 className="text-lg font-semibold font-Lora">
-        Travel Management, Fueled by One Travel Team(font-Lora)
+      <h3 className="text-lg font-semibold font-Poppins">
+        Travel Management, Fueled by One Travel Team
       </h3>
       <p className="text-base font-normal font-RobotoCondensed">
         Whether you're a multinational corporation or a growing enterprise, we

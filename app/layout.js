@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonial } from "@/components/Testimonial";
 import { SalesIq } from "@/components/SalesIq";
+import localFont from 'next/font/local'
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -26,6 +27,22 @@ const workSans = Work_Sans({
   weight: ["600", "400", "700", "300"],
   display: "swap",
 });
+
+const gilroy = localFont({
+  src: [
+    {
+      path: '../public/Gilroy-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/Gilroy-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: "--font-gilroy"
+})
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -132,7 +149,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AppContextProvider>
         <body
-          className={`${workSans.variable} ${sourceSerif.variable} ${poppins.variable} ${alice.variable} ${lora.variable} ${oswald.variable} ${DMSans.variable} ${roboto.variable} ${robotoCondensed.variable}`}
+          className={`${workSans.variable} ${gilroy.variable} ${sourceSerif.variable} ${poppins.variable} ${alice.variable} ${lora.variable} ${oswald.variable} ${DMSans.variable} ${roboto.variable} ${robotoCondensed.variable}`}
         >
           <NavbarPage />
           <Providers>{children}</Providers>

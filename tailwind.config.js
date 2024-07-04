@@ -23,6 +23,7 @@ module.exports = {
         DMSans: "var(--font-DMSans)",
         Roboto: "var(--font-roboto)",
         RobotoCondensed: "var(--font-robotoCondensed)",
+        Gilroy: ["var(--font-gilroy)"]
       },
       aspectRatio: {
         box: "3 / 4",
