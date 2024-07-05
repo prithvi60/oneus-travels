@@ -48,10 +48,10 @@ export const HomePageHero = () => {
             </div>
             <div className="absolute flex flex-col items-start w-full gap-3 md:items-center left-7 md:left-0 md:w-full md:flex-row md:justify-around lg:justify-between lg:w-9/12 xl:w-3/5 bottom-10 md:bottom-16 xl:left-40">
               <div className="block w-4/5 space-y-3 md:w-3/5 md:space-y-5">
-                <h3 className="text-3xl font-extrabold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-WorkSans text-primary">
+                <h3 className="text-3xl font-bold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-WorkSans text-primary">
                   {item.shortNote}
                 </h3>
-                <h4 className="text-lg font-extrabold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-WorkSans text-primary">
+                <h4 className="text-lg font-bold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-WorkSans text-primary">
                   {item.note}
                 </h4>
               </div>
@@ -61,7 +61,7 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px] flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-Gilroy font-extrabold rounded-md py-2 px-3.5 z-10">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px] flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-Gilroy font-bold rounded-md py-2 px-3.5 z-10">
         <h4>oneUs</h4>
         <h4>travels</h4>
       </div>

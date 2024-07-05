@@ -96,10 +96,10 @@ function SimpleSlider() {
                 quality={100}
               />
               <div className="absolute w-full bottom-1 md:bottom-3 left-3 md:left-7">
-                <h3 className="w-4/5 text-xs font-extrabold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Poppins text-primary">
+                <h3 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Poppins text-primary">
                   {"best time"}
                 </h3>
-                <h3 className="w-4/5 text-sm font-extrabold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Poppins text-primary">
+                <h3 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Poppins text-primary">
                   {item.months}
                 </h3>
               </div>

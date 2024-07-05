@@ -35,7 +35,7 @@ export const ContactForm = () => {
           Don't just dream it, travel it. Let us craft your perfect adventure.
         </h4> */}
           <div className="mx-auto rounded-md md:space-y-6 p-7 ">
-            <h4 className="text-2xl tracking-wider text-center font-Gilroy md:text-3xl text-secondary">
+            <h4 className="text-2xl font-bold tracking-wider text-center font-Gilroy md:text-3xl text-secondary">
               Stay Connected
             </h4>
             <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
