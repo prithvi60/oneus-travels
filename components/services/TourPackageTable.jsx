@@ -19,25 +19,25 @@ export const TourPackageTable = ({ location }) => {
     switch (columnKey) {
       case "tour_packages":
         return (
-          <p className="text-base font-WorkSans text-secondary">
+          <p className="text-base font-Poppins text-secondary">
             {packageList.tourPackages}
           </p>
         );
       case "duration":
         return (
-          <p className="text-base font-WorkSans text-secondary">
+          <p className="text-base font-Poppins text-secondary">
             {packageList.duration}
           </p>
         );
       case "price":
         return (
-          <div className="text-base font-WorkSans text-secondary">
+          <div className="text-base font-Poppins text-secondary">
             {packageList.price}
           </div>
         );
       case "inclusions":
         return (
-          <div className="text-base font-WorkSans text-secondary">
+          <div className="text-base font-Poppins text-secondary">
             {packageList.inclusions}
           </div>
         );
@@ -48,7 +48,7 @@ export const TourPackageTable = ({ location }) => {
             download={"sample_file.pdf"}
             type="file"
             target="_blank"
-            className="text-base capitalize text-success hover:text-secondary font-WorkSans"
+            className="text-base capitalize text-success hover:text-secondary font-Poppins"
           >
             View Details
           </Link>
@@ -69,7 +69,7 @@ export const TourPackageTable = ({ location }) => {
           {(column) => (
             <TableColumn
               key={column.uid}
-              className="text-lg text-secondary font-WorkSans"
+              className="text-lg text-secondary font-Poppins"
               //   align={column.uid === "actions" ? "center" : "start"}
             >
               {column.name}

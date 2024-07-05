@@ -7,49 +7,49 @@ export const WelcomeSection = () => {
       <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
         Welcome to Oneus Travels. Your Global Travel Companion.
       </h1>
-      <p className="text-lg font-normal font-Gilroy">
+      <p className="text-lg font-normal font-Poppins">
         OneUs is a leading provider of business travel management solutions
         worldwide. We enable businesses and tourists with maximum savings,
         effectiveness, safety, and sustainability all across the globe. At
         OneUs, we are more than just a travel management company; we are your
         strategic partner in navigating the world of corporate
-        travel(font-Gilroy).
+        travel.
       </p>
-      <p className="text-base font-normal font-Alice">
+      <p className="text-base font-normal font-Poppins">
         With OneUs by your side, you’ll discover a whole new global travel
         experience. Our uniquely tailored travel management programs are crafted
         with you and just for you, guaranteeing consistent and expert service
-        across every region you operate(font-Alice).
+        across every region you operate.
       </p>
-      <p className="text-base font-normal font-Lora">
+      <p className="text-base font-normal font-Poppins">
         When you partner with CTM, you’ll enjoy the experience of global travel
         done differently – a uniquely designed global travel management program,
         built with you and for you, consistently and expertly delivered in every
         region you operate in. We design travel programs that drive strategic
         results for every part of your business and every member of your team,
-        in every region you operate in(font-Lora).
+        in every region you operate in.
       </p>
-      <p className="text-base font-normal font-Lora">
+      <p className="text-base font-normal font-Poppins">
         Contact us to learn more about our tailored travel management solutions
-        and unlock a world of possibilities with OneUs Travels(font-Lora).
+        and unlock a world of possibilities with OneUs Travels.
       </p>
       <h3 className="text-lg font-semibold font-Poppins">
         Travel Management, Fueled by One Travel Team
       </h3>
-      <p className="text-base font-normal font-RobotoCondensed">
+      <p className="text-base font-normal font-Poppins">
         Whether you're a multinational corporation or a growing enterprise, we
         have the expertise and resources to elevate your business travel
         experience. Our commitment to designing the simplest, safest and
         sustainable solutions that deliver measurable results remains
         unwavering, ensuring that we consistently exceed your expectations and
         drive meaningful impact for you and your
-        community(font-RobotoCondensed).
+        community.
       </p>
-      <p className="text-base font-normal font-RobotoCondensed">
+      <p className="text-base font-normal font-Poppins">
         At Oneus Travels, we adopt a tailored and collaborative approach to
         crafting your international travel experience, ensuring a strategy that
         aligns with your company's distinct objectives, challenges, and
-        opportunities(font-RobotoCondensed).
+        opportunities.
       </p>
       <p className="text-base font-normal font-Poppins">
         When we partner with your team, we identify and implement the ideal
@@ -58,10 +58,10 @@ export const WelcomeSection = () => {
         advanced technology platform and dedicated global travel team, OneUs
         Travels ensures your custom global travel program is easily accessible
         and seamlessly supported, making us the perfect fit for your
-        needs(font-Poppins).
+        needs.
       </p>
       <h3 className="text-lg font-medium font-Poppins">
-        This is the OneUs Promise(font-Poppins).
+        This is the OneUs Promise.
       </h3>
       <div className="pt-5 w-max">
         <Link

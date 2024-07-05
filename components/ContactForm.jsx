@@ -21,7 +21,7 @@ export const ContactForm = () => {
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 bg-opacity-85 bg-[#F8F9F8]"></div>
       <div className="z-20 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-secondary p-[24px]">
-        <h1 className="text-lg font-semibold text-center md:text-xl font-WorkSans text-primary">
+        <h1 className="text-lg font-semibold text-center md:text-xl font-Gilroy text-primary">
           Take a tour of OneUs’s global travel solutions
         </h1>
         <SecondaryButton
@@ -35,7 +35,7 @@ export const ContactForm = () => {
           Don't just dream it, travel it. Let us craft your perfect adventure.
         </h4> */}
           <div className="mx-auto rounded-md md:space-y-6 p-7 ">
-            <h4 className="text-2xl tracking-wider text-center font-SourceSerif md:text-3xl text-secondary">
+            <h4 className="text-2xl tracking-wider text-center font-Gilroy md:text-3xl text-secondary">
               Stay Connected
             </h4>
             <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
@@ -65,7 +65,7 @@ export const ContactForm = () => {
           className="z-20 w-full h-auto px-8 mx-auto space-y-4 rounded-md xl:px-20 py-7 md:w-3/4 lg:w-1/2"
         >
           {/* bg-[#133548] */}
-          <h3 className="text-lg font-semibold tracking-normal font-WorkSans text-secondary md:text-xl xl:text-2xl">
+          <h3 className="text-lg font-semibold tracking-normal font-Gilroy text-secondary md:text-xl xl:text-2xl">
             Take your first step towards better business travel with Corporate
             Travel Management.
           </h3>

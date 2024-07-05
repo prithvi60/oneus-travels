@@ -25,7 +25,7 @@ export const FooterSection1 = ({ items }) => {
           <li key={idx}>
             <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
-              <h4 className="font-normal capitalize text-secondary hover:text-success font-WorkSans">
+              <h4 className="font-normal capitalize text-secondary hover:text-success font-Poppins">
                 {item.menuTitle}
               </h4>
             </div>
@@ -34,7 +34,7 @@ export const FooterSection1 = ({ items }) => {
                 <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                 <Link
                   href={`${item.menuTitle}/${list.subMenuRef}`}
-                  className="font-normal text-secondary hover:text-success font-WorkSans"
+                  className="font-normal text-secondary hover:text-success font-Poppins"
                 >
                   {list.listMenu}
                 </Link>
@@ -45,14 +45,14 @@ export const FooterSection1 = ({ items }) => {
         <li>
           <Link href={"/technology"} className="flex items-center gap-2 mb-2">
             <FaAngleRight size={14} className="text-secondary" />
-            <h4 className="font-normal capitalize text-secondary hover:text-success font-WorkSans">
+            <h4 className="font-normal capitalize text-secondary hover:text-success font-Poppins">
               Technology
             </h4>
           </Link>
         </li>
       </ul>
       <div className="order-2 block md:order-3">
-        <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-WorkSans nd:text-lg">
+        <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-Poppins nd:text-lg">
           Subscribe for latest news:
         </h3>
         <form
@@ -72,7 +72,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             color="secondary"
             variant="bordered"
-            className="font-normal font-WorkSans"
+            className="font-normal font-Poppins"
             endContent={
               <MdOutlineDriveFileRenameOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -88,7 +88,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="font-normal font-WorkSans"
+            className="font-normal font-Poppins"
             endContent={
               <IoMailOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -104,7 +104,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="hidden font-normal font-WorkSans"
+            className="hidden font-normal font-Poppins"
           />
           <SubmitBtn text={"submit"} />
         </form>

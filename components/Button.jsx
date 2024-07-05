@@ -11,7 +11,7 @@ export const PrimaryButton = ({ text, roleType }) => {
       role="button"
       className="relative px-3.5 py-2.5 flex items-center gap-0.5 hover:bg-success/80 bg-success transition-all duration-1000 shadow-md ease-soft-spring group after:content-[''] after:bg-primary after:h-5 after:w-5 after:rounded-full after:absolute after:top-[14px] after:-right-[12px] rounded-l-xl"
     >
-      <h3 className="w-full text-xs font-semibold tracking-wider uppercase sm:text-sm font-WorkSans text-primary">
+      <h3 className="w-full text-xs font-semibold tracking-wider uppercase sm:text-sm font-Poppins text-primary">
         {text}
       </h3>
       <ImBarcode className="text-3xl font-semibold rotate-90 text-primary me-2" />
@@ -26,7 +26,7 @@ export const SecondaryButton = ({ text, roleType }) => {
       role="button"
       className="relative px-3.5 py-2.5 flex items-center gap-0.5 hover:bg-primary/80 bg-primary transition-all duration-1000 shadow-md ease-soft-spring group after:content-[''] after:bg-secondary after:h-5 after:w-5 after:rounded-full after:absolute after:top-[14px] after:-right-[12px] rounded-l-xl"
     >
-      <h3 className="w-full text-xs font-semibold tracking-wider uppercase sm:text-sm font-WorkSans text-secondary">
+      <h3 className="w-full text-xs font-semibold tracking-wider uppercase sm:text-sm font-Poppins text-secondary">
         {text}
       </h3>
       <ImBarcode className="text-3xl font-semibold rotate-90 text-secondary me-2" />
@@ -44,7 +44,7 @@ export const MenuBtnMember = ({ text, roleType, percent }) => {
     >
       <FaUsers className={`text-base md:text-lg`} />
       <h3
-        className={`text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-WorkSans block`}
+        className={`text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Poppins block`}
       >
         {text}
       </h3>
@@ -62,7 +62,7 @@ export const MenuBtnCorporate = ({ text, roleType, percent }) => {
     >
       <FaUserTie className={`text-base md:text-lg`} />
       <h3
-        className={`text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-WorkSans block`}
+        className={`text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Poppins block`}
       >
         {text}
       </h3>
@@ -81,7 +81,7 @@ export const OtherBtn = ({ text }) => {
      items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
     >
       <h3
-        className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-WorkSans block`}
+        className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-Poppins block`}
       >
         {text}
       </h3>
@@ -98,7 +98,7 @@ export const SubmitBtn = ({ text }) => {
       className={`bg-success hover:bg-success/80 text-primary relative shadow-lg px-5 py-2 transition-all ease-linear group rounded-full`}
     >
       <h3
-        className={`font-semibold tracking-normal capitalize text-base font-WorkSans block`}
+        className={`font-semibold tracking-normal capitalize text-base font-Poppins block`}
       >
         {text}
       </h3>

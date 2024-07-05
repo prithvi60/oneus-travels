@@ -4,8 +4,8 @@ import { PrimaryButton } from "./Button";
 
 export const ThankYouComponent = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist space-y-6">
-      <h3 className="text-3xl font-semibold text-center md:text-6xl font-Lora text-success">
+    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-Poppins space-y-6">
+      <h3 className="text-3xl font-semibold text-center md:text-6xl font-Poppins text-success">
         <div className="relative mx-auto h-14 w-14 md:h-28 md:w-28 text-warning">
           <Image
             src={"/thumbs-up.gif"}
