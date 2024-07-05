@@ -48,10 +48,10 @@ export const HomePageHero = () => {
             </div>
             <div className="absolute flex flex-col items-start w-full gap-3 md:items-center left-7 md:left-0 md:w-full md:flex-row md:justify-around lg:justify-between lg:w-9/12 xl:w-3/5 bottom-10 md:bottom-16 xl:left-40">
               <div className="block w-4/5 space-y-3 md:w-3/5 md:space-y-5">
-                <h3 className="text-3xl font-bold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-WorkSans text-primary">
+                <h3 className="text-3xl font-extrabold tracking-wide capitalize md:leading-relaxed md:text-4xl xl:text-5xl font-WorkSans text-primary">
                   {item.shortNote}
                 </h3>
-                <h4 className="text-lg font-bold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-WorkSans text-primary">
+                <h4 className="text-lg font-extrabold tracking-wide capitalize md:leading-relaxed md:text-xl xl:text-2xl font-WorkSans text-primary">
                   {item.note}
                 </h4>
               </div>

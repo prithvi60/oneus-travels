@@ -23,6 +23,11 @@ const gilroy = localFont({
       weight: "700",
       style: "normal",
     },
+    {
+      path: "../public/Gilroy-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
   ],
   variable: "--font-gilroy",
 });
@@ -90,7 +95,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AppContextProvider>
         <body
-          className={`${workSans.variable} ${gilroy.variable} ${sourceSerif.variable} ${poppins.variable} ${alice.variable} ${lora.variable} ${oswald.variable} ${DMSans.variable} ${roboto.variable} ${robotoCondensed.variable}`}
+          className={`$${gilroy.variable} ${poppins.variable}`}
         >
           <NavbarPage />
           <Providers>{children}</Providers>

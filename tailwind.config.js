@@ -14,15 +14,7 @@ module.exports = {
         contact_bg_sm: "url('/world_map_sm.png')",
       },
       fontFamily: {
-        WorkSans: "var(--font-workSans)",
-        SourceSerif: "var(--font-sourceSerif)",
         Poppins: "var(--font-poppins)",
-        Alice: "var(--font-alice)",
-        Lora: "var(--font-lora)",
-        Oswald: "var(--font-oswald)",
-        DMSans: "var(--font-DMSans)",
-        Roboto: "var(--font-roboto)",
-        RobotoCondensed: "var(--font-robotoCondensed)",
         Gilroy: ["var(--font-gilroy)"]
       },
       aspectRatio: {
