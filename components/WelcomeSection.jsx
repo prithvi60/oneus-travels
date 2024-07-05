@@ -60,7 +60,7 @@ export const WelcomeSection = () => {
         and seamlessly supported, making us the perfect fit for your
         needs.
       </p>
-      <h3 className="text-lg font-medium font-Poppins">
+      <h3 className="text-lg font-semibold font-Poppins">
         This is the OneUs Promise.
       </h3>
       <div className="pt-5 w-max">
