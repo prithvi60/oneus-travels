@@ -61,7 +61,7 @@ export const HomePageHero = () => {
         ))}
       </Slider> */}
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] md:md:h-[55vh]"> */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px] flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-Gilroy rounded-md py-2 px-3.5 z-10">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px] flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-Gilroy font-extrabold rounded-md py-2 px-3.5 z-10">
         <h4>oneUs</h4>
         <h4>travels</h4>
       </div>
