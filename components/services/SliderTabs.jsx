@@ -29,7 +29,7 @@ const Timeline = () => {
 
   return (
     <div className="relative z-0 flex items-center w-full gap-2 sm:gap-0 bg-success after:content-[''] after:bg-primary after:h-10 after:w-10 after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-[25px] shadow-lg rounded-md overflow-hidden">
-      {/* <h5 className="font-semibold -rotate-90 text-primary font-Poppins me-2">
+      {/* <h5 className="font-semibold -rotate-90 text-primary font-Gilroy me-2">
         Oneus
         <br /> Travel
       </h5> */}
@@ -54,7 +54,7 @@ const Timeline = () => {
                 />
               </div>
               <div
-                className={`text-sm font-semibold sm:text-base  font-Poppins whitespace-nowrap ${
+                className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
                   isActive === item && "text-secondary"
                 } text-primary group-hover:text-secondary`}
               >

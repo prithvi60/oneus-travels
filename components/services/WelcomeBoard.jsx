@@ -10,7 +10,7 @@ export const WelcomeBoard = ({ title, desc, shortNotes }) => {
         <h2 className="text-2xl font-bold tracking-normal font-Gilroy text-secondary md:text-3xl xl:text-4xl">
           {title}
         </h2>
-        <div className="w-full space-y-4 md:space-y-8 font-Poppins md:w-3/5">
+        <div className="w-full space-y-4 md:space-y-8 font-Gilroy md:w-3/5">
           <p className="text-base md:text-lg">{desc}</p>
           <ul>
             {shortNotes?.map((list, idx) => (

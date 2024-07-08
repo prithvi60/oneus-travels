@@ -65,7 +65,7 @@ export const Testimonial = () => {
           {testimonialList.map((list, id) => (
             <div
               key={id}
-              className="w-full mx-auto space-y-5 text-base font-light leading-snug text-center text-secondary md:text-lg font-WorkSans"
+              className="w-full mx-auto space-y-5 text-base font-normal leading-snug text-center text-secondary md:text-lg font-Gilroy"
             >
               <p>{list.review}</p>
               <h4>- {list.name} -</h4>

@@ -31,7 +31,7 @@ export const ContactForm = () => {
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-8 lg:flex-row">
         <div className="z-20 w-full mx-auto lg:w-1/2">
           {/* mt-24 */}
-          {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Poppins">
+          {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Gilroy">
           Don't just dream it, travel it. Let us craft your perfect adventure.
         </h4> */}
           <div className="mx-auto rounded-md md:space-y-6 p-7 ">
@@ -43,7 +43,7 @@ export const ContactForm = () => {
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <LiaPhoneVolumeSolid className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
-                <h5 className="text-lg font-normal tracking-wider text-secondary font-Poppins md:text-xl">
+                <h5 className="text-lg font-normal tracking-wider text-secondary font-Gilroy md:text-xl">
                   +91-98408 84460
                 </h5>
               </div>
@@ -51,7 +51,7 @@ export const ContactForm = () => {
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <RiMailSendLine className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
-                <h5 className="text-lg font-normal tracking-wider text-secondary font-Poppins md:text-xl">
+                <h5 className="text-lg font-normal tracking-wider text-secondary font-Gilroy md:text-xl">
                   oneustravel@gmail.com
                 </h5>
               </div>
@@ -69,14 +69,14 @@ export const ContactForm = () => {
             Take your first step towards better business travel with Corporate
             Travel Management.
           </h3>
-          {/* <h5 className="text-sm font-Poppins text-primary">
+          {/* <h5 className="text-sm font-Gilroy text-primary">
             Contact our team for an obligation-free review of your global travel
             management needs today.
           </h5> */}
           <div className="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2">
             <Input
               classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
+                inputWrapper: "bg-primary font-Gilroy font-normal",
               }}
               name="firstName"
               isRequired
@@ -94,7 +94,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
+                inputWrapper: "bg-primary font-Gilroy font-normal",
               }}
               name="lastName"
               isRequired
@@ -112,7 +112,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
+                inputWrapper: "bg-primary font-Gilroy font-normal",
               }}
               name="email"
               isRequired
@@ -130,7 +130,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
+                inputWrapper: "bg-primary font-Gilroy font-normal",
               }}
               name="phone number"
               size="lg"
@@ -147,7 +147,7 @@ export const ContactForm = () => {
             />
             <Input
               classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
+                inputWrapper: "bg-primary font-Gilroy font-normal",
               }}
               name="company name"
               isRequired
@@ -178,7 +178,7 @@ export const ContactForm = () => {
               variant="faded"
               className="max-w-ful"
               classNames={{
-                label: "text-secondary capitalize font-Poppins font-normal",
+                label: "text-secondary capitalize font-Gilroy font-normal",
                 trigger: "bg-primary",
               }}
             >
@@ -190,7 +190,7 @@ export const ContactForm = () => {
           <div className="pb-6">
             <RadioGroup
               classNames={{
-                label: "text-secondary capitalize font-Poppins font-normal",
+                label: "text-secondary capitalize font-Gilroy font-normal",
               }}
               color="secondary"
               label="Is your company a CTM customer?"
@@ -198,7 +198,7 @@ export const ContactForm = () => {
               <Radio
                 value="yes"
                 classNames={{
-                  label: "text-secondary font-Poppins font-normal",
+                  label: "text-secondary font-Gilroy font-normal",
                 }}
               >
                 Yes
@@ -206,7 +206,7 @@ export const ContactForm = () => {
               <Radio
                 value="no"
                 classNames={{
-                  label: "text-secondary font-Poppins font-normal",
+                  label: "text-secondary font-Gilroy font-normal",
                 }}
               >
                 No
@@ -225,7 +225,7 @@ export const ContactForm = () => {
             variant="faded"
             className="mt-5 max-w-ful"
             classNames={{
-              label: "text-secondary capitalize font-Poppins font-normal",
+              label: "text-secondary capitalize font-Gilroy font-normal",
               trigger: "bg-primary",
             }}
           >
@@ -235,7 +235,7 @@ export const ContactForm = () => {
           </Select>
           <Textarea
             classNames={{
-              inputWrapper: "bg-primary font-Poppins font-normal",
+              inputWrapper: "bg-primary font-Gilroy font-normal",
             }}
             name="comments"
             isRequired
@@ -249,7 +249,7 @@ export const ContactForm = () => {
           />
           <Checkbox
             classNames={{
-              label: "text-secondary capitalize ps-5 leading-sung text-base",
+              label: "text-secondary capitalize ps-5 leading-sung text-base font-Gilroy font-normal",
             }}
             radius="sm"
             color="success"

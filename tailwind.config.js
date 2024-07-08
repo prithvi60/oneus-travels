@@ -14,8 +14,7 @@ module.exports = {
         contact_bg_sm: "url('/world_map_sm.png')",
       },
       fontFamily: {
-        Poppins: "var(--font-poppins)",
-        Gilroy: ["var(--font-gilroy)"]
+        Gilroy: ["var(--font-gilroy)"],
       },
       aspectRatio: {
         box: "3 / 4",

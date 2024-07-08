@@ -1,4 +1,3 @@
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Provider";
 import NavbarPage from "@/components/NavbarPage";
@@ -30,12 +29,6 @@ const gilroy = localFont({
     },
   ],
   variable: "--font-gilroy",
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["400"],
 });
 
 // Meta Data
@@ -95,7 +88,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AppContextProvider>
         <body
-          className={`$${gilroy.variable} ${poppins.variable}`}
+          className={`${gilroy.variable}`}
         >
           <NavbarPage />
           <Providers>{children}</Providers>

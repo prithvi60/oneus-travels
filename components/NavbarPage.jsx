@@ -137,7 +137,7 @@ export default function NavbarPage() {
 
       {/* Desktop menu bar */}
       <NavbarContent
-        className="hidden lg_2:flex gap-1.5 lg:gap-5 font-Poppins"
+        className="hidden lg_2:flex gap-1.5 lg:gap-5 font-Gilroy"
         justify="center"
       >
         <NavbarItem>
@@ -150,7 +150,7 @@ export default function NavbarPage() {
               percent >= 0 && percent <= 18
                 ? "text-primary hover:text-success"
                 : percent >= 35 && percent <= 95
-                ? "text-primary hover:text-secondary"
+                ? "text-primary hover:text-info"
                 : "text-secondary hover:text-success"
             } py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
@@ -165,7 +165,7 @@ export default function NavbarPage() {
                   percent >= 0 && percent <= 18
                     ? "text-primary group-hover:text-success"
                     : percent >= 35 && percent <= 95
-                    ? "text-primary group-hover:text-secondary"
+                    ? "text-primary group-hover:text-info"
                     : "text-secondary group-hover:text-success"
                 } py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
@@ -182,7 +182,7 @@ export default function NavbarPage() {
                     percent >= 0 && percent <= 18
                       ? "text-primary group-hover:text-info"
                       : percent >= 35 && percent <= 95
-                      ? "text-primary group-hover:text-secondary"
+                      ? "text-primary group-hover:text-info"
                       : "text-secondary group-hover:text-info"
                   } text-lg font-semibold group-hover:rotate-180 transition-all`}
                 />
@@ -194,7 +194,7 @@ export default function NavbarPage() {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl font-Poppins group-hover:border-4 border-secondary`}
+                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl font-Gilroy group-hover:border-4 border-secondary`}
                   // first:pt-14 last:pb-14 outline-4 outline-dashed outline-secondary
                 >
                   <div className="absolute hidden w-12 h-12 border-8 -z-10 -top-7 left-5 border-secondary rounded-xl group-hover:block"></div>
@@ -306,7 +306,7 @@ export default function NavbarPage() {
                   path === item.menuTitle
                     ? "text-success"
                     : "text-secondary hover:text-success"
-                } w-full h-full text-base sm:text-lg lg:text-xl font-Poppins font-semibold ${
+                } w-full h-full text-base sm:text-lg lg:text-xl font-Gilroy font-semibold ${
                   item.menuTitle === "Technology" &&
                   "underline underline-offset-1"
                 }`}
@@ -316,7 +316,7 @@ export default function NavbarPage() {
               {item.subMenu?.map((l, id) => (
                 <div
                   key={id}
-                  className="px-2 pb-1 !pt-0 font-Poppins font-normal"
+                  className="px-2 pb-1 !pt-0 font-Gilroy font-normal"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Link

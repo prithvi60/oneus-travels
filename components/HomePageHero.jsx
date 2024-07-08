@@ -67,7 +67,7 @@ export const HomePageHero = () => {
       </div>
 
       <div className="absolute block -translate-x-1/2 rounded-md bottom-0.5 left-1/2 z-10">
-        <h4 className="w-full h-full text-lg font-normal text-center capitalize text-primary md:text-xl font-Poppins">
+        <h4 className="w-full h-full text-lg font-normal text-center capitalize text-primary md:text-xl font-Gilroy">
           we are certified by
         </h4>
         <div className="relative w-full h-20 md:h-28">

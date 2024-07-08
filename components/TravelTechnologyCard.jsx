@@ -29,7 +29,7 @@ export const TravelTechnologyCard = () => {
                 <h3 className="text-base font-semibold tracking-normal font-Gilroy md:text-lg xl:text-xl text-secondary">
                   {list.title}
                 </h3>
-                <p className="text-sm font-normal font-Poppins md:text-base line-clamp-6">
+                <p className="text-sm font-normal font-Gilroy md:text-base line-clamp-6">
                   {list.desc}
                 </p>
               </CardBody>

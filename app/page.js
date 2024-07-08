@@ -1,7 +1,6 @@
 import { HomePageHero } from "@/components/HomePageHero";
 import { WelcomeSection } from "@/components/WelcomeSection";
 import { TravelTechnologyCard } from "@/components/TravelTechnologyCard";
-import { HomeVideoTag } from "@/components/HomeVideoTag";
 import { OurClients } from "@/components/OurClients";
 import { GlobalTeam } from "@/components/GlobalTeam";
 import { localBusinessData, structuredDataForOrg } from "@/libs/schema";
@@ -17,7 +16,6 @@ export default function Home() {
       <OurClients />
       <GlobalTeam />
       <TravelTechnologyCard />
-      {/* <HomeVideoTag /> */}
     </main>
   );
 }
