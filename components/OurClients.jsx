@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 
 export const OurClients = () => {
   return (
-    <section className="w-full h-full px-[24px] py-12 space-y-5">
-      <h1 className="w-full font-Gilroy font-bold text-[32px] md:text-[40px] lg:text-[42px] max-w-[1200px] mx-auto text-secondary leading-tight pt-5 capitalize">
+    <section className="w-full h-full space-y-5 padding">
+      <h1 className="w-full font-Gilroy font-bold text-[32px] md:text-[40px] lg:text-[42px] text-secondary leading-tight pt-5 capitalize">
         Some of our precious clients
       </h1>
       <div className="w-full h-full py-10">

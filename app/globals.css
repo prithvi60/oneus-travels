@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .padding {
+   @apply px-8  sm:px-14 md:px-20 xl:px-40 2xl:px-44 py-12 sm:py-16 xl:py-20
   }
 }
 

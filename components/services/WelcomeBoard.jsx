@@ -5,7 +5,7 @@ import React from "react";
 export const WelcomeBoard = ({ title, desc, shortNotes }) => {
   const router = useRouter();
   return (
-    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10">
+    <section className="w-full h-auto space-y-6 md:!py-12 lg:!py-14 padding md:space-y-10">
       <div className="flex flex-col items-start justify-center gap-6 md:flex-row">
         <h2 className="text-2xl font-bold tracking-normal font-Gilroy text-secondary md:text-3xl xl:text-4xl">
           {title}

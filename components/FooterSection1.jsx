@@ -5,12 +5,12 @@ import { MdOutlineDriveFileRenameOutline, MdFlight } from "react-icons/md";
 
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
-import { PrimaryButton, SubmitBtn } from "./Button";
+import { SubmitBtn } from "./Button";
 
 export const FooterSection1 = ({ items }) => {
   return (
-    <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between lg:justify-evenly">
-      <div className="relative order-1 block w-full h-20 md:h-24 md:w-36 lg:w-44 md:mt-10 lg:h-32 md:hidden lg:block">
+    <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between">
+      <div className="relative order-1 block w-full h-24 md:w-36 lg:w-44 md:mt-10 lg:h-32 md:hidden lg:block">
         <Image
           fill
           title="oneUs logo"
@@ -20,9 +20,9 @@ export const FooterSection1 = ({ items }) => {
           className="object-contain"
         />
       </div>
-      <ul className="grid order-3 grid-cols-2 gap-4 md:pt-4 md:order-2">
+      <ul className="grid order-3 grid-cols-2 gap-4 md:pt-2 md:order-2">
         {items.map((item, idx) => (
-          <li key={idx}>
+          <li key={idx} className="md:px-4 lg:px-6">
             <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
               <h4 className="font-normal capitalize text-secondary hover:text-success font-Gilroy">

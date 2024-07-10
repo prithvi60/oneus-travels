@@ -12,7 +12,7 @@ const footerItems = [
 
 const Footer = () => {
   return (
-    <footer className="w-full h-full px-[24px] py-7 space-y-10">
+    <footer className="w-full h-full !py-8 space-y-10 padding">
       <FooterSection1 items={menuItems} />
       <FooterSection2 />
     </footer>

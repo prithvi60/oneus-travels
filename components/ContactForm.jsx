@@ -6,8 +6,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
-import { Checkbox } from "@nextui-org/checkbox";
-import { PrimaryButton, SecondaryButton, SubmitBtn } from "./Button";
+import {  SecondaryButton, SubmitBtn } from "./Button";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 
@@ -28,13 +27,9 @@ export const ContactForm = () => {
           text={"Explore our Travel Ecosystem"}
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-2 sm:gap-8 lg:flex-row">
-        <div className="z-20 w-full mx-auto lg:w-1/2">
-          {/* mt-24 */}
-          {/* <h4 className="text-2xl font-semibold tracking-wider text-center md:text-3xl text-secondary font-Gilroy">
-          Don't just dream it, travel it. Let us craft your perfect adventure.
-        </h4> */}
-          <div className="mx-auto rounded-md md:space-y-6 p-7 ">
+      <div className="flex flex-col items-center justify-center gap-2 py-6 sm:gap-8 lg:flex-row padding sm:py-10 xl:py-14">
+        <div className="z-20 w-full lg:w-1/2">
+          <div className="md:space-y-6">
             <h4 className="text-2xl font-bold tracking-wider text-center font-Gilroy md:text-3xl text-secondary">
               Stay Connected
             </h4>
@@ -62,7 +57,7 @@ export const ContactForm = () => {
           action="https://public.herotofu.com/v1/19317a90-2945-11ef-b910-172fda062bcc"
           method="post"
           acceptCharset="UTF-8"
-          className="z-20 w-full h-auto px-8 mx-auto space-y-4 rounded-md xl:px-20 py-7 md:w-3/4 lg:w-1/2"
+          className="z-20 w-full h-auto space-y-4 rounded-md lg:w-1/2"
         >
           {/* bg-[#133548] */}
           <h3 className="text-lg font-semibold tracking-normal font-Gilroy text-secondary md:text-xl xl:text-2xl">
@@ -247,17 +242,6 @@ export const ContactForm = () => {
             color="secondary"
             size="lg"
           />
-          <Checkbox
-            classNames={{
-              label: "text-secondary capitalize ps-5 leading-sung text-base font-Gilroy font-normal",
-            }}
-            radius="sm"
-            color="success"
-            size="lg"
-          >
-            YES, I want to receive the latest travel news, insights and offers
-            to my inbox!
-          </Checkbox>
           <SubmitBtn text={"Submit"} />
         </form>
       </div>

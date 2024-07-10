@@ -3,7 +3,7 @@ import { PrimaryButton } from "./Button";
 
 export const WelcomeSection = () => {
   return (
-    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-4">
+    <section className="w-full h-auto space-y-4 padding">
       <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
         Welcome to Oneus Travels <br /> Your Global Travel Companion
       </h1>

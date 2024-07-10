@@ -71,7 +71,7 @@ export default function NavbarPage() {
               : percent >= 75 && percent <= 95
               ? "bg-success shadow-md"
               : "bg-primary shadow-md"
-          } fixed top-0 left-0 py-4 transition-all duration-500 ease-linear`,
+          } fixed top-8 left-0 py-4 transition-all duration-500 ease-linear`,
         ],
         wrapper: ["gap-2 lg:gap-4"],
         item: [`data-[active=true]: !text-success`],
@@ -194,10 +194,8 @@ export default function NavbarPage() {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary p-4 shadow-md rounded-xl font-Gilroy group-hover:border-4 border-secondary`}
-                  // first:pt-14 last:pb-14 outline-4 outline-dashed outline-secondary
+                  } group-hover:block top-[102px] left-0 bg-primary/90 p-4 shadow-md rounded-xl font-Gilroy group-hover:border-2 border-secondary`}
                 >
-                  <div className="absolute hidden w-12 h-12 border-8 -z-10 -top-7 left-5 border-secondary rounded-xl group-hover:block"></div>
                   {item?.subMenu?.map((l, index) => (
                     <Link
                       // title={l.listMenu}

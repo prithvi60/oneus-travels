@@ -4,7 +4,7 @@ import { PrimaryButton } from "./Button";
 
 export const ThankYouComponent = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-Gilroy space-y-6">
+    <section className="space-y-6 padding font-Gilroy">
       <h3 className="text-3xl font-semibold text-center md:text-6xl font-Gilroy text-success">
         <div className="relative mx-auto h-14 w-14 md:h-28 md:w-28 text-warning">
           <Image

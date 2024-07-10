@@ -5,14 +5,14 @@ import { travelCardList } from "@/libs/data";
 
 export const TravelTechnologyCard = () => {
   return (
-    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-5 md:space-y-10">
+    <section className="w-full h-auto space-y-5 padding md:space-y-10">
       <h2 className="tracking-normal font-Gilroy font-bold text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-6 md:pb-2">
         Ground-Breaking Corporate Travel Technology
       </h2>
-      <div className="flex flex-col items-center justify-center w-full h-full gap-6 mt-20 md:flex-row md:gap-8">
+      <div className="grid w-full h-full grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 md:items-center md:justify-center md:gap-12">
         {travelCardList.map((list, id) => (
           <div className="relative w-full h-full" key={id}>
-            <Card className="w-full min-h-[350px] sm:min-h-[470px] group relative !overflow-auto z-10">
+            <Card className="w-full md:min-w-80 min-h-[350px] sm:min-h-[470px] group relative !overflow-auto z-10">
               <CardHeader className="flex gap-3 !p-0">
                 <div className="relative w-full h-56 overflow-hidden">
                   <Image
