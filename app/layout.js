@@ -9,6 +9,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { Testimonial } from "@/components/Testimonial";
 import { SalesIq } from "@/components/SalesIq";
 import localFont from "next/font/local";
+import Development from "@/components/Development";
 
 const gilroy = localFont({
   src: [
@@ -87,9 +88,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AppContextProvider>
-        <body
-          className={`${gilroy.variable}`}
-        >
+        <body className={`${gilroy.variable}`}>
+          <Development />
           <NavbarPage />
           <Providers>{children}</Providers>
           <ContactForm />

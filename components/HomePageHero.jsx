@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { JsonLdComponents } from "./JsonLdComponents";
 
 export const HomePageHero = () => {
   const [blur, setBlur] = useState(true);
@@ -68,7 +69,7 @@ export const HomePageHero = () => {
         />
       </video>
 
-      {/* </div> */}
+      <JsonLdComponents />
     </section>
   );
 };
