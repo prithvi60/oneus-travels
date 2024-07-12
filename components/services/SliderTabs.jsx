@@ -26,8 +26,8 @@ const Timeline = () => {
 
   return (
     <div className="relative z-0 w-full shadow-lg bg-secondary">
-      <div className="w-full">
-        <div className="flex md:justify-center md:items-center w-full gap-3.5 p-5 overflow-auto hideScroll">
+      <div className="w-full mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] px-7 lg:px-0">
+        <div className="flex lg:justify-center lg:items-center w-full gap-3.5 py-5 px-10 lg:p-5 overflow-auto hideScroll">
           {tabs.map((item, idx) => (
             <div
               className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${

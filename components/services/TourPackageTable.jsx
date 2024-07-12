@@ -59,7 +59,11 @@ export const TourPackageTable = ({ location }) => {
   }, []);
 
   return (
-    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto">
+    <section className="w-full h-auto padding">
+      <h2 className="text-xl font-semibold tracking-normal capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
+        {" "}
+        best selling {location} Holiday Packages
+      </h2>
       <Table
         color="secondary"
         isStriped

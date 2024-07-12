@@ -4,7 +4,7 @@
 
 @layer utilities {
   .padding {
-   @apply px-8  sm:px-14 md:px-20 xl:px-40 2xl:px-44 py-12 sm:py-16 xl:py-20
+    @apply mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] px-7 lg:px-0 py-12 sm:py-16 xl:py-20;
   }
 }
 
@@ -22,25 +22,6 @@
   display: none;
 }
 
-.slick__dots--custom {
-  height: 8px;
-  width: 8px;
-  background-color: #fefefe;
-  border-radius: 15px;
-  position: relative;
-}
-
-.slick-dots {
-  bottom: 10px !important;
-}
-
-.slick-dots li {
-  width: 8px;
-  height: 8px;
-  color: blueviolet !important;
-}
-
-.slick-dots li.slick-active {
-  opacity: 0.75;
-  color: blue !important;
+.slick-slide > div {
+  margin: 0px 6px;
 }

@@ -69,7 +69,7 @@ export const HomePageHero = () => {
         />
       </video>
 
-      <JsonLdComponents />
+      {/* <JsonLdComponents /> */}
     </section>
   );
 };

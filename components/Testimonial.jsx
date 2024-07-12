@@ -51,7 +51,7 @@ export const Testimonial = () => {
       <h3 className="w-full text-[32px] font-bold font-Gilroy md:text-[40px] lg:text-[42px] text-center text-secondary leading-tight">
         Testimonial
       </h3>
-      <div className="relative w-full h-full mb-10 slider-container md:w-3/5 lg:w-1/2 xl:w-2/5">
+      <div className="relative w-full h-full mb-10 slider-container md:w-3/5">
         <Slider {...settings}>
           {testimonialList.map((list, id) => (
             <div

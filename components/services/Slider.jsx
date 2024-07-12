@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -right-4 lg:-right-11 cursor-pointer z-20"
+        "absolute top-24 md:top-36 -right-4 md:-right-6 xl:-right-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -left-4 lg:-left-11 cursor-pointer z-20"
+        "absolute top-24 md:top-36 -left-4 md:-left-6 xl:-left-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
@@ -75,15 +75,15 @@ function SimpleSlider() {
   };
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">
-      <Slider {...settings}>
+      <Slider {...settings} className="!py-2.5">
         {timelines.map((item, id) => (
           <Link
             href={`${path}/${item.location}`}
             title="location"
-            className="relative w-full px-2.5 h-[35vh] md:h-[45vh] cursor-pointer"
+            className="relative w-full px-2.5 my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md"
             key={id}
           >
-            <div className="relative overflow-hidden w-full h-[23vh] md:h-[33vh]">
+            <div className="relative overflow-hidden w-full h-[20vh] md:h-[30vh] rounded-t-md">
               <Image
                 fill
                 title="background image"
@@ -102,7 +102,7 @@ function SimpleSlider() {
                 </h3>
               </div>
             </div>
-            <div className="flex flex-col w-full h-auto gap-2 pt-1 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Gilroy">
+            <div className="flex flex-col w-full h-auto gap-2 pt-3.5 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Gilroy">
               <div className="font-medium text-secondary">
                 <h5 className="text-xs sm:text-sm">{item.location}</h5>
                 <p className="text-[11px] sm:text-xs opacity-60">
