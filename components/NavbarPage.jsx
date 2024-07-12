@@ -148,11 +148,11 @@ export default function NavbarPage() {
             href={"/technology"}
             className={`text-sm lg:text-lg xl:text-xl ${
               percent >= 0 && percent <= 18
-                ? "text-primary hover:text-success"
+                ? "text-primary"
                 : percent >= 35 && percent <= 95
-                ? "text-primary hover:text-info"
-                : "text-secondary hover:text-success"
-            } py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
+                ? "text-primary"
+                : "text-secondary"
+            } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
             Technology
           </Link>
@@ -163,11 +163,11 @@ export default function NavbarPage() {
               <div
                 className={`text-base ${
                   percent >= 0 && percent <= 18
-                    ? "text-primary group-hover:text-success"
+                    ? "text-primary "
                     : percent >= 35 && percent <= 95
-                    ? "text-primary group-hover:text-info"
-                    : "text-secondary group-hover:text-success"
-                } py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
+                    ? "text-primary"
+                    : "text-secondary"
+                } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
               >
                 <h4
@@ -180,11 +180,11 @@ export default function NavbarPage() {
                 <MdOutlineKeyboardArrowDown
                   className={`${
                     percent >= 0 && percent <= 18
-                      ? "text-primary group-hover:text-info"
+                      ? "text-primary"
                       : percent >= 35 && percent <= 95
-                      ? "text-primary group-hover:text-info"
-                      : "text-secondary group-hover:text-info"
-                  } text-lg font-semibold group-hover:rotate-180 transition-all`}
+                      ? "text-primary"
+                      : "text-secondary"
+                  } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
                 />
               </div>
               {item.subMenu && (
@@ -194,12 +194,12 @@ export default function NavbarPage() {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary/90 p-4 shadow-md rounded-xl font-Gilroy group-hover:border-2 border-secondary`}
+                  } group-hover:block top-[102px] left-0 bg-primary/90 p-4 shadow-md rounded-xl font-Gilroy`}
                 >
                   {item?.subMenu?.map((l, index) => (
                     <Link
                       // title={l.listMenu}
-                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg hover:text-success w-full h-full font-normal z-10`}
+                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-info`}
                       key={index}
                       href={l.subMenuRef}
                       onClick={() => setIsOpen(false)}

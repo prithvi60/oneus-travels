@@ -39,8 +39,8 @@ export const MenuBtnMember = ({ text, roleType, percent }) => {
     <button
       type={roleType}
       role="button"
-      className={`bg-primary hover:bg-primary/80 text-secondary relative shadow-lg px-3.5 py-1.5 flex flex-col sm:flex-row
-     items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
+      className={`bg-primary text-secondary relative shadow-lg px-3.5 py-1.5 flex flex-col sm:flex-row
+     items-center gap-0 sm:gap-2 rounded-full border-2 border-secondary hover:bg-info hover:text-white transition-colors duration-200 ease-linear`}
     >
       <FaUsers className={`text-base md:text-lg`} />
       <h3
@@ -57,8 +57,8 @@ export const MenuBtnCorporate = ({ text, roleType, percent }) => {
     <button
       type={roleType}
       role="button"
-      className={`bg-primary hover:bg-primary/80 text-secondary relative shadow-lg px-3.5 py-1.5 flex flex-col sm:flex-row
-     items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
+      className={`bg-primary text-secondary relative shadow-lg px-3.5 py-1.5 flex flex-col sm:flex-row
+     items-center gap-0 sm:gap-2 hover:bg-info hover:text-white transition-colors duration-200 ease-linear rounded-full border-2 border-secondary`}
     >
       <FaUserTie className={`text-base md:text-lg`} />
       <h3

@@ -14,9 +14,8 @@ const tabs = [
 ];
 const SliderTabs = () => {
   return (
-    <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] space-y-6 md:space-y-10 mx-auto">
+    <section className="w-full space-y-6 md:space-y-10">
       <Timeline />
-      {/* <DaysTimeline /> */}
       <SimpleSlider />
     </section>
   );
@@ -28,27 +27,20 @@ const Timeline = () => {
   const [isActive, setIsActive] = useState("1 - 3 days");
 
   return (
-    <div className="relative z-0 flex items-center w-full gap-2 sm:gap-0 bg-success after:content-[''] after:bg-primary after:h-10 after:w-10 after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-[25px] shadow-lg rounded-md overflow-hidden">
-      {/* <h5 className="font-semibold -rotate-90 text-primary font-Gilroy me-2">
-        Oneus
-        <br /> Travel
-      </h5> */}
-      {/* Tabs */}
-      <div className="w-[80%] sm:w-[92%] ">
-        <div className="flex w-full gap-3.5 p-5 overflow-auto hideScroll">
+    <div className="relative z-0 w-full shadow-lg bg-secondary">
+      <div className="w-full">
+        <div className="flex md:justify-center md:items-center w-full gap-3.5 p-5 overflow-auto hideScroll">
           {tabs.map((item, idx) => (
             <div
-              className={`flex items-center relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-max after:h-2 after:bg-secondary gap-2.5 h-full py-1 px-2 sm:px-5 w-full ${
+              className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
                 isActive === item && "bg-primary shadow-lg"
-              }  rounded-full cursor-pointer border-2 border-secondary hover:bg-primary group transition-all duration-500 ease-in-out`}
+              }  rounded-full cursor-pointer hover:bg-primary group transition-all duration-500 ease-in-out`}
               key={idx}
               onClick={() => setIsActive(item)}
             >
               <div className="relative w-6 h-6 sm:w-7 sm:h-7">
                 <Image
                   alt="tour package icon"
-                  // width={28}
-                  // height={28}
                   fill
                   src={"/tour.png"}
                 />
@@ -64,7 +56,6 @@ const Timeline = () => {
           ))}
         </div>
       </div>
-      <ImBarcode className="w-[20%] sm:w-[8%] text-4xl sm:text-5xl font-semibold rotate-90 text-primary me-4 md:me-6 lg:me-0" />
     </div>
   );
 };

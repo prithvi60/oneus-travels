@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -right-4 lg:-right-20 cursor-pointer z-20"
+        "absolute top-24 md:top-36 -right-4 lg:-right-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -left-4 lg:-left-20 cursor-pointer z-20"
+        "absolute top-24 md:top-36 -left-4 lg:-left-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
