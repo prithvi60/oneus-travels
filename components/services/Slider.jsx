@@ -35,8 +35,6 @@ function SamplePrevArrow(props) {
 }
 
 function SimpleSlider() {
-  // const [index, setIndex] = useState(0)
-  // console.log(index);
   const path = usePathname();
   const settings = {
     infinite: false,

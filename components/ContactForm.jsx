@@ -6,7 +6,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
-import {  SecondaryButton, SubmitBtn } from "./Button";
+import { SecondaryButton, SubmitBtn } from "./Button";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 
@@ -19,13 +19,10 @@ export const ContactForm = () => {
       id="contact"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 bg-opacity-85 bg-[#F8F9F8]"></div>
-      <div className="z-20 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full h-full bg-secondary p-[24px]">
-        <h1 className="text-lg font-semibold text-center md:text-xl font-Gilroy text-primary">
-          Take a tour of OneUs’s global travel solutions
+      <div className="z-20 text-center w-full h-full bg-secondary p-[24px]">
+        <h1 className="text-lg text-[32px] md:text-[40px] lg:text-[42px] font-Gilroy font-bold text-primary">
+          Contact Us
         </h1>
-        <SecondaryButton
-          text={"Explore our Travel Ecosystem"}
-        />
       </div>
       <div className="flex flex-col items-center justify-center gap-2 py-6 sm:gap-8 lg:flex-row padding sm:py-10 xl:py-14">
         <div className="z-20 w-full lg:w-1/2">

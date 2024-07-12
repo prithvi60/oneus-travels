@@ -1,9 +1,7 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import SimpleSlider from "./Slider";
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { ImBarcode } from "react-icons/im";
 
 const tabs = [
   "1 - 3 days",
@@ -39,11 +37,7 @@ const Timeline = () => {
               onClick={() => setIsActive(item)}
             >
               <div className="relative w-6 h-6 sm:w-7 sm:h-7">
-                <Image
-                  alt="tour package icon"
-                  fill
-                  src={"/tour.png"}
-                />
+                <Image alt="tour package icon" fill src={"/tour.png"} />
               </div>
               <div
                 className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
