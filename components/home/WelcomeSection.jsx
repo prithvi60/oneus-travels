@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PrimaryButton } from "./Button";
+import { PrimaryButton } from "../Button";
 
 export const WelcomeSection = () => {
   return (

@@ -1,9 +1,9 @@
-import { HomePageHero } from "@/components/HomePageHero";
-import { WelcomeSection } from "@/components/WelcomeSection";
-import { TravelTechnologyCard } from "@/components/TravelTechnologyCard";
-import { OurClients } from "@/components/OurClients";
-import { GlobalTeam } from "@/components/GlobalTeam";
-import VideoSection from "@/components/VideoSection";
+import { HomePageHero } from "@/components/home/HomePageHero";
+import { WelcomeSection } from "@/components/home/WelcomeSection";
+import { TravelTechnologyCard } from "@/components/home/TravelTechnologyCard";
+import { OurClients } from "@/components/home/OurClients";
+import { GlobalTeam } from "@/components/home/GlobalTeam";
+import VideoSection from "@/components/home/VideoSection";
 
 export default function Home() {
   return (

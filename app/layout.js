@@ -1,13 +1,13 @@
 import "./globals.css";
 import { Providers } from "./Provider";
-import NavbarPage from "@/components/NavbarPage";
-import Footer from "@/components/Footer";
+import NavbarPage from "@/components/home/NavbarPage";
+import Footer from "@/components/home/Footer";
 import AppContextProvider from "@/hooks/UseHooks";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ContactForm } from "@/components/ContactForm";
-import { Testimonial } from "@/components/Testimonial";
-import { SalesIq } from "@/components/SalesIq";
+import { ContactForm } from "@/components/home/ContactForm";
+import { Testimonial } from "@/components/home/Testimonial";
+import { SalesIq } from "@/components/home/SalesIq";
 import localFont from "next/font/local";
 import Development from "@/components/Development";
 

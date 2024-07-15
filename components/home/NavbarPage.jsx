@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
-import { MenuBtnCorporate, MenuBtnMember } from "./Button";
+import { MenuBtnCorporate, MenuBtnMember } from "../Button";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -101,14 +101,14 @@ export default function NavbarPage() {
       <NavbarBrand className="space-x-3 grow-0">
         {percent >= 0 && percent <= 18 ? (
           <div className="relative">
-            <div className="relative w-20 h-12 md:h-16 md:w-36">
+            <div className="relative w-20 h-12 md:h-14 md:w-32">
               <Image
                 onClick={() => router.push("/")}
                 fill
-                title="OneUs logo image"
+                title="OneUs logo"
                 alt="Logo"
-                src={"/Oneus_Logo_2.png"}
-                className="object-contain object-center transition-transform duration-1000 ease-linear rounded-full cursor-pointer bg-primary"
+                src={"/oneus-logo-1.svg"}
+                className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
               />
             </div>
           </div>
@@ -119,15 +119,15 @@ export default function NavbarPage() {
             animate={{ x: 0, scale: 1, opacity: 1 }}
             transition={{ duration: 0.3, ease: "backInOut" }}
           >
-            <div className="relative w-20 h-12 md:h-16 md:w-36 ">
+            <div className="relative w-20 h-12 md:h-14 md:w-32">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
                 // height={130}
                 fill
-                title="OneUs logo image"
+                title="OneUs logo"
                 alt="Logo"
-                src={"/Oneus_Logo_1.svg"}
+                src={"/oneus-logo-2.svg"}
                 className="object-contain object-center rounded-full cursor-pointer bg-primary"
               />
             </div>

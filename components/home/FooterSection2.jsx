@@ -3,9 +3,8 @@ import Link from "next/link";
 
 const links = [
   { link: "Privacy policy", ref: "/privacy_policy" },
-  { link: "terms&Condition", ref: "/terms_condition" },
-  { link: "Return policy", ref: "/return_policy" },
-  { link: "Travel policy", ref: "/travel_policy" },
+  { link: "Terms of use", ref: "/terms_of_use" },
+  { link: "Booking T&C", ref: "/booking_t&c" },
 ];
 
 export const FooterSection2 = () => {

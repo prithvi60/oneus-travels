@@ -5,20 +5,33 @@ import { MdOutlineDriveFileRenameOutline, MdFlight } from "react-icons/md";
 
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
-import { SubmitBtn } from "./Button";
+import { SubmitBtn } from "../Button";
+
+const imageSrc = [
+  "/oneus-logo-1.svg",
+  "/oneus-logo-11.svg",
+  "/oneus-logo-12.svg",
+];
 
 export const FooterSection1 = ({ items }) => {
   return (
     <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between">
-      <div className="relative order-1 block w-full h-24 md:w-36 lg:w-44 md:mt-10 lg:h-32 md:hidden lg:block">
-        <Image
-          fill
-          title="oneUs logo"
-          sizes="(min-width: 780px) 112px, calc(100vw - 48px)"
-          alt="Logo"
-          src={"/Oneus_Logo_2.png"}
-          className="object-contain"
-        />
+      <div className="flex flex-row items-center justify-center h-full gap-4 md:flex-col md:gap-5">
+        {imageSrc.map((i, id) => (
+          <div
+            className="relative order-1 block w-full h-20 md:w-28 lg:w-32 lg:h-20"
+            key={id}
+          >
+            <Image
+              fill
+              title="OneUs logo"
+              sizes="(min-width: 780px) 112px, calc(100vw - 48px)"
+              alt="OneUs logo"
+              src={i}
+              className="object-contain"
+            />
+          </div>
+        ))}
       </div>
       <ul className="grid order-3 grid-cols-2 gap-4 md:pt-2 md:order-2">
         {items.map((item, idx) => (

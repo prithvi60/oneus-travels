@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { OtherBtn } from "./Button";
+import { OtherBtn } from "../Button";
 import Link from "next/link";
 
 export const GlobalTeamCard = ({ title, imgSrc, desc }) => {

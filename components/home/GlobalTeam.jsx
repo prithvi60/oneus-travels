@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { PrimaryButton } from "./Button";
+import { PrimaryButton } from "../Button";
 import { GlobalTeamCard, GlobalTeamCardReverse } from "./GlobalTeamCard";
 import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "@/hooks/UseHooks";

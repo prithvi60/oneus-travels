@@ -1,5 +1,5 @@
 const page = () => {
-  return <div>Return policy</div>;
+  return <div>Booking T&C</div>;
 };
 
 export default page;

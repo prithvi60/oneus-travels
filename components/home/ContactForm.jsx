@@ -6,7 +6,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { Select, SelectItem } from "@nextui-org/select";
-import { SecondaryButton, SubmitBtn } from "./Button";
+import { SecondaryButton, SubmitBtn } from "../Button";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 
