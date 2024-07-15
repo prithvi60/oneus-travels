@@ -16,7 +16,7 @@ const page = () => {
         desc={
           "CTM is committed to delivering on the company’s vision and customer value proposition. Our board, leadership team and employees are all invested in creating and sustaining a workplace culture that supports equality of opportunity, empowerment, collaboration and recognition."
         }
-        shortNotes={data}
+        
       />
     </main>
   );

@@ -14,7 +14,7 @@ const page = () => {
         desc={
           "Corporate Travel Management (CTM) was founded on the principle of challenging the status quo, asking questions and designing solutions that simply make global business travel better."
         }
-        shortNotes={data}
+        
       />
     </main>
   );

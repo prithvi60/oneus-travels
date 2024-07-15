@@ -15,7 +15,7 @@ const page = () => {
         desc={
           "We love global business travel, but we get the biggest kicks when we’re able to solve complex challenges that drive our expert travel teams to think outside of the box."
         }
-        shortNotes={data}
+        
       />
     </main>
   );

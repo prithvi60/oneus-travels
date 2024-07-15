@@ -20,7 +20,7 @@ const page = () => {
         desc={
           "CTM is an award-winning global provider of innovative and cost-effective travel management solutions to the corporate market. We understand the complex travel needs of businesses large and small in every global market, and are committed to developing tailored travel solutions that drive results."
         }
-        shortNotes={data}
+        
       />
     </main>
   );

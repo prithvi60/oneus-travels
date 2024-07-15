@@ -16,7 +16,7 @@ const page = () => {
         desc={
           "Corporate Travel Management Pty Ltd (CTM) (ASX:CTD) is a global provider of innovative and cost-effective travel solutions spanning corporate, events, leisure, loyalty and wholesale travel."
         }
-        shortNotes={data}
+        
       />
     </main>
   );

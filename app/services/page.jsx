@@ -16,7 +16,7 @@ const page = () => {
         desc={
           "Global business is complex, driven by global objectives and underpinned by regional diverse and complex your travel needs, we’re committed to designing simple, safe and sustainable travel solutions that delivers measurable results."
         }
-        shortNotes={data}
+        
       />
       <SliderTabs />
     </main>

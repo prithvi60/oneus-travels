@@ -20,7 +20,7 @@ const page = () => {
         desc={
           "Corporate Travel Management’s (CTM’s) specialist meetings and events division, Event Travel Management (ETM), delivers strategic value to global travel programs through the consolidation of your meetings and events expenditure."
         }
-        shortNotes={data}
+        
       />
       <SliderTabs />
     </main>
