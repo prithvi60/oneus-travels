@@ -205,7 +205,7 @@ export default function NavbarPage() {
                       onClick={() => setIsOpen(false)}
                     >
                       <GiCommercialAirplane className="text-lg lg:text-xl text-secondary" />
-                      <h4 className="underline underline-offset-8">
+                      <h4 className="hover:underline hover:underline-offset-8">
                         {l.listMenu}
                       </h4>
                     </Link>
