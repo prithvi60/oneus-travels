@@ -17,7 +17,7 @@ export const ThankYouComponent = () => {
         </div>
         Thank You !
       </h3>
-      <p className="w-full text-lg text-center md:text-2xl text-success">
+      <p className="w-full text-lg text-center font-Poppins md:text-2xl text-success">
         We&apos;ve received your submission.
       </p>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-5">

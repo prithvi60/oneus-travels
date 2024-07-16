@@ -52,7 +52,7 @@ export default function NavbarPage() {
     };
   }, [percent]);
 
-  // console.log(isMenuOpen);
+  console.log(path);
 
   return (
     <Navbar
@@ -99,18 +99,42 @@ export default function NavbarPage() {
       }}
     >
       <NavbarBrand className="space-x-3 grow-0">
-        {percent >= 0 && percent <= 18 ? (
+        {percent >= 0 && percent <= 22 ? (
           <div className="relative">
-            <div className="relative w-20 h-12 md:h-14 md:w-32">
-              <Image
-                onClick={() => router.push("/")}
-                fill
-                title="OneUs logo"
-                alt="Logo"
-                src={"/oneus-logo-1.svg"}
-                className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
-              />
-            </div>
+            {path === "/services/leisure" ? (
+              <div className="relative w-20 h-12 md:h-14 md:w-32">
+                <Image
+                  onClick={() => router.push("/")}
+                  fill
+                  title="OneUs logo"
+                  alt="Logo"
+                  src={"/oneus-logo-12.svg"}
+                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                />
+              </div>
+            ) : path === "/services/visa_services" ? (
+              <div className="relative w-20 h-12 md:h-14 md:w-32">
+                <Image
+                  onClick={() => router.push("/")}
+                  fill
+                  title="OneUs logo"
+                  alt="Logo"
+                  src={"/oneus-logo-11.svg"}
+                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                />
+              </div>
+            ) : (
+              <div className="relative w-20 h-12 md:h-14 md:w-32">
+                <Image
+                  onClick={() => router.push("/")}
+                  fill
+                  title="OneUs logo"
+                  alt="Logo"
+                  src={"/oneus-logo-1.svg"}
+                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                />
+              </div>
+            )}
           </div>
         ) : (
           <motion.div

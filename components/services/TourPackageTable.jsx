@@ -73,7 +73,7 @@ export const TourPackageTable = ({ location }) => {
           {(column) => (
             <TableColumn
               key={column.uid}
-              className="text-lg text-secondary font-Gilroy"
+              className="text-lg text-secondary font-Poppins"
               //   align={column.uid === "actions" ? "center" : "start"}
             >
               {column.name}

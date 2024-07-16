@@ -17,7 +17,7 @@ const VideoSection = () => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute z-10 w-full h-full text-xl font-bold tracking-wider text-center -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-40 top-1/2 left-1/2 sm:text-5xl xl:text-7xl font-Gilroy">
+        <div className="absolute z-10 w-full h-full text-xl font-bold tracking-wider text-center -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-80 top-1/2 left-1/2 sm:text-5xl xl:text-7xl font-Poppins">
         <h4 className="flex items-center justify-center w-full h-full capitalize text-opacity-70 text-primary animate-pulse"> Arriving shortly ...</h4>
         </div>
       </div>

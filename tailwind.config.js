@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         Gilroy: ["var(--font-gilroy)"],
+        Poppins: ["var(--font-poppins)"],
       },
       aspectRatio: {
         box: "3 / 4",

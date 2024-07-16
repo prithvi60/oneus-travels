@@ -23,7 +23,7 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
         <CardBody className="h-full">
-          <p className="text-sm md:text-base font-Gilroy">{desc}</p>
+          <p className="text-sm md:text-base font-Poppins">{desc}</p>
         </CardBody>
         <CardFooter>
           <Link href={"#contact"}>

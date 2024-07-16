@@ -47,7 +47,7 @@ export const FooterSection1 = ({ items }) => {
                 <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                 <Link
                   href={`${list.subMenuRef}`}
-                  className="font-normal text-secondary hover:text-success font-Gilroy"
+                  className="font-normal text-secondary hover:text-success font-Poppins"
                 >
                   {list.listMenu}
                 </Link>
@@ -85,7 +85,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             color="secondary"
             variant="bordered"
-            className="font-normal font-Gilroy"
+            className="font-normal font-Poppins"
             endContent={
               <MdOutlineDriveFileRenameOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -101,7 +101,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="font-normal font-Gilroy"
+            className="font-normal font-Poppins"
             endContent={
               <IoMailOutline className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
             }
@@ -117,7 +117,7 @@ export const FooterSection1 = ({ items }) => {
             radius="full"
             variant="bordered"
             color="secondary"
-            className="hidden font-normal font-Gilroy"
+            className="hidden font-normal font-Poppins"
           />
           <SubmitBtn text={"submit"} />
         </form>
