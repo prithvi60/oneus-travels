@@ -552,3 +552,26 @@ export const privacyPolicy = [
     ],
   },
 ];
+
+export const personalInformation = [
+  {
+    title: "Identifying Information",
+    desc: "This may include your name, company, title, AADHAR details, Passport details, and username/password if you create an account.",
+  },
+  {
+    title: "Contact Information",
+    desc: "Includes your email, phone number, address and any other contact details you may share with us.",
+  },
+  {
+    title: "Payment Information",
+    desc: "Such as credit card details if you make a purchase from us.",
+  },
+  {
+    title: "Technical Information",
+    desc: "This could include your IP address, browser type, time zone settings, and location.",
+  },
+  {
+    title: "Other Information",
+    desc: "Such as your interactions with us on social media or our Chatbot.",
+  },
+];
