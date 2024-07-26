@@ -7,7 +7,7 @@ export const WelcomeSection = () => {
       <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
         Welcome to Oneus Travels <br /> Your Global Travel Companion
       </h1>
-      <p className="text-xl italic font-normal font-Poppins">
+      <p className="text-xl font-normal font-Poppins">
         OneUs is a leading provider of business travel management solutions
         worldwide. We enable businesses and tourists with maximum savings,
         effectiveness, safety, and sustainability all across the globe. At

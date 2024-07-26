@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import SimpleSlider from "./Slider";
-import Image from "next/image";
+import { Select, SelectItem } from "@nextui-org/select";
 
 const tabs = [
   "1 - 3 days",
@@ -10,6 +10,7 @@ const tabs = [
   "10 - 12 days",
   "13 days or more",
 ];
+
 const SliderTabs = () => {
   return (
     <section className="w-full space-y-6 md:space-y-10">
@@ -26,8 +27,37 @@ const Timeline = () => {
 
   return (
     <div className="relative z-0 w-full shadow-lg bg-secondary">
-      <div className="w-full mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] px-7 lg:px-0">
-        <div className="flex lg:justify-center lg:items-center w-full gap-3.5 py-5 px-10 lg:p-5 overflow-auto hideScroll">
+      <div className="flex flex-col-reverse items-center justify-center w-full gap-2.5 md:gap-5 md:flex-row px-7 lg:px-0 ">
+      {/* sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] */}
+        <Select
+          label="Filter:"
+          placeholder="Select Category"
+          labelPlacement={"outside-left"}
+          size={"md"}
+          // color="success"
+          // onChange={handleSelectionChange}
+          className="items-center"
+          classNames={{
+            base: "w-full max-w-[320px] h-full capitalize py-5",
+            value:
+              "!text-primary data-[hover=true]:!text-warning font-medium",
+            label:
+              "w-max h-full !text-primary text-lg tracking-wider font-medium",
+            mainWrapper: "min-w-[180px] ",
+            popoverContent: "!p-0",
+            trigger:
+              "bg-transparent data-[hover=true]:bg-secondary data-[hover=true]:bg-opacity-50 !text-primary",
+            innerWrapper:
+              "capitalize ",
+            listbox:
+              "bg-secondary !text-primary data-[hover=true]:!text-secondary rounded-md capitalize",
+          }}
+        >
+          {tabs.map((range, idx) => (
+            <SelectItem key={idx}>{range}</SelectItem>
+          ))}
+        </Select>
+        <div className="flex items-center w-full md:w-max gap-3.5 p-5 overflow-x-auto hideScroll">
           {tabs.map((item, idx) => (
             <div
               className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
@@ -36,9 +66,9 @@ const Timeline = () => {
               key={idx}
               onClick={() => setIsActive(item)}
             >
-              <div className="relative w-6 h-6 sm:w-7 sm:h-7">
+              {/* <div className="relative w-6 h-6 sm:w-7 sm:h-7">
                 <Image alt="tour package icon" fill src={"/tour.png"} />
-              </div>
+              </div> */}
               <div
                 className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
                   isActive === item && "text-secondary"
@@ -54,76 +84,32 @@ const Timeline = () => {
   );
 };
 
-// const DaysTimeline = () => {
-//   return (
-//     <div className="py-20 bg-neutral-100">
-//       <SlideTabs />
-//     </div>
-//   );
-// };
-
-// const SlideTabs = () => {
-//   const [position, setPosition] = useState({
-//     left: 0,
-//     width: 0,
-//     opacity: 0,
-//   });
-
-//   return (
-//     <ul
-//       onMouseLeave={() => {
-//         setPosition((pv) => ({
-//           ...pv,
-//           opacity: 0,
-//         }));
-//       }}
-//       className="relative mx-auto flex w-fit rounded-full border-2 border-[#3880CB] bg-white p-1"
-//     >
-//       {tabs.map((item, id) => (
-//         <Tab key={id} setPosition={setPosition}>
-//           <div className={"w-16 md:w-fit line-clamp-1 md:line-clamp-2"}>
-//             {" "}
-//             {item}
-//           </div>
-//         </Tab>
-//       ))}
-
-//       <Cursor position={position} />
-//     </ul>
-//   );
-// };
-
-// const Tab = ({ children, setPosition }) => {
-//   const ref = useRef(null);
-
-//   return (
-//     <li
-//       ref={ref}
-//       onMouseEnter={() => {
-//         if (!ref?.current) return;
-
-//         const { width } = ref.current.getBoundingClientRect();
-
-//         setPosition({
-//           left: ref.current.offsetLeft,
-//           width,
-//           opacity: 1,
-//         });
-//       }}
-//       className="relative z-10 block cursor-pointer px-1  py-1.5 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
-//     >
-//       {children}
-//     </li>
-//   );
-// };
-
-// const Cursor = ({ position }) => {
-//   return (
-//     <motion.li
-//       animate={{
-//         ...position,
-//       }}
-//       className="absolute z-0 h-7 rounded-full bg-[#3880CB] md:h-12"
-//     />
-//   );
-// };
+{
+  /* <div className="absolute z-10 right-14 md:!right-0 top-14 md:top-0">
+        <Select
+          // label="Filter:"
+          placeholder="Select Category"
+          labelPlacement={"outside-left"}
+          size={"md"}
+          // color="success"
+          // onChange={handleSelectionChange}
+          className="items-center"
+          classNames={{
+            base: "w-full max-w-xs h-full capitalize",
+            value: "!text-white font-medium",
+            label:
+              "w-full h-full !text-primary text-lg tracking-wider font-medium",
+            mainWrapper: "min-w-[230px]",
+            popoverContent: "!p-0",
+            trigger:
+              "bg-info !text-white data-[hover=true]:bg-info data-[hover=true]:bg-opacity-80",
+            innerWrapper: "capitalize !text-white",
+            listbox: "bg-info !text-white rounded-md capitalize",
+          }}
+        >
+          {priceRange.map((range, idx) => (
+            <SelectItem key={idx}>{range}</SelectItem>
+          ))}
+        </Select>
+      </div> */
+}

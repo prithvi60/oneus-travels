@@ -85,7 +85,7 @@ export async function generateMetadata() {
       siteName: "OneUs Travel Agency",
       // images: [
       //   {
-      //     url: "https://ik.imagekit.io/webibee/Agency/brain-logo.svg",
+      //     url: "../public/oneus-logo-1.svg",
       //   },
       // ],
     },

@@ -15,7 +15,6 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { GiCommercialAirplane } from "react-icons/gi";
 import { MenuBtnCorporate, MenuBtnMember } from "../Button";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
@@ -52,7 +51,7 @@ export default function NavbarPage() {
     };
   }, [percent]);
 
-  console.log(path);
+  // console.log(path);
 
   return (
     <Navbar
@@ -109,7 +108,7 @@ export default function NavbarPage() {
                   title="OneUs logo"
                   alt="Logo"
                   src={"/oneus-logo-12.svg"}
-                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                  className="object-contain object-center cursor-pointer"
                 />
               </div>
             ) : path === "/services/visa_services" ? (
@@ -120,7 +119,7 @@ export default function NavbarPage() {
                   title="OneUs logo"
                   alt="Logo"
                   src={"/oneus-logo-11.svg"}
-                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                  className="object-contain object-center cursor-pointer"
                 />
               </div>
             ) : (
@@ -130,8 +129,8 @@ export default function NavbarPage() {
                   fill
                   title="OneUs logo"
                   alt="Logo"
-                  src={"/oneus-logo-1.svg"}
-                  className="object-contain object-center p-1 rounded-full cursor-pointer bg-primary"
+                  src={"/oneus-whitelogo.svg"}
+                  className="object-contain object-center cursor-pointer"
                 />
               </div>
             )}
@@ -143,7 +142,7 @@ export default function NavbarPage() {
             animate={{ x: 0, scale: 1, opacity: 1 }}
             transition={{ duration: 0.3, ease: "backInOut" }}
           >
-            <div className="relative w-20 h-12 md:h-14 md:w-32">
+            <div className="relative w-[52px] h-12 md:h-[64px] md:w-[66px]">
               <Image
                 onClick={() => router.push("/")}
                 // width={130}
@@ -152,7 +151,7 @@ export default function NavbarPage() {
                 title="OneUs logo"
                 alt="Logo"
                 src={"/oneus-logo-2.svg"}
-                className="object-contain object-center rounded-full cursor-pointer bg-primary"
+                className="object-contain p-0.5 rounded-full cursor-pointer bg-primary"
               />
             </div>
           </motion.div>
@@ -161,7 +160,7 @@ export default function NavbarPage() {
 
       {/* Desktop menu bar */}
       <NavbarContent
-        className="hidden lg_2:flex gap-1.5 lg:gap-5 font-Gilroy"
+        className="hidden lg_2:flex ms-5 gap-1.5 lg:gap-5 font-Gilroy"
         justify="center"
       >
         <NavbarItem>
@@ -218,17 +217,16 @@ export default function NavbarPage() {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className={`absolute hidden ${
                     IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-primary/90 p-4 shadow-md rounded-xl font-Gilroy`}
+                  } group-hover:block top-[102px] left-0 bg-secondary/90 p-4 shadow-md rounded-xl font-Gilroy`}
                 >
                   {item?.subMenu?.map((l, index) => (
                     <Link
-                      // title={l.listMenu}
-                      className={`flex items-center gap-2 mb-2 text-secondary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-info`}
+                      title={l.listMenu}
+                      className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-info`}
                       key={index}
                       href={l.subMenuRef}
                       onClick={() => setIsOpen(false)}
                     >
-                      <GiCommercialAirplane className="text-lg lg:text-xl text-secondary" />
                       <h4 className="hover:underline hover:underline-offset-8">
                         {l.listMenu}
                       </h4>
