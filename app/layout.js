@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import { Providers } from "./Provider";
 import NavbarPage from "@/components/home/NavbarPage";
 import Footer from "@/components/home/Footer";
 import AppContextProvider from "@/hooks/UseHooks";
@@ -11,6 +10,7 @@ import { Testimonial } from "@/components/home/Testimonial";
 import { SalesIq } from "@/components/home/SalesIq";
 import localFont from "next/font/local";
 import Development from "@/components/Development";
+import { Providers } from "./Provider";
 
 const gilroy = localFont({
   src: [
@@ -97,13 +97,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AppContextProvider>
         <body className={`${gilroy.variable} ${poppins.variable}`}>
-          <Development />
-          <NavbarPage />
-          <Providers>{children}</Providers>
-          <ContactForm />
-          <Testimonial />
-          <Footer />
-          <SalesIq />
+          <Providers>
+            <Development />
+            <NavbarPage />
+            {children}
+            <ContactForm />
+            <Testimonial />
+            <Footer />
+            <SalesIq />
+          </Providers>
         </body>
       </AppContextProvider>
     </html>

@@ -575,3 +575,34 @@ export const personalInformation = [
     desc: "Such as your interactions with us on social media or our Chatbot.",
   },
 ];
+
+export const whyUsAccordion = [
+  {
+    title: "Streamlined Business Travel",
+    desc: "Experience seamless business travel with our efficient booking and management services, designed to save you time and reduce stress. Focus on your business while we handle the logistics.",
+  },
+  {
+    title: "Tailored Dedicated support ",
+    desc: "Benefit from personalized support tailored to your needs, ensuring a smooth and enjoyable travel experience from start to finish. Our team is available 24/7 to assist you with any inquiries.",
+  },
+  {
+    title: "Comprehensive Travel Platform",
+    desc: "Access a comprehensive platform that integrates all your travel needs in one place, offering convenience and ease of use. Manage your entire itinerary effortlessly with our user-friendly interface.",
+  },
+  {
+    title: "Unmatched Choices and Value",
+    desc: "Discover unparalleled choices and exceptional value with our extensive range of travel options, designed to fit every budget and preference. Enjoy exclusive deals and discounts available only through our services.",
+  },
+];
+
+export const whyOneusIcons = [
+  { note: "24 x 7 support ", src: "/support.png" },
+  { note: "Travel Services", src: "/services.png" },
+  { note: "Company Policy", src: "/corporate-policy.png" },
+  { note: "VISA assistance ", src: "/visa.png" },
+  { note: "Best Forex rates", src: "/exchange.png" },
+  { note: "Travel Insurance", src: "/travel-insurance.png" },
+  { note: "Corporate Deals / Global Aggregator Deals", src: "/deals.png" },
+  { note: "Crisp MIS report ", src: "/report.png" },
+  { note: "Event Planning & Execution", src: "/planning.png" },
+];

@@ -1,3 +1,5 @@
+
+import { WhyOneus } from "@/components/about/WhyOneus";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
@@ -7,15 +9,10 @@ const data = [
 
 const page = () => {
   return (
-    <main>
+    <main className="">
       <OtherHero imgSrc={"/bg_3.jpg"} />
-      <WelcomeBoard
-        title={"Why CTM ?"}
-        desc={
-          "Corporate Travel Management (CTM) was founded on the principle of challenging the status quo, asking questions and designing solutions that simply make global business travel better."
-        }
-        
-      />
+      <WelcomeBoard title={"Why Choose OneUS Travels?"} />
+      <WhyOneus />
     </main>
   );
 };

@@ -30,25 +30,20 @@ const Timeline = () => {
       <div className="flex flex-col-reverse items-center justify-center w-full gap-2.5 md:gap-5 md:flex-row px-7 lg:px-0 ">
       {/* sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] */}
         <Select
-          label="Filter:"
           placeholder="Select Category"
-          labelPlacement={"outside-left"}
           size={"md"}
-          // color="success"
           // onChange={handleSelectionChange}
           className="items-center"
           classNames={{
-            base: "w-full max-w-[320px] h-full capitalize py-5",
+            base: "w-full max-w-[320px] h-full capitalize pb-5 md:py-5",
             value:
-              "!text-primary data-[hover=true]:!text-warning font-medium",
-            label:
-              "w-max h-full !text-primary text-lg tracking-wider font-medium",
-            mainWrapper: "min-w-[180px] ",
+              "!text-secondary font-medium",
+            mainWrapper: "max-w-[220px]",
             popoverContent: "!p-0",
             trigger:
-              "bg-transparent data-[hover=true]:bg-secondary data-[hover=true]:bg-opacity-50 !text-primary",
+              "bg-primary !text-secondary",
             innerWrapper:
-              "capitalize ",
+              "capitalize",
             listbox:
               "bg-secondary !text-primary data-[hover=true]:!text-secondary rounded-md capitalize",
           }}

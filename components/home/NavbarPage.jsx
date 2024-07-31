@@ -22,7 +22,6 @@ import { AiOutlineClose } from "react-icons/ai";
 export default function NavbarPage() {
   const path = usePathname();
   const router = useRouter();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [IsOpen, setIsOpen] = useState(true);
   const [percent, setPercent] = useState(null);
@@ -37,12 +36,12 @@ export default function NavbarPage() {
     const scrollPosition = window.scrollY; // => scroll position
     let percentage =
       ((scrollPosition + window.innerHeight) / ele.clientHeight) * 100;
-    setPercent(Math.trunc(percentage));
+    setPercent(() => Math.trunc(percentage));
     // console.log(Math.trunc(percentage));
   };
 
   // Scroll based color change side effect
-
+  // 96 + 36
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -50,8 +49,6 @@ export default function NavbarPage() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [percent]);
-
-  // console.log(path);
 
   return (
     <Navbar
@@ -63,11 +60,11 @@ export default function NavbarPage() {
       classNames={{
         base: [
           `${
-            percent >= 0 && percent <= 18
+            percent <= 15 && path === "/"
               ? "!bg-transparent shadow-none"
-              : percent >= 35 && percent <= 74
+              : percent >= 35 && percent <= 74 && path === "/"
               ? "bg-secondary shadow-md"
-              : percent >= 75 && percent <= 95
+              : percent >= 75 && percent <= 95 && path === "/"
               ? "bg-success shadow-md"
               : "bg-primary shadow-md"
           } fixed top-8 left-0 py-4 transition-all duration-500 ease-linear`,
@@ -98,7 +95,7 @@ export default function NavbarPage() {
       }}
     >
       <NavbarBrand className="space-x-3 grow-0">
-        {percent >= 0 && percent <= 22 ? (
+        {percent <= 15 ? (
           <div className="relative">
             {path === "/services/leisure" ? (
               <div className="relative w-20 h-12 md:h-14 md:w-32">
@@ -170,9 +167,9 @@ export default function NavbarPage() {
             aria-current={`Technology page`}
             href={"/technology"}
             className={`text-sm lg:text-lg xl:text-xl ${
-              percent >= 0 && percent <= 18
+              percent <= 15 && path === "/"
                 ? "text-primary"
-                : percent >= 35 && percent <= 95
+                : percent >= 35 && percent <= 95 && path === "/"
                 ? "text-primary"
                 : "text-secondary"
             } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
@@ -185,9 +182,9 @@ export default function NavbarPage() {
             <div>
               <div
                 className={`text-base ${
-                  percent >= 0 && percent <= 18
+                  percent <= 15 && path === "/"
                     ? "text-primary "
-                    : percent >= 35 && percent <= 95
+                    : percent >= 35 && percent <= 95 && path === "/"
                     ? "text-primary"
                     : "text-secondary"
                 } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
@@ -202,9 +199,9 @@ export default function NavbarPage() {
                 </h4>
                 <MdOutlineKeyboardArrowDown
                   className={`${
-                    percent >= 0 && percent <= 18
+                    percent <= 15 && path === "/"
                       ? "text-primary"
-                      : percent >= 35 && percent <= 95
+                      : percent >= 35 && percent <= 95 && path === "/"
                       ? "text-primary"
                       : "text-secondary"
                   } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}

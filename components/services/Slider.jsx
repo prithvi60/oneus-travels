@@ -15,7 +15,7 @@ function SampleNextArrow(props) {
       }
       onClick={onClick}
     >
-      <FaCircleArrowRight className="text-2xl lg:text-3xl text-success hover:text-orange-500" />
+      <FaCircleArrowRight className="text-2xl lg:text-3xl text-secondary hover:text-orange-500" />
     </div>
   );
 }
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
       }
       onClick={onClick}
     >
-      <FaCircleArrowLeft className="text-2xl lg:text-3xl text-success hover:text-orange-500" />
+      <FaCircleArrowLeft className="text-2xl lg:text-3xl text-secondary hover:text-orange-500" />
     </div>
   );
 }
@@ -40,8 +40,8 @@ function SimpleSlider() {
     infinite: false,
     loop: false,
     speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {

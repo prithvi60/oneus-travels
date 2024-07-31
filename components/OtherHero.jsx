@@ -3,7 +3,7 @@ import Image from "next/image";
 export const OtherHero = ({imgSrc}) => {
   return (
     <section>
-      <div className="relative overflow-hidden w-full h-[40vh] md:md:h-[55vh] mb-4 md:mb-8">
+      <div className="relative overflow-hidden w-full h-[40vh] md:md:h-[55vh]">
         <Image
           fill
           sizes="100vw"
