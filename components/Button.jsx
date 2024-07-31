@@ -77,7 +77,7 @@ export const OtherBtn = ({ text }) => {
     <button
       type="button"
       role="button"
-      className={`bg-primary hover:bg-primary/80 text-secondary relative shadow-lg px-3.5 py-1.5 flex
+      className={`bg-primary hover:bg-primary/80 hover:scale-95 text-secondary relative shadow-lg px-3.5 py-1.5 flex
      items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
     >
       <h3

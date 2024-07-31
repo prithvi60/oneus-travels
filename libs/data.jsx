@@ -576,6 +576,8 @@ export const personalInformation = [
   },
 ];
 
+// why Oneus
+
 export const whyUsAccordion = [
   {
     title: "Streamlined Business Travel",
@@ -605,4 +607,55 @@ export const whyOneusIcons = [
   { note: "Corporate Deals / Global Aggregator Deals", src: "/deals.png" },
   { note: "Crisp MIS report ", src: "/report.png" },
   { note: "Event Planning & Execution", src: "/planning.png" },
+];
+
+// oneus Team
+
+export const team = [
+  {
+    category: "Board",
+    card: [
+      {
+        src: "/avatar.png",
+        name: "Vishnuprabha Thirukonda ",
+        position: "CEO & Managing Director",
+        desc: "",
+      },
+      {
+        src: "/avatar.png",
+        name: "Sushkrutha Kuttuva ",
+        position: "Non Executive Director",
+        desc: "",
+      },
+    ],
+  },
+  {
+    category: "Regional & Global Leadership",
+    card: [
+      {
+        src: "/avatar.png",
+        name: "Jayabharathi S",
+        position: "Financial Officer",
+        desc: "",
+      },
+      {
+        src: "/avatar.png",
+        name: "Kavitha Srinivasan ",
+        position: "Manager – Corporate Sales & Leisure",
+        desc: "",
+      },
+      {
+        src: "/avatar.png",
+        name: "Boobalan",
+        position: "Manager - Visa",
+        desc: "",
+      },
+      {
+        src: "/avatar.png",
+        name: "Arun",
+        position: "Manager - Operations",
+        desc: "",
+      },
+    ],
+  },
 ];
