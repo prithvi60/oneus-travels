@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Slider from "react-slick";
-import { timelines } from "@/libs/data";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -right-4 md:-right-6 xl:-right-11 cursor-pointer z-20"
+        "absolute top-28 md:top-36 -right-[22px] md:-right-6 xl:-right-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
@@ -25,7 +24,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={
-        "absolute top-24 md:top-36 -left-4 md:-left-6 xl:-left-11 cursor-pointer z-20"
+        "absolute top-28 md:top-36 -left-[22px] md:-left-6 xl:-left-11 cursor-pointer z-20"
       }
       onClick={onClick}
     >
@@ -34,7 +33,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function SimpleSlider() {
+function SimpleSlider({ lists }) {
   const path = usePathname();
   const settings = {
     infinite: false,
@@ -76,45 +75,50 @@ function SimpleSlider() {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">
       <Slider {...settings} className="!py-2.5">
-        {timelines.map((item, id) => (
+        {lists.map((item, id) => (
           <Link
             href={`${path}/${item.location}`}
             title="location"
-            className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md"
+            className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md overflow-hidden group"
             key={id}
           >
-            <div className="relative overflow-hidden w-full h-[20vh] md:h-[30vh] rounded-t-md">
+            <div className="relative overflow-hidden w-full h-[20vh] md:h-[30vh]">
               <Image
                 fill
                 title="background image"
                 sizes="(min-width: 1940px) 201px, (min-width: 1040px) 169px, (min-width: 780px) 151px, (min-width: 660px) 168px, (min-width: 340px) 92px, calc(355vw - 1044px)"
-                src={item.imgSrc}
+                src={item.img}
                 alt="background image"
-                className="object-cover object-center md:px-0"
+                className="object-cover object-center transition-all ease-linear md:px-0 group-hover:scale-105 duration-400"
                 quality={100}
               />
-              <div className="absolute w-full bottom-1 md:bottom-3 left-3 md:left-7">
-                <h3 className="w-4/5 text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed md:w-3/5 font-Gilroy text-primary">
-                  {"best time"}
+              <div className="absolute w-max bottom-3 left-1.5 bg-black/40 px-2.5 py-1 rounded-2xl">
+                <h3 className="text-xs font-bold tracking-wide capitalize md:text-sm md:leading-relaxed font-Gilroy text-primary">
+                  {"Best Time"}
                 </h3>
-                <h3 className="w-4/5 text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed md:w-3/5 font-Gilroy text-primary">
-                  {item.months}
+                <h3 className="text-sm font-bold tracking-wide capitalize md:text-base md:leading-relaxed font-Gilroy text-primary">
+                  {item.bestTime}
                 </h3>
               </div>
             </div>
-            <div className="flex flex-col w-full h-auto gap-2 px-2.5 pt-3.5 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Gilroy">
-              <div className="font-medium text-secondary">
-                <h5 className="text-xs sm:text-sm">{item.location}</h5>
-                <p className="text-[11px] sm:text-xs opacity-60 font-Poppins">
+            <div className="flex flex-col w-full h-auto gap-2 px-2.5 pt-3.5 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Poppins">
+              <div className="font-medium text-secondary ">
+                <h5 className="text-[11px] sm:text-xs text-left opacity-60">
+                  Place
+                </h5>
+                <h5 className="text-xs tracking-wide sm:text-sm line-clamp-1">
+                  {item.location}
+                </h5>
+                {/* <p className="text-[11px] sm:text-xs opacity-60 font-Poppins">
                   {item.packages}+packages
-                </p>
+                </p> */}
               </div>
               <div className="font-medium text-secondary font-Poppins">
                 <h5 className="text-[11px] sm:text-xs text-left opacity-60">
                   starting from
                 </h5>
-                <p className="text-sm font-semibold text-left text-green-600 sm:text-base">
-                  ₹ {item.cost}
+                <p className="text-sm font-semibold tracking-wider text-left text-green-600 sm:text-base">
+                  {item.startingPrice}
                 </p>
               </div>
             </div>

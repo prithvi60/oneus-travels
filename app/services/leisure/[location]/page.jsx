@@ -6,8 +6,8 @@ const page = ({ params }) => {
   return (
     <div>
       <TourHeroSection />
-      <TourPackages location={params.location}/>
-      <TourPackageTable location={params.location}/>
+      <TourPackages location={params.location.replace(/%20/g, " ")}/>
+      <TourPackageTable />
     </div>
   );
 };

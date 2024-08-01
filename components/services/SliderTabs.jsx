@@ -2,6 +2,7 @@
 import { useState } from "react";
 import SimpleSlider from "./Slider";
 import { Select, SelectItem } from "@nextui-org/select";
+import { leisureLists } from "@/libs/data";
 
 const tabs = [
   "Short Breaks (1-3 days)",
@@ -23,12 +24,25 @@ export default SliderTabs;
 
 const Timeline = () => {
   const [isActive, setIsActive] = useState(tabs[0]);
-
+  const [value, setValue] = useState(null);
+  const [filteredData, setFilteredData] = useState(null);
+  const lists = leisureLists.filter((item) => item.days === isActive);
+  // setFilteredData(() => lists);
+  // const handleSelectionChange = (e) => {
+  //   setValue(Number(e.target.value));
+  // };
+  // if(value !== )
+  const filter = lists.filter((item) =>
+    value !== null
+      ? item.category === category[Number(value.currentKey)] && item
+      : lists
+  );
+  console.log(filter);
   return (
     <div className="relative z-0 w-full space-y-4">
       <div className="w-full shadow-lg bg-secondary">
-        <div className="flex flex-col items-center justify-center w-full gap-2.5 md:gap-5 md:flex-row px-7 lg:px-0 ">
-          <div className="flex items-center w-full md:w-max gap-3.5 p-5 overflow-x-auto hideScroll">
+        <div className="flex flex-col items-center justify-center w-full gap-2.5 lg:gap-5 lg:flex-row px-7 lg:px-0 ">
+          <div className="flex justify-center items-center w-full md:w-max gap-3.5 py-5 lg:p-5 flex-wrap lg:flex-nowrap">
             {tabs.map((item, idx) => (
               <div
                 className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
@@ -48,12 +62,16 @@ const Timeline = () => {
             ))}
           </div>
           <Select
+            aria-labelledby=""
             placeholder="Select Category"
             size={"md"}
+            // value={val}
             // onChange={handleSelectionChange}
+            selectedKeys={value}
+            onSelectionChange={setValue}
             className="items-center"
             classNames={{
-              base: "w-full max-w-[320px] h-full capitalize pb-5 md:py-5",
+              base: "w-full max-w-[320px] h-full capitalize pb-5 lg:py-5",
               value: "!text-secondary font-medium",
               mainWrapper: "max-w-[220px]",
               popoverContent: "!p-0",
@@ -69,7 +87,7 @@ const Timeline = () => {
           </Select>
         </div>
       </div>
-      <SimpleSlider />
+      <SimpleSlider lists={lists} />
     </div>
   );
 };

@@ -259,7 +259,7 @@ export const leisureLists = [
     location: "Uttarpradesh",
     shortNote:
       "Delhi is a Capital territory of India and it holds the connectivity to almost all the other cities in India.Delhi is a cosmopolitan city where we can see different culture and traditions. Agra has one of the Seven Wonders –Tajmahal which can be reached in 2 hours from Delhi Airport.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Uttarpradesh.jpg",
     startingPrice: "Rs.11000/-",
     bestTime: "Oct to Feb",
     packages: [
@@ -288,7 +288,7 @@ export const leisureLists = [
     location: "Tamilnadu",
     shortNote:
       "Tamilnadu is a traditional land with a mixture of leisure and Spiritual places where you can see Big temples, Indian monuments which are still preserved in traditional way and World’s longest beach with Queen and princess of Hills (Ooty, Kodaikanal). There are around 80 Vaishnava Dhivya desa in Tamilnadu out of 108.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/tamilnadu.jpg",
     startingPrice: "Rs.11999/-",
     bestTime: "Oct to Mar",
     packages: [
@@ -321,7 +321,7 @@ export const leisureLists = [
     location: "Karnataka",
     shortNote:
       "Karnataka is popular for the Historical places like Mysore Palace, Tipusultan fort etc. The state alsovery famous for Temples in Murudeshwar, Hampi, Kukke, Udipi, Dharmasthala, Hillstations like Coorg and Beachfront like Gokarna, Murudeshwar etc.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Karnataka.jpg",
     startingPrice: "Rs.10000/-",
     bestTime: "Oct to Mar",
     packages: [
@@ -354,7 +354,7 @@ export const leisureLists = [
     location: "Kerala",
     shortNote:
       "Kerala is known as God’s own country and known for its hill stations like Munnar, Thenmala, Wayanadu and Backwater places like Alleppey, Kumarakom. There are some of the famous temple like Padmanaba temple, Chottanikarai, Shabarimala and much more.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/kerala.jpg",
     startingPrice: "Rs.9000/-",
     bestTime: "Oct to Feb",
     packages: [
@@ -385,7 +385,7 @@ export const leisureLists = [
     location: "Himachal",
     shortNote:
       "Himalachal Pradesh is very beautiful scenery for its hilly terrain region with Forest, Lakes, Rivers,Mountain and snow areas like Shimla, Kullu, Manali, Dalhousi, Dharmshala and Kasauli. ",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/himachal.jpg",
     startingPrice: "Rs.9900/-",
     bestTime: "Mar - Aug",
     packages: [
@@ -415,7 +415,7 @@ export const leisureLists = [
     location: "Jammu & Kashmir",
     shortNote:
       "Snow peak mountains, Deepest Forest, Valleys, Rivers and Lakes are main attractions with each surrounded by many beautiful unique sightseeing in Jammu and Kashmir.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Jammu & Kashmir.jpg",
     startingPrice: "Rs.14000/-",
     bestTime: "Mar - Aug",
     packages: [
@@ -445,7 +445,7 @@ export const leisureLists = [
     location: "Uttarakhand",
     shortNote:
       "This Holy places contains the mystical elements with minimum of 10-20 lakh people coming every year for Yatra. Mussoorie, Corbett national park and Nanital are few more places for Leisure and adventure activities.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Uttarakhand.jpg",
     startingPrice: "Rs.22300/-",
     bestTime: "Apr - Oct",
     packages: [
@@ -475,7 +475,7 @@ export const leisureLists = [
     location: "Rajasthan",
     shortNote:
       "Name of this Indian state clarifies that this place is for Raja and known for its palace, Monuments and Archeological Sites even if it’s a Desert. Every Site have history connected with it. Places like Jantar Mantar, Jal Mahal, Hawa Mahal, Ranthampore forest gives a wide knowledge about our culture and tradition.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Rajasthan.jpg",
     startingPrice: "Rs.13999/-",
     bestTime: "Sept - Jan",
     packages: [
@@ -505,7 +505,7 @@ export const leisureLists = [
     location: "North East States of India and West Bengal",
     shortNote:
       "Eight States - Sever sister states - Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura and a Brother state - Sikkim under North Eastern States of India. These are mostly forest and hilly region with unexplored beauty. Some of the popular places are Darjeeling, Shillong, Gangtok and Gauhati.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/North East.jpg",
     startingPrice: "Rs.14990/-",
     bestTime: "Sep - Jan",
     packages: [
@@ -539,7 +539,7 @@ export const leisureLists = [
     location: "Gujarat",
     shortNote:
       "Gujarat is famous for its Rajput and Marvadi community which is renowned for its Wild life Sanctuary, Historic value temples and beaches.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Gujarat.jpg",
     startingPrice: "Rs.12000/-",
     bestTime: "Oct - Feb",
     packages: [
@@ -569,7 +569,7 @@ export const leisureLists = [
     location: "Srilanka",
     shortNote:
       "Srilanka is an Island in South east Asia. This Island is known for Historical sites, beaches, Hills and precious stones. Ramayana Tour gives the entire narration of Ramayan which happened in Ilangai and King Ravana.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Srilanka.jpg",
     startingPrice: "Rs.19000/-",
     bestTime: "Oct - Feb",
     packages: [
@@ -604,7 +604,7 @@ export const leisureLists = [
     location: "Nepal",
     shortNote:
       "Nepal is a Hindu country visited by many tourist for Mt. Everest Expedition and other trekking experience. Lot of Adventure activities are available for the tourist people. Other than that, A whole lot of people come for Spiritual yatra for Manjunath (One of the Vaishnava’s Dhivya Deesh), Pashupathinath (One of the Jyotir Ling)",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Nepal.jpg",
     startingPrice: "Rs.22000/-",
     bestTime: "Apr - Sept",
     packages: [
@@ -640,7 +640,7 @@ export const leisureLists = [
     location: "Bhutan",
     shortNote:
       "Bhutan, ( which means a Land of Thunder Dragons) a Buddhist kingdom on the Himalayas’ eastern edge, is known for its monasteries, fortresses (or dzongs) and dramatic landscapes that range from subtropical plains to steep mountains and valleys.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Bhutan.jpg",
     startingPrice: "Rs.25000/-",
     bestTime: "",
     packages: [
@@ -674,7 +674,7 @@ export const leisureLists = [
     location: "Bangladesh",
     shortNote:
       "This is home to the world's largest river delta, which is formed by the Brahmaputra and the Ganges river. Bengal tigers in the Sundarbans, a mangrove and swampland in the delta makes it more beautiful. It is Known for the longest natural uninterrupted sea beach in Asia (Cox's Bazar beach), which is 150 km long.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Bangladesh.jpg",
     startingPrice: "Rs.15000/-",
     bestTime: "Nov - Apr",
     packages: [
@@ -709,7 +709,7 @@ export const leisureLists = [
     location: "Dubai",
     shortNote:
       "Dubai is situated on the Persian Gulf coast of the United Arab Emirates and is roughly at sea level (16 m or 52ft above). Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Dubai.jpg",
     startingPrice: "Rs.14000/-",
     bestTime: "Nov - Mar",
     packages: [
@@ -744,7 +744,7 @@ export const leisureLists = [
     location: "Maldives",
     shortNote:
       "Maldives is a popular destination amongst tourists, especially from India. Tourism in Maldives offers variety of sightseeing and entertainment options. The wide range of Maldives tourism packages provided by MakeMyTrip allows the traveller to explore various Maldives tourist places in comfort.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Maldives.jpg",
     startingPrice: "Rs.32000/-",
     bestTime: "Nov - Mar",
     packages: [
@@ -778,7 +778,7 @@ export const leisureLists = [
     location: "Mauritius",
     shortNote:
       "Mauritius is the perfect for honeymoon and a family holiday destination with White sandy beaches, turquoise blue waters, lavish resorts,. In addition, Mauritius is a volcanically erupted island surrounded by vast and colourful coral reefs, making it an ideal place for snorkelling and scuba diving.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Mauritius.jpg",
     startingPrice: "Rs.28000/-",
     bestTime: "Nov - Mar",
     packages: [
@@ -813,7 +813,7 @@ export const leisureLists = [
     location: "Singapore",
     shortNote:
       "Singapore has been effective in attracting travellers to the country due to its spectacularly clean, hygienic, and an environmentally friendly stature. Major Tourist Attraction in Singapore. Gardens by the Bay, located Adjacent to the Marina Reservoir. Sentosa Island, Located in the Central Region of Singapore. Singapore Flyer - Asia's Largest Giant Observation Wheel. Clarke Quay - Riverside Quay famous for Night life in Singapore.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Singapore.jpg",
     startingPrice: "Rs.25000/-",
     bestTime: "Nov - Mar",
     packages: [
@@ -851,7 +851,7 @@ export const leisureLists = [
     location: "Malaysia",
     shortNote:
       "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Malaysia.jpg",
     startingPrice: "Rs.15000/-",
     bestTime: "Sept - Apr",
     packages: [
@@ -887,7 +887,7 @@ export const leisureLists = [
     location: "Thailand",
     shortNote:
       "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). There are three coasts in Thailand : the southeastern coast, the southern Gulf of Thailand, and the Andaman coast. It is known to most travellers for beautiful Thailand’s Beaches and Islands.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Thailand.jpg",
     startingPrice: "Rs.13000/-",
     bestTime: "Sept – Apr",
     packages: [
@@ -921,7 +921,7 @@ export const leisureLists = [
     location: "Indonesia",
     shortNote:
       "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Melanesia between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Sulawesi, Java, and parts of Borneo and New Guinea Indonesia has very beautiful natural wealth. Because of its natural beauty that Indonesia has become a tourist destination that is much coveted by both local and international travelers from around the world. Panorama in Indonesia is certainly not inferior to other countries. For it would not hurt if we went on holiday to enjoy a variety of natural beauty that exist in Indonesia and make it as a tourist destination.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Indonesia.jpg",
     startingPrice: "Rs.18000/-",
     bestTime: "Sept – Apr",
     packages: [
@@ -955,7 +955,7 @@ export const leisureLists = [
     location: "United Kingdom",
     shortNote:
       "The United Kingdom is the world's 10th biggest tourist destination. The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/United Kingdom.jpg",
     startingPrice: "Rs.45000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -991,7 +991,7 @@ export const leisureLists = [
     location: "France",
     shortNote:
       "France is a leading Tourist destination across the world and tourism contributes more 80 Billion in an year for the countries GDP. Paris is famed for fashion etiquettes, Classical monuments like Eiffel tower, Louvre Museum. It is also famous for its wine and Cuisine.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/France.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -1025,7 +1025,7 @@ export const leisureLists = [
     location: "Switzerland",
     shortNote:
       "A country of Alp mountains, deep Alpine Lakes, Green valleys with Clear farms and small villages, and thriving cities that blend the old and the fashions, Switzerland is the nexus of the diversed geography and cultural of western Europe, renowned for both its natural beauty and its way of life. Aspects of both have become bywords for the country, whose very name conjures images of the glacier-carved Alps beloved of writers, artists, photographers, and outdoor sports enthusiasts from around the world. ",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Switzerland.jpg",
     startingPrice: "Rs.42000/-",
     bestTime: "Apr - Oct",
     packages: [
@@ -1059,7 +1059,7 @@ export const leisureLists = [
     location: "Austria",
     shortNote:
       "Mountains and forests give the Austrian landscape its character, although in the northeastern part of the country the Danube River winds between the eastern edge of the Alps and the hills of Bohemia and Moravia in its journey toward the Alföld, or Hungarian Plain. Vienna lies in the area where the Danube emerges from between the mountains into the drier plains.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Austria.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -1093,7 +1093,7 @@ export const leisureLists = [
     location: "Netherlands",
     shortNote:
       "The Netherlands is a densely populated country in part reclaimed from the sea with about half of its land lying below sea level. Many tourist only come to the Netherlands to visit Amsterdam. But Holland has plenty to offer outside its capital. Crisscrossed with canals, the flat landscape is perfect for cycling with historic town centers, classic windmills and other tourist spots sprinkled across the country. In the west and north the long coastline is marked by mile upon mile of protective dunes and sandy beaches.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Netherlands.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -1127,7 +1127,7 @@ export const leisureLists = [
     location: "Italy",
     shortNote:
       "This peninsula country is a centre of attention for centuries. This Roman Empire have more history to share with Vatican City as one of the important place to visit.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Italy.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -1164,7 +1164,7 @@ export const leisureLists = [
     location: "Spain",
     shortNote:
       "Spain is the second most visited country in the world. Spain is the only country in Europe that cares for its architectural relics as a heritage of its nation. The towns of Spain are known for being ideal for romantic tourism, which is why they are visited all year round by tourists from all over.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/spain.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
@@ -1198,7 +1198,7 @@ export const leisureLists = [
     location: "Croatia",
     shortNote:
       "Croatia may not be the first place you think of for a sunny holiday and yet, the coast is stunningly beautiful. As soon as you arrive in Croatia, you feel the country’s rich history. You find yourself among the ancient ruins, buildings and castles. Besides the amazing Croatian coastline, the country has over 1,200 islands. Croatia has stunningly beautiful greenery and numerous spectacular waterfalls and nature parks.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Croatia.jpg",
     startingPrice: "Rs.70000/-",
     bestTime: "Jun - Oct",
     packages: [
@@ -1232,7 +1232,7 @@ export const leisureLists = [
     location: "Germany",
     shortNote:
       "Germany is associated with rich history and culture which attracts most of the tourist to this country.",
-    img: "/Uttarpradesh.jpg",
+    img: "/places/Germany.jpg",
     startingPrice: "Rs.35000/-",
     bestTime: "Mar - Oct",
     packages: [
