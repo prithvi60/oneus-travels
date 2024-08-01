@@ -4,12 +4,12 @@ import SimpleSlider from "./Slider";
 import { Select, SelectItem } from "@nextui-org/select";
 
 const tabs = [
-  "1 - 3 days",
-  "4 - 6 days",
-  "7 - 9 days",
-  "10 - 12 days",
-  "13 days or more",
+  "Short Breaks (1-3 days)",
+  "Mini Vacations (4-5 days)",
+  "Extended Getaways (5+ days)",
 ];
+
+const category = ["india", "asia", "europe"];
 
 const SliderTabs = () => {
   return (
@@ -22,13 +22,31 @@ const SliderTabs = () => {
 export default SliderTabs;
 
 const Timeline = () => {
-  const [isActive, setIsActive] = useState("1 - 3 days");
+  const [isActive, setIsActive] = useState(tabs[0]);
 
   return (
     <div className="relative z-0 w-full space-y-4">
       <div className="w-full shadow-lg bg-secondary">
-        <div className="flex flex-col-reverse items-center justify-center w-full gap-2.5 md:gap-5 md:flex-row px-7 lg:px-0 ">
-          {/* sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] */}
+        <div className="flex flex-col items-center justify-center w-full gap-2.5 md:gap-5 md:flex-row px-7 lg:px-0 ">
+          <div className="flex items-center w-full md:w-max gap-3.5 p-5 overflow-x-auto hideScroll">
+            {tabs.map((item, idx) => (
+              <div
+                className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
+                  isActive === item && "bg-primary shadow-lg"
+                }  rounded-full cursor-pointer hover:bg-primary group transition-all duration-500 ease-in-out`}
+                key={idx}
+                onClick={() => setIsActive(item)}
+              >
+                <div
+                  className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
+                    isActive === item && "text-secondary"
+                  } text-primary group-hover:text-secondary`}
+                >
+                  {item}
+                </div>
+              </div>
+            ))}
+          </div>
           <Select
             placeholder="Select Category"
             size={"md"}
@@ -45,65 +63,13 @@ const Timeline = () => {
                 "bg-secondary !text-primary data-[hover=true]:!text-secondary rounded-md capitalize",
             }}
           >
-            {tabs.map((range, idx) => (
-              <SelectItem key={idx}>{range}</SelectItem>
+            {category.map((c, idx) => (
+              <SelectItem key={idx}>{c}</SelectItem>
             ))}
           </Select>
-          <div className="flex items-center w-full md:w-max gap-3.5 p-5 overflow-x-auto hideScroll">
-            {tabs.map((item, idx) => (
-              <div
-                className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
-                  isActive === item && "bg-primary shadow-lg"
-                }  rounded-full cursor-pointer hover:bg-primary group transition-all duration-500 ease-in-out`}
-                key={idx}
-                onClick={() => setIsActive(item)}
-              >
-                {/* <div className="relative w-6 h-6 sm:w-7 sm:h-7">
-                <Image alt="tour package icon" fill src={"/tour.png"} />
-              </div> */}
-                <div
-                  className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
-                    isActive === item && "text-secondary"
-                  } text-primary group-hover:text-secondary`}
-                >
-                  {item}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
       <SimpleSlider />
     </div>
   );
 };
-
-{
-  /* <div className="absolute z-10 right-14 md:!right-0 top-14 md:top-0">
-        <Select
-          // label="Filter:"
-          placeholder="Select Category"
-          labelPlacement={"outside-left"}
-          size={"md"}
-          // color="success"
-          // onChange={handleSelectionChange}
-          className="items-center"
-          classNames={{
-            base: "w-full max-w-xs h-full capitalize",
-            value: "!text-white font-medium",
-            label:
-              "w-full h-full !text-primary text-lg tracking-wider font-medium",
-            mainWrapper: "min-w-[230px]",
-            popoverContent: "!p-0",
-            trigger:
-              "bg-info !text-white data-[hover=true]:bg-info data-[hover=true]:bg-opacity-80",
-            innerWrapper: "capitalize !text-white",
-            listbox: "bg-info !text-white rounded-md capitalize",
-          }}
-        >
-          {priceRange.map((range, idx) => (
-            <SelectItem key={idx}>{range}</SelectItem>
-          ))}
-        </Select>
-      </div> */
-}

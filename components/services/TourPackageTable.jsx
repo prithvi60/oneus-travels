@@ -1,5 +1,5 @@
 "use client";
-import { columns, packages } from "@/libs/data";
+import { leisureLists } from "@/libs/data";
 import {
   Table,
   TableHeader,
@@ -7,89 +7,51 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  getKeyValue,
 } from "@nextui-org/table";
-import Link from "next/link";
-import { useCallback } from "react";
-
+import { usePathname } from "next/navigation";
 export const TourPackageTable = ({ location }) => {
-  const renderCell = useCallback((packageList, columnKey) => {
-    const cellValue = packageList[columnKey];
+  const path = usePathname()
+  const pathArray = path.split('/');
+  const locationPath = pathArray[pathArray.length - 1];
 
-    switch (columnKey) {
-      case "tour_packages":
-        return (
-          <p className="text-base font-Gilroy text-secondary">
-            {packageList.tourPackages}
-          </p>
-        );
-      case "duration":
-        return (
-          <p className="text-base font-Gilroy text-secondary">
-            {packageList.duration}
-          </p>
-        );
-      case "price":
-        return (
-          <div className="text-base font-Gilroy text-secondary">
-            {packageList.price}
-          </div>
-        );
-      case "inclusions":
-        return (
-          <div className="text-base font-Gilroy text-secondary">
-            {packageList.inclusions}
-          </div>
-        );
-      case "details":
-        return (
-          <Link
-            href={"/sample.pdf"}
-            download={"sample_file.pdf"}
-            type="file"
-            target="_blank"
-            className="text-base capitalize text-success hover:text-secondary font-Gilroy"
-          >
-            View Details
-          </Link>
-        );
-      default:
-        return cellValue;
-    }
-  }, []);
+const lists = leisureLists.filter(item => item.location === locationPath)
 
   return (
-    <section className="w-full h-auto padding">
-      <h2 className="text-xl font-semibold tracking-normal capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
+    <section className="w-full h-auto space-y-4 padding md:space-y-6">
+      <h2 className="text-xl font-semibold tracking-normal text-center capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
         {" "}
         best selling {location} Holiday Packages
       </h2>
-      <Table
-        color="secondary"
-        isStriped
-        aria-label={`${location} Tour Packages`}
-      >
-        <TableHeader columns={columns}>
-          {(column) => (
-            <TableColumn
-              key={column.uid}
-              className="text-lg text-secondary font-Poppins"
-              //   align={column.uid === "actions" ? "center" : "start"}
-            >
-              {column.name}
+      <div className="w-full mx-auto sm:max-w-xl lg:max-w-2xl">
+        <Table
+          color="secondary"
+          isStriped
+          aria-label={`${location} Tour Packages`}
+        >
+          <TableHeader
+            color="secondary"
+            isStriped
+            aria-label={`${location} Tour Packages`}
+          >
+            <TableColumn className="text-base font-semibold sm:text-lg text-secondary font-Gilroy">
+              Category
             </TableColumn>
-          )}
-        </TableHeader>
-        <TableBody items={packages}>
-          {(item) => (
-            <TableRow key={item.id}>
-              {(columnKey) => (
-                <TableCell>{renderCell(item, columnKey)}</TableCell>
-              )}
-            </TableRow>
-          )}
-        </TableBody>
-      </Table>
+            <TableColumn className="text-base font-semibold sm:text-lg text-secondary font-Gilroy">
+              Details
+            </TableColumn>
+          </TableHeader>
+          <TableBody>
+            {lists[0].packages.map((list, idx) => (
+              <TableRow key={idx}>
+                <TableCell className="text-sm font-medium capitalize sm:text-base text-secondary font-Poppins">
+                  {list.type}
+                </TableCell>
+                <TableCell className="text-sm font-normal sm:text-base text-secondary font-Poppins">{list.value}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
     </section>
   );
 };

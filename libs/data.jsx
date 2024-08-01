@@ -250,59 +250,1019 @@ export const timelines = [
   },
 ];
 
-export const columns = [
-  { name: "Tour Packages", uid: "tour_packages" },
-  { name: "Duration", uid: "duration" },
-  { name: "Price", uid: "price" },
-  { name: "Inclusions", uid: "inclusions" },
-  { name: "Details", uid: "details" },
+// leisure table data
+
+export const leisureLists = [
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Uttarpradesh",
+    shortNote:
+      "Delhi is a Capital territory of India and it holds the connectivity to almost all the other cities in India.Delhi is a cosmopolitan city where we can see different culture and traditions. Agra has one of the Seven Wonders –Tajmahal which can be reached in 2 hours from Delhi Airport.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.11000/-",
+    bestTime: "Oct to Feb",
+    packages: [
+      { type: "local Language", value: "Hindi" },
+      { type: "Capital", value: "New Delhi" },
+      { type: "Best Time to Visit", value: "October to February" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value: "Golden Triangle (3N/4D), Agra (2N/3D), Varanasi (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Delhi (DEL)" },
+      {
+        type: "Popular Food",
+        value: "Parathas, Maggi Masala, Roti and Dhal Makhani, Paneer Sabji",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.11000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Tamilnadu",
+    shortNote:
+      "Tamilnadu is a traditional land with a mixture of leisure and Spiritual places where you can see Big temples, Indian monuments which are still preserved in traditional way and World’s longest beach with Queen and princess of Hills (Ooty, Kodaikanal). There are around 80 Vaishnava Dhivya desa in Tamilnadu out of 108.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.11999/-",
+    bestTime: "Oct to Mar",
+    packages: [
+      { type: "local Language", value: "Tamil" },
+      { type: "Capital", value: "Chennai" },
+      { type: "Best Time to Visit", value: "October to March" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Ooty Package (2N/3D), KodaiKanal (2N/3D), Madurai, Trichy, Thanjavur(3N/4D), Kumbakonam (3N/4D), KanyaKumari (2N/3D), Kollimalai (2N/3D)",
+      },
+      {
+        type: "Popular Airport",
+        value: "Chennai (MAA), Tiruchirapalli(TRZ), Madurai(IXM),",
+      },
+      {
+        type: "Popular Food",
+        value: "Idli, Dosa, Vada, Pongal, Sambar, Rasam",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.11999/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Karnataka",
+    shortNote:
+      "Karnataka is popular for the Historical places like Mysore Palace, Tipusultan fort etc. The state alsovery famous for Temples in Murudeshwar, Hampi, Kukke, Udipi, Dharmasthala, Hillstations like Coorg and Beachfront like Gokarna, Murudeshwar etc.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.10000/-",
+    bestTime: "Oct to Mar",
+    packages: [
+      { type: "local Language", value: "Kanada" },
+      { type: "Capital", value: "Bangalore" },
+      { type: "Best Time to Visit", value: "October to March" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Coorg (3N/4D), Karnataka Temple Tour 4N/5D, Mysore and Bangalore(3N/4D)",
+      },
+      {
+        type: "Popular Airport",
+        value: "Bangalore (BLR), Mangalore(IXE), Mysore(MYQ",
+      },
+      {
+        type: "Popular Food",
+        value: "Rava Idli, Masala Dosa, Bonda, Shira, BisiBela Baath",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.10000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Kerala",
+    shortNote:
+      "Kerala is known as God’s own country and known for its hill stations like Munnar, Thenmala, Wayanadu and Backwater places like Alleppey, Kumarakom. There are some of the famous temple like Padmanaba temple, Chottanikarai, Shabarimala and much more.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.9000/-",
+    bestTime: "Oct to Feb",
+    packages: [
+      { type: "local Language", value: "Malayalam" },
+      { type: "Capital", value: "Trivandrum" },
+      { type: "Best Time to Visit", value: "October to Feb" },
+      { type: "Duration", value: "2 – 3 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Munnar (2N/3D), Kerala Temple Tour 2N/3D, Thenmala (2N/3D), Alleppey(2N/3D), Wayanadu (2N/3D), Kovalam (2N/3D)",
+      },
+      { type: "Popular Airport", value: "Trivandrum (TRV), Cochin(COK)" },
+      {
+        type: "Popular Food",
+        value:
+          "Puttu, Kappa, Kadai curry, Meen Polichadhu, Kari Meen, Kerala Koli fry",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.9000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Mini Vacations (4-5 days)",
+    location: "Himachal",
+    shortNote:
+      "Himalachal Pradesh is very beautiful scenery for its hilly terrain region with Forest, Lakes, Rivers,Mountain and snow areas like Shimla, Kullu, Manali, Dalhousi, Dharmshala and Kasauli. ",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.9900/-",
+    bestTime: "Mar - Aug",
+    packages: [
+      { type: "local Language", value: "Hindi" },
+      { type: "Capital", value: "Shimla" },
+      { type: "Best Time to Visit", value: "March - August" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Kullu, Manali (4N/5D), Shimla, Manali and Kulli 5N/6D",
+      },
+      { type: "Popular Airport", value: "Chandigarh (IXC), Delhi(DEL)" },
+      {
+        type: "Popular Food",
+        value:
+          "Poori and Channa, Rajma and Chawal, Dhal Makhani, Rice, Dhal, Roti and Parathas",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.9900/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Extended Getaways (5+ days)",
+    location: "Jammu & Kashmir",
+    shortNote:
+      "Snow peak mountains, Deepest Forest, Valleys, Rivers and Lakes are main attractions with each surrounded by many beautiful unique sightseeing in Jammu and Kashmir.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.14000/-",
+    bestTime: "Mar - Aug",
+    packages: [
+      { type: "local Language", value: "Hindi, Urdu & Kashmiri" },
+      { type: "Capital", value: "Srinagar(Summer), Jammu (Winter)" },
+      { type: "Best Time to Visit", value: "March - August" },
+      { type: "Duration", value: "4 – 7 days" },
+      {
+        type: "Packages Available",
+        value: "Srinagar, Pahalgam, Gulmarg(6N/7D), Vaishnov Devi (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Srinagar (SRX)" },
+      {
+        type: "Popular Food",
+        value:
+          "Dum Aloo, Rogan gosh curry, Dhal fry and Dhal Makhani, Rice, Dhal, Roti and Parathas",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.14000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Extended Getaways (5+ days)",
+    location: "Uttarakhand",
+    shortNote:
+      "This Holy places contains the mystical elements with minimum of 10-20 lakh people coming every year for Yatra. Mussoorie, Corbett national park and Nanital are few more places for Leisure and adventure activities.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.22300/-",
+    bestTime: "Apr - Oct",
+    packages: [
+      { type: "local Language", value: "Hindi" },
+      { type: "Capital", value: "Dehradun" },
+      { type: "Best Time to Visit", value: "April - October" },
+      { type: "Duration", value: "7 – 14 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Chardham Yatra (12N/13D), Do Dham (7N/8D), Corbett, Mussoorie, Nainital(5N/6D)",
+      },
+      { type: "Popular Airport", value: "Dehradun (DED)" },
+      {
+        type: "Popular Food",
+        value: "Rice, Dhal, Roti and Parathas",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.22300/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Extended Getaways (5+ days)",
+    location: "Rajasthan",
+    shortNote:
+      "Name of this Indian state clarifies that this place is for Raja and known for its palace, Monuments and Archeological Sites even if it’s a Desert. Every Site have history connected with it. Places like Jantar Mantar, Jal Mahal, Hawa Mahal, Ranthampore forest gives a wide knowledge about our culture and tradition.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.13999/-",
+    bestTime: "Sept - Jan",
+    packages: [
+      { type: "local Language", value: "Hindi" },
+      { type: "Capital", value: "Jaipur" },
+      { type: "Best Time to Visit", value: "September - January" },
+      { type: "Duration", value: "5 – 7 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Jaipur, Ranthampur, Udaipur (5N/6D), Udaipur, Jodhpur, Jaisalmer (5N/6D),Jaipur, Pushkar, Jaisalmer, Udaipur (6N/7D), Udaipur, Mt.Abu (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Jaipur (JAI), Udaipur (UDR)" },
+      {
+        type: "Popular Food",
+        value: "Rice, Dhal, Roti and Parathas",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.13999/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Extended Getaways (5+ days)",
+    location: "North East States of India and West Bengal",
+    shortNote:
+      "Eight States - Sever sister states - Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura and a Brother state - Sikkim under North Eastern States of India. These are mostly forest and hilly region with unexplored beauty. Some of the popular places are Darjeeling, Shillong, Gangtok and Gauhati.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.14990/-",
+    bestTime: "Sep - Jan",
+    packages: [
+      { type: "local Language", value: "Hindi" },
+      {
+        type: "Capital",
+        value:
+          "Itanagar (Arunchal Pradesh), Dispur (Assam), Imphal (Manipur), Shillong(Meghalaya), Aizwal (Mizoram), Kohima (Nagaland), Agartala(Tripura), Gangtok (Sikkim)",
+      },
+      { type: "Best Time to Visit", value: "September - January" },
+      { type: "Duration", value: "5 – 7 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Jaipur, Ranthampur, Udaipur (5N/6D), Udaipur, Jodhpur, Jaisalmer (5N/6D), Jaipur, Pushkar, Jaisalmer, Udaipur (6N/7D), Udaipur, Mt.Abu (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Jaipur (JAI), Udaipur (UDR)" },
+      {
+        type: "Popular Food",
+        value: "",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.14990/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Gujarat",
+    shortNote:
+      "Gujarat is famous for its Rajput and Marvadi community which is renowned for its Wild life Sanctuary, Historic value temples and beaches.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.12000/-",
+    bestTime: "Oct - Feb",
+    packages: [
+      { type: "local Language", value: "Hindi/Gujarati" },
+      { type: "Capital", value: "Gandhi Nagar" },
+      { type: "Best Time to Visit", value: "October - February" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value: "Gujarat Temple Tour (3N/4D), GIR National Sanctuary (2N/3D",
+      },
+      { type: "Popular Airport", value: "Ahmedabad (AMD), Porbandar (POR)" },
+      {
+        type: "Popular Food",
+        value:
+          "Roti, Dhal, Kadi, Dhokla, Fafda, Khandvi, Aam Shrikand, Thepla, Handvo, Patra, Sev Usal",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.12000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Srilanka",
+    shortNote:
+      "Srilanka is an Island in South east Asia. This Island is known for Historical sites, beaches, Hills and precious stones. Ramayana Tour gives the entire narration of Ramayan which happened in Ilangai and King Ravana.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.19000/-",
+    bestTime: "Oct - Feb",
+    packages: [
+      { type: "local Language", value: "Singalam / English" },
+      { type: "Capital", value: "Colombo" },
+      { type: "Best Time to Visit", value: "October - February" },
+      { type: "Duration", value: "5 – 6 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Colombo, Kandy, Nuwereliya, Bentota (5N/6D), Ramayan Tour (6N/7D)",
+      },
+      { type: "Popular Airport", value: "Colombo (CMB)" },
+      {
+        type: "Popular Food",
+        value: "String Hoppers, Sodhi, Aapam",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.19000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Option",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Nepal",
+    shortNote:
+      "Nepal is a Hindu country visited by many tourist for Mt. Everest Expedition and other trekking experience. Lot of Adventure activities are available for the tourist people. Other than that, A whole lot of people come for Spiritual yatra for Manjunath (One of the Vaishnava’s Dhivya Deesh), Pashupathinath (One of the Jyotir Ling)",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.22000/-",
+    bestTime: "Apr - Sept",
+    packages: [
+      { type: "local Language", value: "Hindi/Nepali/English" },
+      { type: "Capital", value: "Kathmandu" },
+      { type: "Best Time to Visit", value: "April - September" },
+      { type: "Duration", value: "5 – 6 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Grand Tour of Nepal (6N/7D), Adventure trip of Netpal (5N/6D), Pilgrimage in Nepal (5N/6D)",
+      },
+      { type: "Popular Airport", value: "Kathmandu (KTM), Pokhara (PKR)" },
+      {
+        type: "Popular Food",
+        value:
+          "– Momos, Dhal Baath, Sel Roti, Yomari, Dhido, Gundruk, Juju dhau",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.22000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Option",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Bhutan",
+    shortNote:
+      "Bhutan, ( which means a Land of Thunder Dragons) a Buddhist kingdom on the Himalayas’ eastern edge, is known for its monasteries, fortresses (or dzongs) and dramatic landscapes that range from subtropical plains to steep mountains and valleys.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.25000/-",
+    bestTime: "",
+    packages: [
+      { type: "local Language", value: "" },
+      { type: "Capital", value: "" },
+      { type: "Best Time to Visit", value: "" },
+      { type: "Duration", value: "" },
+      {
+        type: "Packages Available",
+        value: "",
+      },
+      { type: "Popular Airport", value: "" },
+      {
+        type: "Popular Food",
+        value: "",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.25000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Option",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Bangladesh",
+    shortNote:
+      "This is home to the world's largest river delta, which is formed by the Brahmaputra and the Ganges river. Bengal tigers in the Sundarbans, a mangrove and swampland in the delta makes it more beautiful. It is Known for the longest natural uninterrupted sea beach in Asia (Cox's Bazar beach), which is 150 km long.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.15000/-",
+    bestTime: "Nov - Apr",
+    packages: [
+      { type: "local Language", value: "Bangla" },
+      { type: "Capital", value: "Dhaka" },
+      { type: "Best Time to Visit", value: "November - April" },
+      { type: "Duration", value: "4 – 10days" },
+      {
+        type: "Packages Available",
+        value: "Bangladesh Tour (9N/10D), Sunderban (3N/4D",
+      },
+      { type: "Popular Airport", value: "Dhaka (DAC)" },
+      {
+        type: "Popular Food",
+        value:
+          "Panta Ilish, Kacchi Biryani, Vuna, Khichuri, Murg Pulao, Grill chicken, Haleem, Misti Doi, Rosgulla, Shemai, Pitha",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.15000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Bangladesh Visa process will take minimum 3-4 days. All Original Documents must be submitted and Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion in Mumbai.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Dubai",
+    shortNote:
+      "Dubai is situated on the Persian Gulf coast of the United Arab Emirates and is roughly at sea level (16 m or 52ft above). Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.14000/-",
+    bestTime: "Nov - Mar",
+    packages: [
+      { type: "local Language", value: "Arabic / English" },
+      { type: "Capital", value: "Dubai" },
+      { type: "Best Time to Visit", value: "November - March" },
+      { type: "Duration", value: "4 – 5 day" },
+      {
+        type: "Packages Available",
+        value: "Dubai Tour (4N/5D), Dubai and Abu-dhabi(5N/6D)",
+      },
+      { type: "Popular Airport", value: "Dubai(DXB)" },
+      {
+        type: "Popular Food",
+        value:
+          "Mandi, Falafel, Chelo Kebab, Oozie, Baba Ganoush, Luqaimat, Baklava",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.14000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for passenger who have Valid US Visa) , Dubai Visa process will take minimum 2 days and upto 4– 30 days visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Maldives",
+    shortNote:
+      "Maldives is a popular destination amongst tourists, especially from India. Tourism in Maldives offers variety of sightseeing and entertainment options. The wide range of Maldives tourism packages provided by MakeMyTrip allows the traveller to explore various Maldives tourist places in comfort.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.32000/-",
+    bestTime: "Nov - Mar",
+    packages: [
+      { type: "local Language", value: "Dhivehi/ English" },
+      { type: "Capital", value: "Male" },
+      { type: "Best Time to Visit", value: "November - March" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Maldives (with Beach villa and Water villa) 4N/5D",
+      },
+      { type: "Popular Airport", value: "Male (MLE)" },
+      {
+        type: "Popular Food",
+        value: "Garudhiya, Mas Huni, Bis Kheemya, Boshi Mashuni, Fried Yam",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.32000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Mauritius",
+    shortNote:
+      "Mauritius is the perfect for honeymoon and a family holiday destination with White sandy beaches, turquoise blue waters, lavish resorts,. In addition, Mauritius is a volcanically erupted island surrounded by vast and colourful coral reefs, making it an ideal place for snorkelling and scuba diving.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.28000/-",
+    bestTime: "Nov - Mar",
+    packages: [
+      { type: "local Language", value: "English" },
+      { type: "Capital", value: "Port Louis" },
+      { type: "Best Time to Visit", value: "November - March" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Mauritius Tour (4N/5D)",
+      },
+      { type: "Popular Airport", value: "Mauritius (MRU)" },
+      {
+        type: "Popular Food",
+        value:
+          "Bol Renverse, Mauritian Biryani, Dholl Puri, Chili Bites, Puttu, Boulettes,",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.28000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Singapore",
+    shortNote:
+      "Singapore has been effective in attracting travellers to the country due to its spectacularly clean, hygienic, and an environmentally friendly stature. Major Tourist Attraction in Singapore. Gardens by the Bay, located Adjacent to the Marina Reservoir. Sentosa Island, Located in the Central Region of Singapore. Singapore Flyer - Asia's Largest Giant Observation Wheel. Clarke Quay - Riverside Quay famous for Night life in Singapore.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.25000/-",
+    bestTime: "Nov - Mar",
+    packages: [
+      {
+        type: "local Language",
+        value: "English, Malay, Tamil, Mandarin Chinese",
+      },
+      { type: "Capital", value: "Singapore City" },
+      { type: "Best Time to Visit", value: "November - March" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Singapore Tour (4N/5D)",
+      },
+      { type: "Popular Airport", value: "Singapore (SIN)" },
+      {
+        type: "Popular Food",
+        value:
+          "Laksa, Satay, Roti Parata and Teh Tarik, Hainanese Chicken rice, Chilli Crab",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.25000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Singapore Visa process will take minimum 2 days. All Original Documents must be submitted and Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Malaysia",
+    shortNote:
+      "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.15000/-",
+    bestTime: "Sept - Apr",
+    packages: [
+      { type: "local Language", value: "Malay, Tamil, Chinese" },
+      { type: "Capital", value: "Kuala Lumpur" },
+      { type: "Best Time to Visit", value: "September - April" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Malaysian Tour (3N/4D), Kualalumpur and Genting Highland (3N/4D), Kuala Lumpur and Camaroon Highland (4N/5D), Kuala Lumpur and Langkawi(4N/5D)",
+      },
+      { type: "Popular Airport", value: "Kuala Lumpur (KUL)" },
+      {
+        type: "Popular Food",
+        value:
+          "Aapam Bhalik, Nasi Lemak, Rendang, Nasi Khadar, Roti Jala, Malaysian",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.15000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Malaysia Visa process will take minimum 2 days, can be applied Online. Incase of further verification, all the original documents have to be submitted to the consulate and Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Thailand",
+    shortNote:
+      "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). There are three coasts in Thailand : the southeastern coast, the southern Gulf of Thailand, and the Andaman coast. It is known to most travellers for beautiful Thailand’s Beaches and Islands.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.13000/-",
+    bestTime: "Sept – Apr",
+    packages: [
+      { type: "local Language", value: "Thai /English" },
+      { type: "Capital", value: "Jakarta" },
+      { type: "Best Time to Visit", value: "September – April" },
+      { type: "Duration", value: "5– 6 days" },
+      {
+        type: "Packages Available",
+        value: " Bangkok and Pattaya (3N/4D), Bangkok and Phuket (4N/5D)",
+      },
+      { type: "Popular Airport", value: "Jakarta (CGK), Bali (DPS)" },
+      {
+        type: "Popular Food",
+        value: "Noodle soup, Tom Kha Gai, Som Tam, Laab, Khao Pad, Panang",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.13000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Indonesia",
+    shortNote:
+      "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Melanesia between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Sulawesi, Java, and parts of Borneo and New Guinea Indonesia has very beautiful natural wealth. Because of its natural beauty that Indonesia has become a tourist destination that is much coveted by both local and international travelers from around the world. Panorama in Indonesia is certainly not inferior to other countries. For it would not hurt if we went on holiday to enjoy a variety of natural beauty that exist in Indonesia and make it as a tourist destination.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.18000/-",
+    bestTime: "Sept – Apr",
+    packages: [
+      { type: "local Language", value: "Indonesian / English" },
+      { type: "Capital", value: "Jakarta" },
+      { type: "Best Time to Visit", value: "September – April" },
+      { type: "Duration", value: "5– 6 days" },
+      {
+        type: "Packages Available",
+        value: "Kuta, Ubud & Seminak (5N/6D), Kuta, Gianyar, Nusa Dua (6N/7D)",
+      },
+      { type: "Popular Airport", value: "Jakarta (CGK), Bali (DPS)" },
+      {
+        type: "Popular Food",
+        value: "Noodle soup, Tom Kha Gai, Som Tam, Laab, Khao Pad, Panang",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.18000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Extended Getaways (5+ days)",
+    location: "United Kingdom",
+    shortNote:
+      "The United Kingdom is the world's 10th biggest tourist destination. The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.45000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "English" },
+      { type: "Capital", value: "London" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "8– 9 days" },
+      {
+        type: "Packages Available",
+        value:
+          "London Tour (3N/4D), London & Edinburg (5N/6D), London & Dublin(5N/6D)",
+      },
+      { type: "Popular Airport", value: "London Heathrow (LHR)" },
+      {
+        type: "Popular Food",
+        value:
+          "Fish and Chips, Turkey Roast with Vegies sides, Chicken Broth soup, Steak and Kidney Pie, English Breakfast, Cottage Pie",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.45000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "UK Visa process will take minimum 3-7days, can be applied in VFS. All the original documents have to be submitted, Biometric is also required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Short Breaks (1-3 days)",
+    location: "France",
+    shortNote:
+      "France is a leading Tourist destination across the world and tourism contributes more 80 Billion in an year for the countries GDP. Paris is famed for fashion etiquettes, Classical monuments like Eiffel tower, Louvre Museum. It is also famous for its wine and Cuisine.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "French" },
+      { type: "Capital", value: "Paris" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "3– 4 days" },
+      {
+        type: "Packages Available",
+        value: "Paris (3N/4D), Paris & Nice (5N/6D), Europe Tour (9N/10D)",
+      },
+      { type: "Popular Airport", value: "Paris (CDG)" },
+      {
+        type: "Popular Food",
+        value: "French Onion soup, Coq au Vin, Cassoulet",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "French Visa process or Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Extended Getaways (5+ days)",
+    location: "Switzerland",
+    shortNote:
+      "A country of Alp mountains, deep Alpine Lakes, Green valleys with Clear farms and small villages, and thriving cities that blend the old and the fashions, Switzerland is the nexus of the diversed geography and cultural of western Europe, renowned for both its natural beauty and its way of life. Aspects of both have become bywords for the country, whose very name conjures images of the glacier-carved Alps beloved of writers, artists, photographers, and outdoor sports enthusiasts from around the world. ",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.42000/-",
+    bestTime: "Apr - Oct",
+    packages: [
+      { type: "local Language", value: "French, German, Italian and Romansh" },
+      { type: "Capital", value: "Bern" },
+      { type: "Best Time to Visit", value: "April - October" },
+      { type: "Duration", value: "5– 6 days" },
+      {
+        type: "Packages Available",
+        value: "Grand Swiss Tour (5N/6D), Europe Tour (9N/10D)",
+      },
+      { type: "Popular Airport", value: "Zurich (ZRH), Geneva (GVA)" },
+      {
+        type: "Popular Food",
+        value: "Fondue, Rosti, Muesli and Raclette",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.42000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Swiss Visa process or Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Short Breaks (1-3 days)",
+    location: "Austria",
+    shortNote:
+      "Mountains and forests give the Austrian landscape its character, although in the northeastern part of the country the Danube River winds between the eastern edge of the Alps and the hills of Bohemia and Moravia in its journey toward the Alföld, or Hungarian Plain. Vienna lies in the area where the Danube emerges from between the mountains into the drier plains.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "German" },
+      { type: "Capital", value: "Vienna" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "1– 2 days" },
+      {
+        type: "Packages Available",
+        value: "Vienna (1N/2D)",
+      },
+      { type: "Popular Airport", value: "Vienna (VIE)" },
+      {
+        type: "Popular Food",
+        value: "Tafelspitz, Wiener Schnitzel",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Short Breaks (1-3 days)",
+    location: "Netherlands",
+    shortNote:
+      "The Netherlands is a densely populated country in part reclaimed from the sea with about half of its land lying below sea level. Many tourist only come to the Netherlands to visit Amsterdam. But Holland has plenty to offer outside its capital. Crisscrossed with canals, the flat landscape is perfect for cycling with historic town centers, classic windmills and other tourist spots sprinkled across the country. In the west and north the long coastline is marked by mile upon mile of protective dunes and sandy beaches.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "Dutch" },
+      { type: "Capital", value: "Amsterdam" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "3– 4 days" },
+      {
+        type: "Packages Available",
+        value: "Amsterdam (1N/2D)",
+      },
+      { type: "Popular Airport", value: "Amsterdam (AMS)" },
+      {
+        type: "Popular Food",
+        value: "Poffertjes, Hollandse nieuwe haring, Sate, Stamppot",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Extended Getaways (5+ days)",
+    location: "Italy",
+    shortNote:
+      "This peninsula country is a centre of attention for centuries. This Roman Empire have more history to share with Vatican City as one of the important place to visit.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "Italian" },
+      { type: "Capital", value: "Rome" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "5– 6 days" },
+      {
+        type: "Packages Available",
+        value: "Rome & Venice (4N/5D)",
+      },
+      {
+        type: "Popular Airport",
+        value: "Rome (FCE), Milan (MXP), Venice (VCE)",
+      },
+      {
+        type: "Popular Food",
+        value: "Pizza, Pasta, Risotto, Lasagna Bolognese",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Extended Getaways (5+ days)",
+    location: "Spain",
+    shortNote:
+      "Spain is the second most visited country in the world. Spain is the only country in Europe that cares for its architectural relics as a heritage of its nation. The towns of Spain are known for being ideal for romantic tourism, which is why they are visited all year round by tourists from all over.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "Spanish" },
+      { type: "Capital", value: "Madrid" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "5 – 6 days" },
+      {
+        type: "Packages Available",
+        value: "Barcelona & Madrid (4N/5D)",
+      },
+      { type: "Popular Airport", value: "Barcelona (FCE), Madrid (MXP)" },
+      {
+        type: "Popular Food",
+        value: "Paella, Tortilla, Patata bravas",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Mini Vacations (4-5 days)",
+    location: "Croatia",
+    shortNote:
+      "Croatia may not be the first place you think of for a sunny holiday and yet, the coast is stunningly beautiful. As soon as you arrive in Croatia, you feel the country’s rich history. You find yourself among the ancient ruins, buildings and castles. Besides the amazing Croatian coastline, the country has over 1,200 islands. Croatia has stunningly beautiful greenery and numerous spectacular waterfalls and nature parks.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.70000/-",
+    bestTime: "Jun - Oct",
+    packages: [
+      { type: "local Language", value: "Croatian" },
+      { type: "Capital", value: "Zagreb" },
+      { type: "Best Time to Visit", value: "June - October" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Croatian Grand Trour (5N/6D",
+      },
+      { type: "Popular Airport", value: "Zagreb (ZAG), Dubrovnik (DBV)" },
+      {
+        type: "Popular Food",
+        value: "Istrian Stew, Pasta fazol, Polenta and Cornbread with lard.",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.70000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+      },
+    ],
+  },
+  {
+    category: "europe",
+    days: "Short Breaks (1-3 days)",
+    location: "Germany",
+    shortNote:
+      "Germany is associated with rich history and culture which attracts most of the tourist to this country.",
+    img: "/Uttarpradesh.jpg",
+    startingPrice: "Rs.35000/-",
+    bestTime: "Mar - Oct",
+    packages: [
+      { type: "local Language", value: "German" },
+      { type: "Capital", value: "Berlin" },
+      { type: "Best Time to Visit", value: "March - October" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value: "Berlin & Munich (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Frankfurt (LHR), Munich, Berlin" },
+      {
+        type: "Popular Food",
+        value: "Brot & Brötchen, Käsespätzle",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.35000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
+      },
+    ],
+  },
 ];
 
-export const packages = [
-  {
-    id: 1,
-    tourPackages: "Enjoy An Island Getaway With Our Andaman Honeymoon Package",
-    duration: "5 Nights/6 Days",
-    price: "₹24,420/-	",
-    inclusions: "Upto 3 Stars, Meals, Sightseeing, Transfers, Stay Included	",
-    detailsRef: "#",
-  },
-  {
-    id: 2,
-    tourPackages:
-      "Discover Our Beautiful 4 Nights 5 Days Andaman Family Tour Packages	",
-    duration: "4 Nights/5 Days	",
-    price: "₹18,990/-	",
-    inclusions: "Upto 2 Stars, Meals, Sightseeing, Transfers	",
-    detailsRef: "#",
-  },
-  {
-    id: 3,
-    tourPackages:
-      "Time To Indulge In Some Thrilling Activities & Soak The Sun On The Sand	",
-    duration: "5 Nights/6 Days	",
-    price: "₹25,200/-",
-    inclusions: "Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers	",
-    detailsRef: "#",
-  },
-  {
-    id: 4,
-    tourPackages:
-      "Check Out Our Top-rated Andaman Itinerary For 4 Days For A Soulful Vacancy	",
-    duration: "3 Nights/4 Days	",
-    price: "₹16,800/-	",
-    inclusions: "Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers	",
-    detailsRef: "#",
-  },
-  {
-    id: 5,
-    tourPackages: "Fantastic Andaman Honeymoon Package	",
-    duration: "4 Nights/5 Days	",
-    price: "₹15,599/-	",
-    inclusions: "Upto 3 Stars, Meals, Sightseeing, Transfers, Watersports	",
-    detailsRef: "#",
-  },
-];
+// footer policy
 
 export const bookingTC = [
   {

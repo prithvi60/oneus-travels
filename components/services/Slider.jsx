@@ -80,7 +80,7 @@ function SimpleSlider() {
           <Link
             href={`${path}/${item.location}`}
             title="location"
-            className="relative w-full px-2.5 my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md"
+            className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md"
             key={id}
           >
             <div className="relative overflow-hidden w-full h-[20vh] md:h-[30vh] rounded-t-md">
@@ -102,7 +102,7 @@ function SimpleSlider() {
                 </h3>
               </div>
             </div>
-            <div className="flex flex-col w-full h-auto gap-2 pt-3.5 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Gilroy">
+            <div className="flex flex-col w-full h-auto gap-2 px-2.5 pt-3.5 capitalize sm:gap-0 sm:items-center sm:justify-between sm:flex-row font-Gilroy">
               <div className="font-medium text-secondary">
                 <h5 className="text-xs sm:text-sm">{item.location}</h5>
                 <p className="text-[11px] sm:text-xs opacity-60 font-Poppins">
