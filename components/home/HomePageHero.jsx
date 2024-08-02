@@ -46,7 +46,7 @@ export const HomePageHero = () => {
             priority
             loading={"eager"}
             alt="bg image"
-            src={"/sample_image.jpg"}
+            src={"/sample_image.png"}
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
             className="blur-sm"
@@ -63,7 +63,7 @@ export const HomePageHero = () => {
       >
         <source
           src={
-            "https://ik.imagekit.io/webibee/sample_video.mp4?updatedAt=1718791322485"
+            "https://ik.imagekit.io/webibee/oneus-sample.mp4?updatedAt=1722576543757"
           }
           type="video/mp4"
         />

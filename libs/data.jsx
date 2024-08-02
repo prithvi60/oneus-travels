@@ -1576,13 +1576,13 @@ export const team = [
     category: "Board",
     card: [
       {
-        src: "/avatar.png",
+        src: "/man.png",
         name: "Vishnuprabha Thirukonda ",
         position: "CEO & Managing Director",
         desc: "",
       },
       {
-        src: "/avatar.png",
+        src: "/woman.png",
         name: "Sushkrutha Kuttuva ",
         position: "Non Executive Director",
         desc: "",
@@ -1593,25 +1593,25 @@ export const team = [
     category: "Regional & Global Leadership",
     card: [
       {
-        src: "/avatar.png",
+        src: "/woman.png",
         name: "Jayabharathi S",
         position: "Financial Officer",
         desc: "",
       },
       {
-        src: "/avatar.png",
+        src: "/woman.png",
         name: "Kavitha Srinivasan ",
         position: "Manager – Corporate Sales & Leisure",
         desc: "",
       },
       {
-        src: "/avatar.png",
+        src: "/man.png",
         name: "Boobalan",
         position: "Manager - Visa",
         desc: "",
       },
       {
-        src: "/avatar.png",
+        src: "/man.png",
         name: "Arun",
         position: "Manager - Operations",
         desc: "",

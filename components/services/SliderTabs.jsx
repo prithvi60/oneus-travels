@@ -9,7 +9,7 @@ const tabs = [
   "Mini Vacations (4-5 days)",
   "Extended Getaways (5+ days)",
 ];
-
+// .replace("Extended Getaways", "").trim().replace("(", "").replace(")", "")
 const category = ["india", "asia", "europe"];
 
 const SliderTabs = () => {
@@ -37,7 +37,7 @@ const Timeline = () => {
       ? item.category === category[Number(value.currentKey)] && item
       : lists
   );
-  console.log(filter);
+  // console.log(filter);
   return (
     <div className="relative z-0 w-full space-y-4">
       <div className="w-full shadow-lg bg-secondary">
@@ -52,18 +52,25 @@ const Timeline = () => {
                 onClick={() => setIsActive(item)}
               >
                 <div
-                  className={`text-sm font-semibold sm:text-base  font-Gilroy whitespace-nowrap ${
+                  className={`hidden sm:block font-semibold text-base  font-Gilroy whitespace-nowrap ${
                     isActive === item && "text-secondary"
                   } text-primary group-hover:text-secondary`}
                 >
                   {item}
+                </div>
+                <div
+                  className={`block sm:hidden text-base font-semibold font-Gilroy ${
+                    isActive === item && "text-secondary"
+                  } text-primary`}
+                >
+                  {item.match(/\((.*)\)/)[1]}
                 </div>
               </div>
             ))}
           </div>
           <Select
             aria-labelledby=""
-            placeholder="Select Category"
+            placeholder="Region"
             size={"md"}
             // value={val}
             // onChange={handleSelectionChange}

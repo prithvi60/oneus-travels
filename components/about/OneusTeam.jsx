@@ -12,7 +12,7 @@ export const OneusTeam = () => {
   const data2 = data[0].card.filter((item) =>
     item.name === val ? item : null
   );
-  console.log({ val, data2 });
+  // console.log({ val, data2 });
   return (
     <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
       <p className="text-base font-normal font-Poppins">
@@ -51,13 +51,21 @@ export const OneusTeam = () => {
             key={idx}
             onClick={() => setVal(list.name)}
           >
-            <div className="relative w-full overflow-hidden rounded-full h-44">
+            <div className="relative w-full h-44">
               <Image
                 fill
                 alt={list.name}
                 src={list.src}
-                className="object-contain p-3 transition-all ease-in-out group-hover:scale-105 duration-400"
+                className="object-contain object-top p-1 transition-all ease-in-out group-hover:scale-105 duration-400"
               />
+              <div className="absolute w-11 h-11 -bottom-1 left-6">
+                <Image
+                  fill
+                  alt={"oneus logo"}
+                  src={"/oneus-logo-2.svg"}
+                  className="object-contain p-0.5 rounded-full cursor-pointer bg-primary transition-all ease-in-out group-hover:scale-105 border border-secondary duration-400"
+                />
+              </div>
             </div>
             <div className="pt-6 space-y-3 text-center">
               <h4 className="text-lg font-semibold tracking-wider transition-all ease-linear md:text-xl font-Gilroy group-hover:text-info duration-400">
