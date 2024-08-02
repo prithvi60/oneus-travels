@@ -25,19 +25,17 @@ export default SliderTabs;
 const Timeline = () => {
   const [isActive, setIsActive] = useState(tabs[0]);
   const [value, setValue] = useState(null);
-  const [filteredData, setFilteredData] = useState(null);
+  // const [filteredData, setFilteredData] = useState(null);
   const lists = leisureLists.filter((item) => item.days === isActive);
   // setFilteredData(() => lists);
   // const handleSelectionChange = (e) => {
   //   setValue(Number(e.target.value));
   // };
   // if(value !== )
-  const filter = lists.filter((item) =>
-    value !== null
-      ? item.category === category[Number(value.currentKey)] && item
-      : lists
+  const regionFilteredData = lists.filter((item) =>
+    value !== null ? item.category === category[value] && item : lists
   );
-  // console.log(filter);
+  // console.log({ value, filter });
   return (
     <div className="relative z-0 w-full space-y-4">
       <div className="w-full shadow-lg bg-secondary">
@@ -69,13 +67,13 @@ const Timeline = () => {
             ))}
           </div>
           <Select
-            aria-labelledby=""
+            aria-label="Region"
             placeholder="Region"
             size={"md"}
             // value={val}
-            // onChange={handleSelectionChange}
-            selectedKeys={value}
-            onSelectionChange={setValue}
+            onChange={(e) => setValue(Number(e.target.value))}
+            // selectedKeys={value}
+            // onSelectionChange={setValue}
             className="items-center"
             classNames={{
               base: "w-full max-w-[320px] h-full capitalize pb-5 lg:py-5",
@@ -94,7 +92,7 @@ const Timeline = () => {
           </Select>
         </div>
       </div>
-      <SimpleSlider lists={lists} />
+      <SimpleSlider lists={regionFilteredData} />
     </div>
   );
 };

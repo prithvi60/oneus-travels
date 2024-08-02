@@ -47,28 +47,30 @@ export const OneusTeam = () => {
       <div className="flex flex-wrap items-center justify-center gap-6">
         {data[0].card.map((list, idx) => (
           <div
-            className="flex flex-col items-center justify-center p-4 shadow-xl rounded-xl group w-full max-w-[295px] sm:w-[260px] h-80 cursor-pointer"
+            className="flex flex-col items-center justify-center p-4 shadow-xl rounded-xl group w-full sm:w-[270px]  md:w-[280px] h-80 cursor-pointer"
             key={idx}
             onClick={() => setVal(list.name)}
           >
-            <div className="relative w-full h-44">
-              <Image
-                fill
-                alt={list.name}
-                src={list.src}
-                className="object-contain object-top p-1 transition-all ease-in-out group-hover:scale-105 duration-400"
-              />
-              <div className="absolute w-11 h-11 -bottom-1 left-6">
+            <div className="relative">
+              <div className="relative mx-auto overflow-hidden border-4 rounded-full w-44 h-44 border-[#78AADA]">
+                <Image
+                  fill
+                  alt={list.name}
+                  src={list.src}
+                  className="object-contain object-top p-1 transition-all ease-in-out group-hover:scale-105 duration-400"
+                />
+              </div>
+              <div className="absolute right-0 w-11 h-11 -bottom-1">
                 <Image
                   fill
                   alt={"oneus logo"}
                   src={"/oneus-logo-2.svg"}
-                  className="object-contain p-0.5 rounded-full cursor-pointer bg-primary transition-all ease-in-out group-hover:scale-105 border border-secondary duration-400"
+                  className="object-contain"
                 />
               </div>
             </div>
             <div className="pt-6 space-y-3 text-center">
-              <h4 className="text-lg font-semibold tracking-wider transition-all ease-linear md:text-xl font-Gilroy group-hover:text-info duration-400">
+              <h4 className="text-lg font-semibold tracking-wider transition-all ease-linear font-Gilroy group-hover:text-info duration-400">
                 {list.name}
               </h4>
               <p className="text-sm font-normal tracking-wide transition-all duration-500 ease-linear font-Poppins group-hover:text-info">

@@ -150,106 +150,6 @@ export const testimonialList = [
 
 export const clients = ["/pic_1.png", "/pic_2.png", "/pic_3.png", "/pic_4.png"];
 
-export const timelines = [
-  {
-    imgSrc: "/bg_1.jpg",
-    ref: "/",
-    months: "may - june",
-    location: "singapore",
-    cost: "29000",
-    packages: "105",
-  },
-  {
-    imgSrc: "/bg_2.jpg",
-    ref: "/",
-    months: "jan - mar",
-    location: "bali",
-    cost: "19000",
-    packages: "50",
-  },
-  {
-    imgSrc: "/bg_3.jpg",
-    ref: "/",
-    months: "nov - dec",
-    location: "bhutan",
-    cost: "9000",
-    packages: "10",
-  },
-  {
-    imgSrc: "/bg_1.jpg",
-    ref: "/",
-    months: "may - june",
-    location: "singapore",
-    cost: "29000",
-    packages: "105",
-  },
-  {
-    imgSrc: "/bg_2.jpg",
-    ref: "/",
-    months: "jan - mar",
-    location: "bali",
-    cost: "19000",
-    packages: "50",
-  },
-  {
-    imgSrc: "/bg_3.jpg",
-    ref: "/",
-    months: "nov - dec",
-    location: "bhutan",
-    cost: "9000",
-    packages: "10",
-  },
-  {
-    imgSrc: "/bg_1.jpg",
-    ref: "/",
-    months: "may - june",
-    location: "singapore",
-    cost: "29000",
-    packages: "105",
-  },
-  {
-    imgSrc: "/bg_2.jpg",
-    ref: "/",
-    months: "jan - mar",
-    location: "bali",
-    cost: "19000",
-    packages: "50",
-  },
-  {
-    imgSrc: "/bg_3.jpg",
-    ref: "/",
-    months: "nov - dec",
-    location: "bhutan",
-    cost: "9000",
-    packages: "10",
-  },
-  ,
-  {
-    imgSrc: "/bg_1.jpg",
-    ref: "/",
-    months: "may - june",
-    location: "singapore",
-    cost: "29000",
-    packages: "105",
-  },
-  {
-    imgSrc: "/bg_2.jpg",
-    ref: "/",
-    months: "jan - mar",
-    location: "bali",
-    cost: "19000",
-    packages: "50",
-  },
-  {
-    imgSrc: "/bg_3.jpg",
-    ref: "/",
-    months: "nov - dec",
-    location: "bhutan",
-    cost: "9000",
-    packages: "10",
-  },
-];
-
 // leisure table data
 
 export const leisureLists = [
@@ -642,20 +542,20 @@ export const leisureLists = [
       "Bhutan, ( which means a Land of Thunder Dragons) a Buddhist kingdom on the Himalayas’ eastern edge, is known for its monasteries, fortresses (or dzongs) and dramatic landscapes that range from subtropical plains to steep mountains and valleys.",
     img: "/places/Bhutan.jpg",
     startingPrice: "Rs.25000/-",
-    bestTime: "",
+    bestTime: "Apr - Sept",
     packages: [
-      { type: "local Language", value: "" },
-      { type: "Capital", value: "" },
-      { type: "Best Time to Visit", value: "" },
-      { type: "Duration", value: "" },
+      { type: "local Language", value: "Dzongkha / English" },
+      { type: "Capital", value: "Thimphu" },
+      { type: "Best Time to Visit", value: "April - September" },
+      { type: "Duration", value: "5 – 6 days" },
       {
         type: "Packages Available",
-        value: "",
+        value: "Bhutan (5N/6D)",
       },
-      { type: "Popular Airport", value: "" },
+      { type: "Popular Airport", value: "Paro (PBH)" },
       {
         type: "Popular Food",
-        value: "",
+        value: "Red Rice, Momos, Ema Datshi, Jasha Maroo",
       },
       {
         type: "Package Starting from",
@@ -1588,7 +1488,7 @@ export const team = [
     category: "Board",
     card: [
       {
-        src: "/man.png",
+        src: "/woman.png",
         name: "Vishnuprabha Thirukonda ",
         position: "CEO & Managing Director",
         desc: "",
