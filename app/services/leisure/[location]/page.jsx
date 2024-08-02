@@ -6,7 +6,7 @@ const page = ({ params }) => {
   return (
     <div>
       <TourHeroSection />
-      <TourPackages location={params.location.replace(/%20/g, " ")}/>
+      <TourPackages location={params.location.replace(/_/g, " ")}/>
       <TourPackageTable />
     </div>
   );

@@ -312,7 +312,7 @@ export const leisureLists = [
   {
     category: "india",
     days: "Extended Getaways (5+ days)",
-    location: "Jammu & Kashmir",
+    location: "Jammu and Kashmir",
     shortNote:
       "Snow peak mountains, Deepest Forest, Valleys, Rivers and Lakes are main attractions with each surrounded by many beautiful unique sightseeing in Jammu and Kashmir.",
     img: "/places/Jammu & Kashmir.jpg",

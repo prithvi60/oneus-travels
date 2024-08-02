@@ -75,7 +75,7 @@ function SimpleSlider({ lists }) {
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">
       {lists.length === 0 ? (
-        <div className="block space-y-6 text-center py-7 text-secondary">
+        <div className="block space-y-6 text-center py-3.5 md:py-7 text-secondary">
           <div className="relative w-24 h-24 mx-auto overflow-hidden">
             <Image
               fill
@@ -101,7 +101,8 @@ function SimpleSlider({ lists }) {
         <Slider {...settings} className="!py-2.5">
           {lists.map((item, id) => (
             <Link
-              href={`${path}/${item.location}`}
+              href={`${path}/${item.location.replace(/\s/g, "_")
+              }`}
               title="location"
               className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md overflow-hidden group"
               key={id}
