@@ -1558,15 +1558,27 @@ export const whyUsAccordion = [
 ];
 
 export const whyOneusIcons = [
-  { note: "24 x 7 support ", src: "/support.png" },
-  { note: "Travel Services", src: "/services.png" },
-  { note: "Company Policy", src: "/corporate-policy.png" },
-  { note: "VISA assistance ", src: "/visa.png" },
-  { note: "Best Forex rates", src: "/exchange.png" },
-  { note: "Travel Insurance", src: "/travel-insurance.png" },
-  { note: "Corporate Deals / Global Aggregator Deals", src: "/deals.png" },
-  { note: "Crisp MIS report ", src: "/report.png" },
-  { note: "Event Planning & Execution", src: "/planning.png" },
+  { note: "24 x 7 support ", src: "/mono/support.png" },
+  { note: "Travel Services", src: "/mono/services.png" },
+  { note: "Company Policy", src: "/mono/corporate-policy.png" },
+  { note: "VISA assistance ", src: "/mono/visa.png" },
+  { note: "Best Forex rates", src: "/mono/exchange.png" },
+  { note: "Travel Insurance", src: "/mono/travel-insurance.png" },
+  { note: "Corporate Deals / Global Aggregator Deals", src: "/mono/deals.png" },
+  { note: "Crisp MIS report ", src: "/mono/report.png" },
+  { note: "Event Planning & Execution", src: "/mono/planning.png" },
+];
+
+// oneus story
+export const whyOneusStory = [
+  { note: "IATA", src: "/iata.png" },
+  { note: "India Tourism", src: "/Incredible_India.png" },
+  { note: "Australia Newzeland Chamber", src: "/Adobe_Express.png" },
+  { note: "Madras Chamber of commerce", src: "/madraschamber.png" },
+  {
+    note: "International Trade Council",
+    src: "/international_trade_council.png",
+  },
 ];
 
 // oneus Team

@@ -55,13 +55,13 @@ export const WhyOneus = () => {
       {whyUsAccordion.map((list, idx) => (
         <AccordionComponent list={list} key={idx} idx={idx} />
       ))}
-      <div className="flex flex-wrap items-center justify-center gap-8 pt-10 md:gap-10 xl:gap-12">
+      <div className="flex flex-wrap items-center justify-center gap-8 pt-10 md:gap-12 xl:gap-16">
         {whyOneusIcons.map((list, id) => (
           <div
             className="flex flex-col items-center justify-center gap-4 group"
             key={id}
           >
-            <div className="relative w-10 h-10">
+            <div className="relative w-9 h-9">
               <Image
                 fill
                 alt={list.note}
@@ -69,7 +69,7 @@ export const WhyOneus = () => {
                 className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
               />
             </div>
-            <h4 className="text-base font-semibold tracking-wider text-center capitalize sm:text-lg font-Gilroy">
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
               {list.note}
             </h4>
           </div>

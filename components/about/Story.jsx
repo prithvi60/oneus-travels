@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { OtherBtn } from "../Button";
+import Image from "next/image";
+import { whyOneusStory } from "@/libs/data";
 
 export const Story = () => {
   return (
@@ -78,6 +80,100 @@ export const Story = () => {
           only experienced but officially recognized for delivering superior
           travel solutions. Discover the communities that recognize us as best
         </p>
+      </div>
+      <div className="flex flex-wrap items-center justify-center gap-8 pt-10 md:gap-16 xl:gap-20">
+        {whyOneusStory.map((list, id) => (
+          <div
+            className="flex flex-col items-center justify-center gap-4 group"
+            key={id}
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={list.note}
+                src={list.src}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {list.note}
+            </h4>
+          </div>
+        ))}
+        {/* <div
+            className="flex flex-col items-center justify-center gap-4 group"
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={"IATA"}
+                src={"/iata.png"}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {"IATA"}
+            </h4>
+          </div>
+          <div
+            className="flex flex-col items-center justify-center gap-4 group"
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={"India Tourism"}
+                src={"/Incredible_India.png"}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {"India Tourism"}
+            </h4>
+          </div>
+          <div
+            className="flex flex-col items-center justify-center gap-4 group"
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={"Australia Newzeland Chamber"}
+                src={"/Adobe_Express.png"}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {"Australia Newzeland Chamber"}
+            </h4>
+          </div>
+          <div
+            className="flex flex-col items-center justify-center gap-4 group"
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={"Madras Chamber of commerce"}
+                src={"/madraschamber.png"}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {"Madras Chamber of commerce"}
+            </h4>
+          </div><div
+            className="flex flex-col items-center justify-center gap-4 group"
+          >
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28">
+              <Image
+                fill
+                alt={"International Trade Council"}
+                src={"/international_trade_council.png"}
+                className="object-contain transition-all ease-in-out cursor-pointer group-hover:scale-110 duration-400"
+              />
+            </div>
+            <h4 className="text-base font-semibold tracking-wider text-center capitalize transition-colors duration-500 ease-in-out sm:text-lg font-Gilroy group-hover:text-warning">
+              {"International Trade Council"}
+            </h4>
+          </div> */}
       </div>
     </section>
   );
