@@ -65,7 +65,7 @@ export const OneusTeam = () => {
                   fill
                   alt={"oneus logo"}
                   src={"/oneus-logo-2.svg"}
-                  className="object-contain"
+                  className="object-contain rounded-full bg-primary"
                 />
               </div>
             </div>
