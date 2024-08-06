@@ -41,7 +41,7 @@ export const HomePageHero = () => {
         </div>
       </div>
       {blur === true && (
-        <div className="absolute top-0 left-0 z-0 w-full h-[75dvh]">
+        <div className="absolute top-0 left-0 z-0 w-full h-[90dvh]">
           <Image
             priority
             loading={"eager"}
@@ -59,7 +59,7 @@ export const HomePageHero = () => {
         autoPlay
         playsInline
         ref={loadingImage}
-        className={`h-[75vh] w-full object-cover translate-y-0 transition-all duration-700 ease-linear brightness-[0.55] -z-10`}
+        className={`h-[90dvh] w-full object-cover translate-y-0 transition-all duration-700 ease-linear brightness-[0.55] -z-10`}
       >
         <source
           src={

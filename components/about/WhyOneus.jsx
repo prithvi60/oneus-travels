@@ -55,10 +55,10 @@ export const WhyOneus = () => {
       {whyUsAccordion.map((list, idx) => (
         <AccordionComponent list={list} key={idx} idx={idx} />
       ))}
-      <div className="flex flex-wrap items-center justify-center gap-8 pt-10 md:gap-12 xl:gap-16">
+      <div className="grid grid-cols-2 gap-8 pt-10 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
         {whyOneusIcons.map((list, id) => (
           <div
-            className="flex flex-col items-center justify-center gap-4 group"
+            className="flex flex-col items-center justify-center gap-4 group last:col-span-2 last:lg:col-auto"
             key={id}
           >
             <div className="relative w-9 h-9">
