@@ -34,7 +34,7 @@ export const SecondaryButton = ({ text, roleType }) => {
   );
 };
 
-export const MenuBtnMember = ({ text, roleType, percent }) => {
+export const MenuBtnMember = ({ text, roleType }) => {
   return (
     <button
       type={roleType}
@@ -52,7 +52,7 @@ export const MenuBtnMember = ({ text, roleType, percent }) => {
   );
 };
 
-export const MenuBtnCorporate = ({ text, roleType, percent }) => {
+export const MenuBtnCorporate = ({ text, roleType }) => {
   return (
     <button
       type={roleType}

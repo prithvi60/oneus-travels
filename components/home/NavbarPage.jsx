@@ -25,19 +25,35 @@ export default function NavbarPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [IsOpen, setIsOpen] = useState(true);
   const [percent, setPercent] = useState(null);
-
+  const [scrollYValue, setScrollYValue] = useState(0);
+  const [scrollValue, setScrollValue] = useState({
+    value1: 0,
+    value2: 0,
+    value3: 0,
+    value4: 0,
+  });
   const handleClick = (ref) => {
     setIsMenuOpen(false);
     router.push(`${ref}`);
   };
 
   const handleScroll = () => {
-    const ele = document.body;
-    const scrollPosition = window.scrollY; // => scroll position
-    let percentage =
-      ((scrollPosition + window.innerHeight) / ele.clientHeight) * 100;
+    const ele = document.body.clientHeight;
+    const scrollPosition = window.scrollY;
+    setScrollYValue(() => scrollPosition); // => scroll position
+    let percentage = ((scrollPosition + window.innerHeight) / ele) * 100;
     setPercent(() => Math.trunc(percentage));
     // console.log(Math.trunc(percentage));
+    const percent1 = Math.floor(ele * 0.05);
+    const percent2 = Math.floor(ele * 0.25);
+    const percent3 = Math.floor(ele * 0.6);
+    const percent4 = Math.floor(ele * 0.85);
+    setScrollValue({
+      value1: percent1,
+      value2: percent2,
+      value3: percent3,
+      value4: percent4,
+    });
   };
 
   // Scroll based color change side effect
@@ -57,14 +73,25 @@ export default function NavbarPage() {
       maxWidth="full"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
+      // ${
+      //   percent <= 15 && path === "/"
+      //     ? "!bg-transparent shadow-none"
+      //     : percent >= 35 && percent <= 74 && path === "/"
+      //     ? "bg-secondary shadow-md"
+      //     : percent >= 75 && percent <= 95 && path === "/"
+      //     ? "bg-success shadow-md"
+      //     : "bg-primary shadow-md"
+      // }
       classNames={{
         base: [
-          `${
-            percent <= 15 && path === "/"
+          ` ${
+            scrollYValue <= scrollValue.value1
               ? "!bg-transparent shadow-none"
-              : percent >= 35 && percent <= 74 && path === "/"
+              : scrollYValue <= scrollValue.value2
+              ? "bg-primary shadow-md"
+              : scrollYValue <= scrollValue.value3 && path === "/"
               ? "bg-secondary shadow-md"
-              : percent >= 75 && percent <= 95 && path === "/"
+              : scrollYValue <= scrollValue.value4 && path === "/"
               ? "bg-success shadow-md"
               : "bg-primary shadow-md"
           } fixed top-8 left-0 py-4 transition-all duration-500 ease-linear`,
@@ -95,7 +122,7 @@ export default function NavbarPage() {
       }}
     >
       <NavbarBrand className="space-x-3 grow-0">
-        {percent <= 15 ? (
+        {scrollYValue <= scrollValue.value1 ? (
           <div className="relative">
             {path === "/services/leisure" ? (
               <div className="relative w-20 h-12 md:h-14 md:w-32">
@@ -142,8 +169,6 @@ export default function NavbarPage() {
             <div className="relative w-[52px] h-12 md:h-[64px] md:w-[66px]">
               <Image
                 onClick={() => router.push("/")}
-                // width={130}
-                // height={130}
                 fill
                 title="OneUs logo"
                 alt="Logo"
@@ -167,9 +192,15 @@ export default function NavbarPage() {
             aria-current={`Technology page`}
             href={"/technology"}
             className={`text-sm lg:text-lg xl:text-xl ${
-              percent <= 15 && path === "/"
+              scrollYValue <= scrollValue.value1
                 ? "text-primary"
-                : percent >= 35 && percent <= 95 && path === "/"
+                : scrollYValue <= scrollValue.value2
+                ? "text-secondary"
+                : scrollYValue <= scrollValue.value3 && path === "/"
+                ? "text-primary"
+                : scrollYValue > scrollValue.value3 &&
+                  scrollYValue <= scrollValue.value4 &&
+                  path === "/"
                 ? "text-primary"
                 : "text-secondary"
             } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
@@ -182,9 +213,15 @@ export default function NavbarPage() {
             <div>
               <div
                 className={`text-base ${
-                  percent <= 15 && path === "/"
-                    ? "text-primary "
-                    : percent >= 35 && percent <= 95 && path === "/"
+                  scrollYValue <= scrollValue.value1
+                    ? "text-primary"
+                    : scrollYValue <= scrollValue.value2
+                    ? "text-secondary"
+                    : scrollYValue <= scrollValue.value3 && path === "/"
+                    ? "text-primary"
+                    : scrollYValue > scrollValue.value3 &&
+                      scrollYValue <= scrollValue.value4 &&
+                      path === "/"
                     ? "text-primary"
                     : "text-secondary"
                 } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
@@ -199,9 +236,15 @@ export default function NavbarPage() {
                 </h4>
                 <MdOutlineKeyboardArrowDown
                   className={`${
-                    percent <= 15 && path === "/"
+                    scrollYValue <= scrollValue.value1
                       ? "text-primary"
-                      : percent >= 35 && percent <= 95 && path === "/"
+                      : scrollYValue <= scrollValue.value2
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value3 && path === "/"
+                      ? "text-primary"
+                      : scrollYValue > scrollValue.value3 &&
+                        scrollYValue <= scrollValue.value4 &&
+                        path === "/"
                       ? "text-primary"
                       : "text-secondary"
                   } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
@@ -240,29 +283,13 @@ export default function NavbarPage() {
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
         <NavbarItem>
-          <Link
-            href="/"
-            title="Login"
-            // className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
-          >
-            <MenuBtnMember
-              text={"member"}
-              roleType={"text"}
-              percent={percent}
-            />
+          <Link href="/" title="Login">
+            <MenuBtnMember text={"member"} roleType={"text"} />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link
-            href="/"
-            title="Login"
-            // className="flex flex-col lg:flex-row items-center justify-center lg:gap-2.5"
-          >
-            <MenuBtnCorporate
-              text={"corporate"}
-              roleType={"text"}
-              percent={percent}
-            />
+          <Link href="/" title="Login">
+            <MenuBtnCorporate text={"corporate"} roleType={"text"} />
           </Link>
         </NavbarItem>
       </NavbarContent>
