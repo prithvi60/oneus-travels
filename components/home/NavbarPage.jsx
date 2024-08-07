@@ -46,7 +46,7 @@ export default function NavbarPage() {
     // console.log(Math.trunc(percentage));
     const percent1 = Math.floor(ele * 0.05);
     const percent2 = Math.floor(ele * 0.25);
-    const percent3 = Math.floor(ele * 0.6);
+    const percent3 = Math.floor(ele * 0.60);
     const percent4 = Math.floor(ele * 0.85);
     setScrollValue({
       value1: percent1,
