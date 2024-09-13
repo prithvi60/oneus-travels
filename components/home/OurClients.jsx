@@ -15,7 +15,7 @@ export const OurClients = () => {
               {/* <div className="relative w-24 h-16 transition-all ease-linear cursor-pointer hover:scale-110 duration-400 "> */}
               <Image
                 width={110}
-                height={75}
+                height={85}
                 alt="client logo"
                 src={item}
                 style={{ width: "auto", height: "auto" }}

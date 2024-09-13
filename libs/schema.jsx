@@ -109,7 +109,7 @@ export const contactPageData = {
   contactType: "Customer Service",
   areaServed: "IND",
   availableLanguage: ["English", "Tamil"],
-  email: "oneusTravel@gmail.com",
+  email: "sales@oneustravels.com",
   hoursAvailable: "Mon-Sat 09:30-18:30",
 };
 

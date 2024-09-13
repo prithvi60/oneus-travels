@@ -16,7 +16,7 @@ const page = () => {
       <WelcomeBoard
         title={"Subscribe Today!"}
         desc={
-          "Corporate Travel Management (CTM) provides quality business travel news, insights, product updates, and special offers direct to your inbox, helping you get the most out of your business travel experience."
+          "Corporate Travel Management (OneUs Travels) provides quality business travel news, insights, product updates, and special offers direct to your inbox, helping you get the most out of your business travel experience."
         }
         
       />

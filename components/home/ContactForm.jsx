@@ -44,7 +44,7 @@ export const ContactForm = () => {
                   <RiMailSendLine className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
                 <h5 className="text-lg font-normal tracking-wider text-secondary font-Poppins md:text-xl">
-                  oneustravel@gmail.com
+                  sales@oneustravels.com
                 </h5>
               </div>
             </div>
@@ -185,7 +185,7 @@ export const ContactForm = () => {
                 label: "text-secondary capitalize font-Poppins font-normal",
               }}
               color="secondary"
-              label="Is your company a CTM customer?"
+              label="Is your company a OneUs Travels customer?"
             >
               <Radio
                 value="yes"

@@ -5,8 +5,8 @@ import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 import { leisureServiceData } from "@/libs/schema";
 
 const data = [
-  "With Corporate Travel Management (CTM), you can consolidate every aspect of your business travel,strategic meetings and corporate event management needs to maximize savings, efficiencies and duty of care across your entire business travel portfolio.",
-  "That’s the CTM difference.",
+  "With Corporate Travel Management (OneUs Travels), you can consolidate every aspect of your business travel,strategic meetings and corporate event management needs to maximize savings, efficiencies and duty of care across your entire business travel portfolio.",
+  "That’s the OneUs Travels difference.",
 ];
 
 const page = () => {

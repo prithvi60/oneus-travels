@@ -8,9 +8,9 @@ import Link from "next/link";
 import { SubmitBtn } from "../Button";
 
 const imageSrc = [
-  "/oneus-logo-1.svg",
-  "/oneus-logo-11.svg",
-  "/oneus-logo-12.svg",
+ {img: "/oneus-logo-1.svg",link:"/"},
+ {img: "/oneus-logo-11.svg",link:"/services/visa_services"},
+   {img:"/oneus-logo-12.svg",link:"/services/leisure"},
 ];
 
 export const FooterSection1 = ({ items }) => {
@@ -18,7 +18,8 @@ export const FooterSection1 = ({ items }) => {
     <div className="flex flex-col w-full h-full gap-8 md:gap-2 md:flex-row md:items-start md:justify-between">
       <div className="flex flex-row items-center justify-center h-full gap-4 md:flex-col md:gap-5">
         {imageSrc.map((i, id) => (
-          <div
+          <a
+          href={i.link}
             className="relative order-1 block w-full h-20 md:w-28 lg:w-32 lg:h-20"
             key={id}
           >
@@ -27,10 +28,10 @@ export const FooterSection1 = ({ items }) => {
               title="OneUs logo"
               sizes="(min-width: 780px) 112px, calc(100vw - 48px)"
               alt="OneUs logo"
-              src={i}
+              src={i.img}
               className="object-contain"
             />
-          </div>
+          </a>
         ))}
       </div>
       <ul className="grid order-3 grid-cols-2 gap-4 md:pt-2 md:order-2">

@@ -133,22 +133,33 @@ export const travelCardList = [
 export const testimonialList = [
   {
     review:
-      "Sabre values its long and mutually beneficial relationship with Corporate Travel Management.  As their global technological partner, we have developed trusted relationships with the CTM team and respect their track record of performance and technological innovation.",
-    name: "Andy Finkelstein, Sabre Travel Network",
+      "We normally appreciate all vendors who are all doing a quality and professional jobs. I would like to appreciate OneUs team for their excellent service till date without any problem and kept up the good work. ",
+    name: "Zoho Corporation",
   },
   {
     review:
-      "Sabre values its long and mutually beneficial relationship with Corporate Travel Management.  As their global technological partner, we have developed trusted relationships with the CTM team and respect their track record of performance and technological innovation.",
-    name: "Andy Finkelstein, Sabre Travel Network",
+      "OneUs provides a very good travel services. Their customer support is excellent and we are quite happy with the overall services. We will recommend their services to everyone",
+    name: "NVH Korea",
   },
   {
     review:
-      "Sabre values its long and mutually beneficial relationship with Corporate Travel Management.  As their global technological partner, we have developed trusted relationships with the CTM team and respect their track record of performance and technological innovation.",
-    name: "Andy Finkelstein, Sabre Travel Network",
+      "OneUs is unbelievably helpful when it comes to travel services. They have got a right team, which will go to any extent without hesitation. Thank you guys for the support",
+    name: "Woori Bank",
   },
+  {
+    review:
+      "With One Us,  our travel is relaxing, safe and comfortable. Their service is professional, support is impeccable. Specially, Vishnuprabha and her team have done a great job to make our trip enjoyable",
+    name: "Naya Ventures",
+  },
+
+  // {
+  //   review:
+  //     "Awaiting",
+  //   name: "TVS Tyres",
+  // },
 ];
 
-export const clients = ["/pic_1.png", "/pic_2.png", "/pic_3.png", "/pic_4.png"];
+export const clients = [ "/clients/sgb.png","/clients/nayafull.png","/clients/esab.png","/clients/zoho.png","/clients/nvh.png","/clients/gavs.png","/clients/svrn.png","/clients/uni.png",];
 
 // leisure table data
 

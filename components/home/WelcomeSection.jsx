@@ -7,7 +7,7 @@ export const WelcomeSection = () => {
       <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
         Welcome to Oneus Travels <br /> Your Global Travel Companion
       </h1>
-      <p className="text-xl font-normal font-Poppins">
+      <p className="text-xl font-semibold font-Poppins">
         OneUs is a leading provider of business travel management solutions
         worldwide. We enable businesses and tourists with maximum savings,
         effectiveness, safety, and sustainability all across the globe. At
@@ -21,7 +21,7 @@ export const WelcomeSection = () => {
         across every region you operate.
       </p>
       <p className="text-base font-normal font-Poppins">
-        When you partner with CTM, you’ll enjoy the experience of global travel
+        When you partner with OneUs Travels, you’ll enjoy the experience of global travel
         done differently – a uniquely designed global travel management program,
         built with you and for you, consistently and expertly delivered in every
         region you operate in. We design travel programs that drive strategic
@@ -64,7 +64,7 @@ export const WelcomeSection = () => {
         <Link
           href={"/sample.pdf"}
           title="brochure"
-          download={"sample_file.pdf"}
+          download={"OneUsTravels.pdf"}
           type="file"
           target="_blank"
         >
