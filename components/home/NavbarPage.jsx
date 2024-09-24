@@ -131,8 +131,8 @@ export default function NavbarPage() {
                   fill
                   title="OneUs logo"
                   alt="Logo"
-                  src={"/oneus-logo-12.svg"}
-                  className="object-contain object-center cursor-pointer"
+                  src={"/logos/travelsleisure.png"}
+                     className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
             ) : path === "/services/visa_services" ? (
@@ -142,8 +142,8 @@ export default function NavbarPage() {
                   fill
                   title="OneUs logo"
                   alt="Logo"
-                  src={"/oneus-logo-11.svg"}
-                  className="object-contain object-center cursor-pointer"
+                  src={"/logos/travelsvisa.png"}
+                 className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
             ) : (
@@ -153,8 +153,8 @@ export default function NavbarPage() {
                   fill
                   title="OneUs logo"
                   alt="Logo"
-                  src={"/oneus-whitelogo.svg"}
-                  className="object-contain object-center cursor-pointer"
+                  src={"/logos/whitelogo.png"}
+                  // className="object-contain object-center cursor-pointer"
                 />
               </div>
             )}
@@ -172,7 +172,7 @@ export default function NavbarPage() {
                 fill
                 title="OneUs logo"
                 alt="Logo"
-                src={"/oneus-logo-2.svg"}
+                src={"/logos/blueicon.png"}
                 className="object-contain p-0.5 rounded-full cursor-pointer bg-primary"
               />
             </div>

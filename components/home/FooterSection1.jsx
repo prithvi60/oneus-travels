@@ -8,9 +8,9 @@ import Link from "next/link";
 import { SubmitBtn } from "../Button";
 
 const imageSrc = [
- {img: "/oneus-logo-1.svg",link:"/"},
- {img: "/oneus-logo-11.svg",link:"/services/visa_services"},
-   {img:"/oneus-logo-12.svg",link:"/services/leisure"},
+ {img: "/logos/travels.png",link:"/"},
+ {img: "/logos/travelsvisa.png",link:"/services/visa_services"},
+   {img:"/logos/travelsleisure.png",link:"/services/leisure"},
 ];
 
 export const FooterSection1 = ({ items }) => {
