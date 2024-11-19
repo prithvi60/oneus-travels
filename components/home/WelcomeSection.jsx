@@ -5,60 +5,35 @@ export const WelcomeSection = () => {
   return (
     <section className="w-full h-auto space-y-4 padding">
       <h1 className="w-full text-[32px] font-Gilroy md:text-[40px] lg:text-[42px] font-bold leading-tight text-secondary pt-5">
-        Welcome to Oneus Travels <br /> Your Global Travel Companion
+      Welcome to OneUs Travels, <br /> your go-to partner for business travels worldwide
       </h1>
       <p className="text-xl font-semibold font-Poppins">
-        OneUs is a leading provider of business travel management solutions
-        worldwide. We enable businesses and tourists with maximum savings,
-        effectiveness, safety, and sustainability all across the globe. At
-        OneUs, we are more than just a travel management company; we are your
-        strategic partner in navigating the world of corporate travel.
+      We make travel smarter and more efficient, with a focus on saving you time, money, and effort. Whether you're managing corporate travel or exploring the world for business, OneUs has you covered with tailored travel solutions that keep your safety and sustainability front and center.
       </p>
       <p className="text-base font-normal font-Poppins">
-        With OneUs by your side, you’ll discover a whole new global travel
-        experience. Our uniquely tailored travel management programs are crafted
-        with you and just for you, guaranteeing consistent and expert service
-        across every region you operate.
+      At OneUs, we're not just a travel management company—we're your strategic partner. With us, you experience business travels like never before. Our customized travel programs are designed with you in mind, ensuring smooth and expert service wherever your business takes you.
       </p>
       <p className="text-base font-normal font-Poppins">
-        When you partner with OneUs Travels, you’ll enjoy the experience of global travel
-        done differently – a uniquely designed global travel management program,
-        built with you and for you, consistently and expertly delivered in every
-        region you operate in. We design travel programs that drive strategic
-        results for every part of your business and every member of your team,
-        in every region you operate in.
+      When you choose OneUs Travels, you’re choosing a different kind of travel experience—crafted to fit your business needs in every region you work in. We design travel programs that deliver strategic value to your business and convenience to every team member.
       </p>
       <p className="text-base font-normal font-Poppins">
-        Contact us to learn more about our tailored travel management solutions
-        and unlock a world of possibilities with OneUs Travels.
+      Transform your business travels with OneUs! Let us be your guide to smarter, more effective travel. <Link href="#contact" className="underline">Plan your travel with us</Link> and discover how our custom travel management solutions can make your journey seamless.
       </p>
       <h3 className="text-lg font-semibold font-Poppins">
-        Travel Management, Fueled by One Travel Team
+      Travel Management, Powered by OneUs Travels
       </h3>
       <p className="text-base font-normal font-Poppins">
-        Whether you're a multinational corporation or a growing enterprise, we
-        have the expertise and resources to elevate your business travel
-        experience. Our commitment to designing the simplest, safest and
-        sustainable solutions that deliver measurable results remains
-        unwavering, ensuring that we consistently exceed your expectations and
-        drive meaningful impact for you and your community.
+      Whether you’re a multinational corporation or a growing enterprise, OneUs Travels has the expertise and resources to enhance your business travel experience. We are committed to designing simple, safe, and sustainable travel solutions that deliver measurable results, consistently exceeding your expectations and making a meaningful impact for you and your community.
       </p>
       <p className="text-base font-normal font-Poppins">
-        At Oneus Travels, we adopt a tailored and collaborative approach to
-        crafting your international travel experience, ensuring a strategy that
-        aligns with your company's distinct objectives, challenges, and
-        opportunities.
+      At OneUs Travels, we take a tailored and collaborative approach to crafting your international travel experience. We ensure our strategy aligns with your company's unique objectives, challenges, and opportunities.
       </p>
       <p className="text-base font-normal font-Poppins">
-        When we partner with your team, we identify and implement the ideal
-        solutions for your business and people across all the markets you
-        operate in, seamlessly integrating them into a unified program. With our
-        advanced technology platform and dedicated global travel team, OneUs
-        Travels ensures your custom global travel program is easily accessible
-        and seamlessly supported, making us the perfect fit for your needs.
+      When you partner with us, we identify and implement the ideal solutions for your business and team across all markets you operate in, seamlessly integrating them into a cohesive program. With our <Link href="/technology" className="underline">advanced technology platform</Link> and dedicated global travel team, OneUs Travels ensures your customized global travel program is easily accessible and fully supported, making us the perfect fit for your needs.
+
       </p>
       <h3 className="text-lg font-semibold font-Poppins">
-        This is the OneUs Promise.
+        This is the <Link href="/booking_t&c" className="underline">OneUs Promise.</Link>
       </h3>
       <div className="pt-5 w-max">
         <Link

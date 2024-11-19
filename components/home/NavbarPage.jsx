@@ -15,7 +15,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { MenuBtnCorporate, MenuBtnMember } from "../Button";
+import { MenuBtnCorporate, MenuBtnMember, OtherBtn } from "../Button";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -282,6 +282,14 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
+      <Link href="#contact" className="hidden md:block">
+      <OtherBtn text={"Plan Your Business Travel Now"} />
+      {/* <button
+        className="bg-primary text-black py-2 px-4 rounded-md"
+      >
+        Plan Your Business Travel Now
+      </button> */}
+      </Link>
         <NavbarItem>
           <Link href="/" title="Login">
             <MenuBtnMember text={"member"} roleType={"text"} />

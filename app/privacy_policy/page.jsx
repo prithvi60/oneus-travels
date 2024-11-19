@@ -10,7 +10,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 const page = () => {
   return (
     <section>
-      <OtherHero imgSrc={"/bg_2.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"OneUs Travels Internet Privacy Policy"}
         desc={

@@ -6,6 +6,7 @@ import { GlobalTeamCard, GlobalTeamCardReverse } from "./GlobalTeamCard";
 import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "@/hooks/UseHooks";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 
 export const GlobalTeam = () => {
   const globalRef = useRef(null);
@@ -25,59 +26,52 @@ export const GlobalTeam = () => {
       </h3>
       <div className="space-y-7">
         <p className="w-full h-full text-base font-normal font-Poppins">
-          Elevate your corporate meetings and events with Oneus Travels'
-          specialized event management team, OneT. Our seasoned event planners
-          ensure meticulously reschedulable meetings and events that not only
-          enhance attendee experiences but also yield strategic advantages for
-          your business, while optimizing your travel expenditure.
+        Elevate your corporate meetings and events with OneUs Travels' specialized event management team,  <Link href="/about/oneus_team" className="underline">OneT</Link>. Our experienced event planners create meticulously organized and reschedulable meetings and events that not only enhance attendee experiences but also deliver strategic advantages for your business—all while optimizing your travel expenditure.
+        </p>
+        <h3 className="text-lg font-semibold font-Poppins">
+        Unlock Exclusive Benefits
+      </h3>
+        <p className="w-full h-full text-base font-normal font-Poppins">
+        Leverage our extensive network of suppliers to access exclusive corporate deals on accommodations, travel arrangements, and entertainment, saving you both time and money. Centralize your corporate and event-related travel expenses through OneUs Travels to strengthen your negotiating power with suppliers, maximizing your budget's potential.
         </p>
         <p className="w-full h-full text-base font-normal font-Poppins">
-          Tap into our extensive network of suppliers to capitalize on exclusive
-          corporate deals for accommodations, travel arrangements, and
-          entertainment, saving you both time and money. Furthermore, centralize
-          your corporate and event-related travel expenses through Oneus Travels
-          to strengthen your bargaining position with suppliers, unlocking the
-          full potential of your budget.
+        Whether you’re organizing corporate functions, crucial meetings, large-scale conferences, group excursions, team-building activities, or sales incentives, our  <Link href="/services/corporate_travel" className="underline">tailored event management solutions</Link> are designed to exceed your expectations and drive your business growth. We’ve got your back!
         </p>
         <p className="w-full h-full text-base font-normal font-Poppins">
-          Whether you're organizing corporate functions, pivotal meetings,
-          large-scale conferences, group excursions, team-building initiatives,
-          or sales incentives, we tailor our event management solutions to
-          surpass expectations and fuel your business growth so we’ve got your
-          back!
-        </p>
-        <p className="w-full h-full text-base font-normal font-Poppins">
-          Partner with us for a seamlessly integrated event experience that
-          drives the best results for your business, people, and budget.
+        <Link href="#contact" className="underline"> Partner with OneUs Travels</Link> for a seamlessly integrated event experience that delivers outstanding results for your business, your team, and your budget. Let us handle the details, so you can focus on what matters most—building connections and achieving your goals.
         </p>
       </div>
       <GlobalTeamCard
-        title={"One Strategy,"}
+        title={"One Strategy"}
+        sub={"Crafted for You"}
         imgSrc={"/card_bg_1.jpg"}
-        desc={"Using strategic solutions curated to your need."}
+        desc={"Utilize our strategic solutions tailored to your specific needs and goals."}
       />
 
       <GlobalTeamCardReverse
         title={"One Forum"}
-        imgSrc={"/card_bg_2.jpg"}
+        sub={"Simplified and Organized"}
+        imgSrc={"/card_bg_1.jpg"}
         desc={
-          "We provide a singular simplified forum to ensure organized service "
+          "Experience a centralized forum designed to streamline our services and ensure seamless communication. "
         }
       />
 
       <GlobalTeamCard
         title={"One Community"}
-        imgSrc={"/card_bg_3.jpg"}
+        sub={"Dedicated Support"}
+        imgSrc={"/card_bg_1.jpg"}
         desc={
-          "A specific group of team assigned for your company to ensure consistent service"
+          "Benefit from a dedicated team assigned to your company, providing consistent and personalized service every step of the way."
         }
       />
 
       <GlobalTeamCardReverse
         title={"One Standard"}
+        sub={"Excellence Guaranteed"}
         imgSrc={"/card_bg_1.jpg"}
         desc={
-          "All services maintaining to your business standard and approved by AITA"
+          "Enjoy services that uphold your business standards and are approved by AITA, ensuring quality and compliance."
         }
       />
     </section>

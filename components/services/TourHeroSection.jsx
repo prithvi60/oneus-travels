@@ -7,7 +7,7 @@ export const TourHeroSection = () => {
           fill
           title="background image"
           sizes="calc(101.19vw - 36px)"
-          src={"/bg_2.jpg"}
+          src={"/bg_1.jpg"}
           alt="background image"
           className="object-cover object-center md:px-0"
           quality={100}

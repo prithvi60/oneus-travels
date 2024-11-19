@@ -5,7 +5,7 @@ import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 const page = () => {
   return (
     <main>
-      <OtherHero imgSrc={"/bg_2.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"OneUs Story"}
         desc={

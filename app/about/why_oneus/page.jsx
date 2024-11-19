@@ -10,7 +10,7 @@ const data = [
 const page = () => {
   return (
     <main className="">
-      <OtherHero imgSrc={"/bg_3.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard title={"Why Choose OneUS Travels?"} />
       <WhyOneus />
     </main>

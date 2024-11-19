@@ -23,23 +23,23 @@ export const menuItems = [
       { listMenu: "Network", subMenuRef: "/about/network" },
     ],
   },
-  {
-    menuTitle: "resources",
-    ref: "",
-    subMenu: [
-      { listMenu: "News", subMenuRef: "/resources/news" },
-      { listMenu: "Blog", subMenuRef: "/resources/blog" },
-      { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
-    ],
-  },
-  {
-    menuTitle: "contact",
-    ref: "#contact",
-    subMenu: [
-      { listMenu: "Subscribe", subMenuRef: "/contact/subscribe " },
-      { listMenu: "Social Media", subMenuRef: "/contact/social_media" },
-    ],
-  },
+  // {
+  //   menuTitle: "resources",
+  //   ref: "",
+  //   subMenu: [
+  //     { listMenu: "News", subMenuRef: "/resources/news" },
+  //     { listMenu: "Blog", subMenuRef: "/resources/blog" },
+  //     { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
+  //   ],
+  // },
+  // {
+  //   menuTitle: "contact",
+  //   ref: "#contact",
+  //   subMenu: [
+  //     { listMenu: "Subscribe", subMenuRef: "/contact/subscribe " },
+  //     { listMenu: "Social Media", subMenuRef: "/contact/social_media" },
+  //   ],
+  // },
   // { menuTitle: "Technology", ref: "/technology" },
 ];
 
@@ -93,19 +93,19 @@ export const sliders = [
     ref: "/",
   },
   {
-    imgSrc: "/bg_2.jpg",
+    imgSrc: "/bg_1.jpg",
     shortNote: "One Forum,",
     note: "We provide a singular simplified forum to ensure organized service",
     ref: "/",
   },
   {
-    imgSrc: "/bg_3.jpg",
+    imgSrc: "/bg_1.jpg",
     shortNote: "One Community,",
     note: "A specific group of team assigned for your company to ensure consistent service",
     ref: "/",
   },
   {
-    imgSrc: "/bg_2.jpg",
+    imgSrc: "/bg_1.jpg",
     shortNote: "One Standard,",
     note: "All services maintaining to your business standard and approved by AITA",
     ref: "/",
@@ -116,17 +116,17 @@ export const travelCardList = [
   {
     img: "/card_bg_1.jpg",
     title: "Engineered for Ease, Consistency, and Adaptability",
-    desc: "We employ a consultative, tailored approach to crafting distinctive, straightforward, and efficient global travel solutions that deliver strategic results now and into the future.",
+    desc: "We adopt a consultative and tailored approach to create unique, straightforward, and efficient global travel solutions that deliver strategic results for today and tomorrow.",
   },
   {
-    img: "/card_bg_2.jpg",
+    img: "/card_bg_1.jpg",
     title: "Global Reach, Local Insight, Adaptive Tech",
-    desc: "The capacity to maximize savings, the presence to offer reliable local market expertise, and the flexibility to address future travel challenges today.",
+    desc: "Benefit from our ability to maximize savings, access reliable local market expertise, and enjoy the flexibility to tackle future travel challenges.",
   },
   {
-    img: "/card_bg_3.jpg",
+    img: "/card_bg_1.jpg",
     title: "Your Input Shapes Our Innovations",
-    desc: "We prioritize your needs in our product and service development, ensuring you receive the most relevant, swift, and impactful solutions first.",
+    desc: "Your needs drive our product and service development, ensuring you receive the most relevant, timely, and impactful solutions.",
   },
 ];
 

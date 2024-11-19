@@ -13,7 +13,7 @@ const page = () => {
   return (
     <main>
       <JsonLd data={leisureServiceData} />
-      <OtherHero imgSrc={"/bg_3.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"Leisure"}
         desc={

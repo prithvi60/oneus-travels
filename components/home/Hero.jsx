@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { JsonLdComponents } from "../JsonLdComponents";
+import Link from "next/link";
+import { OtherBtn } from "../Button";
 
 export const HomePageHero = () => {
   const [blur, setBlur] = useState(true);
@@ -16,15 +18,27 @@ export const HomePageHero = () => {
       setBlur(false);
     });
   }, []);
+
   return (
     <section className="relative w-full h-full overflow-hidden slider-container">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px] flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-Gilroy font-bold rounded-md py-2 px-3.5 z-10">
+      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max text-7xl text-center capitalize text-primary sm:text-[100px] lg:text-[120px] xl:text-[160px]  justify-center items-center gap-3  font-Gilroy font-bold rounded-md py-2 px-3.5 z-10">
+        <div className="flex flex-col sm:flex-row flex-wrap">
         <h4>oneUs</h4>
         <h4>travels</h4>
+        </div>
+        <div>
+        <h5 className="text-4xl text-center text-primary/90">Travel Smart with Us</h5>
+        </div>
+
+        <div>
+    
+
+        </div>
       </div>
 
       <div className="absolute block -translate-x-1/2 rounded-md bottom-0.5 left-1/2 z-10">
-        <h4 className="w-full h-full text-lg font-normal text-center capitalize text-primary md:text-xl font-Poppins">
+ 
+        <h4 className="w-full h-full text-lg font-normal text-center capitalize md:text-xl font-Poppins text-primary/90">
           we are certified by
         </h4>
         <div className="relative w-full h-20 md:h-28">

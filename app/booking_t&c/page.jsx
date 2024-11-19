@@ -6,7 +6,7 @@ import { bookingTC } from "@/libs/data";
 const page = () => {
   return (
     <section>
-      <OtherHero imgSrc={"/bg_3.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"Booking Terms and Conditions"}
         desc={

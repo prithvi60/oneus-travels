@@ -4,7 +4,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { OtherBtn } from "../Button";
 import Link from "next/link";
 
-export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
+export const GlobalTeamCard = ({ title, imgSrc, desc,sub }) => {
   return (
     <div className="relative flex flex-col items-center w-full h-full gap-2 sm:gap-0 sm:flex-row sm:justify-center">
       <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-1/2 h-[200px] md:h-[320px] overflow-hidden">
@@ -23,6 +23,8 @@ export const GlobalTeamCard = ({ title, imgSrc, desc }) => {
           <h5 className="text-lg font-semibold md:text-xl">{title}</h5>
         </CardHeader>
         <CardBody className="h-full">
+        <h6 className="text-md  font-semibold  md:text-lg mb-8">{sub}</h6>
+
           <p className="text-sm md:text-base font-Poppins">{desc}</p>
         </CardBody>
         <CardFooter>

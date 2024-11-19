@@ -25,3 +25,6 @@
 .slick-slide > div {
   margin: 0px 6px;
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}

@@ -14,7 +14,7 @@ const page = () => {
   return (
     <main>
       <JsonLd data={visaServiceData} />
-      <OtherHero imgSrc={"/bg_3.jpg"} />
+      <OtherHero imgSrc={"/bg_1.jpg"} />
       <WelcomeBoard
         title={"Global Meetings & Events Management"}
         desc={
