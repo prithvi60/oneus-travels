@@ -2,20 +2,18 @@ import React from "react";
 import { whyOneusIcons, whyUsAccordion } from "@/libs/data";
 import { AccordionComponent } from "./WhyOneusAccordion";
 import Image from "next/image";
+import { OtherBtn } from "../Button";
+import Link from "next/link";
 
 export const WhyOneus = () => {
   return (
     <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-3 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
-          Your No.1 Premier Travel Partner
+        Your No.1 Premier Travel Partner for Business Travels
         </h4>
         <p className="text-base font-normal font-Poppins">
-          OneUS Travels is committed to being your top choice for travel
-          management. We prioritize service, innovation, and cost savings over
-          size. As a leading travel management company, we possess the scale to
-          deliver maximum value, the expertise to provide local market insights,
-          and the agility to anticipate and meet future travel needs.
+        At OneUS Travels, we are committed to being your top travel management partner. Our focus is on delivering superior service, innovation, and cost savings for your corporate travels. We combine global reach with local expertise, offering customized solutions that meet your current and future travel needs.
         </p>
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
@@ -23,23 +21,15 @@ export const WhyOneus = () => {
           Transforming Corporate Travel
         </h4>
         <p className="text-base font-normal font-Poppins">
-          OneUS Travels was established with a mission to revolutionize the
-          corporate travel industry. We constantly challenge the status quo, ask
-          critical questions, and develop innovative solutions to enhance global
-          business travel. Our dedication to continuous improvement ensures that
-          your travel programs evolve and adapt to new opportunities.
+        We were founded with one mission: to revolutionize business travel management. By constantly challenging the status quo, asking the right questions, and embracing innovation, we ensure your corporate travel programs evolve and adapt to new opportunities. Continuous improvement is at the core of everything we do, ensuring a better travel experience for your business.
         </p>
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
-          The Spirit of Entrepreneurship
+        Entrepreneurial Spirit Drives Our Success
         </h4>
         <p className="text-base font-normal font-Poppins">
-          At OneUS Travels, our unique approach stems from a deeply ingrained
-          entrepreneurial spirit. We work hard, seize opportunities, keep things
-          simple, and always act with integrity and positivity. This ethos
-          transcends borders, cultures, and industries, fostering long-lasting
-          partnerships and delivering meaningful results for clients worldwide.
+        Our unique, entrepreneurial spirit empowers us to seize opportunities, keep things simple, and act with integrity. This mindset transcends industries and borders, helping us form lasting partnerships worldwide. At OneUS Travels, we believe in collaboration, agility, and accountability—values that define how we operate and deliver results.
           <br />
           <br />
           The Oneus community emphasizes empowerment, accountability,
@@ -55,6 +45,7 @@ export const WhyOneus = () => {
       {whyUsAccordion.map((list, idx) => (
         <AccordionComponent list={list} key={idx} idx={idx} />
       ))}
+
       <div className="grid grid-cols-2 gap-8 pt-10 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
         {whyOneusIcons.map((list, id) => (
           <div
@@ -74,6 +65,19 @@ export const WhyOneus = () => {
             </h4>
           </div>
         ))}
+      </div>
+      <div className="space-y-4 md:space-y-6 text-secondary">
+        <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
+        Maximize Business Travel Efficiency with OneUS Travels
+        </h4>
+        <p className="text-base font-normal font-Poppins">
+        Choosing OneUS Travels means opting for business travel solutions that streamline your operations, cut costs, and ensure a seamless experience. Our 24/7 support and customized offerings guarantee that your company’s travel needs are met without compromise.
+        </p>
+        <div>
+        <Link href="#contact" className="mt-8">
+      <OtherBtn text={"Plan Your Business Travel Now"} />
+      </Link>
+      </div>
       </div>
     </section>
   );

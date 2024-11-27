@@ -1,3 +1,4 @@
+import { Network } from "@/components/about/Network";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
@@ -18,6 +19,7 @@ const page = () => {
         }
         
       />
+      <Network/>
     </main>
   );
 };

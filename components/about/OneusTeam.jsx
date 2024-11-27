@@ -16,7 +16,7 @@ export const OneusTeam = () => {
   return (
     <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
       <p className="text-base font-normal font-Poppins">
-        Get to know the brilliant minds behind our innovative travel solutions:
+      At OneUs Travels, our strength lies in our talented team of professionals who are dedicated to delivering exceptional corporate travel solutions. Each team member brings a unique set of skills and experiences, working collaboratively to ensure our clients receive innovative and effective travel management services. Together, we strive for excellence and are committed to transforming your business travel experience. Get to know the brilliant minds behind OneUs Travels below!
       </p>
       <div className="w-full rounded-md shadow-lg bg-secondary">
         <div className="flex justify-center items-center w-full gap-3.5 p-5 overflow-x-auto hideScroll">
@@ -80,6 +80,12 @@ export const OneusTeam = () => {
           </div>
         ))}
       </div>
+      <p className="text-base font-normal font-Poppins">
+      United by our shared commitment to integrity, collaboration, and continuous improvement, our team is well-equipped to handle diverse travel needs. With expertise across various sectors of the travel industry, we have successfully managed complex travel arrangements for clients of all sizes.
+      </p>
+      <p className="text-base font-normal font-Poppins">
+      We encourage you to connect with our team members to discover how we can tailor our services to meet your specific travel requirements. Contact us today to experience the OneUs difference in your corporate travel management!
+      </p>
     </section>
   );
 };

@@ -14,15 +14,25 @@ const page = () => {
   return (
     <main>
       <JsonLd data={visaServiceData} />
-      <OtherHero imgSrc={"/bg_1.jpg"} />
+      <OtherHero imgSrc={"/bg_2.jpg"} />
       <WelcomeBoard
-        title={"Global Meetings & Events Management"}
+        title={"Visa Services"}
         desc={
           "Corporate Travel Management’s (OneUs Travels’s) specialist meetings and events division, Event Travel Management (ETM), delivers strategic value to global travel programs through the consolidation of your meetings and events expenditure."
         }
-        
       />
-      <SliderTabs />
+      <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+        <div className="space-y-6 md:space-y-8">
+          <p className="text-base font-normal font-Poppins">
+            Our Visa expertise helps you get the visa starting from the Visa
+            documents, filling in applications, required itineraries and getting
+            the appointments for any countries. We have a success ratio of 99.9%
+            of Visa as we follow a process defined by the embassies and
+            streamlined procedures.
+          </p>
+        </div>
+      </section>
+      {/* <SliderTabs /> */}
     </main>
   );
 };

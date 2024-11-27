@@ -1452,19 +1452,23 @@ export const personalInformation = [
 export const whyUsAccordion = [
   {
     title: "Streamlined Business Travel",
-    desc: "Experience seamless business travel with our efficient booking and management services, designed to save you time and reduce stress. Focus on your business while we handle the logistics.",
+    desc: "Save time and reduce stress with our efficient booking and management services. Let us handle the logistics while you focus on your business goals.",
+ cta:"Get Started With Us" 
   },
   {
-    title: "Tailored Dedicated support ",
-    desc: "Benefit from personalized support tailored to your needs, ensuring a smooth and enjoyable travel experience from start to finish. Our team is available 24/7 to assist you with any inquiries.",
+    title: "Tailored Support 24/7 ",
+    desc: "Enjoy dedicated, personalized support available around the clock. Our team is here to assist with all your travel needs, making your experience smooth from start to finish.",
+    cta:"Speak to Our Team" 
   },
   {
     title: "Comprehensive Travel Platform",
-    desc: "Access a comprehensive platform that integrates all your travel needs in one place, offering convenience and ease of use. Manage your entire itinerary effortlessly with our user-friendly interface.",
+    desc: "Access a single platform for all your corporate travel needs. Manage your itineraries, bookings, and expenses effortlessly using our user-friendly dashboard.",
+    cta:"Explore Our Platform" 
   },
   {
-    title: "Unmatched Choices and Value",
-    desc: "Discover unparalleled choices and exceptional value with our extensive range of travel options, designed to fit every budget and preference. Enjoy exclusive deals and discounts available only through our services.",
+    title: "Unmatched Value and Options",
+    desc: "Benefit from an extensive range of travel options tailored to fit every business budget. We offer exclusive deals and discounts you won’t find elsewhere.",
+    cta:"View Our Deals" 
   },
 ];
 
