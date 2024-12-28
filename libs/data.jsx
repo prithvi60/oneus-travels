@@ -1,6 +1,18 @@
 export const menuItems = [
+  // { menuTitle: "Home", ref: "/" },
   {
-    menuTitle: "services",
+    menuTitle: "About Us",
+    ref: "",
+    subMenu: [
+      { listMenu: "Why Oneus", subMenuRef: "/about/why_oneus" },
+      { listMenu: "Oneus Story", subMenuRef: "/about/oneus_story" },
+      { listMenu: "Oneus Team", subMenuRef: "/about/oneus_team" },
+      { listMenu: "Our Vision", subMenuRef: "/about/our_vision" },
+      { listMenu: "Network", subMenuRef: "/about/network" },
+    ],
+  },
+  {
+    menuTitle: "What We do ",
     ref: "",
     subMenu: [
       {
@@ -13,14 +25,21 @@ export const menuItems = [
     ],
   },
   {
-    menuTitle: "about",
+    menuTitle: "contact us",
     ref: "",
     subMenu: [
-      { listMenu: "Why Oneus", subMenuRef: "/about/why_oneus" },
-      { listMenu: "Oneus Story", subMenuRef: "/about/oneus_story" },
-      { listMenu: "Oneus Team", subMenuRef: "/about/oneus_team" },
-      { listMenu: "Our Vision", subMenuRef: "/about/our_vision" },
-      { listMenu: "Network", subMenuRef: "/about/network" },
+      { listMenu: "Enquires", subMenuRef: "#contact " },
+      { listMenu: "Feedback", subMenuRef: "#contact" },
+      { listMenu: "Work with us", subMenuRef: "#contact" },
+    ],
+  },
+  {
+    menuTitle: "Resources",
+    ref: "/resources",
+    subMenu: [
+      { listMenu: "News", subMenuRef: "/news" },
+      { listMenu: "Blog", subMenuRef: "/blog" },
+      { listMenu: "Case Studies", subMenuRef: "/case_studies" },
     ],
   },
   // {
@@ -32,20 +51,25 @@ export const menuItems = [
   //     { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
   //   ],
   // },
-  // {
-  //   menuTitle: "contact",
-  //   ref: "#contact",
-  //   subMenu: [
-  //     { listMenu: "Subscribe", subMenuRef: "/contact/subscribe " },
-  //     { listMenu: "Social Media", subMenuRef: "/contact/social_media" },
-  //   ],
-  // },
+
   // { menuTitle: "Technology", ref: "/technology" },
 ];
 
 export const menuItemsMobile = [
+
   {
-    menuTitle: "Services",
+    menuTitle: "About us",
+    ref: "/about",
+    subMenu: [
+      { list: "Why Oneus", subMenuRef: "/why_oneus" },
+      { list: "Oneus Story", subMenuRef: "/oneus_story" },
+      { list: "Oneus Team", subMenuRef: "/oneus_team" },
+      { list: "Our Vision", subMenuRef: "/our_vision" },
+      { list: "Network", subMenuRef: "/network" },
+    ],
+  },
+  {
+    menuTitle: "What we do",
     ref: "/services",
     subMenu: [
       { list: "Corporate Travel", subMenuRef: "/corporate_travel" },
@@ -55,14 +79,12 @@ export const menuItemsMobile = [
     ],
   },
   {
-    menuTitle: "About",
-    ref: "/about",
+    menuTitle: "Contact Us",
+    ref: "",
     subMenu: [
-      { list: "Why Oneus", subMenuRef: "/why_oneus" },
-      { list: "Oneus Story", subMenuRef: "/oneus_story" },
-      { list: "Oneus Team", subMenuRef: "/oneus_team" },
-      { list: "Our Vision", subMenuRef: "/our_vision" },
-      { list: "Network", subMenuRef: "/network" },
+      { list: "Enquires", subMenuRef: "#contact " },
+      { list: "Feedback", subMenuRef: "#contact" },
+      { list: "Work with us", subMenuRef: "#contact" },
     ],
   },
   {
@@ -74,15 +96,9 @@ export const menuItemsMobile = [
       { list: "Case Studies", subMenuRef: "/case_studies" },
     ],
   },
-  {
-    menuTitle: "Contact",
-    ref: "#contact",
-    subMenu: [
-      { list: "Subscribe", subMenuRef: "/subscribe " },
-      { list: "Social Media", subMenuRef: "/social_media" },
-    ],
-  },
-  { menuTitle: "Technology", ref: "/technology" },
+  { menuTitle: "Our Technology", ref: "/technology" },
+
+
 ];
 
 export const sliders = [
@@ -114,17 +130,17 @@ export const sliders = [
 
 export const travelCardList = [
   {
-    img: "/card_bg_1.jpg",
+    img: "/card_2_3.jpg",
     title: "Engineered for Ease, Consistency, and Adaptability",
     desc: "We adopt a consultative and tailored approach to create unique, straightforward, and efficient global travel solutions that deliver strategic results for today and tomorrow.",
   },
   {
-    img: "/card_bg_1.jpg",
+    img: "/card_2_2.jpg",
     title: "Global Reach, Local Insight, Adaptive Tech",
     desc: "Benefit from our ability to maximize savings, access reliable local market expertise, and enjoy the flexibility to tackle future travel challenges.",
   },
   {
-    img: "/card_bg_1.jpg",
+    img: "/card_2_1.jpg",
     title: "Your Input Shapes Our Innovations",
     desc: "Your needs drive our product and service development, ensuring you receive the most relevant, timely, and impactful solutions.",
   },

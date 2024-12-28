@@ -39,7 +39,7 @@ export const FooterSection1 = ({ items }) => {
           <li key={idx} className="md:px-4 lg:px-6">
             <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
-              <h4 className="font-normal capitalize text-secondary hover:text-success font-Gilroy">
+              <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl ">
                 {item.menuTitle}
               </h4>
             </div>
@@ -48,7 +48,7 @@ export const FooterSection1 = ({ items }) => {
                 <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                 <Link
                   href={`${list.subMenuRef}`}
-                  className="font-normal text-secondary hover:text-success font-Poppins"
+                  className="font-semibold text-secondary hover:text-success font-Poppins"
                 >
                   {list.listMenu}
                 </Link>
@@ -59,7 +59,7 @@ export const FooterSection1 = ({ items }) => {
         <li>
           <Link href={"/technology"} className="flex items-center gap-2 mb-2">
             <FaAngleRight size={14} className="text-secondary" />
-            <h4 className="font-normal capitalize text-secondary hover:text-success font-Gilroy">
+            <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl">
               Technology
             </h4>
           </Link>

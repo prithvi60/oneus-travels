@@ -187,10 +187,10 @@ export default function NavbarPage() {
       >
         <NavbarItem>
           <Link
-            aria-label={`know more about Technology`}
-            title={"Technology"}
+            aria-label={`know more about OneUs`}
+            title={"Home"}
             aria-current={`Technology page`}
-            href={"/technology"}
+            href={"/"}
             className={`text-sm lg:text-lg xl:text-xl ${
               scrollYValue <= scrollValue.value1
                 ? "text-primary"
@@ -205,7 +205,7 @@ export default function NavbarPage() {
                 : "text-secondary"
             } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
-            Technology
+           Home
           </Link>
         </NavbarItem>
         {menuItems.map((item, id) => (
@@ -277,6 +277,29 @@ export default function NavbarPage() {
             </div>
           </NavbarItem>
         ))}
+                <NavbarItem>
+          <Link
+            aria-label={`know more about Technology`}
+            title={"Technology"}
+            aria-current={`Technology page`}
+            href={"/technology"}
+            className={`text-sm lg:text-lg xl:text-xl ${
+              scrollYValue <= scrollValue.value1
+                ? "text-primary"
+                : scrollYValue <= scrollValue.value2
+                ? "text-secondary"
+                : scrollYValue <= scrollValue.value3 && path === "/"
+                ? "text-primary"
+                : scrollYValue > scrollValue.value3 &&
+                  scrollYValue <= scrollValue.value4 &&
+                  path === "/"
+                ? "text-primary"
+                : "text-secondary"
+            } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
+          >
+           Our Technology
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
       {/* Login button For employee and client */}

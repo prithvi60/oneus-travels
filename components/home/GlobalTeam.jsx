@@ -44,14 +44,14 @@ export const GlobalTeam = () => {
       <GlobalTeamCard
         title={"One Strategy"}
         sub={"Crafted for You"}
-        imgSrc={"/card_bg_1.jpg"}
+        imgSrc={"/card_bg_5.jpg"}
         desc={"Utilize our strategic solutions tailored to your specific needs and goals."}
       />
 
       <GlobalTeamCardReverse
         title={"One Forum"}
         sub={"Simplified and Organized"}
-        imgSrc={"/card_bg_1.jpg"}
+        imgSrc={"/card_bg_6.jpg"}
         desc={
           "Experience a centralized forum designed to streamline our services and ensure seamless communication. "
         }
@@ -60,7 +60,7 @@ export const GlobalTeam = () => {
       <GlobalTeamCard
         title={"One Community"}
         sub={"Dedicated Support"}
-        imgSrc={"/card_bg_1.jpg"}
+        imgSrc={"/card_bg_7.jpg"}
         desc={
           "Benefit from a dedicated team assigned to your company, providing consistent and personalized service every step of the way."
         }
@@ -69,7 +69,7 @@ export const GlobalTeam = () => {
       <GlobalTeamCardReverse
         title={"One Standard"}
         sub={"Excellence Guaranteed"}
-        imgSrc={"/card_bg_1.jpg"}
+        imgSrc={"/card_bg_4.jpg"}
         desc={
           "Enjoy services that uphold your business standards and are approved by AITA, ensuring quality and compliance."
         }
