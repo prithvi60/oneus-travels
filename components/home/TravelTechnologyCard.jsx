@@ -6,8 +6,9 @@ import { travelCardList } from "@/libs/data";
 export const TravelTechnologyCard = () => {
   return (
     <section className="w-full h-auto space-y-5 padding md:space-y-10">
-      <h2 className="tracking-normal font-Gilroy font-bold text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-6 md:pb-2">
-        Ground-Breaking Corporate Travel Technology
+      <h2 className="tracking-normal font-Gilroy font-bold text-secondary text-[32px] md:text-[40px] lg:text-[42px] pb-6 md:pb-2 capitalize">
+        Advanced travel technology for Corporates
+        {/* Ground-Breaking Corporate Travel Technology */}
       </h2>
       <div className="grid w-full h-full grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 md:items-center md:justify-center md:gap-12 ">
         {travelCardList.map((list, id) => (
