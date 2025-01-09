@@ -8,9 +8,12 @@ import Link from "next/link";
 import { SubmitBtn } from "../Button";
 
 const imageSrc = [
- {img: "/logos/travels.png",link:"/"},
- {img: "/logos/travelsvisa.png",link:"/services/visa_services"},
-   {img:"/logos/travelsleisure.png",link:"/services/leisure"},
+  
+ {img: "/logos/blueicon.png",link:"/"},
+
+//  {img: "/logos/travels.png",link:"/"},
+//  {img: "/logos/travelsvisa.png",link:"/services/visa_services"},
+//    {img:"/logos/travelsleisure.png",link:"/services/leisure"},
 ];
 
 export const FooterSection1 = ({ items }) => {

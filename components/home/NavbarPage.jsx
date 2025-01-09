@@ -305,13 +305,11 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
-      <Link href="#contact" className="hidden md:block">
+      <Link href="#contact" className="hidden 3xl:block">
       <OtherBtn text={"Plan Your Business Travel Now"} />
-      {/* <button
-        className="bg-primary text-black py-2 px-4 rounded-md"
-      >
-        Plan Your Business Travel Now
-      </button> */}
+      </Link>
+      <Link href="#contact" className="hidden md:block 3xl:hidden">
+      <OtherBtn text={"Enquire"} />
       </Link>
         <NavbarItem>
           <Link href="/" title="Login">
