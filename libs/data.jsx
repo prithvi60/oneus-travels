@@ -33,24 +33,24 @@ export const menuItems = [
       { listMenu: "Work with us", subMenuRef: "#contact" },
     ],
   },
-  {
-    menuTitle: "Resources",
-    ref: "/resources",
-    subMenu: [
-      { listMenu: "News", subMenuRef: "/news" },
-      { listMenu: "Blog", subMenuRef: "/blog" },
-      { listMenu: "Case Studies", subMenuRef: "/case_studies" },
-    ],
-  },
   // {
-  //   menuTitle: "resources",
-  //   ref: "",
+  //   menuTitle: "Resources",
+  //   ref: "/resources",
   //   subMenu: [
-  //     { listMenu: "News", subMenuRef: "/resources/news" },
-  //     { listMenu: "Blog", subMenuRef: "/resources/blog" },
-  //     { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
+  //     { listMenu: "News", subMenuRef: "/news" },
+  //     { listMenu: "Blog", subMenuRef: "/blog" },
+  //     { listMenu: "Case Studies", subMenuRef: "/case_studies" },
   //   ],
   // },
+  {
+    menuTitle: "resources",
+    ref: "",
+    subMenu: [
+      { listMenu: "News", subMenuRef: "/resources/news" },
+      { listMenu: "Blog", subMenuRef: "/resources/blog" },
+      { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
+    ],
+  },
 
   // { menuTitle: "Technology", ref: "/technology" },
 ];
@@ -175,7 +175,7 @@ export const testimonialList = [
   // },
 ];
 
-export const clients = [ "/clients/sgb.png","/clients/nayafull.png","/clients/esab.png","/clients/zoho.png","/clients/nvh.png","/clients/gavs.png","/clients/svrn.png","/clients/uni.png",];
+export const clients = ["/clients/sgb.png", "/clients/nayafull.png", "/clients/esab.png", "/clients/zoho.png", "/clients/nvh.png", "/clients/gavs.png", "/clients/svrn.png", "/clients/uni.png",];
 
 // leisure table data
 
@@ -1469,22 +1469,22 @@ export const whyUsAccordion = [
   {
     title: "Streamlined Business Travel",
     desc: "Save time and reduce stress with our efficient booking and management services. Let us handle the logistics while you focus on your business goals.",
- cta:"Get Started With Us" 
+    cta: "Get Started With Us"
   },
   {
     title: "Tailored Support 24/7 ",
     desc: "Enjoy dedicated, personalized support available around the clock. Our team is here to assist with all your travel needs, making your experience smooth from start to finish.",
-    cta:"Speak to Our Team" 
+    cta: "Speak to Our Team"
   },
   {
     title: "Comprehensive Travel Platform",
     desc: "Access a single platform for all your corporate travel needs. Manage your itineraries, bookings, and expenses effortlessly using our user-friendly dashboard.",
-    cta:"Explore Our Platform" 
+    cta: "Explore Our Platform"
   },
   {
     title: "Unmatched Value and Options",
     desc: "Benefit from an extensive range of travel options tailored to fit every business budget. We offer exclusive deals and discounts you won’t find elsewhere.",
-    cta:"View Our Deals" 
+    cta: "View Our Deals"
   },
 ];
 

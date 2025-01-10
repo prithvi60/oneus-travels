@@ -84,17 +84,16 @@ export default function NavbarPage() {
       // }
       classNames={{
         base: [
-          ` ${
-            scrollYValue <= scrollValue.value1
-              ? "!bg-transparent shadow-none"
-              : scrollYValue <= scrollValue.value2
+          ` ${scrollYValue <= scrollValue.value1
+            ? "!bg-transparent shadow-none"
+            : scrollYValue <= scrollValue.value2
               ? "bg-primary shadow-md"
               : scrollYValue <= scrollValue.value3 && path === "/"
-              ? "bg-secondary shadow-md"
-              : scrollYValue <= scrollValue.value4 && path === "/"
-              ? "bg-success shadow-md"
-              : "bg-primary shadow-md"
-          } fixed top-8 left-0 py-4 transition-all duration-500 ease-linear`,
+                ? "bg-secondary shadow-md"
+                : scrollYValue <= scrollValue.value4 && path === "/"
+                  ? "bg-success shadow-md"
+                  : "bg-primary shadow-md"
+          } fixed left-0 py-4 transition-all duration-500 ease-linear`,
         ],
         wrapper: ["gap-2 lg:gap-4"],
         item: [`data-[active=true]: !text-success`],
@@ -132,7 +131,7 @@ export default function NavbarPage() {
                   title="OneUs logo"
                   alt="Logo"
                   src={"/logos/travelsleisure.png"}
-                     className="object-contain p-2 rounded-full cursor-pointer bg-primary"
+                  className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
             ) : path === "/services/visa_services" ? (
@@ -143,7 +142,7 @@ export default function NavbarPage() {
                   title="OneUs logo"
                   alt="Logo"
                   src={"/logos/travelsvisa.png"}
-                 className="object-contain p-2 rounded-full cursor-pointer bg-primary"
+                  className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
             ) : (
@@ -154,7 +153,7 @@ export default function NavbarPage() {
                   title="OneUs logo"
                   alt="Logo"
                   src={"/logos/whitelogo.png"}
-                  // className="object-contain object-center cursor-pointer"
+                // className="object-contain object-center cursor-pointer"
                 />
               </div>
             )}
@@ -191,63 +190,59 @@ export default function NavbarPage() {
             title={"Home"}
             aria-current={`Technology page`}
             href={"/"}
-            className={`text-sm lg:text-lg xl:text-xl ${
-              scrollYValue <= scrollValue.value1
-                ? "text-primary"
-                : scrollYValue <= scrollValue.value2
+            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1
+              ? "text-primary"
+              : scrollYValue <= scrollValue.value2
                 ? "text-secondary"
                 : scrollYValue <= scrollValue.value3 && path === "/"
-                ? "text-primary"
-                : scrollYValue > scrollValue.value3 &&
-                  scrollYValue <= scrollValue.value4 &&
-                  path === "/"
-                ? "text-primary"
-                : "text-secondary"
-            } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
+                  ? "text-primary"
+                  : scrollYValue > scrollValue.value3 &&
+                    scrollYValue <= scrollValue.value4 &&
+                    path === "/"
+                    ? "text-primary"
+                    : "text-secondary"
+              } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
-           Home
+            Home
           </Link>
         </NavbarItem>
         {menuItems.map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${
-                  scrollYValue <= scrollValue.value1
-                    ? "text-primary"
-                    : scrollYValue <= scrollValue.value2
+                className={`text-base ${scrollYValue <= scrollValue.value1
+                  ? "text-primary"
+                  : scrollYValue <= scrollValue.value2
                     ? "text-secondary"
                     : scrollYValue <= scrollValue.value3 && path === "/"
-                    ? "text-primary"
-                    : scrollYValue > scrollValue.value3 &&
-                      scrollYValue <= scrollValue.value4 &&
-                      path === "/"
-                    ? "text-primary"
-                    : "text-secondary"
-                } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
-                onClick={() => handleClick(item.ref)}
-              >
-                <h4
-                  className={`${
-                    item.ref !== "" && "cursor-pointer"
-                  } font-semibold capitalize`}
-                >
-                  {item.menuTitle}
-                </h4>
-                <MdOutlineKeyboardArrowDown
-                  className={`${
-                    scrollYValue <= scrollValue.value1
-                      ? "text-primary"
-                      : scrollYValue <= scrollValue.value2
-                      ? "text-secondary"
-                      : scrollYValue <= scrollValue.value3 && path === "/"
                       ? "text-primary"
                       : scrollYValue > scrollValue.value3 &&
                         scrollYValue <= scrollValue.value4 &&
                         path === "/"
-                      ? "text-primary"
-                      : "text-secondary"
-                  } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
+                        ? "text-primary"
+                        : "text-secondary"
+                  } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
+                onClick={() => handleClick(item.ref)}
+              >
+                <h4
+                  className={`${item.ref !== "" && "cursor-pointer"
+                    } font-semibold capitalize`}
+                >
+                  {item.menuTitle}
+                </h4>
+                <MdOutlineKeyboardArrowDown
+                  className={`${scrollYValue <= scrollValue.value1
+                    ? "text-primary"
+                    : scrollYValue <= scrollValue.value2
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value3 && path === "/"
+                        ? "text-primary"
+                        : scrollYValue > scrollValue.value3 &&
+                          scrollYValue <= scrollValue.value4 &&
+                          path === "/"
+                          ? "text-primary"
+                          : "text-secondary"
+                    } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
                 />
               </div>
               {item.subMenu && (
@@ -255,9 +250,8 @@ export default function NavbarPage() {
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
-                  className={`absolute hidden ${
-                    IsOpen === false ? "hidden" : "group-hover:block"
-                  } group-hover:block top-[102px] left-0 bg-secondary/90 p-4 shadow-md rounded-xl font-Gilroy`}
+                  className={`absolute hidden ${IsOpen === false ? "hidden" : "group-hover:block"
+                    } group-hover:block top-[102px] left-0 bg-secondary/90 p-4 shadow-md rounded-xl font-Gilroy`}
                 >
                   {item?.subMenu?.map((l, index) => (
                     <Link
@@ -277,27 +271,26 @@ export default function NavbarPage() {
             </div>
           </NavbarItem>
         ))}
-                <NavbarItem>
+        <NavbarItem>
           <Link
             aria-label={`know more about Technology`}
             title={"Technology"}
             aria-current={`Technology page`}
             href={"/technology"}
-            className={`text-sm lg:text-lg xl:text-xl ${
-              scrollYValue <= scrollValue.value1
-                ? "text-primary"
-                : scrollYValue <= scrollValue.value2
+            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1
+              ? "text-primary"
+              : scrollYValue <= scrollValue.value2
                 ? "text-secondary"
                 : scrollYValue <= scrollValue.value3 && path === "/"
-                ? "text-primary"
-                : scrollYValue > scrollValue.value3 &&
-                  scrollYValue <= scrollValue.value4 &&
-                  path === "/"
-                ? "text-primary"
-                : "text-secondary"
-            } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
+                  ? "text-primary"
+                  : scrollYValue > scrollValue.value3 &&
+                    scrollYValue <= scrollValue.value4 &&
+                    path === "/"
+                    ? "text-primary"
+                    : "text-secondary"
+              } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
-           Our Technology
+            Our Technology
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -305,19 +298,19 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
-      <Link href="#contact" className="hidden 3xl:block">
-      <OtherBtn text={"Plan Your Business Travel Now"} />
-      </Link>
-      <Link href="#contact" className="hidden md:block 3xl:hidden">
-      <OtherBtn text={"Enquire"} />
-      </Link>
-        <NavbarItem>
+        <Link href="#contact" className="hidden 3xl:block">
+          <OtherBtn text={"Plan Your Business Travel Now"} />
+        </Link>
+        <Link href="#contact" className="hidden md:block 3xl:hidden">
+          <OtherBtn text={"Enquire"} />
+        </Link>
+        {/* <NavbarItem>
           <Link href="/" title="Login">
             <MenuBtnMember text={"member"} roleType={"text"} />
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
-          <Link href="/" title="Login">
+          <Link href="https://oneustravels.paxes.com/authenticate/log-in" title="Login">
             <MenuBtnCorporate text={"corporate"} roleType={"text"} />
           </Link>
         </NavbarItem>
@@ -375,14 +368,12 @@ export default function NavbarPage() {
                 title={item.menuTitle}
                 aria-current={`${item.menuTitle} page`}
                 href={item.ref}
-                className={`${
-                  path === item.menuTitle
-                    ? "text-success"
-                    : "text-secondary hover:text-success"
-                } w-full h-full text-base sm:text-lg lg:text-xl font-Gilroy font-semibold ${
-                  item.menuTitle === "Technology" &&
+                className={`${path === item.menuTitle
+                  ? "text-success"
+                  : "text-secondary hover:text-success"
+                  } w-full h-full text-base sm:text-lg lg:text-xl font-Gilroy font-semibold ${item.menuTitle === "Technology" &&
                   "underline underline-offset-1"
-                }`}
+                  }`}
               >
                 {item.menuTitle}
               </Link>

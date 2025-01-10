@@ -1,3 +1,4 @@
+import DefaultLayout from "@/components/home/DefaultLayout";
 import JsonLd from "@/components/JsonLd";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
@@ -11,15 +12,17 @@ const data = [
 const page = () => {
   return (
     <main>
-      <JsonLd data={contactPageData} />
-      <OtherHero imgSrc={"/bg_1.jpg"} />
-      <WelcomeBoard
-        title={"Subscribe Today!"}
-        desc={
-          "Corporate Travel Management (OneUs Travels) provides quality business travel news, insights, product updates, and special offers direct to your inbox, helping you get the most out of your business travel experience."
-        }
-        
-      />
+      <DefaultLayout>
+        <JsonLd data={contactPageData} />
+        <OtherHero imgSrc={"/bg_1.jpg"} />
+        <WelcomeBoard
+          title={"Subscribe Today!"}
+          desc={
+            "Corporate Travel Management (OneUs Travels) provides quality business travel news, insights, product updates, and special offers direct to your inbox, helping you get the most out of your business travel experience."
+          }
+
+        />
+      </DefaultLayout>
     </main>
   );
 };

@@ -1,15 +1,14 @@
 import DefaultLayout from "@/components/home/DefaultLayout";
 import { OtherHero } from "@/components/OtherHero";
-import PostCards from "@/components/resources/PostCards";
+import PostDetails from "@/components/resources/PostDetails";
 import { client } from "@/sanity/lib/client";
-import { CSS_QUERY } from "@/sanity/Queries";
-
+import { POST_QUERY } from "@/sanity/Queries";
 export const revalidate = 10;
-
-const page = async () => {
-  const posts = await client.fetch(
-    CSS_QUERY,
-    {},
+const page = async ({ params }) => {
+  const slug = params.slug;
+  const post = await client.fetch(
+    POST_QUERY,
+    { slug },
     {
       cache: "no-cache",
       next: {
@@ -21,7 +20,7 @@ const page = async () => {
     <main>
       <DefaultLayout>
         <OtherHero imgSrc={"/bg_1.jpg"} />
-        <PostCards href={"/resources/case_studies"} title={"Case Studies"} posts={posts} />
+        <PostDetails post={post} />
       </DefaultLayout>
     </main>
   );

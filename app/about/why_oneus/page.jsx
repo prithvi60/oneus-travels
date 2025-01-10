@@ -1,5 +1,6 @@
 
 import { WhyOneus } from "@/components/about/WhyOneus";
+import DefaultLayout from "@/components/home/DefaultLayout";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
@@ -10,9 +11,11 @@ const data = [
 const page = () => {
   return (
     <main className="">
-      <OtherHero imgSrc={"/bg_1.jpg"} />
-      <WelcomeBoard title={"Why Choose OneUS Travels?"} />
-      <WhyOneus />
+      <DefaultLayout>
+        <OtherHero imgSrc={"/bg_1.jpg"} />
+        <WelcomeBoard title={"Why Choose OneUS Travels?"} />
+        <WhyOneus />
+      </DefaultLayout>
     </main>
   );
 };

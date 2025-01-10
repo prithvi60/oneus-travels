@@ -1,15 +1,9 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import NavbarPage from "@/components/home/NavbarPage";
-import Footer from "@/components/home/Footer";
 import AppContextProvider from "@/hooks/UseHooks";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ContactForm } from "@/components/home/ContactForm";
-import { Testimonial } from "@/components/home/Testimonial";
-import { SalesIq } from "@/components/home/SalesIq";
 import localFont from "next/font/local";
-import Development from "@/components/Development";
 import { Providers } from "./Provider";
 
 const gilroy = localFont({
@@ -97,15 +91,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AppContextProvider>
         <body className={`${gilroy.variable} ${poppins.variable}`}>
-          <Providers>
-            <Development />
-            <NavbarPage />
-            {children}
-            <ContactForm />
-            <Testimonial />
-            <Footer />
-            <SalesIq />
-          </Providers>
+          <Providers>{children}</Providers>
         </body>
       </AppContextProvider>
     </html>

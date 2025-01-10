@@ -1,3 +1,4 @@
+import DefaultLayout from "@/components/home/DefaultLayout";
 import { OtherHero } from "@/components/OtherHero";
 import { WelcomeBoard } from "@/components/services/WelcomeBoard";
 
@@ -10,14 +11,16 @@ const data = [
 const page = () => {
   return (
     <main>
-      <OtherHero imgSrc={"/bg_1.jpg"} />
-      <WelcomeBoard
-        title={"Blog"}
-        desc={
-          "OneUs Travels is an award-winning global provider of innovative and cost-effective travel management solutions to the corporate market. We understand the complex travel needs of businesses large and small in every global market, and are committed to developing tailored travel solutions that drive results."
-        }
-        
-      />
+      <DefaultLayout>
+        <OtherHero imgSrc={"/bg_1.jpg"} />
+        <WelcomeBoard
+          title={"Blog"}
+          desc={
+            "OneUs Travels is an award-winning global provider of innovative and cost-effective travel management solutions to the corporate market. We understand the complex travel needs of businesses large and small in every global market, and are committed to developing tailored travel solutions that drive results."
+          }
+
+        />
+      </DefaultLayout>
     </main>
   );
 };
