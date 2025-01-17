@@ -146,14 +146,14 @@ export default function NavbarPage() {
                 />
               </div>
             ) : (
-              <div className="relative w-20 h-12 md:h-14 md:w-32">
+              <div className="relative w-20 h-12 bg-white rounded-full shadow-xl md:h-14 md:w-32">
                 <Image
                   onClick={() => router.push("/")}
                   fill
                   title="OneUs logo"
                   alt="Logo"
-                  src={"/logos/whitelogo.png"}
-                // className="object-contain object-center cursor-pointer"
+                  src={"/logos/travels.png"}
+                  className="object-contain object-center p-2 cursor-pointer"
                 />
               </div>
             )}

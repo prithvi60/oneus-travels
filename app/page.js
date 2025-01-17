@@ -12,7 +12,7 @@ export default function Home() {
       <DefaultLayout>
         <HomePageHero />
         <WelcomeSection />
-        <OurClients />
+        {/* <OurClients /> */}
         {/* <VideoSection /> */}
         <GlobalTeam />
         <TravelTechnologyCard />
