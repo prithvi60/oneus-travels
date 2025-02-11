@@ -16,7 +16,7 @@ const page = () => {
     <main>
       <DefaultLayout>
         <JsonLd data={meetingEventServiceData} />
-        <OtherHero imgSrc={"/bg_1.jpg"} />
+        <OtherHero imgSrc={"/bg_4.jpg"} />
         <WelcomeBoard
           title={"Global Meetings & Events Management Services"}
           desc={

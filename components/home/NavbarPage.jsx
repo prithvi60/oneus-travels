@@ -181,7 +181,7 @@ export default function NavbarPage() {
 
       {/* Desktop menu bar */}
       <NavbarContent
-        className="hidden lg_2:flex ms-5 gap-1.5 lg:gap-5 font-Gilroy"
+        className="hidden lg:flex ms-5 gap-1.5 lg:gap-5 font-Gilroy"
         justify="center"
       >
         <NavbarItem>
@@ -206,7 +206,7 @@ export default function NavbarPage() {
             Home
           </Link>
         </NavbarItem>
-        {menuItems.map((item, id) => (
+        {menuItems.slice(0,2).map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
               <div
@@ -293,8 +293,73 @@ export default function NavbarPage() {
             Our Technology
           </Link>
         </NavbarItem>
+        {menuItems.slice(2,4).map((item, id) => (
+          <NavbarItem key={id} className="relative group">
+            <div>
+              <div
+                className={`text-base ${scrollYValue <= scrollValue.value1
+                  ? "text-primary"
+                  : scrollYValue <= scrollValue.value2
+                    ? "text-secondary"
+                    : scrollYValue <= scrollValue.value3 && path === "/"
+                      ? "text-primary"
+                      : scrollYValue > scrollValue.value3 &&
+                        scrollYValue <= scrollValue.value4 &&
+                        path === "/"
+                        ? "text-primary"
+                        : "text-secondary"
+                  } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
+                onClick={() => handleClick(item.ref)}
+              >
+                <h4
+                  className={`${item.ref !== "" && "cursor-pointer"
+                    } font-semibold capitalize`}
+                >
+                  {item.menuTitle}
+                </h4>
+                <MdOutlineKeyboardArrowDown
+                  className={`${scrollYValue <= scrollValue.value1
+                    ? "text-primary"
+                    : scrollYValue <= scrollValue.value2
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value3 && path === "/"
+                        ? "text-primary"
+                        : scrollYValue > scrollValue.value3 &&
+                          scrollYValue <= scrollValue.value4 &&
+                          path === "/"
+                          ? "text-primary"
+                          : "text-secondary"
+                    } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
+                />
+              </div>
+              {item.subMenu && (
+                <motion.div
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  className={`absolute hidden ${IsOpen === false ? "hidden" : "group-hover:block"
+                    } group-hover:block top-[102px] left-0 bg-secondary/90 p-4 shadow-md rounded-xl font-Gilroy`}
+                >
+                  {item?.subMenu?.map((l, index) => (
+                    <Link
+                      title={l.listMenu}
+                      className={`flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-info`}
+                      key={index}
+                      href={l.subMenuRef}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <h4 className="hover:underline hover:underline-offset-8">
+                        {l.listMenu}
+                      </h4>
+                    </Link>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+          </NavbarItem>
+        ))}
       </NavbarContent>
-
+    
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">

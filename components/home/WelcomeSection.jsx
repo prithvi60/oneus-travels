@@ -37,11 +37,12 @@ export const WelcomeSection = () => {
       </h3>
       <div className="pt-5 w-max">
         <Link
-          href={"/sample.pdf"}
-          title="brochure"
-          download={"OneUsTravels.pdf"}
-          type="file"
-          target="_blank"
+          // href={"/sample.pdf"}
+          // title="brochure"
+          // download={"OneUsTravels.pdf"}
+          // type="file"
+          // target="_blank"
+          href={"/about/our_vision"}
         >
           <PrimaryButton
             roleType={"button"}

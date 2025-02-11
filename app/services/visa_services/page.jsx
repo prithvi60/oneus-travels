@@ -16,7 +16,7 @@ const page = () => {
     <main>
       <DefaultLayout>
         <JsonLd data={visaServiceData} />
-        <OtherHero imgSrc={"/bg_2.jpg"} />
+        <OtherHero imgSrc={"/bg_3.jpg"} />
         <WelcomeBoard
           title={"Visa Services"}
           desc={
