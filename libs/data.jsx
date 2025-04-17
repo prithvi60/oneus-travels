@@ -4,10 +4,10 @@ export const menuItems = [
     menuTitle: "About Us",
     ref: "",
     subMenu: [
-      { listMenu: "Why Oneus", subMenuRef: "/about/why_oneus" },
-      { listMenu: "Oneus Story", subMenuRef: "/about/oneus_story" },
-      { listMenu: "Oneus Team", subMenuRef: "/about/oneus_team" },
-      { listMenu: "Our Vision", subMenuRef: "/about/our_vision" },
+      { listMenu: "Why Oneus", subMenuRef: "/about/why-oneus" },
+      { listMenu: "Oneus Story", subMenuRef: "/about/oneus-story" },
+      { listMenu: "Oneus Team", subMenuRef: "/about/oneus-team" },
+      { listMenu: "Our Vision", subMenuRef: "/about/our-vision" },
       { listMenu: "Network", subMenuRef: "/about/network" },
     ],
   },
@@ -17,11 +17,11 @@ export const menuItems = [
     subMenu: [
       {
         listMenu: "Corporate Travel",
-        subMenuRef: "/services/corporate_travel",
+        subMenuRef: "/services/corporate-travel",
       },
       { listMenu: "Leisure", subMenuRef: "/services/leisure" },
-      { listMenu: "Visa Services", subMenuRef: "/services/visa_services" },
-      { listMenu: "Meeting & Events", subMenuRef: "/services/meeting_events" },
+      { listMenu: "Visa Services", subMenuRef: "/services/visa-services" },
+      { listMenu: "Meeting & Events", subMenuRef: "/services/meeting-events" },
     ],
   },
   {
@@ -39,7 +39,7 @@ export const menuItems = [
   //   subMenu: [
   //     { listMenu: "News", subMenuRef: "/news" },
   //     { listMenu: "Blog", subMenuRef: "/blog" },
-  //     { listMenu: "Case Studies", subMenuRef: "/case_studies" },
+  //     { listMenu: "Case Studies", subMenuRef: "/case-studies" },
   //   ],
   // },
   {
@@ -48,7 +48,7 @@ export const menuItems = [
     subMenu: [
       { listMenu: "News", subMenuRef: "/resources/news" },
       { listMenu: "Blog", subMenuRef: "/resources/blog" },
-      { listMenu: "Case Studies", subMenuRef: "/resources/case_studies" },
+      { listMenu: "Case Studies", subMenuRef: "/resources/case-studies" },
     ],
   },
 
@@ -56,15 +56,14 @@ export const menuItems = [
 ];
 
 export const menuItemsMobile = [
-
   {
     menuTitle: "About us",
     ref: "/about",
     subMenu: [
-      { list: "Why Oneus", subMenuRef: "/why_oneus" },
-      { list: "Oneus Story", subMenuRef: "/oneus_story" },
-      { list: "Oneus Team", subMenuRef: "/oneus_team" },
-      { list: "Our Vision", subMenuRef: "/our_vision" },
+      { list: "Why Oneus", subMenuRef: "/why-oneus" },
+      { list: "Oneus Story", subMenuRef: "/oneus-story" },
+      { list: "Oneus Team", subMenuRef: "/oneus-team" },
+      { list: "Our Vision", subMenuRef: "/our-vision" },
       { list: "Network", subMenuRef: "/network" },
     ],
   },
@@ -72,10 +71,10 @@ export const menuItemsMobile = [
     menuTitle: "What we do",
     ref: "/services",
     subMenu: [
-      { list: "Corporate Travel", subMenuRef: "/corporate_travel" },
+      { list: "Corporate Travel", subMenuRef: "/corporate-travel" },
       { list: "Leisure", subMenuRef: "/leisure" },
-      { list: "Visa Services", subMenuRef: "/visa_services" },
-      { list: "Meeting & Events", subMenuRef: "/meeting_events" },
+      { list: "Visa Services", subMenuRef: "/visa-services" },
+      { list: "Meeting & Events", subMenuRef: "/meeting-events" },
     ],
   },
   {
@@ -93,12 +92,10 @@ export const menuItemsMobile = [
     subMenu: [
       { list: "News", subMenuRef: "/news" },
       { list: "Blog", subMenuRef: "/blog" },
-      { list: "Case Studies", subMenuRef: "/case_studies" },
+      { list: "Case Studies", subMenuRef: "/case-studies" },
     ],
   },
   { menuTitle: "Our Technology", ref: "/technology" },
-
-
 ];
 
 export const sliders = [
@@ -175,7 +172,16 @@ export const testimonialList = [
   // },
 ];
 
-export const clients = ["/clients/sgb.png", "/clients/nayafull.png", "/clients/esab.png", "/clients/zoho.png", "/clients/nvh.png", "/clients/gavs.png", "/clients/svrn.png", "/clients/uni.png",];
+export const clients = [
+  "/clients/sgb.png",
+  "/clients/nayafull.png",
+  "/clients/esab.png",
+  "/clients/zoho.png",
+  "/clients/nvh.png",
+  "/clients/gavs.png",
+  "/clients/svrn.png",
+  "/clients/uni.png",
+];
 
 // leisure table data
 
@@ -193,7 +199,7 @@ export const leisureLists = [
       { type: "local Language", value: "Hindi" },
       { type: "Capital", value: "New Delhi" },
       { type: "Best Time to Visit", value: "October to February" },
-      { type: "Duration", value: "3 – 4 days" },
+      { type: "Duration", value: "3 - 4 days" },
       {
         type: "Packages Available",
         value: "Golden Triangle (3N/4D), Agra (2N/3D), Varanasi (3N/4D)",
@@ -222,7 +228,7 @@ export const leisureLists = [
       { type: "local Language", value: "Tamil" },
       { type: "Capital", value: "Chennai" },
       { type: "Best Time to Visit", value: "October to March" },
-      { type: "Duration", value: "3 – 4 days" },
+      { type: "Duration", value: "3 - 4 days" },
       {
         type: "Packages Available",
         value:
@@ -288,7 +294,7 @@ export const leisureLists = [
       { type: "local Language", value: "Malayalam" },
       { type: "Capital", value: "Trivandrum" },
       { type: "Best Time to Visit", value: "October to Feb" },
-      { type: "Duration", value: "2 – 3 days" },
+      { type: "Duration", value: "2 - 3 days" },
       {
         type: "Packages Available",
         value:
@@ -1469,22 +1475,22 @@ export const whyUsAccordion = [
   {
     title: "Streamlined Business Travel",
     desc: "Save time and reduce stress with our efficient booking and management services. Let us handle the logistics while you focus on your business goals.",
-    cta: "Get Started With Us"
+    cta: "Get Started With Us",
   },
   {
     title: "Tailored Support 24/7 ",
     desc: "Enjoy dedicated, personalized support available around the clock. Our team is here to assist with all your travel needs, making your experience smooth from start to finish.",
-    cta: "Speak to Our Team"
+    cta: "Speak to Our Team",
   },
   {
     title: "Comprehensive Travel Platform",
     desc: "Access a single platform for all your corporate travel needs. Manage your itineraries, bookings, and expenses effortlessly using our user-friendly dashboard.",
-    cta: "Explore Our Platform"
+    cta: "Explore Our Platform",
   },
   {
     title: "Unmatched Value and Options",
     desc: "Benefit from an extensive range of travel options tailored to fit every business budget. We offer exclusive deals and discounts you won’t find elsewhere.",
-    cta: "View Our Deals"
+    cta: "View Our Deals",
   },
 ];
 

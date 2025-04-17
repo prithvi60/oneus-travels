@@ -15,7 +15,7 @@ export const TourPackageTable = () => {
   const locationPath = pathArray[pathArray.length - 1];
 
   const lists = leisureLists.filter(
-    (item) => item.location === locationPath.replace(/_/g, " ")
+    (item) => item.location === locationPath.replace(/-/g, " ")
   );
 
   return (

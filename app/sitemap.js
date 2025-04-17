@@ -25,19 +25,19 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: "https://travel.com/about/why_oneus",
+      url: "https://travel.com/about/why-oneus",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
-      url: "https://travel.com/services/meeting_events",
+      url: "https://travel.com/services/meeting-events",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: "https://travel.com/services/corporate_travel",
+      url: "https://travel.com/services/corporate-travel",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,

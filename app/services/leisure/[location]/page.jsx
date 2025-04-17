@@ -4,11 +4,12 @@ import { TourPackageTable } from "@/components/services/TourPackageTable";
 import { TourPackages } from "@/components/services/TourPackages";
 
 const page = ({ params }) => {
+
   return (
     <div>
       <DefaultLayout>
         <TourHeroSection />
-        <TourPackages location={params.location.replace(/_/g, " ")} />
+        <TourPackages location={params.location.replace(/-/g, " ")} />
         <TourPackageTable />
       </DefaultLayout>
     </div>

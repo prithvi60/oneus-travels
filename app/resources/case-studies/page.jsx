@@ -21,7 +21,7 @@ const page = async () => {
     <main>
       <DefaultLayout>
         <OtherHero imgSrc={"/bg_1.jpg"} />
-        <PostCards href={"/resources/case_studies"} title={"Case Studies"} posts={posts} />
+        <PostCards href={"/resources/case-studies"} title={"Case Studies"} posts={posts} />
       </DefaultLayout>
     </main>
   );

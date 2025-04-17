@@ -26,7 +26,7 @@ export const GlobalTeam = () => {
       </h3>
       <div className="space-y-7">
         <p className="w-full h-full text-base font-normal font-Poppins">
-        Elevate your corporate meetings and events with OneUs Travels' specialized event management team,  <Link href="/about/oneus_team" className="underline">OneT</Link>. Our experienced event planners create meticulously organized and reschedulable meetings and events that not only enhance attendee experiences but also deliver strategic advantages for your business—all while optimizing your travel expenditure.
+        Elevate your corporate meetings and events with OneUs Travels' specialized event management team,  <Link href="/about/oneus-team" className="underline">OneT</Link>. Our experienced event planners create meticulously organized and reschedulable meetings and events that not only enhance attendee experiences but also deliver strategic advantages for your business—all while optimizing your travel expenditure.
         </p>
         <h3 className="text-lg font-semibold font-Poppins">
         Unlock Exclusive Benefits
@@ -35,7 +35,7 @@ export const GlobalTeam = () => {
         Leverage our extensive network of suppliers to access exclusive corporate deals on accommodations, travel arrangements, and entertainment, saving you both time and money. Centralize your corporate and event-related travel expenses through OneUs Travels to strengthen your negotiating power with suppliers, maximizing your budget's potential.
         </p>
         <p className="w-full h-full text-base font-normal font-Poppins">
-        Whether you’re organizing corporate functions, crucial meetings, large-scale conferences, group excursions, team-building activities, or sales incentives, our  <Link href="/services/corporate_travel" className="underline">tailored event management solutions</Link> are designed to exceed your expectations and drive your business growth. We’ve got your back!
+        Whether you’re organizing corporate functions, crucial meetings, large-scale conferences, group excursions, team-building activities, or sales incentives, our  <Link href="/services/corporate-travel" className="underline">tailored event management solutions</Link> are designed to exceed your expectations and drive your business growth. We’ve got your back!
         </p>
         <p className="w-full h-full text-base font-normal font-Poppins">
         <Link href="#contact" className="underline"> Partner with OneUs Travels</Link> for a seamlessly integrated event experience that delivers outstanding results for your business, your team, and your budget. Let us handle the details, so you can focus on what matters most—building connections and achieving your goals.

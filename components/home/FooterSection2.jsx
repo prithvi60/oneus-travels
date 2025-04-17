@@ -2,9 +2,9 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const links = [
-  { link: "Privacy policy", ref: "/privacy_policy" },
-  { link: "Terms of use", ref: "/terms_of_use" },
-  { link: "Booking T&C", ref: "/booking_t&c" },
+  { link: "Privacy policy", ref: "/privacy-policy" },
+  { link: "Terms of use", ref: "/terms-of-use" },
+  { link: "Booking T&C", ref: "/booking-tc" },
 ];
 
 export const FooterSection2 = () => {

@@ -101,7 +101,7 @@ function SimpleSlider({ lists }) {
         <Slider {...settings} className="!py-2.5">
           {lists.map((item, id) => (
             <Link
-              href={`${path}/${item.location.replace(/\s/g, "_")
+              href={`${path}/${item.location.replace(/\s/g, "-")
               }`}
               title="location"
               className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md overflow-hidden group"

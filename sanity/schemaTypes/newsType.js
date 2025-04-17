@@ -21,7 +21,7 @@ export const newsType = defineType({
       options: {
         source: "title",
         maxLength: 50,
-        slugify: (input) => input.toLowerCase().replace(/\s+/g, "_"),
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, "-"),
       },
     }),
     defineField({
