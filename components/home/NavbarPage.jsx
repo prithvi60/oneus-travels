@@ -15,7 +15,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { MenuBtnCorporate, MenuBtnMember, OtherBtn } from "../Button";
+import { MenuBtnCorporate, MenuBtnMember, OtherBtn, OutlineBtn } from "../Button";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -123,7 +123,7 @@ export default function NavbarPage() {
       <NavbarBrand className="space-x-3 grow-0">
         {scrollYValue <= scrollValue.value1 ? (
           <div className="relative">
-            {path === "/services/leisure" ? (
+            {path === "/leisure" ? (
               <div className="relative w-20 h-12 md:h-14 md:w-32">
                 <Image
                   onClick={() => router.push("/")}
@@ -134,7 +134,7 @@ export default function NavbarPage() {
                   className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
-            ) : path === "/services/visa_services" ? (
+            ) : path === "/visa-services" ? (
               <div className="relative w-20 h-12 md:h-14 md:w-32">
                 <Image
                   onClick={() => router.push("/")}
@@ -206,7 +206,7 @@ export default function NavbarPage() {
             Home
           </Link>
         </NavbarItem>
-        {menuItems.slice(0,2).map((item, id) => (
+        {menuItems.slice(0, 2).map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
               <div
@@ -230,20 +230,22 @@ export default function NavbarPage() {
                 >
                   {item.menuTitle}
                 </h4>
-                <MdOutlineKeyboardArrowDown
-                  className={`${scrollYValue <= scrollValue.value1
-                    ? "text-primary"
-                    : scrollYValue <= scrollValue.value2
-                      ? "text-secondary"
-                      : scrollYValue <= scrollValue.value3 && path === "/"
-                        ? "text-primary"
-                        : scrollYValue > scrollValue.value3 &&
-                          scrollYValue <= scrollValue.value4 &&
-                          path === "/"
+                {item.subMenu && (
+                  <MdOutlineKeyboardArrowDown
+                    className={`${scrollYValue <= scrollValue.value1
+                      ? "text-primary"
+                      : scrollYValue <= scrollValue.value2
+                        ? "text-secondary"
+                        : scrollYValue <= scrollValue.value3 && path === "/"
                           ? "text-primary"
-                          : "text-secondary"
-                    } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
-                />
+                          : scrollYValue > scrollValue.value3 &&
+                            scrollYValue <= scrollValue.value4 &&
+                            path === "/"
+                            ? "text-primary"
+                            : "text-secondary"
+                      } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
+                  />
+                )}
               </div>
               {item.subMenu && (
                 <motion.div
@@ -273,10 +275,10 @@ export default function NavbarPage() {
         ))}
         <NavbarItem>
           <Link
-            aria-label={`know more about Technology`}
-            title={"Technology"}
-            aria-current={`Technology page`}
-            href={"/technology"}
+            aria-label={`know more about Solo Travel`}
+            title={"Solo Travel"}
+            aria-current={`Solo Travel page`}
+            href={"/solo-travel"}
             className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1
               ? "text-primary"
               : scrollYValue <= scrollValue.value2
@@ -290,10 +292,10 @@ export default function NavbarPage() {
                     : "text-secondary"
               } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
-            Our Technology
+            Solo Travel
           </Link>
         </NavbarItem>
-        {menuItems.slice(2,4).map((item, id) => (
+        {menuItems.slice(2, 4).map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
               <div
@@ -317,20 +319,22 @@ export default function NavbarPage() {
                 >
                   {item.menuTitle}
                 </h4>
-                <MdOutlineKeyboardArrowDown
-                  className={`${scrollYValue <= scrollValue.value1
-                    ? "text-primary"
-                    : scrollYValue <= scrollValue.value2
-                      ? "text-secondary"
-                      : scrollYValue <= scrollValue.value3 && path === "/"
-                        ? "text-primary"
-                        : scrollYValue > scrollValue.value3 &&
-                          scrollYValue <= scrollValue.value4 &&
-                          path === "/"
+                {item.subMenu && (
+                  <MdOutlineKeyboardArrowDown
+                    className={`${scrollYValue <= scrollValue.value1
+                      ? "text-primary"
+                      : scrollYValue <= scrollValue.value2
+                        ? "text-secondary"
+                        : scrollYValue <= scrollValue.value3 && path === "/"
                           ? "text-primary"
-                          : "text-secondary"
-                    } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
-                />
+                          : scrollYValue > scrollValue.value3 &&
+                            scrollYValue <= scrollValue.value4 &&
+                            path === "/"
+                            ? "text-primary"
+                            : "text-secondary"
+                      } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
+                  />
+                )}
               </div>
               {item.subMenu && (
                 <motion.div
@@ -359,7 +363,7 @@ export default function NavbarPage() {
           </NavbarItem>
         ))}
       </NavbarContent>
-    
+
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
@@ -367,13 +371,19 @@ export default function NavbarPage() {
           <OtherBtn text={"Plan Your Business Travel Now"} />
         </Link>
         <Link href="#contact" className="hidden md:block 3xl:hidden">
-          <OtherBtn text={"Enquire"} />
+          <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1
+            ? "text-primary hover:text-secondary border-primary"
+            : scrollYValue <= scrollValue.value2
+              ? "text-secondary border-primary"
+              : scrollYValue <= scrollValue.value3 && path === "/"
+                ? "text-primary border-success"
+                : scrollYValue > scrollValue.value3 &&
+                  scrollYValue <= scrollValue.value4 &&
+                  path === "/"
+                  ? "text-primary border-primary"
+                  : "text-secondary border-success"
+          } />
         </Link>
-        {/* <NavbarItem>
-          <Link href="/" title="Login">
-            <MenuBtnMember text={"member"} roleType={"text"} />
-          </Link>
-        </NavbarItem> */}
         <NavbarItem>
           <Link href="https://oneustravels.paxes.com/authenticate/log-in" title="Login">
             <MenuBtnCorporate text={"corporate"} roleType={"text"} />

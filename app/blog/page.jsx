@@ -26,7 +26,7 @@ const page = async () => {
         <JsonLd data={blogPostData} />
         <JsonLd data={blogPostBreadcrumbsData} />
         <OtherHero imgSrc={"/bg_1.jpg"} />
-        <PostCards posts={posts} title={"Blog"} href={"/resources/blog"} />
+        <PostCards posts={posts} title={"Blog"} href={"/blog"} />
       </DefaultLayout>
     </main>
   );

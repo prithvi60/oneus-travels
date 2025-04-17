@@ -8,12 +8,12 @@ import Link from "next/link";
 import { SubmitBtn } from "../Button";
 
 const imageSrc = [
-  
- {img: "/logos/blueicon.png",link:"/"},
 
-//  {img: "/logos/travels.png",link:"/"},
-//  {img: "/logos/travelsvisa.png",link:"/services/visa_services"},
-//    {img:"/logos/travelsleisure.png",link:"/services/leisure"},
+  { img: "/logos/blueicon.png", link: "/" },
+
+  //  {img: "/logos/travels.png",link:"/"},
+  //  {img: "/logos/travelsvisa.png",link:"/visa-services"},
+  //    {img:"/logos/travelsleisure.png",link:"/leisure"},
 ];
 
 export const FooterSection1 = ({ items }) => {
@@ -22,7 +22,7 @@ export const FooterSection1 = ({ items }) => {
       <div className="flex flex-row items-center justify-center h-full gap-4 md:flex-col md:gap-5">
         {imageSrc.map((i, id) => (
           <a
-          href={i.link}
+            href={i.link}
             className="relative order-1 block w-full h-20 md:w-28 lg:w-32 lg:h-20"
             key={id}
           >
@@ -38,7 +38,7 @@ export const FooterSection1 = ({ items }) => {
         ))}
       </div>
       <ul className="grid order-3 grid-cols-2 gap-4 md:pt-2 md:order-2">
-        {items.map((item, idx) => (
+        {items?.map((item, idx) => (
           <li key={idx} className="md:px-4 lg:px-6">
             <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
@@ -46,27 +46,31 @@ export const FooterSection1 = ({ items }) => {
                 {item.menuTitle}
               </h4>
             </div>
-            {item.subMenu.map((list, idx) => (
-              <div className="flex items-start gap-2 mb-2 ms-4" key={idx}>
-                <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
-                <Link
-                  href={`${list.subMenuRef}`}
-                  className="font-semibold text-secondary hover:text-success font-Poppins"
-                >
-                  {list.listMenu}
-                </Link>
-              </div>
-            ))}
+            {item.subMenu && (
+              <>
+                {item?.subMenu.map((list, idx) => (
+                  <div className="flex items-start gap-2 mb-2 ms-4" key={idx}>
+                    <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
+                    <Link
+                      href={`${list.subMenuRef}`}
+                      className="font-semibold text-secondary hover:text-success font-Poppins"
+                    >
+                      {list.listMenu}
+                    </Link>
+                  </div>
+                ))}
+              </>
+            )}
           </li>
         ))}
-        <li>
+        {/* <li>
           <Link href={"/technology"} className="flex items-center gap-2 mb-2">
             <FaAngleRight size={14} className="text-secondary" />
             <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl">
               Technology
             </h4>
           </Link>
-        </li>
+        </li> */}
       </ul>
       <div className="order-2 block md:order-3">
         <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-Gilroy nd:text-lg">

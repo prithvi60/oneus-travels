@@ -2,13 +2,13 @@ import DefaultLayout from "@/components/home/DefaultLayout";
 import { OtherHero } from "@/components/OtherHero";
 import PostCards from "@/components/resources/PostCards";
 import { client } from "@/sanity/lib/client";
-import { CSS_QUERY } from "@/sanity/Queries";
+import { NEWS_QUERIES } from "@/sanity/Queries";
 
 export const revalidate = 10;
 
 const page = async () => {
   const posts = await client.fetch(
-    CSS_QUERY,
+    NEWS_QUERIES,
     {},
     {
       cache: "no-cache",
@@ -21,7 +21,7 @@ const page = async () => {
     <main>
       <DefaultLayout>
         <OtherHero imgSrc={"/bg_1.jpg"} />
-        <PostCards href={"/resources/case-studies"} title={"Case Studies"} posts={posts} />
+        <PostCards href={"/news"} title={"News"} posts={posts} />
       </DefaultLayout>
     </main>
   );

@@ -1,13 +1,5 @@
 import DefaultLayout from "@/components/home/DefaultLayout";
 import { OtherHero } from "@/components/OtherHero";
-import { WelcomeBoard } from "@/components/services/WelcomeBoard";
-import Link from "next/link";
-
-const data = [
-  "The OneUs Travels Global Network provides customers with consistency and assurance wherever they travel. Combining OneUs Travels’s wholly owned operations across Australia and New Zealand, North America, Europe, and Asia and a global network of best-in-class independent travel management companies across approximately 100 countries, the OneUs Travels Global Network allows our customers to enjoy consistency of service supported by compatible systems and processes in every market they travel in for maximum savings, efficiency and compliance.",
-  "So whether you’re accessing OneUs Travels’s network in Paris, Seattle, Sydney or Taiwan, rest assured you’re working with a local leader in travel management who truly understands your business’s travel needs.",
-  "That’s the OneUs Travels difference.",
-];
 
 const page = () => {
   return (

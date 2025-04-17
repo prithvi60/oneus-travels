@@ -129,7 +129,7 @@ export const blogPostBreadcrumbsData = {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://oneus-travels.vercel.app/resources/blog",
+      item: "https://oneus-travels.vercel.app/blog",
     },
   ],
 };
@@ -148,7 +148,7 @@ export const corporateTravelBreadcrumbsData = {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://oneus-travels.vercel.app/services/corporate_travel",
+      item: "https://oneus-travels.vercel.app/corporate-travel",
     },
   ],
 };

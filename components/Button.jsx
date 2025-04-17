@@ -90,6 +90,24 @@ export const OtherBtn = ({ text }) => {
   );
 };
 
+export const OutlineBtn = ({ text, colorChange }) => {
+  return (
+    <button
+      type="button"
+      role="button"
+      className={`hover:bg-primary/80 hover:scale-95 relative shadow-lg px-3.5 py-1.5 flex
+     items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 ${colorChange}`}
+    >
+      <h3
+        className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}
+      >
+        {text}
+      </h3>
+      <TbArrowBigRightLines className={`text-base md:text-lg`} />
+    </button>
+  );
+};
+
 export const SubmitBtn = ({ text }) => {
   return (
     <button

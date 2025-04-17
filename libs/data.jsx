@@ -1,14 +1,13 @@
 export const menuItems = [
-  // { menuTitle: "Home", ref: "/" },
   {
     menuTitle: "About Us",
     ref: "",
     subMenu: [
-      { listMenu: "Why Oneus", subMenuRef: "/about/why-oneus" },
-      { listMenu: "Oneus Story", subMenuRef: "/about/oneus-story" },
-      { listMenu: "Oneus Team", subMenuRef: "/about/oneus-team" },
+      { listMenu: "Why Oneus", subMenuRef: "/about/why-choose-us" },
+      { listMenu: "Oneus Story", subMenuRef: "/about/our-story" },
+      { listMenu: "Meet the team", subMenuRef: "/about/meet-the-team" },
       { listMenu: "Our Vision", subMenuRef: "/about/our-vision" },
-      { listMenu: "Network", subMenuRef: "/about/network" },
+      { listMenu: "Network", subMenuRef: "/about/list-of-countries" },
     ],
   },
   {
@@ -17,42 +16,16 @@ export const menuItems = [
     subMenu: [
       {
         listMenu: "Corporate Travel",
-        subMenuRef: "/services/corporate-travel",
+        subMenuRef: "/corporate-travel",
       },
-      { listMenu: "Leisure", subMenuRef: "/services/leisure" },
-      { listMenu: "Visa Services", subMenuRef: "/services/visa-services" },
-      { listMenu: "Meeting & Events", subMenuRef: "/services/meeting-events" },
+      { listMenu: "Leisure", subMenuRef: "/leisure" },
+      { listMenu: "Visa Services", subMenuRef: "/visa-services" },
+      { listMenu: "Meeting & Events", subMenuRef: "/services/meetings-and-events" },
     ],
   },
-  {
-    menuTitle: "contact us",
-    ref: "",
-    subMenu: [
-      { listMenu: "Enquires", subMenuRef: "#contact " },
-      { listMenu: "Feedback", subMenuRef: "#contact" },
-      { listMenu: "Work with us", subMenuRef: "#contact" },
-    ],
-  },
-  // {
-  //   menuTitle: "Resources",
-  //   ref: "/resources",
-  //   subMenu: [
-  //     { listMenu: "News", subMenuRef: "/news" },
-  //     { listMenu: "Blog", subMenuRef: "/blog" },
-  //     { listMenu: "Case Studies", subMenuRef: "/case-studies" },
-  //   ],
-  // },
-  {
-    menuTitle: "resources",
-    ref: "",
-    subMenu: [
-      { listMenu: "News", subMenuRef: "/resources/news" },
-      { listMenu: "Blog", subMenuRef: "/resources/blog" },
-      { listMenu: "Case Studies", subMenuRef: "/resources/case-studies" },
-    ],
-  },
-
-  // { menuTitle: "Technology", ref: "/technology" },
+  { menuTitle: "News", ref: "/news" },
+  { menuTitle: "Blog", ref: "/blog" },
+  { menuTitle: "Solo Travel", ref: "/solo-travel" },
 ];
 
 export const menuItemsMobile = [
@@ -60,42 +33,26 @@ export const menuItemsMobile = [
     menuTitle: "About us",
     ref: "/about",
     subMenu: [
-      { list: "Why Oneus", subMenuRef: "/why-oneus" },
-      { list: "Oneus Story", subMenuRef: "/oneus-story" },
-      { list: "Oneus Team", subMenuRef: "/oneus-team" },
+      { list: "Why Oneus", subMenuRef: "/why-choose-us" },
+      { list: "Oneus Story", subMenuRef: "/our-story" },
+      { list: "Meet the team", subMenuRef: "/meet-the-team" },
       { list: "Our Vision", subMenuRef: "/our-vision" },
-      { list: "Network", subMenuRef: "/network" },
+      { list: "Network", subMenuRef: "/list-of-countries" },
     ],
   },
   {
     menuTitle: "What we do",
-    ref: "/services",
+    ref: "",
     subMenu: [
       { list: "Corporate Travel", subMenuRef: "/corporate-travel" },
       { list: "Leisure", subMenuRef: "/leisure" },
       { list: "Visa Services", subMenuRef: "/visa-services" },
-      { list: "Meeting & Events", subMenuRef: "/meeting-events" },
+      { list: "Meeting & Events", subMenuRef: "/services/meetings-and-events" },
     ],
   },
-  {
-    menuTitle: "Contact Us",
-    ref: "",
-    subMenu: [
-      { list: "Enquires", subMenuRef: "#contact " },
-      { list: "Feedback", subMenuRef: "#contact" },
-      { list: "Work with us", subMenuRef: "#contact" },
-    ],
-  },
-  {
-    menuTitle: "Resources",
-    ref: "/resources",
-    subMenu: [
-      { list: "News", subMenuRef: "/news" },
-      { list: "Blog", subMenuRef: "/blog" },
-      { list: "Case Studies", subMenuRef: "/case-studies" },
-    ],
-  },
-  { menuTitle: "Our Technology", ref: "/technology" },
+  { menuTitle: "News", ref: "/news" },
+  { menuTitle: "Blog", ref: "/blog" },
+  { menuTitle: "Solo Travel", ref: "/solo-travel" },
 ];
 
 export const sliders = [

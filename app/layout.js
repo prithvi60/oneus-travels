@@ -38,9 +38,13 @@ const poppins = Poppins({
 // Meta Data
 export async function generateMetadata() {
   return {
-    title: "OneUs Travel Website",
+    title: "Comfortable & Customisable Holiday Packages | OneUs Travels",
     description:
       "Craft your dream vacation! Explore destinations, find deals on flights & hotels, plan your itinerary - all in one place.",
+    other: {
+      title:
+        "Holiday Packages Tailored for Comfortable & Customisable Travel | OneUs Travels",
+    },
     robots: "index, follow",
     applicationName: "OneUs Travel Website Agency",
     authors: [{ name: "OneUs Travel Agency" }],
@@ -64,25 +68,21 @@ export async function generateMetadata() {
     referrer: "origin-when-cross-origin",
     creator: "Prithvi, Gokul Gandhi",
     publisher: "Travel Agency",
-    // metadataBase: new URL("https://webibee.com/"),
+    metadataBase: new URL("https://www.oneustravels.com/"),
     alternates: {
-      canonical: "/resources/blog",
+      canonical: "/blog",
       languages: {
         "en-US": "/",
       },
     },
     openGraph: {
       type: "website",
-      // url: `https://webibee.com`,
-      title: "OneUs Travel Website",
+      url: `https://www.oneustravels.com`,
+      title:
+        "Holiday Packages Tailored for Comfortable & Customisable Travel | OneUs Travels",
       description:
         "Craft your dream vacation! Explore destinations, find deals on flights & hotels, plan your itinerary - all in one place.",
-      siteName: "OneUs Travel Agency",
-      // images: [
-      //   {
-      //     url: "../public/oneus-logo-1.svg",
-      //   },
-      // ],
+      siteName: "OneUs Travel",
     },
   };
 }

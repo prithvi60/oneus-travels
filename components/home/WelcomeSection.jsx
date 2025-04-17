@@ -32,7 +32,7 @@ export const WelcomeSection = () => {
         When you partner with us, we identify and implement the ideal solutions for your business and team across all markets you operate in, seamlessly integrating them into a cohesive program. With our <Link href="/technology" className="underline">advanced technology platform</Link> and dedicated global travel team, OneUs Travels ensures your customized global travel program is easily accessible and fully supported, making us the perfect fit for your needs.
       </p>
       <h3 className="text-lg font-semibold font-Poppins">
-        This is the <Link href="/booking-tc" className="underline">OneUs Promise.</Link>
+        This is the <Link href="/booking-terms-and-conditions" className="underline">OneUs Promise.</Link>
       </h3>
       <div className="pt-5 w-max">
         <Link

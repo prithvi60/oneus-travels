@@ -1,10 +1,8 @@
-
-
+"use client";
+import { redirect } from "next/navigation";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  redirect("/about/why-choose-us");
+};
 
-export default page
+export default page;
