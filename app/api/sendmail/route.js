@@ -1,15 +1,17 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  host: "smtp.office365.com",
+  port: 587,
+  secure: false, // use TLS
   auth: {
-    user: process.env.EMAIL_ID,
-    pass: process.env.EMAIL_PASSWORD,
+    user: process.env.EMAIL_ID,        // e.g., "yourname@yourcompany.com"
+    pass: process.env.EMAIL_PASSWORD,  // use App Password if MFA is ON
+  },
+  tls: {
+    ciphers: 'SSLv3',
   },
 });
-
 export async function POST(req) {
   const { firstName, lastName, userEmail, phoneNo, enquiry,location,company } = await req.json();
 
@@ -59,7 +61,7 @@ export async function POST(req) {
                    <p>Thanks & Regards,<br>
                     <br>
            OneUS Travels<br>
-            No. V1, Kernite Kip,6th Main Rd, next to CTS Speciality Hospital, V Block, <br>
+            No. V1, 6th Main Rd, V Block, <br>
            Anna Nagar, Chennai, Tamil Nadu 600040<br>
            +91-98408 84460<br></p>`,
 
