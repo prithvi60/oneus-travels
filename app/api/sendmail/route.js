@@ -1,96 +1,82 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   port: 587,
-  secure: false, // STARTTLS is used automatically
+  secure: false, // STARTTLS
   auth: {
-    user: process.env.EMAIL_ID,        // e.g., "yourname@yourcompany.com"
-    pass: process.env.EMAIL_PASSWORD,  // App Password if MFA is enabled
+    user: process.env.EMAIL_ID,        // e.g. "sale@oneustravels.com"
+    pass: process.env.EMAIL_PASSWORD,  // App Password
   },
   tls: {
-    rejectUnauthorized: true, // Optional: can be false if you're testing in dev env
+    rejectUnauthorized: true,
   },
+  connectionTimeout: 8000,   // 8s to connect
+  greetingTimeout: 5000,     // 5s for server hello
+  socketTimeout: 10000       // 10s max idle
 });
+
 export async function POST(req) {
-  const { firstName, lastName, userEmail, phoneNo, enquiry,location,company } = await req.json();
+  const { firstName, lastName, userEmail, phoneNo, enquiry, location, company } = await req.json();
 
-  // console.log(capitalized);
-
-  // !clientEmail
-  if (!userEmail && !process.env.EMAIL_ID) {
+  if (!userEmail || !process.env.EMAIL_ID) {
     return NextResponse.json(
       { success: false, message: "Recipient email(s) missing" },
       { status: 400 }
     );
   }
 
-  // Email options for the client (all user data and attachments)
   const clientMailOptions = {
-    from: `Mail service <sale@oneustravels.com>`,
+    from: `"Mail Service" <sale@oneustravels.com>`,
     to: "sales@oneustravels.com",
     subject: `New Customer Form Submitted - ${company} Page`,
     html: `
-            <div className="block space-y-10 font-merriWeather">
-            <h4 className="!text-lg !capitalize">Hi,</h4>
-            <p>You have a new lead from OneUs website</p>
-            <p className="!flex !items-center !justify-center !gap-3">
-            <span className="!capitalize !font-bold">Name:</span> 
-            ${firstName} ${lastName}
-            <p>Company: ${company}</p>
-            <p>Email: ${userEmail}</p>
-            <p>Phone Number: ${phoneNo}</p>
-            <p>Location: ${location}</p>
-            <p>Enquiry: ${enquiry}</p>
-            </p>
-            <br/>
-            <br/>
-            <p>Thanks</p>
-            </div> 
-            `,
-    // bcc: [process.env.EMAIL_ID],
+      <p>You have a new lead from the OneUs website.</p>
+      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+      <p><strong>Company:</strong> ${company}</p>
+      <p><strong>Email:</strong> ${userEmail}</p>
+      <p><strong>Phone Number:</strong> ${phoneNo}</p>
+      <p><strong>Location:</strong> ${location}</p>
+      <p><strong>Enquiry:</strong> ${enquiry}</p>
+      <br/>
+      <p>Thanks,</p>
+      <p>OneUs Travels</p>
+    `,
   };
 
   const userMailOptions = {
-    from: `OneUs Travels <${"sale@oneustravels.com"}>`,
+    from: `"OneUs Travels" <sale@oneustravels.com>`,
     to: userEmail,
-    subject: "Acknowledgment: We received your Submission",
-    html: `<p>Dear ${firstName} ${lastName},</p>
-             <p>Greetings from OneUS Travels!</p>
-             <p>We appreciate your interest in our services and will get back shortly.</p>
-                   <p>Thanks & Regards,<br>
-                    <br>
-           OneUS Travels<br>
-            No. V1, 6th Main Rd, V Block, <br>
-           Anna Nagar, Chennai, Tamil Nadu 600040<br>
-           +91-98408 84460<br></p>`,
-
-    // attachments: [
-    //   // Default PDF attachment
-    //   {
-    //     filename: "Denkiro_Dental_Brochure_Digital.pdf",
-    //     content: defaultPdfContent,
-    //     contentType: "application/pdf",
-    //   },
-    // ],
-    // bcc: ["sales@vbccinstruments.com"],
+    subject: "Acknowledgment: We received your submission",
+    html: `
+      <p>Dear ${firstName} ${lastName},</p>
+      <p>Greetings from OneUs Travels!</p>
+      <p>We appreciate your interest in our services and will get back to you shortly.</p>
+      <br/>
+      <p>Thanks & Regards,<br/>
+      OneUs Travels<br/>
+      No. V1, 6th Main Rd, V Block,<br/>
+      Anna Nagar, Chennai, Tamil Nadu 600040<br/>
+      +91-98408 84460</p>
+    `,
   };
 
   try {
-    // Send acknowledgment email to the customer
-    await transporter.sendMail(userMailOptions);
-
-    // Send detailed email to the client
-    await transporter.sendMail(clientMailOptions);
+    // ✅ Send both emails in parallel to avoid Vercel timeout
+    await Promise.all([
+      transporter.sendMail(userMailOptions),
+      transporter.sendMail(clientMailOptions)
+    ]);
 
     return NextResponse.json({
       success: true,
-      message: "Emails sent successfully",
+      message: "Emails sent successfully"
     });
   } catch (error) {
     console.error("Error sending emails:", error);
     return NextResponse.json(
-      { success: false, message: error.message || "Error sending emails" },
+      { success: false, message: error.message || "Failed to send emails" },
       { status: 500 }
     );
   }
