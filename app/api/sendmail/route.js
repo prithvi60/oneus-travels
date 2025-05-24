@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   port: 587,
-  secure: false, // use TLS
+  secure: false, // STARTTLS is used automatically
   auth: {
     user: process.env.EMAIL_ID,        // e.g., "yourname@yourcompany.com"
-    pass: process.env.EMAIL_PASSWORD,  // use App Password if MFA is ON
+    pass: process.env.EMAIL_PASSWORD,  // App Password if MFA is enabled
   },
   tls: {
-    ciphers: 'SSLv3',
+    rejectUnauthorized: false, // Optional: can be false if you're testing in dev env
   },
 });
 export async function POST(req) {
@@ -27,7 +27,7 @@ export async function POST(req) {
 
   // Email options for the client (all user data and attachments)
   const clientMailOptions = {
-    from: `"${userEmail}" <${"support@webibee.com"}>`,
+    from: `Mail service <sale@oneustravels.com>`,
     to: "sales@oneustravels.com",
     subject: `New Customer Form Submitted - ${company} Page`,
     html: `
@@ -52,7 +52,7 @@ export async function POST(req) {
   };
 
   const userMailOptions = {
-    from: `OneUS Travels "${process.env.EMAIL_ID}" <${"support@webibee.com"}>`,
+    from: `OneUs Travels <${"sale@oneustravels.com"}>`,
     to: userEmail,
     subject: "Acknowledgment: We received your Submission",
     html: `<p>Dear ${firstName} ${lastName},</p>
