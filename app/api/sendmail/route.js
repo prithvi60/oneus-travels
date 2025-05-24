@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASSWORD,  // App Password if MFA is enabled
   },
   tls: {
-    rejectUnauthorized: false, // Optional: can be false if you're testing in dev env
+    rejectUnauthorized: true, // Optional: can be false if you're testing in dev env
   },
 });
 export async function POST(req) {
