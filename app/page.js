@@ -12,8 +12,6 @@ export default function Home() {
       <DefaultLayout>
         <HomePageHero />
         <WelcomeSection />
-        {/* <OurClients /> */}
-        {/* <VideoSection /> */}
         <GlobalTeam />
         <TravelTechnologyCard />
       </DefaultLayout>
