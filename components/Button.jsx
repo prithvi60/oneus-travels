@@ -72,13 +72,12 @@ export const MenuBtnCorporate = ({ text, roleType }) => {
 
 // Common button
 
-export const OtherBtn = ({ text }) => {
+export const OtherBtn = ({ text, tag }) => {
   return (
     <button
       type="button"
       role="button"
-      className={`bg-primary hover:bg-primary/80 hover:scale-95 text-secondary relative shadow-lg px-3.5 py-1.5 flex
-     items-center gap-0 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
+      className={`${tag ? "bg-success hover:bg-success/80 text-white" : "bg-primary hover:bg-primary/80 text-secondary"} hover:scale-95 relative shadow-lg px-3.5 py-1.5 flex items-center gap-2 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary`}
     >
       <h3
         className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}

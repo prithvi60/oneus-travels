@@ -1,8 +1,12 @@
-"use client";
-import { redirect } from "next/navigation";
+import OurServices from "@/components/services/OurServices";
+import React from "react";
 
-const page = () => {
-  redirect("/leisure");
+const Page = () => {
+  return (
+    <main>
+      <OurServices />;
+    </main>
+  );
 };
 
-export default page;
+export default Page;

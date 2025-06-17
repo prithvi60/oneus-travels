@@ -41,11 +41,11 @@ const nextConfig = {
         destination: "/about/meet-the-team",
         permanent: true,
       },
-      {
-        source: "/services",
-        destination: "/our-services",
-        permanent: true,
-      },
+      // {
+      //   source: "/services",
+      //   destination: "/services",
+      //   permanent: true,
+      // },
       {
         source: "/services/corporate_travel",
         destination: "/corporate-travel",
