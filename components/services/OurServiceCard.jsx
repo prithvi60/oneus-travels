@@ -5,7 +5,7 @@ const OurServiceCard = ({ data }) => {
     return (
         <>
             {data.map((item, id) => (
-                <div key={id} className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+                <div key={id} className="space-y-5">
                     <h2 className="text-2xl font-bold tracking-normal capitalize font-Gilroy text-secondary md:text-3xl xl:text-4xl">
                         {item.mainTitle}
                     </h2>
@@ -27,7 +27,7 @@ const OurServiceCard = ({ data }) => {
                     <p className="text-base font-normal font-Poppins">
                         {item.para1}
                     </p>
-                    <OtherBtn roleType={"button"} text={item.hrefName} />
+                    <OtherBtn roleType={"button"} text={item.hrefName} href={item.href} />
                     {item.para2 && (
                         <p className="text-base font-normal font-Poppins">
                             {item.para2}

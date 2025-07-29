@@ -3,6 +3,7 @@ import { IoPersonOutline } from "react-icons/io5";
 // import { FaTruckPlane } from "react-icons/fa6";
 import { FaUserTie, FaUsers } from "react-icons/fa";
 import { TbArrowBigRightLines } from "react-icons/tb";
+import Link from "next/link";
 
 export const PrimaryButton = ({ text, roleType }) => {
   return (
@@ -72,19 +73,21 @@ export const MenuBtnCorporate = ({ text, roleType }) => {
 
 // Common button
 
-export const OtherBtn = ({ text, tag }) => {
+export const OtherBtn = ({ text, tag, href }) => {
   return (
     <button
       type="button"
       role="button"
-      className={`${tag ? "bg-success hover:bg-success/80 text-white" : "bg-primary hover:bg-primary/80 text-secondary"} hover:scale-95 relative shadow-lg px-3.5 py-1.5 flex items-center gap-2 sm:gap-2 transition-all ease-linear group rounded-full border-2 border-secondary w-max`}
+      className={`${tag ? "bg-success hover:bg-success/80 text-white" : "bg-primary hover:bg-primary/80 text-secondary"} hover:scale-95 relative shadow-lg px-3.5 py-1.5 transition-all ease-linear group rounded-full border-2 border-secondary w-max`}
     >
-      <h3
-        className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}
-      >
-        {text}
-      </h3>
-      <TbArrowBigRightLines className={`text-base md:text-lg`} />
+      <Link href={href || "#"} className="flex items-center gap-2 sm:gap-2 ">
+        <h3
+          className={`text-xs font-semibold tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}
+        >
+          {text}
+        </h3>
+        <TbArrowBigRightLines className={`text-base md:text-lg`} />
+      </Link>
     </button>
   );
 };

@@ -19,8 +19,8 @@ const page = () => {
           title={"Corporate Travel Services by OneUs Travel"}
           desc={"Seamless, Strategic, and Tailored for Modern Business"}
         />
-        <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
-          <div className="space-y-5">
+        <section className="w-full h-auto space-y-5 md:space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Business Travel, Handled Like Business
             </h2>
@@ -40,14 +40,16 @@ const page = () => {
                 roleType={"button"}
                 text={"📩 Request a Corporate Quote"}
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Schedule a Travel Strategy Call"}
+                href={"#contact"}
               />
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Tailored Itineraries for Every Team
             </h2>
@@ -79,7 +81,7 @@ const page = () => {
               you, not the other way around.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               End-to-End Corporate Travel Management
             </h2>
@@ -101,7 +103,7 @@ const page = () => {
               From CEOs to interns, we ensure every journey is managed with the same professionalism and care.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Why OneUs for Your Company
             </h2>
@@ -123,7 +125,7 @@ const page = () => {
               Whether you’re traveling for business growth, collaboration, or recognition - we make sure the logistics never slow you down.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Partner with Us
             </h2>
@@ -138,10 +140,12 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Schedule a Travel Strategy Call to discuss your goals"}
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📩 Request a Corporate Quote and get started today"}
+                href={"#contact"}
               />
             </div>
           </div>

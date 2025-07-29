@@ -25,8 +25,8 @@ const page = () => {
             "Global business is complex, driven by global objectives and underpinned by regional diverse and complex your travel needs, we're committed to designing simple, safe and sustainable travel solutions that delivers measurable results."
           }
         />
-        <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
-          <div className="space-y-6 md:space-y-8">
+        <section className="w-full h-auto space-y-5 md:space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-lg font-semibold tracking-normal capitalize font-Poppins text-secondary md:text-xl xl:text-2xl">
               Your Dream Vacation, Perfectly Planned
             </h2>
@@ -35,10 +35,10 @@ const page = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-7">
-            <OtherBtn roleType={"button"} text={"Plan Your Trip"} tag />
-            <OtherBtn roleType={"button"} text={"Get a Custom Itinerary"} />
+            <OtherBtn roleType={"button"} text={"Plan Your Trip"} tag href={"#contact"} />
+            <OtherBtn roleType={"button"} text={"Get a Custom Itinerary"} href={"#contact"} />
           </div>
-          <div className="space-y-4 md:space-y-6 text-secondary pt-10">
+          <div className="space-y-3 md:space-y-4 text-secondary">
             <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
               Why Travel Leisurely with OneUS?
             </h4>

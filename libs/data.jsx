@@ -1597,7 +1597,7 @@ export const ourServices = [
     listTitle: "Our solo travel services include:",
     lists: ["Handpicked accommodations in secure neighborhoods", "Custom itineraries based on your pace and passions", "Optional guided day tours for deeper cultural connections", "24/7 global assistance—so you're never truly alone"],
     para1: "Explore independently—with the comfort of knowing we’re always there when you need us.",
-    href: "#",
+    href: "/solo-travel",
     hrefName: "Plan Your Solo Escape",
   },
   {
@@ -1607,7 +1607,7 @@ export const ourServices = [
     listTitle: "Our corporate travel solutions include:",
     lists: ["End-to-end itinerary management for executives and teams", "Fast-track bookings with airline, hotel, and transport partners", "Travel policy compliance and budget control", "Personalized service from a dedicated account manager", "Support for meetings, incentives, conferences, and exhibitions (MICE)"],
     para1: "From startups to global firms, we tailor each journey to your company’s pace and purpose—with professionalism and precision.",
-    href: "#",
+    href: "/corporate-travel",
     hrefName: "Talk to Our Corporate Travel Experts",
   },
   {
@@ -1617,7 +1617,7 @@ export const ourServices = [
     listTitle: "What we offer:",
     lists: ["Tailored multi-city itineraries across Europe, Asia, and beyond", "Handpicked boutique hotels and scenic resorts", "Unique experiences—from gondola rides in Venice to hot air balloons in Cappadocia", "Travel planning for couples, families, and group holidays", "24/7 assistance, because your comfort is our priority"],
     para1: "With our stress-free leisure travel solutions, all you need to do is pack. We’ll handle the rest.",
-    href: "#",
+    href: "/leisure",
     hrefName: "Start Planning Your Perfect Getaway",
   },
   {
@@ -1627,7 +1627,7 @@ export const ourServices = [
     listTitle: "What we handle:",
     lists: ["Tourist, business, student, and transit visas", "Schengen, US, UK, UAE, Singapore, and more", "End-to-end documentation guidance and personalized checklists", "Appointment scheduling, fee assistance, and embassy coordination", "Real-time status updates and follow-ups until your visa is in hand"],
     para1: "With a proven track record and insider knowledge of global visa protocols, we turn complexity into clarity—so you can focus on your journey, not the paperwork.",
-    href: "#",
+    href: "/visa-services",
     hrefName: "Apply for Your Visa with Confidence",
     para2: "Need full travel planning too? Explore our Leisure and Meetings & Events services."
   },
@@ -1638,7 +1638,7 @@ export const ourServices = [
     listTitle: "What we offer:",
     lists: ["Venue selection & negotiations across Asia, Europe, and the Middle East", "End-to-end logistics management (flights, hotels, transfers, meals)", "Delegate coordination, personalized invites & RSVP handling", "Onsite event execution, branding, and tech setup", "Industry-specific planning with measurable outcomes"],
     para1: "Whether it’s a 20-member offsite in Switzerland or a 2000-person product unveiling in Dubai, we ensure your event runs like clockwork—with zero last-minute panic and maximum engagement.",
-    href: "#",
+    href: "/services/meetings-and-events",
     hrefName: "Plan Your MICE Event with Us",
     para2: "Need travel solutions for individuals or teams? Check out our Corporate Travel and Visa Services."
   },

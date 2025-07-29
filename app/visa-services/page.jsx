@@ -22,8 +22,8 @@ const page = () => {
           title={"Visa Services by OneUs Travel"}
           desc={"Trusted. Hassle-Free. Globally Recognized."}
         />
-        <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
-          <div className="space-y-5">
+        <section className="w-full h-auto space-y-5 md:space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Visa Made Simple
             </h2>
@@ -45,14 +45,16 @@ const page = () => {
                 roleType={"button"}
                 text={"📩 Start Your Visa Application"}
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Get a Free Visa Consultation"}
+                href={"#contact"}
               />
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               End-to-End Support for All Visa Types
             </h2>
@@ -85,7 +87,7 @@ const page = () => {
               a successful application.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Countries We Cover
             </h2>
@@ -120,7 +122,7 @@ const page = () => {
               visa, we manage every application with region-specific expertise.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Why Trust OneUs Travel
             </h2>
@@ -157,10 +159,12 @@ const page = () => {
                   "📩 Start Your Visa Application today and travel without worry"
                 }
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Get a Free Visa Consultation to explore your options"}
+                href={"#contact"}
               />
             </div>
             <p className="text-base font-normal font-Poppins">

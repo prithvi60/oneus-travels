@@ -15,8 +15,8 @@ const page = () => {
           title={"Global Meetings & Events Management Services"}
           desc={"Strategic Planning. Flawless Execution. Measurable Results."}
         />
-        <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
-          <div className="space-y-5">
+        <section className="w-full h-auto space-y-5 md:space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] mt-5 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               500+ Events. One Trusted Partner
             </h2>
@@ -39,14 +39,16 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Talk to Our Event Strategy Team"}
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📩 Plan Your Next Global Event with Us"}
+                href={"#contact"}
               />
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               End-to-End Business Event Management
             </h2>
@@ -82,7 +84,7 @@ const page = () => {
               but a measurable success.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Custom Events Built for ROI
             </h2>
@@ -117,7 +119,7 @@ const page = () => {
               solutions deliver outcomes that move the needle.
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Custom Events Built for ROI
             </h2>
@@ -129,7 +131,7 @@ const page = () => {
               {golbalMeeting.map((list, idx) => (
                 <li
                   key={idx}
-                  className="text-base font-normal font-Poppins space-y-5"
+                  className="text-base font-normal font-Poppins space-y-3 md:space-y-4"
                 >
                   <h3 className="text-lg md:text-xl font-semibold tracking-wide font-Gilroy">
                     {list.title}
@@ -141,7 +143,7 @@ const page = () => {
               ))}
             </ul>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-3 md:space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-[32px] lg:leading-7 tracking-normal font-bold font-Gilroy text-secondary mb-8">
               Let’s Build Your Next Big Event
             </h2>
@@ -163,12 +165,14 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Talk to Our Event Strategy Team today"}
                 tag
+                href={"#contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={
                   "📩 Plan Your Next Global Event with Us and make every moment matter"
                 }
+                href={"#contact"}
               />
             </div>
           </div>
