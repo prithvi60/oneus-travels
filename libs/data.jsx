@@ -11,8 +11,8 @@ export const menuItems = [
     ],
   },
   {
-    menuTitle: "What We do ",
-    ref: "",
+    menuTitle: "Our Services",
+    ref: "/our-services",
     subMenu: [
       {
         listMenu: "Corporate Travel",
@@ -44,8 +44,8 @@ export const menuItemsMobile = [
     ],
   },
   {
-    menuTitle: "What we do",
-    ref: "",
+    menuTitle: "Our Services",
+    ref: "/our-services",
     subMenu: [
       { list: "Corporate Travel", subMenuRef: "/corporate-travel" },
       { list: "Leisure", subMenuRef: "/leisure" },
@@ -1584,6 +1584,10 @@ export const whyTravelLists = [
     desc: "- Plans change, and so can we. Your itinerary, your terms.",
   },
 ];
+
+// export const soloTravels = [
+//   ""
+// ]
 
 export const ourServices = [
   {

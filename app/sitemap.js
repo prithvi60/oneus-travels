@@ -44,7 +44,7 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: "https://www.oneustravels.com/services",
+      url: "https://www.oneustravels.com/our-services",
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -108,12 +108,6 @@ export default function sitemap() {
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.3,
-    },
-    {
-      url: "https://www.oneustravels.com/global",
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.5,
     },
   ];
 }

@@ -10,9 +10,9 @@ export const WelcomeBoard = ({ title, desc }) => {
         <h2 className="text-2xl font-bold tracking-normal capitalize font-Gilroy text-secondary md:text-3xl xl:text-4xl">
           {title}
         </h2>
-        {/* <div className="w-full">
+        <div className="w-full">
           <p className="text-base md:text-lg font-Poppins">{desc}</p>
-        </div> */}
+        </div>
       </div>
     </section>
   );
