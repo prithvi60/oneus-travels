@@ -10,10 +10,10 @@ export const WhyOneus = () => {
     <section className="w-full h-auto space-y-6 md:space-y-8 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] -mt-3 px-7 lg:px-0 !pb-12 sm:!pb-16 xl:!pb-20 text-secondary">
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
-        Your No.1 Premier Travel Partner for Business Travels
+          Your No.1 Premier Travel Partner for Business Travels
         </h4>
         <p className="text-base font-normal font-Poppins">
-        At OneUS Travels, we are committed to being your top travel management partner. Our focus is on delivering superior service, innovation, and cost savings for your corporate travels. We combine global reach with local expertise, offering customized solutions that meet your current and future travel needs.
+          At OneUS Travels, we are committed to being your top travel management partner. Our focus is on delivering superior service, innovation, and cost savings for your corporate travels. We combine global reach with local expertise, offering customized solutions that meet your current and future travel needs.
         </p>
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
@@ -21,15 +21,15 @@ export const WhyOneus = () => {
           Transforming Corporate Travel
         </h4>
         <p className="text-base font-normal font-Poppins">
-        We were founded with one mission: to revolutionize business travel management. By constantly challenging the status quo, asking the right questions, and embracing innovation, we ensure your corporate travel programs evolve and adapt to new opportunities. Continuous improvement is at the core of everything we do, ensuring a better travel experience for your business.
+          We were founded with one mission: to revolutionize business travel management. By constantly challenging the status quo, asking the right questions, and embracing innovation, we ensure your corporate travel programs evolve and adapt to new opportunities. Continuous improvement is at the core of everything we do, ensuring a better travel experience for your business.
         </p>
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
-        Entrepreneurial Spirit Drives Our Success
+          Entrepreneurial Spirit Drives Our Success
         </h4>
         <p className="text-base font-normal font-Poppins">
-        Our unique, entrepreneurial spirit empowers us to seize opportunities, keep things simple, and act with integrity. This mindset transcends industries and borders, helping us form lasting partnerships worldwide. At OneUS Travels, we believe in collaboration, agility, and accountability—values that define how we operate and deliver results.
+          Our unique, entrepreneurial spirit empowers us to seize opportunities, keep things simple, and act with integrity. This mindset transcends industries and borders, helping us form lasting partnerships worldwide. At OneUS Travels, we believe in collaboration, agility, and accountability—values that define how we operate and deliver results.
           <br />
           <br />
           The Oneus community emphasizes empowerment, accountability,
@@ -68,16 +68,16 @@ export const WhyOneus = () => {
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
-        Maximize Business Travel Efficiency with OneUS Travels
+          Maximize Business Travel Efficiency with OneUS Travels
         </h4>
         <p className="text-base font-normal font-Poppins">
-        Choosing OneUS Travels means opting for business travel solutions that streamline your operations, cut costs, and ensure a seamless experience. Our 24/7 support and customized offerings guarantee that your company’s travel needs are met without compromise.
+          Choosing OneUS Travels means opting for business travel solutions that streamline your operations, cut costs, and ensure a seamless experience. Our 24/7 support and customized offerings guarantee that your company’s travel needs are met without compromise.
         </p>
         <div>
-        <Link href="#contact" className="mt-8">
-      <OtherBtn text={"Plan Your Business Travel Now"} />
-      </Link>
-      </div>
+          <Link href="#contact" className="mt-8">
+            <OtherBtn text={"Speak to a Travel Expert"} />
+          </Link>
+        </div>
       </div>
     </section>
   );

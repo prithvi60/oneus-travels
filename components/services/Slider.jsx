@@ -72,6 +72,8 @@ function SimpleSlider({ lists }) {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+  console.log(lists);
+
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">
       {lists.length === 0 ? (
@@ -101,8 +103,8 @@ function SimpleSlider({ lists }) {
         <Slider {...settings} className="!py-2.5">
           {lists.map((item, id) => (
             <Link
-              href={`${path}/${item.location.replace(/\s/g, "-")
-              }`}
+              href={`/${item.location.replace(/\s/g, "-")
+                }`}
               title="location"
               className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md overflow-hidden group"
               key={id}

@@ -6,19 +6,20 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // STARTTLS
   auth: {
-    user: process.env.EMAIL_ID,        // e.g. "sale@oneustravels.com"
-    pass: process.env.EMAIL_PASSWORD,  // App Password
+    user: process.env.EMAIL_ID, // e.g. "sale@oneustravels.com"
+    pass: process.env.EMAIL_PASSWORD, // App Password
   },
   tls: {
     rejectUnauthorized: true,
   },
-  connectionTimeout: 8000,   // 8s to connect
-  greetingTimeout: 5000,     // 5s for server hello
-  socketTimeout: 10000       // 10s max idle
+  connectionTimeout: 8000, // 8s to connect
+  greetingTimeout: 5000, // 5s for server hello
+  socketTimeout: 10000, // 10s max idle
 });
 
 export async function POST(req) {
-  const { firstName, lastName, userEmail, phoneNo, enquiry, location, company } = await req.json();
+  const { userName, userEmail, phoneNo, enquiry, location, company } =
+    await req.json();
 
   if (!userEmail || !process.env.EMAIL_ID) {
     return NextResponse.json(
@@ -30,14 +31,11 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"Mail Service" <sale@oneustravels.com>`,
     to: "sales@oneustravels.com",
-    subject: `New Customer Form Submitted - ${company} Page`,
+    subject: `New Customer Form Submitted`,
     html: `
       <p>You have a new lead from the OneUs website.</p>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-      <p><strong>Company:</strong> ${company}</p>
-      <p><strong>Email:</strong> ${userEmail}</p>
+      <p><strong>Name:</strong> ${userName}</p>
       <p><strong>Phone Number:</strong> ${phoneNo}</p>
-      <p><strong>Location:</strong> ${location}</p>
       <p><strong>Enquiry:</strong> ${enquiry}</p>
       <br/>
       <p>Thanks,</p>
@@ -45,12 +43,23 @@ export async function POST(req) {
     `,
   };
 
+  // <p>You have a new lead from the OneUs website.</p>
+  //     <p><strong>Name:</strong> ${userName}</p>
+  //     <p><strong>Company:</strong> ${company}</p>
+  //     <p><strong>Email:</strong> ${userEmail}</p>
+  //     <p><strong>Phone Number:</strong> ${phoneNo}</p>
+  //     <p><strong>Location:</strong> ${location}</p>
+  //     <p><strong>Enquiry:</strong> ${enquiry}</p>
+  //     <br/>
+  //     <p>Thanks,</p>
+  //     <p>OneUs Travels</p>
+
   const userMailOptions = {
     from: `"OneUs Travels" <sale@oneustravels.com>`,
     to: userEmail,
     subject: "Acknowledgment: We received your submission",
     html: `
-      <p>Dear ${firstName} ${lastName},</p>
+      <p>Dear ${userName},</p>
       <p>Greetings from OneUs Travels!</p>
       <p>We appreciate your interest in our services and will get back to you shortly.</p>
       <br/>
@@ -66,12 +75,12 @@ export async function POST(req) {
     // ✅ Send both emails in parallel to avoid Vercel timeout
     await Promise.all([
       transporter.sendMail(userMailOptions),
-      transporter.sendMail(clientMailOptions)
+      transporter.sendMail(clientMailOptions),
     ]);
 
     return NextResponse.json({
       success: true,
-      message: "Emails sent successfully"
+      message: "Emails sent successfully",
     });
   } catch (error) {
     console.error("Error sending emails:", error);

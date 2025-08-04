@@ -260,18 +260,17 @@ import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { RiMailSendLine } from "react-icons/ri";
 // import Loader from "../Loader"; // Assuming you have a Loader component
 
-
-
 export const ContactForm = () => {
   const initialFormData = {
-    firstName: "",
-    lastName: "",
-    userEmail: "",
+    // firstName: "",
+    // lastName: "",
+    userName: "",
+    // userEmail: "",
     phoneNo: "",
-    company: "",
-    location: "",
-    customerStatus: "",
-    helpTopic: "",
+    // company: "",
+    // location: "",
+    // customerStatus: "",
+    // helpTopic: "",
     enquiry: "",
   };
 
@@ -367,7 +366,7 @@ export const ContactForm = () => {
             Take your first step towards better business travel with Corporate
             Travel Management.
           </h3>
-          <div className="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2">
+          {/* <div className="grid grid-cols-1 gap-6 md:gap-4 md:grid-cols-2">
             <Input
               name="firstName"
               value={formData.firstName}
@@ -417,20 +416,7 @@ export const ContactForm = () => {
               variant="faded"
               color="secondary"
             />
-            <Input
-              name="phoneNo"
-              value={formData.phoneNo}
-              onChange={handleChange}
-              size="lg"
-              label="Phone Number"
-              placeholder="Enter Your Ph. No."
-              endContent={<FaPhoneAlt className="text-lg opacity-50" />}
-              classNames={{
-                inputWrapper: "bg-primary font-Poppins font-normal",
-              }}
-              variant="faded"
-              color="secondary"
-            />
+
             <Input
               name="company"
               value={formData.company}
@@ -442,7 +428,6 @@ export const ContactForm = () => {
               className="md:col-span-2"
               endContent={
                 <HiOutlineBuildingOffice2 className="text-lg opacity-50" />
-                
               }
               classNames={{
                 inputWrapper: "bg-primary font-Poppins font-normal",
@@ -450,8 +435,40 @@ export const ContactForm = () => {
               variant="faded"
               color="secondary"
             />
-          </div>
+          </div> */}
           <Input
+            name="firstName"
+            value={formData.userName}
+            onChange={handleChange}
+            isRequired
+            size="lg"
+            label="First Name"
+            placeholder="Enter Your First Name"
+            endContent={
+              <MdOutlineDriveFileRenameOutline className="text-2xl opacity-50" />
+            }
+            classNames={{
+              inputWrapper: "bg-primary font-Poppins font-normal",
+            }}
+            variant="faded"
+            color="secondary"
+          />
+          <Input
+            name="phoneNo"
+            value={formData.phoneNo}
+            onChange={handleChange}
+            size="lg"
+            isRequired
+            label="Phone Number"
+            placeholder="Enter Your Ph. No."
+            endContent={<FaPhoneAlt className="text-lg opacity-50" />}
+            classNames={{
+              inputWrapper: "bg-primary font-Poppins font-normal",
+            }}
+            variant="faded"
+            color="secondary"
+          />
+          {/* <Input
             name="location"
             value={formData.location}
             onChange={handleChange}
@@ -463,9 +480,9 @@ export const ContactForm = () => {
             }}
             variant="faded"
             color="secondary"
-            // className="md:col-span-2"
-            // endContent={<HiOutlineBuildingOffice2 className="text-lg opacity-50" />}
-          />
+          // className="md:col-span-2"
+          // endContent={<HiOutlineBuildingOffice2 className="text-lg opacity-50" />}
+          /> */}
           {/* <Select
             name="location"
             value={formData.location}
@@ -485,8 +502,9 @@ export const ContactForm = () => {
             onChange={handleChange}
             isRequired
             label="Enquiry"
-            placeholder="Comments Please..."
+            placeholder="Feel free to mention your company, where you're located and what sort of service you are looking for"
             classNames={{
+              input: "placeholder:text-gray-400",
               inputWrapper: "bg-primary font-Poppins font-normal",
             }}
             variant="faded"

@@ -24,11 +24,11 @@ export const menuItems = [
         listMenu: "Meeting & Events",
         subMenuRef: "/services/meetings-and-events",
       },
+      { listMenu: "Solo Travel", subMenuRef: "/solo-travel" },
     ],
   },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },
-  { menuTitle: "Solo Travel", ref: "/solo-travel" },
 ];
 
 export const menuItemsMobile = [
@@ -51,11 +51,11 @@ export const menuItemsMobile = [
       { list: "Leisure", subMenuRef: "/leisure" },
       { list: "Visa Services", subMenuRef: "/visa-services" },
       { list: "Meeting & Events", subMenuRef: "/services/meetings-and-events" },
+      { list: "Solo Travel", subMenuRef: "/solo-travel" },
     ],
   },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },
-  { menuTitle: "Solo Travel", ref: "/solo-travel" },
 ];
 
 export const sliders = [
@@ -1595,8 +1595,14 @@ export const ourServices = [
     sub: "Discover the World—Your Way",
     desc: "Craving a break from the ordinary or a journey into self-discovery? At OneUS Travels, we make solo travel empowering, safe, and seamless. Whether you're wandering through the art alleys of Paris, meditating in ancient Asian temples, or riding the scenic rails of the Swiss Alps, your trip is fully curated—just for you.",
     listTitle: "Our solo travel services include:",
-    lists: ["Handpicked accommodations in secure neighborhoods", "Custom itineraries based on your pace and passions", "Optional guided day tours for deeper cultural connections", "24/7 global assistance—so you're never truly alone"],
-    para1: "Explore independently—with the comfort of knowing we’re always there when you need us.",
+    lists: [
+      "Handpicked accommodations in secure neighborhoods",
+      "Custom itineraries based on your pace and passions",
+      "Optional guided day tours for deeper cultural connections",
+      "24/7 global assistance—so you're never truly alone",
+    ],
+    para1:
+      "Explore independently—with the comfort of knowing we’re always there when you need us.",
     href: "/solo-travel",
     hrefName: "Plan Your Solo Escape",
   },
@@ -1605,8 +1611,15 @@ export const ourServices = [
     sub: "Seamless Business, Wherever You Go",
     desc: "In a world where every second counts, OneUS Travels ensures that your business travel is smooth, efficient, and fully managed. Whether it's a high-stakes board meeting in Dubai, an international trade show, or an offsite in Singapore, we make corporate mobility stress-free—so you and your team can focus on what truly matters.",
     listTitle: "Our corporate travel solutions include:",
-    lists: ["End-to-end itinerary management for executives and teams", "Fast-track bookings with airline, hotel, and transport partners", "Travel policy compliance and budget control", "Personalized service from a dedicated account manager", "Support for meetings, incentives, conferences, and exhibitions (MICE)"],
-    para1: "From startups to global firms, we tailor each journey to your company’s pace and purpose—with professionalism and precision.",
+    lists: [
+      "End-to-end itinerary management for executives and teams",
+      "Fast-track bookings with airline, hotel, and transport partners",
+      "Travel policy compliance and budget control",
+      "Personalized service from a dedicated account manager",
+      "Support for meetings, incentives, conferences, and exhibitions (MICE)",
+    ],
+    para1:
+      "From startups to global firms, we tailor each journey to your company’s pace and purpose—with professionalism and precision.",
     href: "/corporate-travel",
     hrefName: "Talk to Our Corporate Travel Experts",
   },
@@ -1615,8 +1628,15 @@ export const ourServices = [
     sub: "Effortless Holidays, Unforgettable Memories",
     desc: "At OneUS Travels, we believe a holiday should feel like a break—not a checklist. Whether you dream of a romantic honeymoon in Italy, a snow-filled family getaway in Switzerland, or a sun-soaked retreat in Bali, we take care of every detail—from flights and stays to curated experiences—so you can truly unwind.",
     listTitle: "What we offer:",
-    lists: ["Tailored multi-city itineraries across Europe, Asia, and beyond", "Handpicked boutique hotels and scenic resorts", "Unique experiences—from gondola rides in Venice to hot air balloons in Cappadocia", "Travel planning for couples, families, and group holidays", "24/7 assistance, because your comfort is our priority"],
-    para1: "With our stress-free leisure travel solutions, all you need to do is pack. We’ll handle the rest.",
+    lists: [
+      "Tailored multi-city itineraries across Europe, Asia, and beyond",
+      "Handpicked boutique hotels and scenic resorts",
+      "Unique experiences—from gondola rides in Venice to hot air balloons in Cappadocia",
+      "Travel planning for couples, families, and group holidays",
+      "24/7 assistance, because your comfort is our priority",
+    ],
+    para1:
+      "With our stress-free leisure travel solutions, all you need to do is pack. We’ll handle the rest.",
     href: "/leisure",
     hrefName: "Start Planning Your Perfect Getaway",
   },
@@ -1625,21 +1645,37 @@ export const ourServices = [
     sub: "Fast, Hassle-Free, and Transparent",
     desc: "Applying for a visa can feel like navigating a maze—but not with OneUS Travels by your side. Whether you're headed for a European getaway, a U.S. business trip, or a family vacation in Dubai, we streamline the entire visa process to ensure smooth, stress-free approvals.",
     listTitle: "What we handle:",
-    lists: ["Tourist, business, student, and transit visas", "Schengen, US, UK, UAE, Singapore, and more", "End-to-end documentation guidance and personalized checklists", "Appointment scheduling, fee assistance, and embassy coordination", "Real-time status updates and follow-ups until your visa is in hand"],
-    para1: "With a proven track record and insider knowledge of global visa protocols, we turn complexity into clarity—so you can focus on your journey, not the paperwork.",
+    lists: [
+      "Tourist, business, student, and transit visas",
+      "Schengen, US, UK, UAE, Singapore, and more",
+      "End-to-end documentation guidance and personalized checklists",
+      "Appointment scheduling, fee assistance, and embassy coordination",
+      "Real-time status updates and follow-ups until your visa is in hand",
+    ],
+    para1:
+      "With a proven track record and insider knowledge of global visa protocols, we turn complexity into clarity—so you can focus on your journey, not the paperwork.",
     href: "/visa-services",
     hrefName: "Apply for Your Visa with Confidence",
-    para2: "Need full travel planning too? Explore our Leisure and Meetings & Events services."
+    para2:
+      "Need full travel planning too? Explore our Leisure and Meetings & Events services.",
   },
   {
     mainTitle: "Meetings & Events",
     sub: "High-Impact MICE Execution Without the Stress",
     desc: "From leadership summits and incentive getaways to client conferences and destination product launches, OneUS Travels delivers MICE (Meetings, Incentives, Conferences, and Exhibitions) experiences that are seamless, impactful, and on-brand.",
     listTitle: "What we offer:",
-    lists: ["Venue selection & negotiations across Asia, Europe, and the Middle East", "End-to-end logistics management (flights, hotels, transfers, meals)", "Delegate coordination, personalized invites & RSVP handling", "Onsite event execution, branding, and tech setup", "Industry-specific planning with measurable outcomes"],
-    para1: "Whether it’s a 20-member offsite in Switzerland or a 2000-person product unveiling in Dubai, we ensure your event runs like clockwork—with zero last-minute panic and maximum engagement.",
+    lists: [
+      "Venue selection & negotiations across Asia, Europe, and the Middle East",
+      "End-to-end logistics management (flights, hotels, transfers, meals)",
+      "Delegate coordination, personalized invites & RSVP handling",
+      "Onsite event execution, branding, and tech setup",
+      "Industry-specific planning with measurable outcomes",
+    ],
+    para1:
+      "Whether it’s a 20-member offsite in Switzerland or a 2000-person product unveiling in Dubai, we ensure your event runs like clockwork—with zero last-minute panic and maximum engagement.",
     href: "/services/meetings-and-events",
     hrefName: "Plan Your MICE Event with Us",
-    para2: "Need travel solutions for individuals or teams? Check out our Corporate Travel and Visa Services."
+    para2:
+      "Need travel solutions for individuals or teams? Check out our Corporate Travel and Visa Services.",
   },
 ];

@@ -40,6 +40,8 @@ const Timeline = () => {
       : lists
   );
 
+
+
   return (
     <div className="relative z-0 w-full space-y-4">
       <div className="w-full shadow-lg bg-secondary">
@@ -47,23 +49,20 @@ const Timeline = () => {
           <div className="flex justify-center items-center w-full md:w-max gap-3.5 py-5 lg:p-5 flex-wrap lg:flex-nowrap">
             {tabs.map((item, idx) => (
               <div
-                className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${
-                  isActive === item && "bg-primary shadow-lg"
-                }  rounded-full cursor-pointer hover:bg-primary group transition-all duration-500 ease-in-out`}
+                className={`flex items-center relative w-max gap-2.5 h-full py-1 px-2 sm:px-5  ${isActive === item && "bg-primary shadow-lg"
+                  }  rounded-full cursor-pointer hover:bg-primary group transition-all duration-500 ease-in-out`}
                 key={idx}
                 onClick={() => setIsActive(item)}
               >
                 <div
-                  className={`hidden sm:block font-semibold text-base  font-Gilroy whitespace-nowrap ${
-                    isActive === item && "text-secondary"
-                  } text-primary group-hover:text-secondary`}
+                  className={`hidden sm:block font-semibold text-base  font-Gilroy whitespace-nowrap ${isActive === item && "text-secondary"
+                    } text-primary group-hover:text-secondary`}
                 >
                   {item}
                 </div>
                 <div
-                  className={`block sm:hidden text-base font-semibold font-Gilroy ${
-                    isActive === item && "text-secondary"
-                  } text-primary`}
+                  className={`block sm:hidden text-base font-semibold font-Gilroy ${isActive === item && "text-secondary"
+                    } text-primary`}
                 >
                   {item.match(/\((.*)\)/)[1]}
                 </div>

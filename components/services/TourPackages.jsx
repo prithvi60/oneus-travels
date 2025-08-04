@@ -1,6 +1,5 @@
 
 export const TourPackages = ({ location }) => {
-  console.log(location);
 
   return (
     <section className="w-full h-auto space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] px-7 lg:px-0 pt-10 md:space-y-10">

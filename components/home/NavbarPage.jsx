@@ -273,7 +273,7 @@ export default function NavbarPage() {
             </div>
           </NavbarItem>
         ))}
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link
             aria-label={`know more about Solo Travel`}
             title={"Solo Travel"}
@@ -294,7 +294,7 @@ export default function NavbarPage() {
           >
             Solo Travel
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         {menuItems.slice(2, 4).map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
@@ -367,10 +367,10 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
-        <Link href="#contact" className="hidden 3xl:block">
-          <OtherBtn text={"Plan Your Business Travel Now"} />
+        <Link href="#contact" className="hidden 2xl:block">
+          <OtherBtn text={"Speak to a Travel Expert"} />
         </Link>
-        <Link href="#contact" className="hidden md:block 3xl:hidden">
+        <Link href="#contact" className="hidden md:block 2xl:hidden">
           <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1
             ? "text-primary hover:text-secondary border-primary"
             : scrollYValue <= scrollValue.value2
@@ -386,7 +386,7 @@ export default function NavbarPage() {
         </Link>
         <NavbarItem>
           <Link href="https://oneustravels.paxes.com/authenticate/log-in" title="Login">
-            <MenuBtnCorporate text={"corporate"} roleType={"text"} />
+            <MenuBtnCorporate text={"corporate"} roleType={"text"} font />
           </Link>
         </NavbarItem>
       </NavbarContent>

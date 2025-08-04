@@ -9,13 +9,14 @@ import {
   TableCell,
 } from "@nextui-org/table";
 import { usePathname } from "next/navigation";
-export const TourPackageTable = () => {
-  const path = usePathname();
-  const pathArray = path.split("/");
-  const locationPath = pathArray[pathArray.length - 1];
+export const TourPackageTable = ({ location }) => {
+  // const path = usePathname();
+  // const pathArray = path.split("/");
+  // const locationPath = pathArray[pathArray.length - 1];
+  // console.log({ location, locationPath });
 
   const lists = leisureLists.filter(
-    (item) => item.location === locationPath.replace(/-/g, " ")
+    (item) => item.location === location
   );
 
   return (

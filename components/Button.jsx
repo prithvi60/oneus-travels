@@ -53,7 +53,7 @@ export const MenuBtnMember = ({ text, roleType }) => {
   );
 };
 
-export const MenuBtnCorporate = ({ text, roleType }) => {
+export const MenuBtnCorporate = ({ text, roleType,font }) => {
   return (
     <button
       type={roleType}
@@ -63,7 +63,7 @@ export const MenuBtnCorporate = ({ text, roleType }) => {
     >
       <FaUserTie className={`text-base md:text-lg`} />
       <h3
-        className={`text-xs font-medium tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}
+        className={`text-xs ${font ? "font-semibold" : "font-medium"} tracking-normal capitalize md:text-sm lg:text-base font-Gilroy block`}
       >
         {text}
       </h3>

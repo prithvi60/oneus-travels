@@ -89,7 +89,7 @@ export const Story = () => {
           <Link href={"#contact"}>
             <OtherBtn
               roleType={"button"}
-              text={"Plan Your Business Travel Now"}
+              text={"Speak to a Travel Expert"}
             />
           </Link>
         </div>

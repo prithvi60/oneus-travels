@@ -87,7 +87,7 @@ export const FooterSection1 = ({ items }) => {
             isRequired
             size="lg"
             type="firstName"
-            label="First Name"
+            label="Name"
             labelPlacement={"outside"}
             placeholder="Enter Your Name"
             radius="full"
@@ -127,7 +127,9 @@ export const FooterSection1 = ({ items }) => {
             color="secondary"
             className="hidden font-normal font-Poppins"
           />
-          <SubmitBtn text={"submit"} />
+          <div className="!mt-5">
+            <SubmitBtn text={"submit"} />
+          </div>
         </form>
       </div>
     </div>
