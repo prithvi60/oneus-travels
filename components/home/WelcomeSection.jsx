@@ -17,7 +17,7 @@ export const WelcomeSection = () => {
         When you choose OneUs Travels, you’re choosing a different kind of travel experience—crafted to fit your business needs in every region you work in. We design travel programs that deliver strategic value to your business and convenience to every team member.
       </p>
       <p className="text-base font-normal font-Poppins">
-        Transform your business travels with OneUs! Let us be your guide to smarter, more effective travel. <Link href="#contact" className="underline">Plan your travel with us</Link> and discover how our custom travel management solutions can make your journey seamless.
+        Transform your business travels with OneUs! Let us be your guide to smarter, more effective travel. <Link href="/contact" className="underline">Plan your travel with us</Link> and discover how our custom travel management solutions can make your journey seamless.
       </p>
       <h3 className="text-lg font-semibold font-Poppins">
         Travel Management, Powered by OneUs Travels

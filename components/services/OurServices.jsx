@@ -127,7 +127,7 @@ const OurServices = () => {
             <OtherBtn
               roleType={"button"}
               text={"Plan My Travel"}
-              href={"#contact"}
+              href={"/contact"}
             />
           </div>
         </section>

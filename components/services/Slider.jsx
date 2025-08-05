@@ -72,7 +72,7 @@ function SimpleSlider({ lists }) {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
-  console.log(lists);
+  // console.log(lists);
 
   return (
     <section className="w-full h-auto px-[24px] py-7 max-w-[1200px] mx-auto space-y-6 md:space-y-10 slider-container !gap-10 relative">

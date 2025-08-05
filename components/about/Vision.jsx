@@ -48,7 +48,7 @@ export const Vision = () => {
         </p>
       </div>
       <div className="pt-5 w-max">
-        <Link href={"#contact"}>
+        <Link href={"/contact"}>
           <OtherBtn roleType={"button"} text={"Speak to a Travel Expert"} />
         </Link>
       </div>

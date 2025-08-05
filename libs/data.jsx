@@ -1534,31 +1534,31 @@ export const leisureTravelLists = [
     title: "100% Tailored Itineraries",
     desc: "- Forget fixed templates. We design each itinerary around your pace, budget, and interests—from romantic hideaways to kid-friendly adventures and solo explorations.",
     hrefName: "Get my custom plan",
-    href: "#contact",
+    href: "/contact",
   },
   {
     title: "🏨 Boutique Stays & Curated Experiences",
     desc: "- We go beyond hotels. Stay in sea-view villas, alpine lodges, or art-rich heritage homes. Plus, enjoy handpicked local experiences—from vineyard picnics to private museum tours.",
     hrefName: "Explore Unique Stays & Activities",
-    href: "#contact",
+    href: "/contact",
   },
   {
     title: "🛫 End-to-End Travel Management ",
     desc: "- We handle everything: international flights, intercity transfers, visa assistance, meals, sightseeing, and even special requests like surprise proposals or anniversary dinners.",
     hrefName: "Let OneUS Handle It All",
-    href: "#contact",
+    href: "/contact",
   },
   {
     title: "🌍 Global Reach, Local Insight",
     desc: "- With trusted local partners across Europe, Asia, the Middle East, and the Americas, we give you insider access and 24/7 support—so you travel smart, safe, and like a local.",
     hrefName: "Talk to a Regional Expert",
-    href: "#contact",
+    href: "/contact",
   },
   {
     title: "📅 Multi-Destination Itineraries",
     desc: "- Why stop at one? Enjoy smooth, multi-city holidays across borders with zero hassle. From Italy to Switzerland, or Spain to Portugal, we map every step for you.",
     hrefName: "Plan a Multi-Country Trip",
-    href: "#contact",
+    href: "/contact",
   },
 ];
 

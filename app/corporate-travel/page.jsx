@@ -40,12 +40,12 @@ const page = () => {
                 roleType={"button"}
                 text={"📩 Request a Corporate Quote"}
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Schedule a Travel Strategy Call"}
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
           </div>
@@ -140,12 +140,12 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Schedule a Travel Strategy Call to discuss your goals"}
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📩 Request a Corporate Quote and get started today"}
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
           </div>

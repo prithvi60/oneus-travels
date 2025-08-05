@@ -35,8 +35,8 @@ const page = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-7">
-            <OtherBtn roleType={"button"} text={"Plan Your Trip"} tag href={"#contact"} />
-            <OtherBtn roleType={"button"} text={"Get a Custom Itinerary"} href={"#contact"} />
+            <OtherBtn roleType={"button"} text={"Plan Your Trip"} tag href={"/contact"} />
+            <OtherBtn roleType={"button"} text={"Get a Custom Itinerary"} href={"/contact"} />
           </div>
           <div className="space-y-3 md:space-y-4 text-secondary">
             <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">

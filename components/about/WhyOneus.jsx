@@ -74,7 +74,7 @@ export const WhyOneus = () => {
           Choosing OneUS Travels means opting for business travel solutions that streamline your operations, cut costs, and ensure a seamless experience. Our 24/7 support and customized offerings guarantee that your company’s travel needs are met without compromise.
         </p>
         <div>
-          <Link href="#contact" className="mt-8">
+          <Link href="/contact" className="mt-8">
             <OtherBtn text={"Speak to a Travel Expert"} />
           </Link>
         </div>

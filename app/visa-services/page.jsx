@@ -45,12 +45,12 @@ const page = () => {
                 roleType={"button"}
                 text={"📩 Start Your Visa Application"}
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Get a Free Visa Consultation"}
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
           </div>
@@ -159,12 +159,12 @@ const page = () => {
                   "📩 Start Your Visa Application today and travel without worry"
                 }
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📞 Get a Free Visa Consultation to explore your options"}
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
             <p className="text-base font-normal font-Poppins">

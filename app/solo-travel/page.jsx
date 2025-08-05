@@ -86,8 +86,8 @@ const page = () => {
                 At OneUs Travels, we’re more than just a travel provider—we're your partner in creating a hassle-free and comfortable travel experience. Our dedication to results-driven solutions, combined with the trust we've earned globally, is what sets us apart.
               </p>
               <div className="flex flex-col space-y-5">
-                <OtherBtn roleType={"button"} text={"📩 Plan Your Solo Trip"} href={"#contact"} tag />
-                <OtherBtn roleType={"button"} text={"📞 Talk to our travel expert today"} href={"#contact"} />
+                <OtherBtn roleType={"button"} text={"📩 Plan Your Solo Trip"} href={"/contact"} tag />
+                <OtherBtn roleType={"button"} text={"📞 Talk to our travel expert today"} href={"/contact"} />
               </div>
             </div>
           </section>

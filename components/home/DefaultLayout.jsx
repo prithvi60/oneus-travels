@@ -1,10 +1,10 @@
 import React from 'react'
-import Development from '../Development';
 import Footer from './Footer';
 import NavbarPage from './NavbarPage';
 import { ContactForm } from './ContactForm';
 import { Testimonial } from './Testimonial';
 import { SalesIq } from './SalesIq';
+import { ContactFormComponent } from './ContactFormComponent';
 
 const DefaultLayout = ({ children }) => {
     return (
@@ -12,7 +12,7 @@ const DefaultLayout = ({ children }) => {
             {/* <Development /> */}
             <NavbarPage />
             {children}
-            <ContactForm />
+            <ContactFormComponent />
             <Testimonial />
             <Footer />
             <SalesIq />

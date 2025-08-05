@@ -5,12 +5,12 @@ import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { OtherBtn } from "../Button";
 
-export const AccordionComponent = ({ list,idx }) => {
+export const AccordionComponent = ({ list, idx }) => {
   const [selectedKeys, setSelectedKeys] = useState(new Set(["0"]));
   return (
     <Accordion
       variant="light"
-    //   defaultExpandedKeys={["0"]}
+      //   defaultExpandedKeys={["0"]}
       selectedKeys={selectedKeys}
       onSelectionChange={setSelectedKeys}
     >
@@ -33,10 +33,10 @@ export const AccordionComponent = ({ list,idx }) => {
           {list.desc}
         </p>
         <div>
-        <Link href="#contact" className="mt-8">
-      <OtherBtn text={list.cta} />
-      </Link>
-      </div>
+          <Link href="/contact" className="mt-8">
+            <OtherBtn text={list.cta} />
+          </Link>
+        </div>
       </AccordionItem>
     </Accordion>
   );

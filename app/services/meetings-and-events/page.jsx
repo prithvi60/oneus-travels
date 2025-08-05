@@ -39,12 +39,12 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Talk to Our Event Strategy Team"}
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={"📩 Plan Your Next Global Event with Us"}
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
           </div>
@@ -165,14 +165,14 @@ const page = () => {
                 roleType={"button"}
                 text={"📞 Talk to Our Event Strategy Team today"}
                 tag
-                href={"#contact"}
+                href={"/contact"}
               />
               <OtherBtn
                 roleType={"button"}
                 text={
                   "📩 Plan Your Next Global Event with Us and make every moment matter"
                 }
-                href={"#contact"}
+                href={"/contact"}
               />
             </div>
           </div>

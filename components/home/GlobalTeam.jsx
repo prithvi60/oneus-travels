@@ -38,7 +38,7 @@ export const GlobalTeam = () => {
           Whether you’re organizing corporate functions, crucial meetings, large-scale conferences, group excursions, team-building activities, or sales incentives, our  <Link href="/services/corporate-travel" className="underline">tailored event management solutions</Link> are designed to exceed your expectations and drive your business growth. We’ve got your back!
         </p>
         <p className="w-full h-full text-base font-normal font-Poppins">
-          <Link href="#contact" className="underline"> Partner with OneUs Travels</Link> for a seamlessly integrated event experience that delivers outstanding results for your business, your team, and your budget. Let us handle the details, so you can focus on what matters most—building connections and achieving your goals.
+          <Link href="/contact" className="underline"> Partner with OneUs Travels</Link> for a seamlessly integrated event experience that delivers outstanding results for your business, your team, and your budget. Let us handle the details, so you can focus on what matters most—building connections and achieving your goals.
         </p>
       </div>
       <GlobalTeamCard
