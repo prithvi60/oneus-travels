@@ -99,7 +99,7 @@ export const Contact = ({ blog }) => {
                     placeholder="Enter Your Email"
                     endContent={<IoMailOutline className="text-lg opacity-50" />}
                     classNames={{
-                        inputWrapper: "bg-primary font-Poppins font-normal",
+                        inputWrapper: "bg-primary font-Poppins font-normal -top-2",
                     }}
                     variant="faded"
                     color="secondary"
