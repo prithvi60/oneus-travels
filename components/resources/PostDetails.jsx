@@ -4,8 +4,8 @@ import { Contact } from "../Contact";
 const PostDetails = ({ post }) => {
 
     return (
-        <section className="relative w-full h-full flex justify-between gap-5 padding">
-            <div className="font-Gilroy space-6 md:space-y-10 lg:w-3/5">
+        <section className="relative w-full h-full flex justify-between gap-8 xl:gap-12 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-full xl:max-w-fit 2xl:ml-80 px-7 py-12 sm:py-16 xl:py-20">
+            <div className="font-Gilroy space-6 md:space-y-10 lg:w-[70%]">
                 <h2 className="text-2xl font-bold tracking-normal capitalize font-Gilroy text-secondary md:text-3xl xl:text-4xl">
                     {post.title}
                 </h2>
@@ -14,9 +14,6 @@ const PostDetails = ({ post }) => {
                 </div>
             </div>
             <Contact blog />
-            {/* <div className="">
-
-            </div> */}
         </section>
     )
 }

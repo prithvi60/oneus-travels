@@ -3,11 +3,13 @@
 import { Input, Textarea } from "@nextui-org/input";
 import { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
 
 export const Contact = ({ blog }) => {
     const initialFormData = {
         userName: "",
+        userEmail: "",
         phoneNo: "",
         enquiry: "",
     };
@@ -44,7 +46,7 @@ export const Contact = ({ blog }) => {
             }
 
             const emailDataResult = await response.json();
-
+            console.log(emailDataResult);
             if (emailDataResult.success) {
                 setStatus(false);
                 setFormData(initialFormData);
@@ -61,7 +63,7 @@ export const Contact = ({ blog }) => {
     return (
         <form
             onSubmit={handleSubmit}
-            className={`z-20 w-full h-full space-y-4 ${blog ? "hidden lg:block rounded-lg lg:w-2/5 shadow-md lg:sticky lg:top-32 overflow-hidden border" : "rounded-md lg:w-1/2"}`}
+            className={`z-20 w-full h-full space-y-4 ${blog ? "hidden lg:block rounded-lg lg:w-[30%] shadow-md lg:sticky lg:top-32 overflow-hidden border xl:mx-5" : "rounded-md lg:w-1/2"}`}
         >
             <h3
                 className={`text-lg font-semibold tracking-normal font-Gilroy md:text-xl xl:text-2xl ${blog ? "bg-secondary text-white p-5 overflow-hidden" : "bg-transparent text-secondary"}`}
@@ -71,16 +73,31 @@ export const Contact = ({ blog }) => {
             </h3>
             <div className={`${blog && "p-5 bg-[#F8F9F8]"} space-y-4`}>
                 <Input
-                    name="firstName"
+                    name="userName"
                     value={formData.userName}
                     onChange={handleChange}
                     isRequired
                     size="lg"
-                    label="First Name"
+                    label="Name"
                     placeholder="Enter Your First Name"
                     endContent={
                         <MdOutlineDriveFileRenameOutline className="text-2xl opacity-50 relative -top-2" />
                     }
+                    classNames={{
+                        inputWrapper: "bg-primary font-Poppins font-normal",
+                    }}
+                    variant="faded"
+                    color="secondary"
+                />
+                <Input
+                    name="userEmail"
+                    value={formData.userEmail}
+                    onChange={handleChange}
+                    isRequired
+                    size="lg"
+                    label="Email"
+                    placeholder="Enter Your Email"
+                    endContent={<IoMailOutline className="text-lg opacity-50" />}
                     classNames={{
                         inputWrapper: "bg-primary font-Poppins font-normal",
                     }}
