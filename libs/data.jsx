@@ -1436,21 +1436,25 @@ export const whyUsAccordion = [
     title: "Streamlined Business Travel",
     desc: "Save time and reduce stress with our efficient booking and management services. Let us handle the logistics while you focus on your business goals.",
     cta: "Get Started With Us",
+    href: "/contact"
   },
   {
     title: "Tailored Support 24/7 ",
     desc: "Enjoy dedicated, personalized support available around the clock. Our team is here to assist with all your travel needs, making your experience smooth from start to finish.",
     cta: "Speak to Our Team",
+    href: "/contact"
   },
   {
     title: "Comprehensive Travel Platform",
     desc: "Access a single platform for all your corporate travel needs. Manage your itineraries, bookings, and expenses effortlessly using our user-friendly dashboard.",
     cta: "Explore Our Platform",
+    href: "/contact"
   },
   {
     title: "Unmatched Value and Options",
     desc: "Benefit from an extensive range of travel options tailored to fit every business budget. We offer exclusive deals and discounts you won’t find elsewhere.",
     cta: "View Our Deals",
+    href: "/contact"
   },
 ];
 

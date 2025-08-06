@@ -4,7 +4,7 @@ import DefaultLayout from "../home/DefaultLayout";
 import { WelcomeBoard } from "./WelcomeBoard";
 import { FaLink } from "react-icons/fa";
 import { OtherBtn } from "../Button";
-import { leisureTravelLists, ourServices, whyTravelLists } from "@/libs/data";
+import { ourServices, whyTravelLists } from "@/libs/data";
 import Link from "next/link";
 import OurServiceCard from "./OurServiceCard";
 
@@ -96,6 +96,7 @@ const OurServices = () => {
               <OtherBtn
                 roleType={"button"}
                 text={"Talk to a Travel Consultant Today"}
+                 href={"/contact"}
               />
             </div>
           </div>

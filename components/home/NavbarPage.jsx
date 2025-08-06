@@ -367,9 +367,9 @@ export default function NavbarPage() {
       {/* Login button For employee and client */}
 
       <NavbarContent className="!justify-end space-x-1 md:mt-0 md:space-x-4 gap-0 md:gap-1">
-        <Link href="/contact" className="hidden 2xl:block">
-          <OtherBtn text={"Speak to a Travel Expert"} />
-        </Link>
+        <div className="hidden 2xl:block">
+          <OtherBtn text={"Speak to a Travel Expert"} href={"/contact"} />
+        </div>
         <Link href="/contact" className="hidden md:block 2xl:hidden">
           <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1
             ? "text-primary hover:text-secondary border-primary"

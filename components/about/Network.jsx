@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { OtherBtn } from "../Button";
-import Image from "next/image";
-import { whyOneusStory } from "@/libs/data";
+
 
 export const Network = () => {
   return (
@@ -30,9 +29,7 @@ export const Network = () => {
         To experience seamless, cost-effective travel management. Click below to get started!
       </p>
       <div className="pt-5 w-max">
-        <Link href={"/contact"}>
-          <OtherBtn roleType={"button"} text={"Speak to a Travel Expert"} />
-        </Link>
+        <OtherBtn roleType={"button"} text={"Speak to a Travel Expert"} href={"/contact"} />
       </div>
 
 

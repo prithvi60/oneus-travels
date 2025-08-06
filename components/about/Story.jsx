@@ -41,12 +41,11 @@ export const Story = () => {
         </p>
       </div>
       <div className="pt-5 w-max">
-        <Link href={"/technology"}>
-          <OtherBtn
-            roleType={"button"}
-            text={"Discover our latest technology solutions here"}
-          />
-        </Link>
+        <OtherBtn
+          roleType={"button"}
+          text={"Discover our latest technology solutions here"}
+          href={"/contact"}
+        />
       </div>
       <div className="space-y-4 md:space-y-6 text-secondary">
         <h4 className="text-lg font-semibold tracking-wide capitalize font-Gilroy md:text-xl">
@@ -86,12 +85,11 @@ export const Story = () => {
           experience why we’re the best in business travel.
         </p>
         <div className="pt-5 w-max">
-          <Link href={"/contact"}>
-            <OtherBtn
-              roleType={"button"}
-              text={"Speak to a Travel Expert"}
-            />
-          </Link>
+          <OtherBtn
+            roleType={"button"}
+            text={"Speak to a Travel Expert"}
+            href={"/contact"}
+          />
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-8 pt-10 md:gap-16 xl:gap-20">

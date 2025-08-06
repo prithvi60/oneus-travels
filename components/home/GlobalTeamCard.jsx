@@ -28,9 +28,7 @@ export const GlobalTeamCard = ({ title, imgSrc, desc, sub }) => {
           <p className="text-sm md:text-base font-Poppins">{desc}</p>
         </CardBody>
         <CardFooter>
-          <Link href={"/contact"}>
-            <OtherBtn roleType={"button"} text={"Find out more"} />
-          </Link>
+          <OtherBtn roleType={"button"} text={"Find out more"} href={"/contact"} />
         </CardFooter>
       </Card>
     </div>
@@ -48,9 +46,7 @@ export const GlobalTeamCardReverse = ({ title, imgSrc, desc }) => {
           <p className="text-sm md:text-base font-Gilroy">{desc}</p>
         </CardBody>
         <CardFooter>
-          <Link href={"/contact"}>
-            <OtherBtn text={"Find out more"} />
-          </Link>
+          <OtherBtn text={"Find out more"} href={"/contact"} />
         </CardFooter>
       </Card>
       <div className="relative w-full sm:w-[40%] md:w-full lg:w-2/5 xl:w-1/2 h-[200px] md:h-[320px] overflow-hidden">

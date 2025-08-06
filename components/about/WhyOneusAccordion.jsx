@@ -33,9 +33,9 @@ export const AccordionComponent = ({ list, idx }) => {
           {list.desc}
         </p>
         <div>
-          <Link href="/contact" className="mt-8">
-            <OtherBtn text={list.cta} />
-          </Link>
+          <div className="mt-8">
+            <OtherBtn text={list.cta} href={list.href} />
+          </div>
         </div>
       </AccordionItem>
     </Accordion>
