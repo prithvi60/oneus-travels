@@ -5,7 +5,7 @@ import { OtherHero } from "@/components/OtherHero";
 export default function ContactPage() {
   return (
     <DefaultLayout>
-      <OtherHero imgSrc={"/bg_1.jpg"} />
+      {/* <OtherHero imgSrc={"/bg_1.jpg"} /> */}
       <ContactForm contact />
     </DefaultLayout>
   );

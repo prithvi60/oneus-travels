@@ -73,18 +73,9 @@ export default function NavbarPage() {
       maxWidth="full"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      // ${
-      //   percent <= 15 && path === "/"
-      //     ? "!bg-transparent shadow-none"
-      //     : percent >= 35 && percent <= 74 && path === "/"
-      //     ? "bg-secondary shadow-md"
-      //     : percent >= 75 && percent <= 95 && path === "/"
-      //     ? "bg-success shadow-md"
-      //     : "bg-primary shadow-md"
-      // }
       classNames={{
         base: [
-          ` ${scrollYValue <= scrollValue.value1
+          ` ${scrollYValue <= scrollValue.value1 && !path === "/contact"
             ? "!bg-transparent shadow-none"
             : scrollYValue <= scrollValue.value2
               ? "bg-primary shadow-md"
@@ -134,7 +125,7 @@ export default function NavbarPage() {
                   className="object-contain p-2 rounded-full cursor-pointer bg-primary"
                 />
               </div>
-            ) : path === "/visa-services" ? (
+            ) : path === "/visa-services" || path === "/contact" ? (
               <div className="relative w-20 h-12 md:h-14 md:w-32">
                 <Image
                   onClick={() => router.push("/")}
@@ -190,7 +181,7 @@ export default function NavbarPage() {
             title={"Home"}
             aria-current={`Technology page`}
             href={"/"}
-            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1
+            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1 && !path === "/contact"
               ? "text-primary"
               : scrollYValue <= scrollValue.value2
                 ? "text-secondary"
@@ -210,7 +201,7 @@ export default function NavbarPage() {
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${scrollYValue <= scrollValue.value1
+                className={`text-base ${scrollYValue <= scrollValue.value1 && !path === "/contact"
                   ? "text-primary"
                   : scrollYValue <= scrollValue.value2
                     ? "text-secondary"
@@ -232,7 +223,7 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${scrollYValue <= scrollValue.value1
+                    className={`${scrollYValue <= scrollValue.value1 && !path === "/contact"
                       ? "text-primary"
                       : scrollYValue <= scrollValue.value2
                         ? "text-secondary"
@@ -299,7 +290,7 @@ export default function NavbarPage() {
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${scrollYValue <= scrollValue.value1
+                className={`text-base ${scrollYValue <= scrollValue.value1 && !path === "/contact"
                   ? "text-primary"
                   : scrollYValue <= scrollValue.value2
                     ? "text-secondary"
@@ -321,7 +312,7 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${scrollYValue <= scrollValue.value1
+                    className={`${scrollYValue <= scrollValue.value1 && !path === "/contact"
                       ? "text-primary"
                       : scrollYValue <= scrollValue.value2
                         ? "text-secondary"
@@ -371,7 +362,7 @@ export default function NavbarPage() {
           <OtherBtn text={"Speak to a Travel Expert"} href={"/contact"} />
         </div>
         <Link href="/contact" className="hidden md:block 2xl:hidden">
-          <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1
+          <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1 && !path === "/contact"
             ? "text-primary hover:text-secondary border-primary"
             : scrollYValue <= scrollValue.value2
               ? "text-secondary border-primary"

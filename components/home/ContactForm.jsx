@@ -6,7 +6,7 @@ import { Contact } from "../Contact";
 export const ContactForm = ({ contact }) => {
   return (
     <section
-      className={`w-full h-full md:h-auto ${contact ? "mb-12" : "my-12"} relative bg-[url('/world_map_sm.png')] lg:bg-[url('/world_map_lg.png')] shadow-md bg-no-repeat bg-cover lg:bg-contain bg-center z-0`}
+      className={`w-full h-full md:h-auto ${contact ? "mb-12 mt-24" : "my-12"} relative bg-[url('/world_map_sm.png')] lg:bg-[url('/world_map_lg.png')] shadow-md bg-no-repeat bg-cover lg:bg-contain bg-center z-0`}
       id="contact"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 bg-opacity-85 bg-[#F8F9F8]"></div>

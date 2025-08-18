@@ -27,6 +27,18 @@ export const menuItems = [
       { listMenu: "Solo Travel", subMenuRef: "/solo-travel" },
     ],
   },
+  {
+    menuTitle: "Explore Places",
+    ref: "",
+    subMenu: [
+      {
+        listMenu: "Thailand",
+        subMenuRef: "/Thailand",
+      },
+      { listMenu: "Srilanka", subMenuRef: "/Srilanka" },
+      { listMenu: "More Places", subMenuRef: "/leisure" },
+    ],
+  },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },
 ];

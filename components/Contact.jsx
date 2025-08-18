@@ -63,14 +63,28 @@ export const Contact = ({ blog }) => {
     return (
         <form
             onSubmit={handleSubmit}
-            className={`z-20 w-full h-full space-y-4 ${blog ? "hidden lg:block rounded-lg lg:w-[30%] shadow-md lg:sticky lg:top-32 overflow-hidden border xl:mx-5" : "rounded-md lg:w-1/2"}`}
+            className={`z-20 w-full h-full ${blog ? "hidden lg:block rounded-lg lg:w-[30%] shadow-md lg:sticky lg:top-24 overflow-hidden border xl:mx-5" : "rounded-md lg:w-1/2 space-y-4"}`}
         >
-            <h3
-                className={`text-lg font-semibold tracking-normal font-Gilroy md:text-xl xl:text-2xl ${blog ? "bg-secondary text-white p-5 overflow-hidden" : "bg-transparent text-secondary"}`}
+            {blog ? (
+                <h3
+                    className={` font-semibold tracking-normal font-Gilroy bg-secondary text-white p-5 overflow-hidden text-base xl:text-lg`}
+                >
+                    Better business travel with Corporate Travel Management
+                </h3>
+            ) : (
+                <h3
+                    className={` font-semibold tracking-normal font-Gilroy bg-transparent text-secondary text-lg md:text-xl xl:text-2xl`}
+                >
+                    Take your first step towards better business travel with Corporate
+                    Travel Management.
+                </h3>
+            )}
+            {/* <h3
+                className={` font-semibold tracking-normal font-Gilroy ${blog ? "bg-secondary text-white p-5 overflow-hidden text-lg " : "bg-transparent text-secondary text-lg md:text-xl xl:text-2xl"}`}
             >
                 Take your first step towards better business travel with Corporate
                 Travel Management.
-            </h3>
+            </h3> */}
             <div className={`${blog && "p-5 bg-[#F8F9F8]"} space-y-4`}>
                 <Input
                     name="userName"
@@ -116,7 +130,7 @@ export const Contact = ({ blog }) => {
                         <FaPhoneAlt className="text-lg opacity-50 relative -top-2" />
                     }
                     classNames={{
-                        inputWrapper: "bg-primary font-Poppins font-normal",
+                        inputWrapper: "bg-primary font-Poppins font-normal -top-2",
                     }}
                     variant="faded"
                     color="secondary"
@@ -130,7 +144,7 @@ export const Contact = ({ blog }) => {
                     placeholder="Feel free to mention your company, where you're located and what sort of service you are looking for"
                     classNames={{
                         input: "placeholder:text-gray-400",
-                        inputWrapper: "bg-primary font-Poppins font-normal",
+                        inputWrapper: "bg-primary font-Poppins font-normal -top-2",
                     }}
                     variant="faded"
                     color="secondary"
