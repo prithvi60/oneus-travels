@@ -75,7 +75,7 @@ export default function NavbarPage() {
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
         base: [
-          ` ${scrollYValue <= scrollValue.value1 && !path === "/contact"
+          ` ${scrollYValue <= scrollValue.value1
             ? "!bg-transparent shadow-none"
             : scrollYValue <= scrollValue.value2
               ? "bg-primary shadow-md"
@@ -175,13 +175,13 @@ export default function NavbarPage() {
         className="hidden lg:flex ms-5 gap-1.5 lg:gap-5 font-Gilroy"
         justify="center"
       >
-        <NavbarItem>
+        <NavbarItem className="w-fit">
           <Link
             aria-label={`know more about OneUs`}
             title={"Home"}
-            aria-current={`Technology page`}
+            aria-current={`Home page`}
             href={"/"}
-            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1 && !path === "/contact"
+            className={`text-sm lg:text-lg xl:text-xl ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
               ? "text-primary"
               : scrollYValue <= scrollValue.value2
                 ? "text-secondary"
@@ -201,7 +201,7 @@ export default function NavbarPage() {
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${scrollYValue <= scrollValue.value1 && !path === "/contact"
+                className={`text-base ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
                   ? "text-primary"
                   : scrollYValue <= scrollValue.value2
                     ? "text-secondary"
@@ -223,7 +223,7 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${scrollYValue <= scrollValue.value1 && !path === "/contact"
+                    className={`${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
                       ? "text-primary"
                       : scrollYValue <= scrollValue.value2
                         ? "text-secondary"
@@ -264,33 +264,11 @@ export default function NavbarPage() {
             </div>
           </NavbarItem>
         ))}
-        {/* <NavbarItem>
-          <Link
-            aria-label={`know more about Solo Travel`}
-            title={"Solo Travel"}
-            aria-current={`Solo Travel page`}
-            href={"/solo-travel"}
-            className={`text-sm lg:text-lg xl:text-xl ${scrollYValue <= scrollValue.value1
-              ? "text-primary"
-              : scrollYValue <= scrollValue.value2
-                ? "text-secondary"
-                : scrollYValue <= scrollValue.value3 && path === "/"
-                  ? "text-primary"
-                  : scrollYValue > scrollValue.value3 &&
-                    scrollYValue <= scrollValue.value4 &&
-                    path === "/"
-                    ? "text-primary"
-                    : "text-secondary"
-              } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
-          >
-            Solo Travel
-          </Link>
-        </NavbarItem> */}
-        {menuItems.slice(2, 4).map((item, id) => (
+        {menuItems.slice(2, menuItems.length).map((item, id) => (
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${scrollYValue <= scrollValue.value1 && !path === "/contact"
+                className={`text-base ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
                   ? "text-primary"
                   : scrollYValue <= scrollValue.value2
                     ? "text-secondary"
@@ -312,7 +290,7 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${scrollYValue <= scrollValue.value1 && !path === "/contact"
+                    className={`${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
                       ? "text-primary"
                       : scrollYValue <= scrollValue.value2
                         ? "text-secondary"
@@ -362,7 +340,7 @@ export default function NavbarPage() {
           <OtherBtn text={"Speak to a Travel Expert"} href={"/contact"} />
         </div>
         <Link href="/contact" className="hidden md:block 2xl:hidden">
-          <OutlineBtn text={"Contact"} colorChange={scrollYValue <= scrollValue.value1 && !path === "/contact"
+          <OutlineBtn text={"Contact"} colorChange={path === "/contact" ? "text-secondary border-primary" : scrollYValue <= scrollValue.value1
             ? "text-primary hover:text-secondary border-primary"
             : scrollYValue <= scrollValue.value2
               ? "text-secondary border-primary"

@@ -66,6 +66,18 @@ export const menuItemsMobile = [
       { list: "Solo Travel", subMenuRef: "/solo-travel" },
     ],
   },
+  {
+    menuTitle: "Explore Places",
+    ref: "",
+    subMenu: [
+      {
+        list: "Thailand",
+        subMenuRef: "/Thailand",
+      },
+      { list: "Srilanka", subMenuRef: "/Srilanka" },
+      { list: "More Places", subMenuRef: "/leisure" },
+    ],
+  },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },
 ];
