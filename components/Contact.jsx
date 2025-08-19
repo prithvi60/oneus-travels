@@ -63,7 +63,7 @@ export const Contact = ({ blog }) => {
     return (
         <form
             onSubmit={handleSubmit}
-            className={`z-20 w-full h-full ${blog ? "hidden lg:block rounded-lg lg:w-[30%] shadow-md lg:sticky lg:top-24 overflow-hidden border xl:mx-5" : "rounded-md lg:w-1/2 space-y-4"}`}
+            className={`z-20 w-full h-full ${blog ? "hidden lg:block rounded-lg lg:w-[30%] shadow-md lg:sticky lg:top-24 [@media(min-width:1620px)]:top-32 overflow-hidden border xl:mx-5" : "rounded-md lg:w-1/2 space-y-4"}`}
         >
             {blog ? (
                 <h3
