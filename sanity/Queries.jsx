@@ -84,3 +84,15 @@ export const CS_QUERY = groq`
   }
 }
 `
+export const LOCATION_QUERY = groq`
+*[_type == "location" && lower(title) == lower($slug)][0] {
+  title,
+  blockContent[]{
+    ...,
+    _type == "image" => {
+      "imageUrl": asset->url,
+      alt
+    }
+  }
+}
+`
