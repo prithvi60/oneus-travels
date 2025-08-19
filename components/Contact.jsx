@@ -46,7 +46,6 @@ export const Contact = ({ blog }) => {
             }
 
             const emailDataResult = await response.json();
-            console.log(emailDataResult);
             if (emailDataResult.success) {
                 setStatus(false);
                 setFormData(initialFormData);

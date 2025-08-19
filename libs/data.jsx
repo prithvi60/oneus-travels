@@ -1,172 +1,3 @@
-export const menuItems = [
-  {
-    menuTitle: "About Us",
-    ref: "",
-    subMenu: [
-      { listMenu: "Why Oneus", subMenuRef: "/about/why-choose-us" },
-      { listMenu: "Oneus Story", subMenuRef: "/about/our-story" },
-      { listMenu: "Meet the team", subMenuRef: "/about/meet-the-team" },
-      { listMenu: "Our Vision", subMenuRef: "/about/our-vision" },
-      { listMenu: "Network", subMenuRef: "/about/list-of-countries" },
-    ],
-  },
-  {
-    menuTitle: "Our Services",
-    ref: "/our-services",
-    subMenu: [
-      {
-        listMenu: "Corporate Travel",
-        subMenuRef: "/corporate-travel",
-      },
-      { listMenu: "Leisure", subMenuRef: "/leisure" },
-      { listMenu: "Visa Services", subMenuRef: "/visa-services" },
-      {
-        listMenu: "Meeting & Events",
-        subMenuRef: "/services/meetings-and-events",
-      },
-      { listMenu: "Solo Travel", subMenuRef: "/solo-travel" },
-    ],
-  },
-  {
-    menuTitle: "Explore Places",
-    ref: "",
-    subMenu: [
-      {
-        listMenu: "Thailand",
-        subMenuRef: "/Thailand",
-      },
-      { listMenu: "Srilanka", subMenuRef: "/Srilanka" },
-      { listMenu: "More Places", subMenuRef: "/leisure" },
-    ],
-  },
-  { menuTitle: "News", ref: "/news" },
-  { menuTitle: "Blog", ref: "/blog" },
-];
-
-export const menuItemsMobile = [
-  {
-    menuTitle: "About us",
-    ref: "/about",
-    subMenu: [
-      { list: "Why Oneus", subMenuRef: "/why-choose-us" },
-      { list: "Oneus Story", subMenuRef: "/our-story" },
-      { list: "Meet the team", subMenuRef: "/meet-the-team" },
-      { list: "Our Vision", subMenuRef: "/our-vision" },
-      { list: "Network", subMenuRef: "/list-of-countries" },
-    ],
-  },
-  {
-    menuTitle: "Our Services",
-    ref: "/our-services",
-    subMenu: [
-      { list: "Corporate Travel", subMenuRef: "/corporate-travel" },
-      { list: "Leisure", subMenuRef: "/leisure" },
-      { list: "Visa Services", subMenuRef: "/visa-services" },
-      { list: "Meeting & Events", subMenuRef: "/services/meetings-and-events" },
-      { list: "Solo Travel", subMenuRef: "/solo-travel" },
-    ],
-  },
-  {
-    menuTitle: "Explore Places",
-    ref: "",
-    subMenu: [
-      {
-        list: "Thailand",
-        subMenuRef: "/Thailand",
-      },
-      { list: "Srilanka", subMenuRef: "/Srilanka" },
-      { list: "More Places", subMenuRef: "/leisure" },
-    ],
-  },
-  { menuTitle: "News", ref: "/news" },
-  { menuTitle: "Blog", ref: "/blog" },
-];
-
-export const sliders = [
-  {
-    imgSrc: "/bg_1.jpg",
-    shortNote: "One Strategy,",
-    note: "Using strategic solutions curated to your need",
-    ref: "/",
-  },
-  {
-    imgSrc: "/bg_1.jpg",
-    shortNote: "One Forum,",
-    note: "We provide a singular simplified forum to ensure organized service",
-    ref: "/",
-  },
-  {
-    imgSrc: "/bg_1.jpg",
-    shortNote: "One Community,",
-    note: "A specific group of team assigned for your company to ensure consistent service",
-    ref: "/",
-  },
-  {
-    imgSrc: "/bg_1.jpg",
-    shortNote: "One Standard,",
-    note: "All services maintaining to your business standard and approved by AITA",
-    ref: "/",
-  },
-];
-
-export const travelCardList = [
-  {
-    img: "/card_2_3.jpg",
-    title: "Engineered for Ease, Consistency, and Adaptability",
-    desc: "We adopt a consultative and tailored approach to create unique, straightforward, and efficient global travel solutions that deliver strategic results for today and tomorrow.",
-  },
-  {
-    img: "/card_2_2.jpg",
-    title: "Global Reach, Local Insight, Adaptive Tech",
-    desc: "Benefit from our ability to maximize savings, access reliable local market expertise, and enjoy the flexibility to tackle future travel challenges.",
-  },
-  {
-    img: "/card_2_1.jpg",
-    title: "Your Input Shapes Our Innovations",
-    desc: "Your needs drive our product and service development, ensuring you receive the most relevant, timely, and impactful solutions.",
-  },
-];
-
-export const testimonialList = [
-  {
-    review:
-      "We normally appreciate all vendors who are all doing a quality and professional jobs. I would like to appreciate OneUs team for their excellent service till date without any problem and kept up the good work. ",
-    name: "Zoho Corporation",
-  },
-  {
-    review:
-      "OneUs provides a very good travel services. Their customer support is excellent and we are quite happy with the overall services. We will recommend their services to everyone",
-    name: "NVH Korea",
-  },
-  {
-    review:
-      "OneUs is unbelievably helpful when it comes to travel services. They have got a right team, which will go to any extent without hesitation. Thank you guys for the support",
-    name: "Woori Bank",
-  },
-  {
-    review:
-      "With One Us,  our travel is relaxing, safe and comfortable. Their service is professional, support is impeccable. Specially, Vishnuprabha and her team have done a great job to make our trip enjoyable",
-    name: "Naya Ventures",
-  },
-
-  // {
-  //   review:
-  //     "Awaiting",
-  //   name: "TVS Tyres",
-  // },
-];
-
-export const clients = [
-  "/clients/sgb.png",
-  "/clients/nayafull.png",
-  "/clients/esab.png",
-  "/clients/zoho.png",
-  "/clients/nvh.png",
-  "/clients/gavs.png",
-  "/clients/svrn.png",
-  "/clients/uni.png",
-];
-
 // leisure table data
 
 export const leisureLists = [
@@ -1177,6 +1008,174 @@ export const leisureLists = [
       },
     ],
   },
+];
+
+const locations = leisureLists.map(val => val.location)
+
+export const menuItems = [
+  {
+    menuTitle: "About Us",
+    ref: "",
+    subMenu: [
+      { listMenu: "Why Oneus", subMenuRef: "/about/why-choose-us" },
+      { listMenu: "Oneus Story", subMenuRef: "/about/our-story" },
+      { listMenu: "Meet the team", subMenuRef: "/about/meet-the-team" },
+      { listMenu: "Our Vision", subMenuRef: "/about/our-vision" },
+      { listMenu: "Network", subMenuRef: "/about/list-of-countries" },
+    ],
+  },
+  {
+    menuTitle: "Our Services",
+    ref: "/our-services",
+    subMenu: [
+      {
+        listMenu: "Corporate Travel",
+        subMenuRef: "/corporate-travel",
+      },
+      { listMenu: "Leisure", subMenuRef: "/leisure" },
+      { listMenu: "Visa Services", subMenuRef: "/visa-services" },
+      {
+        listMenu: "Meeting & Events",
+        subMenuRef: "/services/meetings-and-events",
+      },
+      { listMenu: "Solo Travel", subMenuRef: "/solo-travel" },
+    ],
+  },
+  {
+    menuTitle: "Explore Places",
+    ref: "",
+    subMenu: [
+      // Generate from leisureLists
+      ...locations.map((place) => ({
+        listMenu: place,
+        subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
+      })),
+    ],
+  },
+  { menuTitle: "News", ref: "/news" },
+  { menuTitle: "Blog", ref: "/blog" },
+];
+
+export const menuItemsMobile = [
+  {
+    menuTitle: "About us",
+    ref: "/about",
+    subMenu: [
+      { list: "Why Oneus", subMenuRef: "/why-choose-us" },
+      { list: "Oneus Story", subMenuRef: "/our-story" },
+      { list: "Meet the team", subMenuRef: "/meet-the-team" },
+      { list: "Our Vision", subMenuRef: "/our-vision" },
+      { list: "Network", subMenuRef: "/list-of-countries" },
+    ],
+  },
+  {
+    menuTitle: "Our Services",
+    ref: "/our-services",
+    subMenu: [
+      { list: "Corporate Travel", subMenuRef: "/corporate-travel" },
+      { list: "Leisure", subMenuRef: "/leisure" },
+      { list: "Visa Services", subMenuRef: "/visa-services" },
+      { list: "Meeting & Events", subMenuRef: "/services/meetings-and-events" },
+      { list: "Solo Travel", subMenuRef: "/solo-travel" },
+    ],
+  },
+  {
+    menuTitle: "Explore Places",
+    ref: "",
+    subMenu: [
+      ...locations.map((place) => ({
+        list: place,
+        subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
+      })),
+    ],
+  },
+  { menuTitle: "News", ref: "/news" },
+  { menuTitle: "Blog", ref: "/blog" },
+];
+
+export const sliders = [
+  {
+    imgSrc: "/bg_1.jpg",
+    shortNote: "One Strategy,",
+    note: "Using strategic solutions curated to your need",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_1.jpg",
+    shortNote: "One Forum,",
+    note: "We provide a singular simplified forum to ensure organized service",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_1.jpg",
+    shortNote: "One Community,",
+    note: "A specific group of team assigned for your company to ensure consistent service",
+    ref: "/",
+  },
+  {
+    imgSrc: "/bg_1.jpg",
+    shortNote: "One Standard,",
+    note: "All services maintaining to your business standard and approved by AITA",
+    ref: "/",
+  },
+];
+
+export const travelCardList = [
+  {
+    img: "/card_2_3.jpg",
+    title: "Engineered for Ease, Consistency, and Adaptability",
+    desc: "We adopt a consultative and tailored approach to create unique, straightforward, and efficient global travel solutions that deliver strategic results for today and tomorrow.",
+  },
+  {
+    img: "/card_2_2.jpg",
+    title: "Global Reach, Local Insight, Adaptive Tech",
+    desc: "Benefit from our ability to maximize savings, access reliable local market expertise, and enjoy the flexibility to tackle future travel challenges.",
+  },
+  {
+    img: "/card_2_1.jpg",
+    title: "Your Input Shapes Our Innovations",
+    desc: "Your needs drive our product and service development, ensuring you receive the most relevant, timely, and impactful solutions.",
+  },
+];
+
+export const testimonialList = [
+  {
+    review:
+      "We normally appreciate all vendors who are all doing a quality and professional jobs. I would like to appreciate OneUs team for their excellent service till date without any problem and kept up the good work. ",
+    name: "Zoho Corporation",
+  },
+  {
+    review:
+      "OneUs provides a very good travel services. Their customer support is excellent and we are quite happy with the overall services. We will recommend their services to everyone",
+    name: "NVH Korea",
+  },
+  {
+    review:
+      "OneUs is unbelievably helpful when it comes to travel services. They have got a right team, which will go to any extent without hesitation. Thank you guys for the support",
+    name: "Woori Bank",
+  },
+  {
+    review:
+      "With One Us,  our travel is relaxing, safe and comfortable. Their service is professional, support is impeccable. Specially, Vishnuprabha and her team have done a great job to make our trip enjoyable",
+    name: "Naya Ventures",
+  },
+
+  // {
+  //   review:
+  //     "Awaiting",
+  //   name: "TVS Tyres",
+  // },
+];
+
+export const clients = [
+  "/clients/sgb.png",
+  "/clients/nayafull.png",
+  "/clients/esab.png",
+  "/clients/zoho.png",
+  "/clients/nvh.png",
+  "/clients/gavs.png",
+  "/clients/svrn.png",
+  "/clients/uni.png",
 ];
 
 // footer policy

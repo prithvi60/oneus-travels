@@ -15,7 +15,12 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { MenuBtnCorporate, MenuBtnMember, OtherBtn, OutlineBtn } from "../Button";
+import {
+  MenuBtnCorporate,
+  MenuBtnMember,
+  OtherBtn,
+  OutlineBtn,
+} from "../Button";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -46,7 +51,7 @@ export default function NavbarPage() {
     // console.log(Math.trunc(percentage));
     const percent1 = Math.floor(ele * 0.05);
     const percent2 = Math.floor(ele * 0.25);
-    const percent3 = Math.floor(ele * 0.60);
+    const percent3 = Math.floor(ele * 0.6);
     const percent4 = Math.floor(ele * 0.85);
     setScrollValue({
       value1: percent1,
@@ -181,17 +186,19 @@ export default function NavbarPage() {
             title={"Home"}
             aria-current={`Home page`}
             href={"/"}
-            className={`text-sm lg:text-lg xl:text-xl ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
-              ? "text-primary"
-              : scrollYValue <= scrollValue.value2
-                ? "text-secondary"
-                : scrollYValue <= scrollValue.value3 && path === "/"
-                  ? "text-primary"
-                  : scrollYValue > scrollValue.value3 &&
-                    scrollYValue <= scrollValue.value4 &&
-                    path === "/"
+            className={`text-sm lg:text-lg xl:text-xl ${path === "/contact"
+              ? "text-secondary"
+              : scrollYValue <= scrollValue.value1
+                ? "text-primary"
+                : scrollYValue <= scrollValue.value2
+                  ? "text-secondary"
+                  : scrollYValue <= scrollValue.value3 && path === "/"
                     ? "text-primary"
-                    : "text-secondary"
+                    : scrollYValue > scrollValue.value3 &&
+                      scrollYValue <= scrollValue.value4 &&
+                      path === "/"
+                      ? "text-primary"
+                      : "text-secondary"
               } hover:text-info py-10 scroll-smooth tracking-wider cursor-pointer font-semibold`}
           >
             Home
@@ -201,17 +208,19 @@ export default function NavbarPage() {
           <NavbarItem key={id} className="relative group">
             <div>
               <div
-                className={`text-base ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
-                  ? "text-primary"
-                  : scrollYValue <= scrollValue.value2
-                    ? "text-secondary"
-                    : scrollYValue <= scrollValue.value3 && path === "/"
-                      ? "text-primary"
-                      : scrollYValue > scrollValue.value3 &&
-                        scrollYValue <= scrollValue.value4 &&
-                        path === "/"
+                className={`text-base ${path === "/contact"
+                  ? "text-secondary"
+                  : scrollYValue <= scrollValue.value1
+                    ? "text-primary"
+                    : scrollYValue <= scrollValue.value2
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value3 && path === "/"
                         ? "text-primary"
-                        : "text-secondary"
+                        : scrollYValue > scrollValue.value3 &&
+                          scrollYValue <= scrollValue.value4 &&
+                          path === "/"
+                          ? "text-primary"
+                          : "text-secondary"
                   } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
               >
@@ -223,17 +232,19 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
-                      ? "text-primary"
-                      : scrollYValue <= scrollValue.value2
-                        ? "text-secondary"
-                        : scrollYValue <= scrollValue.value3 && path === "/"
-                          ? "text-primary"
-                          : scrollYValue > scrollValue.value3 &&
-                            scrollYValue <= scrollValue.value4 &&
-                            path === "/"
+                    className={`${path === "/contact"
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value1
+                        ? "text-primary"
+                        : scrollYValue <= scrollValue.value2
+                          ? "text-secondary"
+                          : scrollYValue <= scrollValue.value3 && path === "/"
                             ? "text-primary"
-                            : "text-secondary"
+                            : scrollYValue > scrollValue.value3 &&
+                              scrollYValue <= scrollValue.value4 &&
+                              path === "/"
+                              ? "text-primary"
+                              : "text-secondary"
                       } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
                   />
                 )}
@@ -265,20 +276,25 @@ export default function NavbarPage() {
           </NavbarItem>
         ))}
         {menuItems.slice(2, menuItems.length).map((item, id) => (
-          <NavbarItem key={id} className="relative group">
+          <NavbarItem
+            key={id}
+            className={`${item.menuTitle !== "Explore Places" && "relative"} group`}
+          >
             <div>
               <div
-                className={`text-base ${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
-                  ? "text-primary"
-                  : scrollYValue <= scrollValue.value2
-                    ? "text-secondary"
-                    : scrollYValue <= scrollValue.value3 && path === "/"
-                      ? "text-primary"
-                      : scrollYValue > scrollValue.value3 &&
-                        scrollYValue <= scrollValue.value4 &&
-                        path === "/"
+                className={`text-base ${path === "/contact"
+                  ? "text-secondary"
+                  : scrollYValue <= scrollValue.value1
+                    ? "text-primary"
+                    : scrollYValue <= scrollValue.value2
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value3 && path === "/"
                         ? "text-primary"
-                        : "text-secondary"
+                        : scrollYValue > scrollValue.value3 &&
+                          scrollYValue <= scrollValue.value4 &&
+                          path === "/"
+                          ? "text-primary"
+                          : "text-secondary"
                   } group-hover:text-info py-10 cursor-default tracking-wider text-sm lg:text-lg xl:text-xl flex items-center lg:gap-2 transition-all ease-linear `}
                 onClick={() => handleClick(item.ref)}
               >
@@ -290,22 +306,67 @@ export default function NavbarPage() {
                 </h4>
                 {item.subMenu && (
                   <MdOutlineKeyboardArrowDown
-                    className={`${path === "/contact" ? "text-secondary" : scrollYValue <= scrollValue.value1
-                      ? "text-primary"
-                      : scrollYValue <= scrollValue.value2
-                        ? "text-secondary"
-                        : scrollYValue <= scrollValue.value3 && path === "/"
-                          ? "text-primary"
-                          : scrollYValue > scrollValue.value3 &&
-                            scrollYValue <= scrollValue.value4 &&
-                            path === "/"
+                    className={`${path === "/contact"
+                      ? "text-secondary"
+                      : scrollYValue <= scrollValue.value1
+                        ? "text-primary"
+                        : scrollYValue <= scrollValue.value2
+                          ? "text-secondary"
+                          : scrollYValue <= scrollValue.value3 && path === "/"
                             ? "text-primary"
-                            : "text-secondary"
+                            : scrollYValue > scrollValue.value3 &&
+                              scrollYValue <= scrollValue.value4 &&
+                              path === "/"
+                              ? "text-primary"
+                              : "text-secondary"
                       } group-hover:text-info text-lg font-semibold group-hover:rotate-180 transition-all`}
                   />
                 )}
               </div>
               {item.subMenu && (
+                <motion.div
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  className={`absolute hidden ${IsOpen === false ? "hidden" : "group-hover:block"
+                    } group-hover:block bg-secondary/90 p-4 shadow-md rounded-xl font-Gilroy ${item.menuTitle === "Explore Places" ? "left-40 xl:left-60 top-[80px]" : "left-0 top-[102px]"}`}
+                >
+                  {/* If Explore Places → grid layout */}
+                  {item.menuTitle === "Explore Places" ? (
+                    <div className="grid grid-cols-5 gap-4 w-[800px]">
+                      {item?.subMenu?.map((l, index) => (
+                        <Link
+                          title={l.listMenu}
+                          className=" text-primary text-sm cursor-pointer lg:text-lg font-normal z-10 hover:text-info"
+                          key={index}
+                          href={l.subMenuRef}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <h4 className="hover:underline hover:underline-offset-4 whitespace-normal break-words">
+                            {l.listMenu}
+                          </h4>
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    // Default vertical list
+                    item?.subMenu?.map((l, index) => (
+                      <Link
+                        title={l.listMenu}
+                        className="flex items-center gap-2 mb-2 text-primary text-sm cursor-pointer lg:text-lg w-full h-full font-normal z-10 hover:text-info"
+                        key={index}
+                        href={l.subMenuRef}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <h4 className="hover:underline hover:underline-offset-8">
+                          {l.listMenu}
+                        </h4>
+                      </Link>
+                    ))
+                  )}
+                </motion.div>
+              )}
+              {/* {item.subMenu && (
                 <motion.div
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -327,7 +388,7 @@ export default function NavbarPage() {
                     </Link>
                   ))}
                 </motion.div>
-              )}
+              )} */}
             </div>
           </NavbarItem>
         ))}
@@ -340,21 +401,30 @@ export default function NavbarPage() {
           <OtherBtn text={"Speak to a Travel Expert"} href={"/contact"} />
         </div>
         <Link href="/contact" className="hidden md:block 2xl:hidden">
-          <OutlineBtn text={"Contact"} colorChange={path === "/contact" ? "text-secondary border-primary" : scrollYValue <= scrollValue.value1
-            ? "text-primary hover:text-secondary border-primary"
-            : scrollYValue <= scrollValue.value2
-              ? "text-secondary border-primary"
-              : scrollYValue <= scrollValue.value3 && path === "/"
-                ? "text-primary border-success"
-                : scrollYValue > scrollValue.value3 &&
-                  scrollYValue <= scrollValue.value4 &&
-                  path === "/"
-                  ? "text-primary border-primary"
-                  : "text-secondary border-success"
-          } />
+          <OutlineBtn
+            text={"Contact"}
+            colorChange={
+              path === "/contact"
+                ? "text-secondary border-primary"
+                : scrollYValue <= scrollValue.value1
+                  ? "text-primary hover:text-secondary border-primary"
+                  : scrollYValue <= scrollValue.value2
+                    ? "text-secondary border-primary"
+                    : scrollYValue <= scrollValue.value3 && path === "/"
+                      ? "text-primary border-success"
+                      : scrollYValue > scrollValue.value3 &&
+                        scrollYValue <= scrollValue.value4 &&
+                        path === "/"
+                        ? "text-primary border-primary"
+                        : "text-secondary border-success"
+            }
+          />
         </Link>
         <NavbarItem>
-          <Link href="https://oneustravels.paxes.com/authenticate/log-in" title="Login">
+          <Link
+            href="https://oneustravels.paxes.com/authenticate/log-in"
+            title="Login"
+          >
             <MenuBtnCorporate text={"corporate"} roleType={"text"} font />
           </Link>
         </NavbarItem>
@@ -373,7 +443,7 @@ export default function NavbarPage() {
       {/* Mobile view menubar */}
 
       <NavbarMenu
-        className="items-start !columns-2 gap-20 py-0 !z-[1000] top-0"
+        className="items-start !columns-2  py-0 !z-[1000] top-0"
         motionProps={{
           variants: {
             enter: {
@@ -399,45 +469,71 @@ export default function NavbarPage() {
         >
           <AiOutlineClose className="text-red-500" />
         </h4>
-        <div className="w-full h-[400px] grid grid-cols-2 gap-y-9 gap-x-6 pt-16">
+        <div className="w-full h-fit grid grid-cols-2 gap-x-6 pt-16">
           {/* className="w-full h-[400px] columns-2 gap-4" */}
           {menuItemsMobile.map((item, index) => (
             <NavbarMenuItem
               key={index}
-              className="aspect-auto break-inside-avoid-column"
+              className={`aspect-auto break-inside-avoid-column ${item.menuTitle === "Explore Places" && "col-span-2"}`}
             >
-              <Link
-                onClick={() => setIsMenuOpen(false)}
-                aria-label={`know more about ${item.menuTitle}`}
-                title={item.menuTitle}
-                aria-current={`${item.menuTitle} page`}
-                href={item.ref}
-                className={`${path === item.menuTitle
-                  ? "text-success"
-                  : "text-secondary hover:text-success"
-                  } w-full h-full text-base sm:text-lg lg:text-xl font-Gilroy font-semibold ${item.menuTitle === "Technology" &&
-                  "underline underline-offset-1"
-                  }`}
-              >
-                {item.menuTitle}
-              </Link>
-              {item.subMenu?.map((l, id) => (
-                <div
-                  key={id}
-                  className="px-2 pb-1 !pt-0 font-Gilroy font-normal"
+              <div className="mb-3">
+                <Link
                   onClick={() => setIsMenuOpen(false)}
+                  aria-label={`know more about ${item.menuTitle}`}
+                  title={item.menuTitle}
+                  aria-current={`${item.menuTitle} page`}
+                  href={item.ref}
+                  className={`${path === item.menuTitle
+                    ? "text-success"
+                    : "text-secondary hover:text-success"
+                    } w-full h-full text-base sm:text-lg lg:text-xl font-Gilroy font-semibold ${item.menuTitle === "Technology" &&
+                    "underline underline-offset-1"
+                    }`}
                 >
-                  <Link
-                    aria-label={`know more about ${l.list}`}
-                    title={l.list}
-                    aria-current={`${l.list} page`}
-                    href={`${item.ref}${l.subMenuRef}`}
-                    className={`w-full h-full text-sm sm:text-base lg:text-lg hover:text-info`}
-                  >
-                    <h4>{l.list}</h4>
-                  </Link>
+                  {item.menuTitle}
+                </Link>
+              </div>
+              {item.menuTitle === "Explore Places" ? (
+                //  Grid form for Explore Places
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5 w-full lg:w-[800px] max-h-28 overflow-y-auto">
+                  {item.subMenu?.map((l, id) => (
+                    <div
+                      key={id}
+                      className="px-2 pb-1 !pt-0 font-Gilroy font-normal"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <Link
+                        aria-label={`know more about ${l.list}`}
+                        title={l.list}
+                        aria-current={`${l.list} page`}
+                        href={`${item.ref}${l.subMenuRef}`}
+                        className="w-full h-full text-sm sm:text-base lg:text-lg hover:text-info"
+                      >
+                        <h4 className="whitespace-normal break-words">{l.list}</h4>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              ) : (
+                //  Default vertical list for other menus
+                item.subMenu?.map((l, id) => (
+                  <div
+                    key={id}
+                    className="px-2 pb-1 !pt-0 font-Gilroy font-normal"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Link
+                      aria-label={`know more about ${l.list}`}
+                      title={l.list}
+                      aria-current={`${l.list} page`}
+                      href={`${item.ref}${l.subMenuRef}`}
+                      className="w-full h-full text-sm sm:text-base lg:text-lg hover:text-info"
+                    >
+                      <h4>{l.list}</h4>
+                    </Link>
+                  </div>
+                ))
+              )}
             </NavbarMenuItem>
           ))}
         </div>

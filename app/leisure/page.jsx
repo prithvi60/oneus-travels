@@ -14,6 +14,7 @@ const data = [
 ];
 
 const page = () => {
+
   return (
     <main>
       <DefaultLayout>
