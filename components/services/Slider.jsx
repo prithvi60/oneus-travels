@@ -102,8 +102,7 @@ function SimpleSlider({ lists }) {
         <Slider {...settings} className="!py-2.5">
           {lists.map((item, id) => (
             <Link
-              href={`/${item.location.replace(/\s/g, "-")
-                }`}
+              href={`/${item.location.replace(/\s/g, "-")}`}
               title="location"
               className="relative w-full my-2.5 h-[35vh] md:h-[40vh] cursor-pointer shadow-lg rounded-md overflow-hidden group"
               key={id}
@@ -133,7 +132,9 @@ function SimpleSlider({ lists }) {
                     Place
                   </h5>
                   <h5 className="text-xs tracking-wide sm:text-sm line-clamp-1">
-                    {item.location}
+                    {item.location === "North East"
+                      ? "North East States of India and West Bengal"
+                      : item.location}
                   </h5>
                   {/* <p className="text-[11px] sm:text-xs opacity-60 font-Poppins">
                   {item.packages}+packages

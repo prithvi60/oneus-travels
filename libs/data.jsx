@@ -250,7 +250,7 @@ export const leisureLists = [
   {
     category: "india",
     days: "Extended Getaways (5+ days)",
-    location: "North East States of India and West Bengal",
+    location: "North East",
     shortNote:
       "Eight States - Sever sister states - Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura and a Brother state - Sikkim under North Eastern States of India. These are mostly forest and hilly region with unexplored beauty. Some of the popular places are Darjeeling, Shillong, Gangtok and Gauhati.",
     img: "/places/North East.jpg",

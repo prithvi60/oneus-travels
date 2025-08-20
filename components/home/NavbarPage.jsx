@@ -343,6 +343,7 @@ export default function NavbarPage() {
                           onClick={() => setIsOpen(false)}
                         >
                           <h4 className="hover:underline hover:underline-offset-4 whitespace-normal break-words">
+                            {/* North East States of India and West Bengal */}
                             {l.listMenu}
                           </h4>
                         </Link>

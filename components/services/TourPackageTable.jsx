@@ -15,14 +15,16 @@ export const TourPackageTable = ({ location }) => {
   // const locationPath = pathArray[pathArray.length - 1];
   // console.log({ location, locationPath });
 
-  const lists = leisureLists.filter(
-    (item) => item.location === location
-  );
+  const lists = leisureLists.filter((item) => item.location === location);
 
   return (
     <section className="w-full h-auto space-y-4 padding md:space-y-6">
       <h2 className="text-xl font-semibold tracking-normal text-center capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
-        best selling {lists[0].location} Holiday Packages
+        best selling{" "}
+        {lists[0].location === "North East"
+          ? "North East States of India and West Bengal"
+          : lists[0].location}{" "}
+        Holiday Packages
       </h2>
       <div className="w-full mx-auto sm:max-w-xl lg:max-w-2xl">
         <Table
