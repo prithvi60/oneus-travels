@@ -8,7 +8,6 @@ import Link from "next/link";
 import { SubmitBtn } from "../Button";
 
 const imageSrc = [
-
   { img: "/logos/blueicon.png", link: "/" },
 
   //  {img: "/logos/travels.png",link:"/"},
@@ -42,13 +41,22 @@ export const FooterSection1 = ({ items }) => {
           <li key={idx} className="md:px-4 lg:px-6">
             <div className="flex items-center gap-2 mb-2">
               <FaAngleRight size={14} className="text-secondary" />
-              <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl ">
-                {item.menuTitle}
-              </h4>
+              {item.ref === "" ? (
+                <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl ">
+                  {item.menuTitle}
+                </h4>
+              ) : (
+                <Link
+                  href={`${item.ref}`}
+                  className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl"
+                >
+                  {item.menuTitle}
+                </Link>
+              )}
             </div>
             {item.subMenu && (
               <>
-                {item?.subMenu.map((list, idx) => (
+                {item?.subMenu.slice(0, 6).map((list, idx) => (
                   <div className="flex items-start gap-2 mb-2 ms-4" key={idx}>
                     <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                     <Link
@@ -59,18 +67,24 @@ export const FooterSection1 = ({ items }) => {
                     </Link>
                   </div>
                 ))}
+                {item.menuTitle === "Explore Places" && (
+                  <div
+                    className="flex items-start gap-2 mb-2 ms-4"
+                    key={`service-${idx}`}
+                  >
+                    <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
+                    <Link
+                      href={"/leisure"}
+                      className="font-semibold text-secondary hover:text-success font-Poppins"
+                    >
+                      See More
+                    </Link>
+                  </div>
+                )}
               </>
             )}
           </li>
         ))}
-        {/* <li>
-          <Link href={"/technology"} className="flex items-center gap-2 mb-2">
-            <FaAngleRight size={14} className="text-secondary" />
-            <h4 className="font-bold capitalize text-secondary hover:text-success font-Gilroy text-xl">
-              Technology
-            </h4>
-          </Link>
-        </li> */}
       </ul>
       <div className="order-2 block md:order-3">
         <h3 className="pb-3 text-base font-semibold tracking-wider capitalize font-Gilroy nd:text-lg">
