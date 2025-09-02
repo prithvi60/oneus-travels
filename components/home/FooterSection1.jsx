@@ -6,6 +6,7 @@ import { MdOutlineDriveFileRenameOutline, MdFlight } from "react-icons/md";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
 import { SubmitBtn } from "../Button";
+import Menu from "./Menu";
 
 const imageSrc = [
   { img: "/logos/blueicon.png", link: "/" },
@@ -54,9 +55,10 @@ export const FooterSection1 = ({ items }) => {
                 </Link>
               )}
             </div>
-            {item.subMenu && (
+            <Menu menuItems={[item]} />
+            {/* {item.subMenu && (
               <>
-                {item?.subMenu.slice(0, 6).map((list, idx) => (
+                {item?.subMenu.map((list, idx) => (
                   <div className="flex items-start gap-2 mb-2 ms-4" key={idx}>
                     <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
                     <Link
@@ -67,22 +69,8 @@ export const FooterSection1 = ({ items }) => {
                     </Link>
                   </div>
                 ))}
-                {item.menuTitle === "Explore Places" && (
-                  <div
-                    className="flex items-start gap-2 mb-2 ms-4"
-                    key={`service-${idx}`}
-                  >
-                    <MdFlight className="mt-1 text-base rotate-45 text-secondary" />
-                    <Link
-                      href={"/leisure"}
-                      className="font-semibold text-secondary hover:text-success font-Poppins"
-                    >
-                      See More
-                    </Link>
-                  </div>
-                )}
               </>
-            )}
+            )} */}
           </li>
         ))}
       </ul>

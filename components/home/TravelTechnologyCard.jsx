@@ -10,10 +10,10 @@ export const TravelTechnologyCard = () => {
         Advanced travel technology for Corporates
         {/* Ground-Breaking Corporate Travel Technology */}
       </h2>
-      <div className="grid w-full h-full grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 md:items-center md:justify-center md:gap-12 ">
+      <div className="grid w-full h-full grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 md:items-center md:justify-center gap-5 md:gap-2">
         {travelCardList.map((list, id) => (
           <div className="relative w-full h-full" key={id}>
-            <Card className="w-full md:min-w-80 min-h-[350px] sm:min-h-[470px] group relative !overflow-auto z-10">
+            <Card className="w-full h-full sm:min-h-[480px] lg:min-h-[520px] group relative !overflow-auto z-10">
               <CardHeader className="flex gap-3 !p-0">
                 <div className="relative w-full h-56 overflow-hidden">
                   <Image
