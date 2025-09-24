@@ -42,6 +42,8 @@ export const caseStudyType = defineType({
       name: "mainImage",
       type: "image",
       title: "Post Image",
+      validation: (Rule) =>
+        Rule.required().max(5242880).error("Image size must be 5MB or less"),
       options: {
         hotspot: true,
       },
