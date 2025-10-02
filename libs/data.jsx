@@ -12,7 +12,7 @@ export const leisureLists = [
     bestTime: "Oct to Feb",
     packages: [
       { type: "local Language", value: "Hindi" },
-      { type: "Capital", value: "New Delhi" },
+      { type: "Capital", value: "Lucknow" },
       { type: "Best Time to Visit", value: "October to February" },
       { type: "Duration", value: "3 - 4 days" },
       {
@@ -477,7 +477,7 @@ export const leisureLists = [
       },
       {
         type: "Package Starting from",
-        value: "Rs.14000/- per person (Twin Sharing)",
+        value: "Rs.35,000/- per person (Twin Sharing)",
       },
       {
         type: "Visa Options",
@@ -511,7 +511,7 @@ export const leisureLists = [
       },
       {
         type: "Package Starting from",
-        value: "Rs.32000/- per person (Twin Sharing)",
+        value: "Rs.60,000/- per person (Twin Sharing)",
       },
       {
         type: "Visa Options",
@@ -584,7 +584,7 @@ export const leisureLists = [
       },
       {
         type: "Package Starting from",
-        value: "Rs.25000/- per person (Twin Sharing)",
+        value: "Rs.27,000/- per person (Twin Sharing)",
       },
       {
         type: "Visa Options",
@@ -600,7 +600,7 @@ export const leisureLists = [
     shortNote:
       "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.",
     img: "/places/Malaysia.jpg",
-    startingPrice: "Rs.15000/-",
+    startingPrice: "Rs.24000/-",
     bestTime: "Sept - Apr",
     packages: [
       { type: "local Language", value: "Malay, Tamil, Chinese" },
@@ -620,7 +620,7 @@ export const leisureLists = [
       },
       {
         type: "Package Starting from",
-        value: "Rs.15000/- per person (Twin Sharing)",
+        value: "Rs.35,000/- per person (Twin Sharing)",
       },
       {
         type: "Visa Options",
@@ -636,7 +636,7 @@ export const leisureLists = [
     shortNote:
       "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). There are three coasts in Thailand : the southeastern coast, the southern Gulf of Thailand, and the Andaman coast. It is known to most travellers for beautiful Thailand’s Beaches and Islands.",
     img: "/places/Thailand.jpg",
-    startingPrice: "Rs.13000/-",
+    startingPrice: "Rs.22,000/-",
     bestTime: "Sept – Apr",
     packages: [
       { type: "local Language", value: "Thai /English" },
@@ -647,14 +647,14 @@ export const leisureLists = [
         type: "Packages Available",
         value: " Bangkok and Pattaya (3N/4D), Bangkok and Phuket (4N/5D)",
       },
-      { type: "Popular Airport", value: "Jakarta (CGK), Bali (DPS)" },
+      { type: "Popular Airport", value: " DMK (Don Mueang International Airport),BKK (Suvarnabhumi Airport)" },
       {
         type: "Popular Food",
         value: "Noodle soup, Tom Kha Gai, Som Tam, Laab, Khao Pad, Panang",
       },
       {
         type: "Package Starting from",
-        value: "Rs.13000/- per person (Twin Sharing)",
+        value: "Rs.22,000/- per person (Twin Sharing)",
       },
       {
         type: "Visa Options",
@@ -1008,7 +1008,166 @@ export const leisureLists = [
       },
     ],
   },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Penang",
+    shortNote:
+      "Penang, Malaysia is called the Pearl of the Orient. It is famous for its colonial George Town (a UNESCO World Heritage Site), street art, multicultural heritage, and world-renowned street food. It offers beaches, culture, and modern attractions all in one.",
+    img: "/places/Penang.jpg",
+    startingPrice: "Rs.24000/-",
+    bestTime: "Nov - Apr",
+    packages: [
+      { type: "local Language", value: "Malay, English, Chinese, Tamil" },
+      { type: "Capital", value: "George Town" },
+      { type: "Best Time to Visit", value: "November - April" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value: "Penang City & Beaches Tour (4N/5D), Malaysia Combo (Kuala Lumpur + Penang 5N/6D)",
+      },
+      { type: "Popular Airport", value: "Penang International Airport (PEN)" },
+      {
+        type: "Popular Food",
+        value: "Char Kway Teow, Penang Laksa, Nasi Kandar, Roti Canai",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.24000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Extended Getaways (5+ days)",
+    location: "Vietnam",
+    shortNote:
+      "Vietnam is famous for its beaches, rivers, Buddhist pagodas, French colonial history, and breathtaking landscapes like Ha Long Bay, Mekong Delta, and rice terraces of Sapa. Cities like Hanoi and Ho Chi Minh combine history with vibrant nightlife.",
+    img: "/places/Vietnam.jpg",
+    startingPrice: "Rs.27000/-",
+    bestTime: "Oct - Apr",
+    packages: [
+      { type: "local Language", value: "Vietnamese / English" },
+      { type: "Capital", value: "Hanoi" },
+      { type: "Best Time to Visit", value: "October - April" },
+      { type: "Duration", value: "6 – 7 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Hanoi & Ha Long Bay Cruise (3N/4D), Hanoi + Ho Chi Minh (5N/6D), Vietnam Highlights (6N/7D)",
+      },
+      { type: "Popular Airport", value: "Hanoi (HAN), Ho Chi Minh City (SGN)" },
+      {
+        type: "Popular Food",
+        value: "Pho, Banh Mi, Bun Cha, Spring Rolls",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.27000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value: "E-Visa available for Indians (processing time 3-4 days).",
+      },
+    ],
+  },
+  {
+    category: "asia",
+    days: "Mini Vacations (4-5 days)",
+    location: "Bali",
+    shortNote:
+      "Bali, Indonesia is known as the Island of Gods. Famous for beaches, lush rice terraces, temples, and cultural traditions. It’s a hotspot for honeymoon, yoga retreats, surfing, and nightlife in Kuta and Seminyak.",
+    img: "/places/Bali.jpg",
+    startingPrice: "Rs.22000/-",
+    bestTime: "Apr - Oct",
+    packages: [
+      { type: "local Language", value: "Balinese, Indonesian, English" },
+      { type: "Capital", value: "Denpasar" },
+      { type: "Best Time to Visit", value: "April - October" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Bali Beaches & Ubud (4N/5D), Bali Honeymoon Villa (5N/6D), Bali with Gili Islands (6N/7D)",
+      },
+      { type: "Popular Airport", value: "Ngurah Rai International Airport (DPS)" },
+      {
+        type: "Popular Food",
+        value: "Nasi Goreng, Satay, Babi Guling, Lawar",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.22000/- per person (Twin Sharing)",
+      },
+      {
+        type: "Visa Options",
+        value:
+          "On Arrival Visa (for Indians). Approval at immigration officer’s discretion.",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Short Breaks (1-3 days)",
+    location: "Lakshadweep",
+    shortNote:
+      "Lakshadweep is India’s smallest Union Territory with 36 islands known for crystal-clear waters, lagoons, coral reefs, and untouched beaches. It’s ideal for scuba diving, snorkeling, and water sports.",
+    img: "/places/Lakshadweep.jpg",
+    startingPrice: "Rs.15000/-",
+    bestTime: "Oct - Mar",
+    packages: [
+      { type: "local Language", value: "Malayalam, English" },
+      { type: "Capital", value: "Kavaratti" },
+      { type: "Best Time to Visit", value: "October - March" },
+      { type: "Duration", value: "3 – 4 days" },
+      {
+        type: "Packages Available",
+        value: "Agatti Island Tour (2N/3D), Scuba & Adventure Package (3N/4D)",
+      },
+      { type: "Popular Airport", value: "Agatti Airport (AGX)" },
+      {
+        type: "Popular Food",
+        value: "Tuna Curry, Coconut rice, Fried Fish, Lakshadweep Prawn curry",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.15000/- per person (Twin Sharing)",
+      },
+    ],
+  },
+  {
+    category: "india",
+    days: "Mini Vacations (4-5 days)",
+    location: "Andaman",
+    shortNote:
+      "The Andaman & Nicobar Islands are famous for Radhanagar Beach, Cellular Jail, Ross Island, and Havelock Island. Perfect for beach lovers, honeymooners, and adventure seekers who want scuba diving and snorkeling experiences.",
+    img: "/places/Andaman.jpg",
+    startingPrice: "Rs.18000/-",
+    bestTime: "Oct - May",
+    packages: [
+      { type: "local Language", value: "Hindi, Bengali, English" },
+      { type: "Capital", value: "Port Blair" },
+      { type: "Best Time to Visit", value: "October - May" },
+      { type: "Duration", value: "4 – 5 days" },
+      {
+        type: "Packages Available",
+        value:
+          "Port Blair + Havelock (4N/5D), Andaman Honeymoon Tour (5N/6D), Scuba Diving Adventure (4N/5D)",
+      },
+      { type: "Popular Airport", value: "Veer Savarkar Airport (IXZ)" },
+      {
+        type: "Popular Food",
+        value: "Seafood Curry, Lobsters, Fish fry, Coconut-based dishes",
+      },
+      {
+        type: "Package Starting from",
+        value: "Rs.18000/- per person (Twin Sharing)",
+      },
+    ],
+  },
 ];
+
+
 
 const locations = leisureLists.map(val => val.location)
 
