@@ -7,10 +7,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.sanity.io",
       },
-      {
-        protocol: "https",
-        hostname: "cdn.webibee.com",
-      },
+      // {
+      //   protocol: "https",
+      //   hostname: "cdn.webibee.com",
+      // },
     ],
   },
 

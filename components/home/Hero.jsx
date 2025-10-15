@@ -77,7 +77,7 @@ export const HomePageHero = () => {
       >
         <source
           src={
-            "https://cdn.webibee.com/Oneus/oneusherocompressed.mp4"
+            "/oneusherocompressed.mp4"
           }
           type="video/mp4"
         />
