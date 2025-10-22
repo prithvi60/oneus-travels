@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import localFont from "next/font/local";
 import { Providers } from "./Provider";
 import GoogleAnalytics from "../libs/GoogleAnalytics";
-
+import ReCaptchaProvider from "./ReCaptchaProvider";
 const gilroy = localFont({
   src: [
     {
@@ -93,6 +93,7 @@ export default function RootLayout({ children }) {
       <AppContextProvider>
         <body className={`${gilroy.variable} ${poppins.variable}`}>
           <GoogleAnalytics />
+          <ReCaptchaProvider>{children}</ReCaptchaProvider>
           <Providers>{children}</Providers>
         </body>
       </AppContextProvider>

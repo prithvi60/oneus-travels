@@ -6,21 +6,27 @@ import { Contact } from "../Contact";
 export const ContactForm = ({ contact }) => {
   return (
     <section
-      className={`w-full h-full md:h-auto ${contact ? "mb-12 mt-24" : "my-12"} relative bg-[url('/world_map_sm.png')] lg:bg-[url('/world_map_lg.png')] shadow-md bg-no-repeat bg-cover lg:bg-contain bg-center z-0`}
+      className={`w-full h-full md:h-auto ${
+        contact ? "mb-12 mt-24" : "my-12"
+      } relative bg-[url('/world_map_sm.png')] lg:bg-[url('/world_map_lg.png')] shadow-md bg-no-repeat bg-cover lg:bg-contain bg-center z-0`}
       id="contact"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 bg-opacity-85 bg-[#F8F9F8]"></div>
+
       <div className="z-20 text-center w-full h-full bg-secondary p-[24px]">
         <h1 className="text-lg text-[32px] md:text-[40px] lg:text-[42px] font-Gilroy font-bold text-primary">
           Contact Us
         </h1>
       </div>
+
       <div className="flex flex-col items-center justify-center gap-2 py-6 sm:gap-8 lg:flex-row padding sm:py-10 xl:py-14">
+        {/* Left info section */}
         <div className="z-20 w-full lg:w-1/2">
           <div className="md:space-y-6">
             <h4 className="text-2xl font-bold tracking-wider text-center font-Gilroy md:text-3xl text-secondary">
               Stay Connected
             </h4>
+
             <div className="flex flex-col items-center justify-center sm:gap-10 sm:flex-row lg:block">
               <div className="flex flex-col items-center justify-center w-full text-center sm:gap-3 sm:flex-row lg:block">
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
@@ -30,6 +36,7 @@ export const ContactForm = ({ contact }) => {
                   +91-98408 84460
                 </h5>
               </div>
+
               <div className="flex flex-col items-center justify-center w-full text-center sm:gap-3 sm:flex-row lg:block">
                 <div className="p-2 mt-3.5 rounded-full lg:mx-auto bg-primary/80 w-max">
                   <RiMailSendLine className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
@@ -41,6 +48,8 @@ export const ContactForm = ({ contact }) => {
             </div>
           </div>
         </div>
+
+        {/* ✅ Let Contact handle submission */}
         <Contact />
       </div>
     </section>
