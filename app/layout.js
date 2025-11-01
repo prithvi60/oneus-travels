@@ -93,8 +93,9 @@ export default function RootLayout({ children }) {
       <AppContextProvider>
         <body className={`${gilroy.variable} ${poppins.variable}`}>
           <GoogleAnalytics />
-          <ReCaptchaProvider>{children}</ReCaptchaProvider>
-          <Providers>{children}</Providers>
+          <ReCaptchaProvider>
+            <Providers>{children}</Providers>
+          </ReCaptchaProvider>
         </body>
       </AppContextProvider>
     </html>
