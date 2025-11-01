@@ -49,6 +49,7 @@ export const Contact = ({ blog }) => {
         setStatus(false);
         return;
       }
+      console.error("form:", formData);
 
       // ✅ Proceed to send email only after success
       const response = await fetch("/api/sendmail", {
