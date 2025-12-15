@@ -1,5 +1,6 @@
 // leisure table data
 
+
 export const leisureLists = [
   {
     category: "india",
@@ -1170,6 +1171,34 @@ export const leisureLists = [
 
 
 const locations = leisureLists.map(val => val.location)
+// 1. Separate Europe locations from the rest
+const europeLocations = leisureLists
+  .filter(item => item.category === "europe")
+  .map(item => item.location);
+
+const nonEuropeLocations = leisureLists
+  .filter(item => item.category !== "europe")
+  .map(item => item.location);
+
+// 2. Create individual subMenu entries for non-Europe locations
+const individualSubMenus = nonEuropeLocations.map((place) => ({
+  listMenu: place,
+  subMenuRef: `/${place.replace(/\s+/g, "-")}`, // E.g., /Uttarpradesh or /Maldives
+}));
+
+// 3. Create a single combined subMenu entry for the 'europe' category
+const europeSubMenu = {
+  listMenu: "Europe",
+  subMenuRef: "/europe",
+};
+
+// 4. Combine them into the final subMenu array
+const subMenu = [
+  ...individualSubMenus,
+  europeSubMenu,
+];
+
+export const finalSubMenu = subMenu;
 
 export const menuItems = [
   {
@@ -1203,13 +1232,14 @@ export const menuItems = [
   {
     menuTitle: "Explore Places",
     ref: "",
-    subMenu: [
-      // Generate from leisureLists
-      ...locations.map((place) => ({
-        listMenu: place,
-        subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
-      })),
-    ],
+    // subMenu: [
+    //   // Generate from leisureLists
+    //   ...locations.map((place) => ({
+    //     listMenu: place,
+    //     subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
+    //   })),
+    // ],
+    subMenu:finalSubMenu
   },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },
@@ -1241,12 +1271,14 @@ export const menuItemsMobile = [
   {
     menuTitle: "Explore Places",
     ref: "",
-    subMenu: [
-      ...locations.map((place) => ({
-        list: place,
-        subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
-      })),
-    ],
+    // subMenu: [
+    //   ...locations.map((place) => ({
+    //     list: place,
+    //     subMenuRef: `/${place.replace(/\s+/g, "-")}`, // turn spaces into hyphens for URL
+    //   })),
+      
+    // ],
+    subMenu:finalSubMenu
   },
   { menuTitle: "News", ref: "/news" },
   { menuTitle: "Blog", ref: "/blog" },

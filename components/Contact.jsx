@@ -89,8 +89,8 @@ export const Contact = ({ blog }) => {
             : "bg-transparent text-secondary text-lg md:text-xl xl:text-2xl"
         }`}
       >
-        Take your first step towards better business travel with Corporate Travel
-        Management.
+        { blog
+            ?`Ask a Question`:`Take your first step towards better business travel with Corporate Travel Management.`}
       </h3>
 
       <div className={`${blog && "p-5 bg-[#F8F9F8]"} space-y-4`}>
