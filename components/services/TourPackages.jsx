@@ -125,10 +125,176 @@ const NepalContent = () => {
     </>
   );
 };
+const MaldivesContent = () => {
+  const myCustomImages = [
+    { id: 1, imgUrl: "/places/maldives/1.jpeg", altText: "Maldives slide 1" },
+    { id: 2, imgUrl: "/places/maldives/2.jpeg", altText: "Maldives slide 2" },
+    { id: 3, imgUrl: "/places/maldives/3.jpeg", altText: "Maldives slide 3" },
+    { id: 4, imgUrl: "/places/maldives/4.jpeg", altText: "Maldives slide 4" },
+    { id: 5, imgUrl: "/places/maldives/5.jpeg", altText: "Maldives slide 5" },
+  ];
+
+  return (
+    <>
+      {/* Title */}
+      <h2 className="text-xl font-semibold tracking-normal capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
+        Maldives Leisure Trip
+      </h2>
+      <p className="text-base font-normal font-Poppins mt-4">
+        Private island stays, overwater villas, and effortless luxury in the
+        heart of the Indian Ocean
+      </p>
+
+      {/* Introduction */}
+      <p className="text-base font-normal font-Poppins mt-4">
+        The Maldives is one of the world’s most sought-after leisure destinations,
+        celebrated for its crystal-clear waters, private island resorts, and
+        calm luxury experiences. Ideal for short international getaways, the
+        Maldives is perfect for couples, honeymooners, and families seeking
+        privacy, comfort, and scenic beauty.
+      </p>
+      <p className="text-base font-normal font-Poppins mt-4">
+        With direct flights from India and visa-free entry for Indian travelers,
+        the Maldives is both accessible and indulgent. OneUs Travels curates
+        Maldives leisure trips focused on seamless travel, premium stays, and
+        stress-free planning.
+      </p>
+
+      {/* Why Visit Maldives */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Why Visit the Maldives
+      </h3>
+
+      <ul className="list-disc list-inside text-base font-normal font-Poppins ml-4 mt-2 space-y-2">
+        <li>
+          <span className="font-semibold">Visa-Free & Easy Access:</span> Visa-free
+          country for Indians, direct flights to Malé, ideal 3–4 night trips.
+        </li>
+        <li>
+          <span className="font-semibold">Private Island Resorts:</span> Each
+          resort is on its own island, offering unmatched privacy and premium
+          service.
+        </li>
+        <li>
+          <span className="font-semibold">Seamless Transfers:</span> Complimentary
+          speedboat or seaplane transfers included with most resorts.
+        </li>
+        <li>
+          <span className="font-semibold">Luxury Villas:</span> Overwater villas
+          with sea views, private decks, and optional private pools.
+        </li>
+        <li>
+          <span className="font-semibold">Water Sports:</span> Jet skiing,
+          parasailing, snorkelling, scuba diving, and more.
+        </li>
+      </ul>
+
+      {/* Honeymoon */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Honeymoon-Friendly Destination
+      </h3>
+      <p className="text-base font-normal font-Poppins mt-4">
+        The Maldives is one of the top honeymoon destinations globally. Honeymoon
+        couples (with proof) are eligible for complimentary experiences such as
+        honeymoon cakes, candlelight dinners, and flower bed decorations, making
+        the stay even more special.
+      </p>
+
+      {/* Family Friendly */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Family-Friendly Benefits
+      </h3>
+      <p className="text-base font-normal font-Poppins mt-4">
+        Many resorts offer family-friendly packages like 2 nights in a Beach
+        Villa and 1 night in an Overwater Villa. In select resorts, up to two
+        children below 5 years can stay complimentary.
+      </p>
+
+      {/* Important Notes */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Important Travel Notes
+      </h3>
+      <ul className="list-disc list-inside text-base font-normal font-Poppins ml-4 mt-2 space-y-2">
+        <li>
+          Alcohol cannot be carried through the airport; it is served only at
+          resorts under regulation.
+        </li>
+        <li>
+          Children below 5 years are not permitted in overwater villas.
+        </li>
+        <li>
+          Island hopping between resorts is available at additional cost (USD
+          200+ per person).
+        </li>
+      </ul>
+
+      {/* Why Maldives */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Why the Maldives is an Amazing Place to Visit
+      </h3>
+      <p className="text-base font-normal font-Poppins mt-4">
+        The Maldives perfectly blends luxury with simplicity. Private islands,
+        calm blue waters, world-class resorts, and thoughtfully curated
+        experiences make it an unforgettable destination for honeymoons,
+        anniversaries, and short leisure breaks.
+      </p>
+
+      {/* Why OneUs */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Why Book Your Maldives Trip with OneUs Travels
+      </h3>
+      <ul className="list-disc list-inside text-base font-normal font-Poppins ml-4 mt-2 space-y-2">
+        <li>Resort selection tailored to your travel purpose</li>
+        <li>Transparent guidance on meal plans and villa categories</li>
+        <li>End-to-end coordination from flights to island transfers</li>
+        <li>Clear communication on upgrades, inclusions, and restrictions</li>
+      </ul>
+
+      {/* CTA */}
+      <h3 className="text-lg font-semibold tracking-normal capitalize font-Gilroy text-secondary mt-6">
+        Plan Your Maldives Leisure Trip with OneUs Travels
+      </h3>
+      <p className="text-base font-normal font-Poppins mt-4">
+        With OneUs Travels, your Maldives holiday is thoughtfully planned,
+        professionally managed, and completely hassle-free. Reach out today and
+        experience island luxury the right way.
+      </p>
+
+      {/* <ImgSlider images={myCustomImages} /> */}
+    </>
+  );
+};
+const renderLocationContent = (location) => {
+  switch (location) {
+    case "Nepal":
+      return <NepalContent />;
+
+    case "Maldives":
+      return <MaldivesContent />;
+
+    default:
+      return (
+        <>
+          <h1 className="text-xl font-semibold tracking-normal capitalize font-Gilroy text-secondary md:text-2xl xl:text-3xl">
+            {location === "North East"
+              ? "North East States of India and West Bengal"
+              : location}{" "}
+            Holiday Packages
+          </h1>
+
+          <p className="text-base font-normal font-Poppins">
+            {`Embark on a captivating exploration of the pristine Andaman and Nicobar Archipelago, enclosed by the spotless, clean water of the Bay of Bengal, with our exclusive ${location} Tour Packages. Located to the east of the Indian mainland, these 527 islands, of which only a few are open to tourists, offer a mesmerizing escape.`}
+          </p>
+        </>
+      );
+  }
+};
+
 export const TourPackages = ({ location }) => {
   return (
     <section className="w-full h-auto space-y-6 mx-auto sm:max-w-[620px] md:max-w-[720px] lg:max-w-[940px] px-7 lg:px-0 pt-10 md:space-y-10">
-      {location === "Nepal" ? (
+       {renderLocationContent(location)}
+      {/* {location === "Nepal" ? (
         // Display the custom Nepal content
         <NepalContent />
       ) : (
@@ -141,7 +307,7 @@ export const TourPackages = ({ location }) => {
           </h1>
           <p className="text-base font-normal font-Poppins">{`Embark on a captivating exploration of the pristine Andaman and Nicobar Archipelago, enclosed by the spotless, clean water of the Bay of Bengal, with our exclusive ${location} Tour Packages. Located to the east of the Indian mainland, these 527 islands, of which only a few are open to tourists, offer a mesmerizing escape.`}</p>
         </>
-      )}
+      )} */}
     </section>
   );
 };
