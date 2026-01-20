@@ -664,42 +664,42 @@ export const leisureLists = [
       },
     ],
   },
+  // {
+  //   category: "asia",
+  //   days: "Extended Getaways (5+ days)",
+  //   location: "Indonesia",
+  //   shortNote:
+  //     "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Melanesia between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Sulawesi, Java, and parts of Borneo and New Guinea Indonesia has very beautiful natural wealth. Because of its natural beauty that Indonesia has become a tourist destination that is much coveted by both local and international travelers from around the world. Panorama in Indonesia is certainly not inferior to other countries. For it would not hurt if we went on holiday to enjoy a variety of natural beauty that exist in Indonesia and make it as a tourist destination.",
+  //   img: "/places/Indonesia.jpg",
+  //   startingPrice: "Rs.18000/-",
+  //   bestTime: "Sept – Apr",
+  //   packages: [
+  //     { type: "local Language", value: "Indonesian / English" },
+  //     { type: "Capital", value: "Jakarta" },
+  //     { type: "Best Time to Visit", value: "September – April" },
+  //     { type: "Duration", value: "5– 6 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Kuta, Ubud & Seminak (5N/6D), Kuta, Gianyar, Nusa Dua (6N/7D)",
+  //     },
+  //     { type: "Popular Airport", value: "Jakarta (CGK), Bali (DPS)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Noodle soup, Tom Kha Gai, Som Tam, Laab, Khao Pad, Panang",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.18000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
+  //     },
+  //   ],
+  // },
   {
-    category: "asia",
-    days: "Extended Getaways (5+ days)",
-    location: "Indonesia",
-    shortNote:
-      "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Melanesia between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Sulawesi, Java, and parts of Borneo and New Guinea Indonesia has very beautiful natural wealth. Because of its natural beauty that Indonesia has become a tourist destination that is much coveted by both local and international travelers from around the world. Panorama in Indonesia is certainly not inferior to other countries. For it would not hurt if we went on holiday to enjoy a variety of natural beauty that exist in Indonesia and make it as a tourist destination.",
-    img: "/places/Indonesia.jpg",
-    startingPrice: "Rs.18000/-",
-    bestTime: "Sept – Apr",
-    packages: [
-      { type: "local Language", value: "Indonesian / English" },
-      { type: "Capital", value: "Jakarta" },
-      { type: "Best Time to Visit", value: "September – April" },
-      { type: "Duration", value: "5– 6 days" },
-      {
-        type: "Packages Available",
-        value: "Kuta, Ubud & Seminak (5N/6D), Kuta, Gianyar, Nusa Dua (6N/7D)",
-      },
-      { type: "Popular Airport", value: "Jakarta (CGK), Bali (DPS)" },
-      {
-        type: "Popular Food",
-        value: "Noodle soup, Tom Kha Gai, Som Tam, Laab, Khao Pad, Panang",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.18000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "On Arrival Visa (for Indians). Visa approval is completely on Immigration officer’s Discretion.",
-      },
-    ],
-  },
-  {
-    category: "europe",
+    category: "",
     days: "Extended Getaways (5+ days)",
     location: "United Kingdom",
     shortNote:
@@ -768,247 +768,247 @@ export const leisureLists = [
       },
     ],
   },
-  {
-    category: "europe",
-    days: "Extended Getaways (5+ days)",
-    location: "Switzerland",
-    shortNote:
-      "A country of Alp mountains, deep Alpine Lakes, Green valleys with Clear farms and small villages, and thriving cities that blend the old and the fashions, Switzerland is the nexus of the diversed geography and cultural of western Europe, renowned for both its natural beauty and its way of life. Aspects of both have become bywords for the country, whose very name conjures images of the glacier-carved Alps beloved of writers, artists, photographers, and outdoor sports enthusiasts from around the world. ",
-    img: "/places/Switzerland.jpg",
-    startingPrice: "Rs.42000/-",
-    bestTime: "Apr - Oct",
-    packages: [
-      { type: "local Language", value: "French, German, Italian and Romansh" },
-      { type: "Capital", value: "Bern" },
-      { type: "Best Time to Visit", value: "April - October" },
-      { type: "Duration", value: "5– 6 days" },
-      {
-        type: "Packages Available",
-        value: "Grand Swiss Tour (5N/6D), Europe Tour (9N/10D)",
-      },
-      { type: "Popular Airport", value: "Zurich (ZRH), Geneva (GVA)" },
-      {
-        type: "Popular Food",
-        value: "Fondue, Rosti, Muesli and Raclette",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.42000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Swiss Visa process or Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Short Breaks (1-3 days)",
-    location: "Austria",
-    shortNote:
-      "Mountains and forests give the Austrian landscape its character, although in the northeastern part of the country the Danube River winds between the eastern edge of the Alps and the hills of Bohemia and Moravia in its journey toward the Alföld, or Hungarian Plain. Vienna lies in the area where the Danube emerges from between the mountains into the drier plains.",
-    img: "/places/Austria.jpg",
-    startingPrice: "Rs.35000/-",
-    bestTime: "Mar - Oct",
-    packages: [
-      { type: "local Language", value: "German" },
-      { type: "Capital", value: "Vienna" },
-      { type: "Best Time to Visit", value: "March - October" },
-      { type: "Duration", value: "1– 2 days" },
-      {
-        type: "Packages Available",
-        value: "Vienna (1N/2D)",
-      },
-      { type: "Popular Airport", value: "Vienna (VIE)" },
-      {
-        type: "Popular Food",
-        value: "Tafelspitz, Wiener Schnitzel",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.35000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Short Breaks (1-3 days)",
-    location: "Netherlands",
-    shortNote:
-      "The Netherlands is a densely populated country in part reclaimed from the sea with about half of its land lying below sea level. Many tourist only come to the Netherlands to visit Amsterdam. But Holland has plenty to offer outside its capital. Crisscrossed with canals, the flat landscape is perfect for cycling with historic town centers, classic windmills and other tourist spots sprinkled across the country. In the west and north the long coastline is marked by mile upon mile of protective dunes and sandy beaches.",
-    img: "/places/Netherlands.jpg",
-    startingPrice: "Rs.35000/-",
-    bestTime: "Mar - Oct",
-    packages: [
-      { type: "local Language", value: "Dutch" },
-      { type: "Capital", value: "Amsterdam" },
-      { type: "Best Time to Visit", value: "March - October" },
-      { type: "Duration", value: "3– 4 days" },
-      {
-        type: "Packages Available",
-        value: "Amsterdam (1N/2D)",
-      },
-      { type: "Popular Airport", value: "Amsterdam (AMS)" },
-      {
-        type: "Popular Food",
-        value: "Poffertjes, Hollandse nieuwe haring, Sate, Stamppot",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.35000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Extended Getaways (5+ days)",
-    location: "Italy",
-    shortNote:
-      "This peninsula country is a centre of attention for centuries. This Roman Empire have more history to share with Vatican City as one of the important place to visit.",
-    img: "/places/Italy.jpg",
-    startingPrice: "Rs.35000/-",
-    bestTime: "Mar - Oct",
-    packages: [
-      { type: "local Language", value: "Italian" },
-      { type: "Capital", value: "Rome" },
-      { type: "Best Time to Visit", value: "March - October" },
-      { type: "Duration", value: "5– 6 days" },
-      {
-        type: "Packages Available",
-        value: "Rome & Venice (4N/5D)",
-      },
-      {
-        type: "Popular Airport",
-        value: "Rome (FCE), Milan (MXP), Venice (VCE)",
-      },
-      {
-        type: "Popular Food",
-        value: "Pizza, Pasta, Risotto, Lasagna Bolognese",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.35000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Extended Getaways (5+ days)",
-    location: "Spain",
-    shortNote:
-      "Spain is the second most visited country in the world. Spain is the only country in Europe that cares for its architectural relics as a heritage of its nation. The towns of Spain are known for being ideal for romantic tourism, which is why they are visited all year round by tourists from all over.",
-    img: "/places/spain.jpg",
-    startingPrice: "Rs.35000/-",
-    bestTime: "Mar - Oct",
-    packages: [
-      { type: "local Language", value: "Spanish" },
-      { type: "Capital", value: "Madrid" },
-      { type: "Best Time to Visit", value: "March - October" },
-      { type: "Duration", value: "5 – 6 days" },
-      {
-        type: "Packages Available",
-        value: "Barcelona & Madrid (4N/5D)",
-      },
-      { type: "Popular Airport", value: "Barcelona (FCE), Madrid (MXP)" },
-      {
-        type: "Popular Food",
-        value: "Paella, Tortilla, Patata bravas",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.35000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Mini Vacations (4-5 days)",
-    location: "Croatia",
-    shortNote:
-      "Croatia may not be the first place you think of for a sunny holiday and yet, the coast is stunningly beautiful. As soon as you arrive in Croatia, you feel the country’s rich history. You find yourself among the ancient ruins, buildings and castles. Besides the amazing Croatian coastline, the country has over 1,200 islands. Croatia has stunningly beautiful greenery and numerous spectacular waterfalls and nature parks.",
-    img: "/places/Croatia.jpg",
-    startingPrice: "Rs.70000/-",
-    bestTime: "Jun - Oct",
-    packages: [
-      { type: "local Language", value: "Croatian" },
-      { type: "Capital", value: "Zagreb" },
-      { type: "Best Time to Visit", value: "June - October" },
-      { type: "Duration", value: "4 – 5 days" },
-      {
-        type: "Packages Available",
-        value: "Croatian Grand Trour (5N/6D",
-      },
-      { type: "Popular Airport", value: "Zagreb (ZAG), Dubrovnik (DBV)" },
-      {
-        type: "Popular Food",
-        value: "Istrian Stew, Pasta fazol, Polenta and Cornbread with lard.",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.70000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
-      },
-    ],
-  },
-  {
-    category: "europe",
-    days: "Short Breaks (1-3 days)",
-    location: "Germany",
-    shortNote:
-      "Germany is associated with rich history and culture which attracts most of the tourist to this country.",
-    img: "/places/Germany.jpg",
-    startingPrice: "Rs.35000/-",
-    bestTime: "Mar - Oct",
-    packages: [
-      { type: "local Language", value: "German" },
-      { type: "Capital", value: "Berlin" },
-      { type: "Best Time to Visit", value: "March - October" },
-      { type: "Duration", value: "3 – 4 days" },
-      {
-        type: "Packages Available",
-        value: "Berlin & Munich (3N/4D)",
-      },
-      { type: "Popular Airport", value: "Frankfurt (LHR), Munich, Berlin" },
-      {
-        type: "Popular Food",
-        value: "Brot & Brötchen, Käsespätzle",
-      },
-      {
-        type: "Package Starting from",
-        value: "Rs.35000/- per person (Twin Sharing)",
-      },
-      {
-        type: "Visa Options",
-        value:
-          "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
-      },
-    ],
-  },
+  // {
+  //   category: "europe",
+  //   days: "Extended Getaways (5+ days)",
+  //   location: "Switzerland",
+  //   shortNote:
+  //     "A country of Alp mountains, deep Alpine Lakes, Green valleys with Clear farms and small villages, and thriving cities that blend the old and the fashions, Switzerland is the nexus of the diversed geography and cultural of western Europe, renowned for both its natural beauty and its way of life. Aspects of both have become bywords for the country, whose very name conjures images of the glacier-carved Alps beloved of writers, artists, photographers, and outdoor sports enthusiasts from around the world. ",
+  //   img: "/places/Switzerland.jpg",
+  //   startingPrice: "Rs.42000/-",
+  //   bestTime: "Apr - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "French, German, Italian and Romansh" },
+  //     { type: "Capital", value: "Bern" },
+  //     { type: "Best Time to Visit", value: "April - October" },
+  //     { type: "Duration", value: "5– 6 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Grand Swiss Tour (5N/6D), Europe Tour (9N/10D)",
+  //     },
+  //     { type: "Popular Airport", value: "Zurich (ZRH), Geneva (GVA)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Fondue, Rosti, Muesli and Raclette",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.42000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Swiss Visa process or Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Short Breaks (1-3 days)",
+  //   location: "Austria",
+  //   shortNote:
+  //     "Mountains and forests give the Austrian landscape its character, although in the northeastern part of the country the Danube River winds between the eastern edge of the Alps and the hills of Bohemia and Moravia in its journey toward the Alföld, or Hungarian Plain. Vienna lies in the area where the Danube emerges from between the mountains into the drier plains.",
+  //   img: "/places/Austria.jpg",
+  //   startingPrice: "Rs.35000/-",
+  //   bestTime: "Mar - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "German" },
+  //     { type: "Capital", value: "Vienna" },
+  //     { type: "Best Time to Visit", value: "March - October" },
+  //     { type: "Duration", value: "1– 2 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Vienna (1N/2D)",
+  //     },
+  //     { type: "Popular Airport", value: "Vienna (VIE)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Tafelspitz, Wiener Schnitzel",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.35000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Short Breaks (1-3 days)",
+  //   location: "Netherlands",
+  //   shortNote:
+  //     "The Netherlands is a densely populated country in part reclaimed from the sea with about half of its land lying below sea level. Many tourist only come to the Netherlands to visit Amsterdam. But Holland has plenty to offer outside its capital. Crisscrossed with canals, the flat landscape is perfect for cycling with historic town centers, classic windmills and other tourist spots sprinkled across the country. In the west and north the long coastline is marked by mile upon mile of protective dunes and sandy beaches.",
+  //   img: "/places/Netherlands.jpg",
+  //   startingPrice: "Rs.35000/-",
+  //   bestTime: "Mar - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "Dutch" },
+  //     { type: "Capital", value: "Amsterdam" },
+  //     { type: "Best Time to Visit", value: "March - October" },
+  //     { type: "Duration", value: "3– 4 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Amsterdam (1N/2D)",
+  //     },
+  //     { type: "Popular Airport", value: "Amsterdam (AMS)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Poffertjes, Hollandse nieuwe haring, Sate, Stamppot",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.35000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Extended Getaways (5+ days)",
+  //   location: "Italy",
+  //   shortNote:
+  //     "This peninsula country is a centre of attention for centuries. This Roman Empire have more history to share with Vatican City as one of the important place to visit.",
+  //   img: "/places/Italy.jpg",
+  //   startingPrice: "Rs.35000/-",
+  //   bestTime: "Mar - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "Italian" },
+  //     { type: "Capital", value: "Rome" },
+  //     { type: "Best Time to Visit", value: "March - October" },
+  //     { type: "Duration", value: "5– 6 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Rome & Venice (4N/5D)",
+  //     },
+  //     {
+  //       type: "Popular Airport",
+  //       value: "Rome (FCE), Milan (MXP), Venice (VCE)",
+  //     },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Pizza, Pasta, Risotto, Lasagna Bolognese",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.35000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Extended Getaways (5+ days)",
+  //   location: "Spain",
+  //   shortNote:
+  //     "Spain is the second most visited country in the world. Spain is the only country in Europe that cares for its architectural relics as a heritage of its nation. The towns of Spain are known for being ideal for romantic tourism, which is why they are visited all year round by tourists from all over.",
+  //   img: "/places/spain.jpg",
+  //   startingPrice: "Rs.35000/-",
+  //   bestTime: "Mar - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "Spanish" },
+  //     { type: "Capital", value: "Madrid" },
+  //     { type: "Best Time to Visit", value: "March - October" },
+  //     { type: "Duration", value: "5 – 6 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Barcelona & Madrid (4N/5D)",
+  //     },
+  //     { type: "Popular Airport", value: "Barcelona (FCE), Madrid (MXP)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Paella, Tortilla, Patata bravas",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.35000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Mini Vacations (4-5 days)",
+  //   location: "Croatia",
+  //   shortNote:
+  //     "Croatia may not be the first place you think of for a sunny holiday and yet, the coast is stunningly beautiful. As soon as you arrive in Croatia, you feel the country’s rich history. You find yourself among the ancient ruins, buildings and castles. Besides the amazing Croatian coastline, the country has over 1,200 islands. Croatia has stunningly beautiful greenery and numerous spectacular waterfalls and nature parks.",
+  //   img: "/places/Croatia.jpg",
+  //   startingPrice: "Rs.70000/-",
+  //   bestTime: "Jun - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "Croatian" },
+  //     { type: "Capital", value: "Zagreb" },
+  //     { type: "Best Time to Visit", value: "June - October" },
+  //     { type: "Duration", value: "4 – 5 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Croatian Grand Trour (5N/6D",
+  //     },
+  //     { type: "Popular Airport", value: "Zagreb (ZAG), Dubrovnik (DBV)" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Istrian Stew, Pasta fazol, Polenta and Cornbread with lard.",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.70000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion. ",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "europe",
+  //   days: "Short Breaks (1-3 days)",
+  //   location: "Germany",
+  //   shortNote:
+  //     "Germany is associated with rich history and culture which attracts most of the tourist to this country.",
+  //   img: "/places/Germany.jpg",
+  //   startingPrice: "Rs.35000/-",
+  //   bestTime: "Mar - Oct",
+  //   packages: [
+  //     { type: "local Language", value: "German" },
+  //     { type: "Capital", value: "Berlin" },
+  //     { type: "Best Time to Visit", value: "March - October" },
+  //     { type: "Duration", value: "3 – 4 days" },
+  //     {
+  //       type: "Packages Available",
+  //       value: "Berlin & Munich (3N/4D)",
+  //     },
+  //     { type: "Popular Airport", value: "Frankfurt (LHR), Munich, Berlin" },
+  //     {
+  //       type: "Popular Food",
+  //       value: "Brot & Brötchen, Käsespätzle",
+  //     },
+  //     {
+  //       type: "Package Starting from",
+  //       value: "Rs.35000/- per person (Twin Sharing)",
+  //     },
+  //     {
+  //       type: "Visa Options",
+  //       value:
+  //         "Schengen will take minimum 3 -7 days, can be applied in VFS. On the appointment day, all the original documents have to be submitted and Biometric is required. Duration of Visitor visa can be applied based on the Itinerary, Stay and return tickets. Visa approval is completely under Consulate discretion.",
+  //     },
+  //   ],
+  // },
   {
     category: "asia",
     days: "Mini Vacations (4-5 days)",

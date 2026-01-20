@@ -20,7 +20,7 @@ const page = async ({ params }) => {
       next: {
         tags: ["post", "news", "caseStudy", "location"],
       },
-    }
+    },
   );
 
   return (
@@ -28,16 +28,39 @@ const page = async ({ params }) => {
       <DefaultLayout>
         <TourHeroSection />
         {params.location.replace(/-/g, " ") === "europe" ? (
-         leisureLists.filter((item) => item.category === "europe").map((list, idx) => (
+          leisureLists
+            .filter((item) => item.category === "europe")
+            .map((list, idx) => (
+              <>
+                <TourPackages key={idx} location={list.location} />
+                <TourPackageTable location={list.location} />
+              </>
+            ))
+        ) : (
           <>
-          <TourPackages key={idx} location={list.location} />
-           <TourPackageTable location={list.location} />
-           </>
-         ) )
-        ) :  <>
-            <TourPackages location={params.location.replace(/-/g, " ")} />
-            <TourPackageTable location={params.location.replace(/-/g, " ")} />
-          </>}
+             <TourPackageTable
+                  location={params.location.replace(/-/g, " ")}
+                />
+                <TourPackages location={params.location.replace(/-/g, " ")} />
+            {/* {params.location.replace(/-/g, " ") === "Nepal" ||
+            params.location.replace(/-/g, " ") === "Maldives" ? (
+              <>
+                   <TourPackageTable
+                  location={params.location.replace(/-/g, " ")}
+                />
+                <TourPackages location={params.location.replace(/-/g, " ")} />
+           
+              </>
+            ) : (
+              <>
+                <TourPackages location={params.location.replace(/-/g, " ")} />
+                <TourPackageTable
+                  location={params.location.replace(/-/g, " ")}
+                />
+              </>
+            )} */}
+          </>
+        )}
         {post !== null && <MiniBlogDetails post={post} />}
       </DefaultLayout>
     </div>
