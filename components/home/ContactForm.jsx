@@ -33,7 +33,7 @@ export const ContactForm = ({ contact }) => {
                   <LiaPhoneVolumeSolid className="w-full text-lg rounded-full text-secondary md:text-xl animate-pulse" />
                 </div>
                 <h5 className="text-lg font-normal tracking-wider text-secondary font-Poppins md:text-xl">
-                  +91-98408 84460
+                  +91 93843 23450
                 </h5>
               </div>
 
